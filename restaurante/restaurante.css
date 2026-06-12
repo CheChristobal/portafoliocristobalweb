@@ -1,0 +1,197 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: GASTRO & BISTRO (Warm Terracotta Luxury)
+   ========================================================================== */
+
+:root {
+    --terracotta-color: #e07a5f;      /* Arcilla / Terracota Elegante */
+    --terracotta-glow: rgba(224, 122, 95, 0.25);
+    --bg-bistro-dark: #16191e;        /* Grafito Oscuro Profundo */
+    --bg-bistro-surface: #1f232b;     /* Superficie de Menú */
+    --border-soft: rgba(224, 122, 95, 0.15);
+    --text-silver-dim: #cbd5e1;
+}
+
+body {
+    background-color: var(--bg-bistro-dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Tipografías Especiales */
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-terracotta { color: var(--terracotta-color); }
+.text-light-muted { color: #94a3b8; }
+.tracking-wide { letter-spacing: 1px; }
+.tracking-wider { letter-spacing: 3px; }
+.tracking-widest { letter-spacing: 4px; }
+
+/* Contornos del Salón */
+.bg-bistro { background-color: var(--bg-bistro-surface); }
+.bg-bistro-light { background-color: #121418; }
+.bg-bistro-dark { background-color: var(--bg-bistro-dark); }
+.border-terracotta { border: 1px solid var(--terracotta-color) !important; box-shadow: 0 0 15px var(--terracotta-glow); }
+.border-secondary-custom { border-color: rgba(255, 255, 255, 0.03) !important; }
+
+/* Enlaces adaptados de la barra de navegación */
+.navbar {
+    background-color: rgba(22, 25, 30, 0.95) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--terracotta-color) !important;
+}
+
+/* ==========================================================================
+   HERO / ATMÓSFERA DEL BISTRO
+   ========================================================================== */
+.bistro-hero {
+    height: 75vh;
+    background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.bistro-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(180deg, rgba(22, 25, 30, 0.4) 0%, var(--bg-bistro-dark) 100%);
+    z-index: 1;
+}
+
+.max-w-600 { max-width: 600px; }
+
+.badge-terracotta {
+    border: 1px solid var(--terracotta-color);
+    color: var(--terracotta-color);
+    background-color: rgba(224, 122, 95, 0.05);
+    border-radius: 0;
+    padding: 0.6rem 1.2rem;
+}
+
+/* Línea divisoria elegante */
+.bistro-line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--terracotta-color);
+}
+
+/* ==========================================================================
+   BOTONES DE AUTOR Y COMPONENTES TABS
+   ========================================================================== */
+.btn-terracotta {
+    background-color: var(--terracotta-color);
+    color: #ffffff !important;
+    border-radius: 0; /* Aspecto cuadrado arquitectónico */
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px var(--terracotta-glow);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn-terracotta:hover {
+    background-color: transparent;
+    color: var(--terracotta-color) !important;
+    border-color: var(--terracotta-color);
+    box-shadow: 0 0 20px var(--terracotta-color);
+}
+
+.btn-outline-terracotta {
+    border: 1px solid var(--terracotta-color);
+    color: var(--terracotta-color);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-terracotta:hover {
+    background-color: var(--terracotta-color);
+    color: #ffffff !important;
+}
+
+/* Personalización de Pestañas (Tabs de Bootstrap) */
+#menuTabs .nav-link {
+    background: transparent !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 0;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+#menuTabs .nav-link.active {
+    color: var(--terracotta-color) !important;
+    border-color: var(--terracotta-color) !important;
+    box-shadow: inset 0 -2px 0 var(--terracotta-color);
+}
+
+/* ==========================================================================
+   MENU ITEMS & BUSCADOR
+   ========================================================================== */
+.menu-item-box {
+    border-bottom: 1px dashed var(--border-soft);
+    background-color: rgba(255, 255, 255, 0.01);
+    transition: background-color 0.3s ease;
+}
+.menu-item-box:hover {
+    background-color: rgba(224, 122, 95, 0.03);
+}
+
+.menu-price {
+    color: var(--terracotta-color);
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+/* Campos de Formulario Gastronómicos */
+.bistro-input {
+    background-color: rgba(18, 20, 24, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 0 !important;
+    padding: 0.8rem 1.1rem;
+    color: #ffffff !important;
+}
+.bistro-input:focus {
+    border-color: var(--terracotta-color) !important;
+    box-shadow: 0 0 8px var(--terracotta-glow) !important;
+}
+select.bistro-input option {
+    background-color: var(--bg-bistro-surface);
+    color: #ffffff;
+}
+
+/* Cuadrículas e imágenes de la nueva galería */
+.gallery-frame {
+    height: 300px;
+    background-color: #000;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.4s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(0deg, rgba(22, 25, 30, 0.9) 10%, transparent 70%);
+    z-index: 2;
+}
+
+.gallery-frame:hover .gallery-img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Cajas de críticas y reviews */
+.review-box {
+    background-color: var(--bg-bistro-surface);
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+.review-box:hover {
+    transform: translateY(-2px);
+}

@@ -1,0 +1,160 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: PODOLOGÍA & ESTÉTICA (Zen Organic Style)
+   ========================================================================== */
+
+:root {
+    --sage-primary: #78866b;       /* Verde Salvia / Oliva Apagado */
+    --sage-hover: #606c54;
+    --sage-soft: #f0f3ed;          /* Contraste suave menta/salvia */
+    --ivory-white: #fdfdfb;        /* Fondo Orgánico Marfil */
+    --text-slate: #475569;
+}
+
+body {
+    background-color: var(--ivory-white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-slate);
+}
+
+/* Tipografías e Identidades */
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-sage { color: var(--sage-primary); }
+.bg-sage-soft { background-color: var(--sage-soft); }
+.bg-zen-soft { background-color: #f7f6f0; } /* Fondo tierra ultra claro */
+
+/* Navbar con efecto de cristal traslúcido opaco */
+.bg-zen-blur {
+    background-color: rgba(253, 253, 251, 0.9) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.nav-link {
+    color: var(--text-slate) !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--sage-primary) !important;
+}
+
+/* ==========================================================================
+   HERO / ATMÓSFERA ZEN ORGÁNICA
+   ========================================================================== */
+.zen-hero {
+    background: radial-gradient(circle at 90% 10%, #f4f3eb 0%, var(--ivory-white) 60%);
+}
+
+.max-w-600 { max-width: 600px; }
+
+.badge-zen {
+    border: 1px solid var(--sage-primary);
+    color: var(--sage-primary);
+    background-color: rgba(120, 134, 107, 0.05);
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.zen-line {
+    width: 35px;
+    height: 3px;
+    background-color: var(--sage-primary);
+    border-radius: 2px;
+}
+
+/* Imagen principal con curvas orgánicas redondeadas */
+.main-zen-img {
+    border-radius: 40px !important;
+}
+
+/* Widget flotante sutil */
+.floating-zen-card {
+    position: absolute;
+    bottom: 25px;
+    left: -20px;
+    min-width: 220px;
+    animation: floatZen 6s ease-in-out infinite;
+}
+
+.icon-circle-zen {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes floatZen {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* ==========================================================================
+   TARJETAS Y COMPONENTES PURE CALM
+   ========================================================================== */
+.zen-card {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.02) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.zen-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(120, 134, 107, 0.06) !important;
+}
+
+.zen-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Inputs Redondeados Limpios */
+.zen-input {
+    background-color: #faf9f5 !important;
+    border: 1px solid #e5dfd3 !important;
+    border-radius: 12px !important;
+    padding: 0.8rem 1.1rem;
+    font-size: 0.95rem;
+}
+.zen-input:focus {
+    background-color: #ffffff !important;
+    border-color: var(--sage-primary) !important;
+    box-shadow: 0 0 0 3px rgba(120, 134, 107, 0.15) !important;
+}
+
+/* Botonería Orgánica */
+.btn-sage {
+    background-color: var(--sage-primary);
+    color: #ffffff !important;
+    border: 1px solid var(--sage-primary);
+    transition: all 0.3s ease;
+}
+.btn-sage:hover {
+    background-color: var(--sage-hover);
+    border-color: var(--sage-hover);
+    transform: translateY(-2px);
+}
+
+.btn-outline-sage {
+    border: 2px solid var(--sage-primary);
+    color: var(--sage-primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.btn-outline-sage:hover {
+    background-color: var(--sage-primary);
+    color: #ffffff !important;
+}
+
+.btn-outline-dark-zen {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: var(--text-slate);
+    transition: all 0.3s ease;
+}
+.btn-outline-dark-zen:hover {
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.02);
+}

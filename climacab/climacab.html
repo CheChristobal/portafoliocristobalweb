@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Operativo HVAC | ClimaCab Control</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="climacab.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-machinery sticky-top py-3 border-bottom border-amber">
+        <div class="container">
+            <a class="navbar-brand font-mono fw-bold text-white" href="#">
+                <i class="bi bi-fan text-amber spinning-fan me-2"></i>CLIMA<span class="text-amber">CAB</span>_SYSTEMS
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHVAC">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarHVAC">
+                <ul class="navbar-nav ms-auto align-items-center gap-3 font-jakarta text-uppercase small tracking-wider fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#dashboard">Consola</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#alertas">Alertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reportes">Bitácoras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Protocolos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inspeccion">Registrar OT</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-amber btn-sm px-3 rounded-0"><i class="bi bi-box-arrow-left"></i> Portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="dashboard" class="hvac-hero py-5 position-relative">
+        <div class="container py-4 position-relative z-2">
+            <div class="row g-4 align-items-center mb-5">
+                <div class="col-lg-8 text-white">
+                    <span class="badge badge-amber mb-3 text-uppercase font-mono">HVAC Industrial Telemetry</span>
+                    <h1 class="display-4 font-jakarta fw-bold text-uppercase mb-2">Consola de Mantenimiento <span class="glow-text text-amber">HVAC</span></h1>
+                    <p class="lead font-jakarta text-silver mb-0 fw-light fs-5">Mapeo estático y bitácoras de calibración para Chillers de absorción, flujos de caudal de aire acondicionado y sistemas VRF de alta capacidad.</p>
+                </div>
+            </div>
+
+            <div class="row g-3 text-white font-mono">
+                <div class="col-6 col-md-3">
+                    <div class="metric-box p-3 border border-secondary-custom">
+                        <small class="text-muted d-block text-uppercase">Compresores Activos</small>
+                        <div class="fs-2 fw-bold text-white mt-1">14 <span class="fs-6 text-success"><i class="bi bi-arrow-up-short"></i>OK</span></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="metric-box p-3 border border-secondary-custom">
+                        <small class="text-muted d-block text-uppercase">Presión de Refrigerante</small>
+                        <div class="fs-2 fw-bold text-amber mt-1">125 <span class="fs-6 text-muted">PSI</span></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="metric-box p-3 border border-secondary-custom">
+                        <small class="text-muted d-block text-uppercase">Eficiencia Flujo (COP)</small>
+                        <div class="fs-2 fw-bold text-white mt-1">4.2 <span class="fs-6 text-muted">Nominal</span></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="metric-box p-3 border border-secondary-custom">
+                        <small class="text-muted d-block text-uppercase">Alertas Anómalas</small>
+                        <div class="fs-2 fw-bold text-danger mt-1">02 <span class="fs-6 text-warning"><i class="bi bi-exclamation-triangle"></i></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="alertas" class="py-5 bg-machinery-deep text-white">
+        <div class="container">
+            <div class="mb-4">
+                <h4 class="font-jakarta fw-bold text-uppercase text-amber"><i class="bi bi-exclamation-octagon-fill me-2"></i>Anomalías Críticas en Proceso</h4>
+                <p class="font-jakarta text-silver small">Diagnósticos emitidos por cuadrillas mecánicas durante las inspecciones rutinarias de la semana.</p>
+            </div>
+            <div class="row g-3 font-mono small">
+                <div class="col-md-6">
+                    <div class="p-3 bg-machinery border-start border-danger border-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-white fw-bold">TAG: CHILLER-04-BASE</span>
+                            <span class="text-danger fw-bold">CRÍTICO</span>
+                        </div>
+                        <p class="text-silver mb-0">Falla mecánica/eléctrica detectada en el presostato de alta presión. Se registra pérdida de aislamiento en el bobinado del motor principal.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 bg-machinery border-start border-warning border-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-white Bars fw-bold">TAG: VRF-TOSHIBA-P2</span>
+                            <span class="text-warning fw-bold">ADVERTENCIA</span>
+                        </div>
+                        <p class="text-silver mb-0">Micro-fuga latente localizada en la línea de líquido de cobre. Variación térmica inestable registrada en los evaporadores del ala sur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reportes" class="py-5 bg-machinery-dark border-top border-bottom border-dark">
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3 text-white">
+                <div>
+                    <h2 class="font-jakarta fw-bold text-uppercase mb-1">Historial de Informes de Climatización</h2>
+                    <p class="font-jakarta text-silver small mb-0">Inspecciones validadas mediante análisis químico de gases de refrigeración y termografía infrarroja.</p>
+                </div>
+                <div style="max-width: 320px;" class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control hvac-input border-end-0 small font-mono" placeholder="N° de Serie / TAG">
+                        <button class="btn btn-outline-amber px-3" onclick="alert('Simulación: Buscando bitácora en la base de datos HVAC...')"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap mb-4 font-mono">
+                <button class="btn btn-outline-amber btn-sm px-3 active">Todos</button>
+                <button class="btn btn-outline-amber btn-sm px-3">Operativos</button>
+                <button class="btn btn-outline-amber btn-sm px-3">En Observación</button>
+            </div>
+
+            <div class="table-responsive rounded shadow-lg border border-secondary-custom">
+                <table class="table table-dark table-striped table-hover align-middle font-mono mb-0 text-start small">
+                    <thead class="table-machinery-head text-uppercase text-amber">
+                        <tr>
+                            <th>ID Reporte</th>
+                            <th>Equipo / TAG</th>
+                            <th>Carga Gas (R410A)</th>
+                            <th>Consumo Amp</th>
+                            <th>Salto Térmico ΔT</th>
+                            <th>Estado Técnico</th>
+                            <th class="text-center">Certificado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-silver">
+                        <tr>
+                            <td class="text-white fw-bold">#REP-2026-A1</td>
+                            <td>Chiller Carrier Base-04</td>
+                            <td>45.5 Kg</td>
+                            <td>32.4 A</td>
+                            <td>6.8 °C</td>
+                            <td><span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">Operativo</span></td>
+                            <td class="text-center"><button class="btn btn-outline-light btn-xs py-1 px-2" onclick="alert('Simulación: Descargando PDF Técnico...')"><i class="bi bi-file-earmark-pdf text-danger"></i> PDF</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-white fw-bold">#REP-2026-A2</td>
+                            <td>Manejadora Aire Piso-12</td>
+                            <td>12.0 Kg</td>
+                            <td>14.1 A</td>
+                            <td>8.2 °C</td>
+                            <td><span class="badge bg-warning-subtle text-warning border border-warning-subtle px-2 py-1">Filtro Obstruido</span></td>
+                            <td class="text-center"><button class="btn btn-outline-light btn-xs py-1 px-2" onclick="alert('Simulación: Descargando PDF Técnico...')"><i class="bi bi-file-earmark-pdf text-danger"></i> PDF</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-white fw-bold">#REP-2026-A3</td>
+                            <td>VRF Toshiba-Box Sur</td>
+                            <td>22.4 Kg</td>
+                            <td>18.9 A</td>
+                            <td>7.5 °C</td>
+                            <td><span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">Operativo</span></td>
+                            <td class="text-center"><button class="btn btn-outline-light btn-xs py-1 px-2" onclick="alert('Simulación: Descargando PDF Técnico...')"><i class="bi bi-file-earmark-pdf text-danger"></i> PDF</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-white fw-bold">#REP-2026-A4</td>
+                            <td>Chiller Trane Central</td>
+                            <td>88.0 Kg</td>
+                            <td>64.2 A</td>
+                            <td>5.9 °C</td>
+                            <td><span class="badge bg-danger-subtle text-danger border border-danger-subtle px-2 py-1">Baja Presión</span></td>
+                            <td class="text-center"><button class="btn btn-outline-light btn-xs py-1 px-2" onclick="alert('Simulación: Descargando PDF Técnico...')"><i class="bi bi-file-earmark-pdf text-danger"></i> PDF</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-machinery-deep border-bottom border-dark">
+        <div class="container py-4" style="max-width: 850px;">
+            <div class="text-center mb-5 text-white">
+                <h2 class="font-jakarta fw-bold text-uppercase">Protocolos de Acuerdo e Ingeniería (SLA)</h2>
+                <p class="font-jakarta text-silver">Estándares técnicos y tiempos de respuesta automatizados para plantas industriales.</p>
+            </div>
+            
+            <div class="accordion accordion-flush industrial-accordion" id="hvacAccordion">
+                <div class="accordion-item bg-machinery text-white mb-2 border border-secondary-custom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-machinery text-white collapsed font-mono text-uppercase text-amber" type="button" data-bs-toggle="collapse" data-bs-target="#hvacFaq1">
+                            ¿Cuál es el tiempo de respuesta ante alarmas de baja presión de refrigerante?
+                        </button>
+                    </h2>
+                    <div id="hvacFaq1" class="accordion-collapse collapse" data-bs-parent="#hvacAccordion">
+                        <div class="accordion-body font-jakarta text-silver small lh-lg">
+                            Toda anomalía crítica de pérdida de presión activa un ticket prioritario Nivel 1. Las cuadrillas de técnicos asignadas al sector industrial cuentan con un lapso máximo de 45 minutos para presentarse en sala de máquinas y ejecutar el protocolo de contención de gases refrigerantes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-machinery text-white mb-2 border border-secondary-custom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-machinery text-white collapsed font-mono text-uppercase text-amber" type="button" data-bs-toggle="collapse" data-bs-target="#hvacFaq2">
+                            ¿Cómo se calculan los coeficientes de salto térmico admisibles?
+                        </button>
+                    </h2>
+                    <div id="hvacFaq2" class="accordion-collapse collapse" data-bs-parent="#hvacAccordion">
+                        <div class="accordion-body font-jakarta text-silver small lh-lg">
+                            Los rangos óptimos de operación de salto térmico en evaporadores industriales deben situarse de forma estricta entre los 6 °C y 10 °C. Variaciones superiores indican flujos de caudal insuficientes o saturación severa en las líneas de filtros de aire.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inspeccion" class="py-5 bg-machinery-dark">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="card bg-machinery border-amber p-4 p-md-5 text-white rounded-0 shadow-xl">
+                <div class="text-center mb-4">
+                    <h3 class="font-jakarta text-uppercase text-white">Registro de Mantenimiento de Ciclo</h3>
+                    <p class="font-jakarta text-silver small">Inyección de datos para el cálculo estático de salto térmico y eficiencia energética.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Informe HVAC compilado. Guardado en la base de datos industrial de ClimaCab.');">
+                    <div class="row g-3 font-jakarta">
+                        <div class="col-md-6">
+                            <label class="form-label text-amber text-uppercase font-mono text-xs">Identificador del Supervisor / RUT</label>
+                            <input type="text" class="form-control hvac-input text-white font-mono" placeholder="Ej: 15.678.123-K" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-amber text-uppercase font-mono text-xs">TAG del Sistema de Climatización</label>
+                            <input type="text" class="form-control hvac-input text-white font-mono" placeholder="Ej: CHILLER-04-A" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-amber text-uppercase font-mono text-xs">Tipo de Compresor</label>
+                            <select class="form-select hvac-input text-white" required>
+                                <option value="" selected disabled>Seleccionar tipo...</option>
+                                <option>Compresor de Tornillo Helicoidal</option>
+                                <option>Compresor Scroll (Hermético)</option>
+                                <option>Centrífugo de Alta Capacidad</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-amber text-uppercase font-mono text-xs">Firma de Conformidad Digital</label>
+                            <div class="signature-mock p-2 text-center text-muted font-mono border">
+                                <i class="bi bi-patch-check-fill text-success me-2"></i>TOKEN_AUTH_VERIFIED
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-amber font-mono w-100 py-3 text-uppercase fw-bold rounded-0">Compilar e Inyectar Informe Técnico</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-machinery-deep py-4 text-center border-top border-dark">
+        <div class="container text-muted font-jakarta small">
+            <p class="mb-1">CLIMACAB SYSTEMS &copy; 2026 — Protocolo técnico estático estructurado para demostración de arquitectura web.</p>
+            <a href="../index.html" class="text-amber text-decoration-none font-mono text-xs"><i class="bi bi-chevron-left"></i> Volver a Consola Principal</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

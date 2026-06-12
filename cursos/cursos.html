@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Digital | NextLevel Education</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="cursos.css">
+</head>
+<body>
+
+    <!-- Navbar de la Academia -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blur sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-extrabold text-indigo" href="#">
+                <i class="bi bi-mortarboard-fill me-2 text-gradient-purple"></i>Edu<span class="text-dark">Stream</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCursos">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCursos">
+                <ul class="navbar-nav ms-auto align-items-center gap-3 fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="#impacto">Métricas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#malla">Programas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comunidad">Comunidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inscripcion">Inscribirse</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-indigo btn-sm rounded-pill px-4"><i class="bi bi-arrow-left-short"></i> Portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Encabezado de Aprendizaje -->
+    <header class="academy-hero py-5 position-relative overflow-hidden">
+        <div class="abstract-circles"></div>
+        <div class="container py-5 position-relative z-2">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge bg-indigo-soft text-indigo rounded-pill px-3 py-2 text-uppercase fw-bold mb-3 tracking-wide">Acceso Vitalicio e Ilimitado</span>
+                    <h1 class="display-4 fw-extrabold text-slate mb-3">Domina las habilidades del <span class="text-gradient-purple">futuro digital</span>.</h1>
+                    <p class="lead text-muted mb-4">Aprende código, diseño de interfaces y estrategias de negocio de la mano de ingenieros activos en la industria global.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#inscripcion" class="btn btn-indigo rounded-pill px-4 py-3 fw-bold shadow-indigo">Comenzar Ahora</a>
+                        <a href="#malla" class="btn btn-link-custom rounded-pill px-4 py-3 fw-semibold">Explorar Clases <i class="bi bi-arrow-down-short fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image-stack position-relative d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Estudiante en Plataforma" class="img-fluid rounded-4 shadow-xl main-hero-img">
+                        <div class="stat-card p-3 rounded-4 bg-white shadow-lg d-flex align-items-center gap-3">
+                            <div class="badge-icon bg-warning-soft text-warning fs-4"><i class="bi bi-star-fill"></i></div>
+                            <div class="text-start">
+                                <h6 class="fw-bold mb-0">4.9 / 5.0</h6>
+                                <small class="text-muted">Valoración de alumnos</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NUEVA SECCIÓN: Métricas e Impacto Laboral -->
+    <section id="impacto" class="py-5 bg-white text-center">
+        <div class="container py-3 border-bottom">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="p-2">
+                        <h2 class="fw-extrabold text-indigo display-5 mb-1">+15K</h2>
+                        <p class="text-muted text-uppercase small tracking-wider fw-bold">Estudiantes Graduados</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-2">
+                        <h2 class="fw-extrabold text-indigo display-5 mb-1">87%</h2>
+                        <p class="text-muted text-uppercase small tracking-wider fw-bold">Tasa de Inserción Laboral</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-2">
+                        <h2 class="fw-extrabold text-indigo display-5 mb-1">4.5X</h2>
+                        <p class="text-muted text-uppercase small tracking-wider fw-bold">Retorno de Inversión Promedio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Cursos / Malla Curricular Ampliada (6 Especialidades) -->
+    <section id="malla" class="py-5 bg-soft-surface">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <h2 class="fw-extrabold text-slate text-uppercase">Rutas de Aprendizaje Especializadas</h2>
+                <div class="indigo-line mx-auto my-3"></div>
+                <p class="text-muted fs-5">Programas e-learning estructurados modularmente para llevarte al siguiente nivel profesional.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tarjeta de Curso 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 course-card border-0 shadow-sm overflow-hidden">
+                        <div class="course-thumb position-relative">
+                            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=500&q=80" alt="Full Stack Dev" class="img-fluid">
+                            <span class="badge bg-dark rounded-pill position-absolute top-0 end-0 m-3 fw-medium">32 Horas</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="text-indigo fw-bold small text-uppercase tracking-wider">Desarrollo Web</span>
+                            <h4 class="fw-bold text-slate mt-1 mb-3">Carrera Full-Stack Engineer</h4>
+                            <p class="text-muted small">Aprende la arquitectura moderna: desde semántica HTML5 y CSS avanzado hasta backend robusto y despliegues automáticos.</p>
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-4">
+                                <div class="fw-bold text-indigo fs-5">$45.000 <span class="fs-7 text-muted fw-normal">/mes</span></div>
+                                <a href="#inscripcion" class="btn btn-outline-indigo btn-sm rounded-pill px-3">Ver Temario</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Curso 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 course-card border-0 shadow-sm overflow-hidden">
+                        <div class="course-thumb position-relative">
+                            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=500&q=80" alt="UI/UX Design" class="img-fluid">
+                            <span class="badge bg-dark rounded-pill position-absolute top-0 end-0 m-3 fw-medium">24 Horas</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="text-indigo fw-bold small text-uppercase tracking-wider">Diseño Digital</span>
+                            <h4 class="fw-bold text-slate mt-1 mb-3">Diseño de Interfaces UI/UX</h4>
+                            <p class="text-muted small">Domina Figma desde las bases. Fundamentos visuales, creación de sistemas de componentes complejos y prototipos interactivos.</p>
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-4">
+                                <div class="fw-bold text-indigo fs-5">$38.000 <span class="fs-7 text-muted fw-normal">/mes</span></div>
+                                <a href="#inscripcion" class="btn btn-outline-indigo btn-sm rounded-pill px-3">Ver Temario</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Curso 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 course-card border-0 shadow-sm overflow-hidden">
+                        <div class="course-thumb position-relative">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Digital Marketing" class="img-fluid">
+                            <span class="badge bg-dark rounded-pill position-absolute top-0 end-0 m-3 fw-medium">18 Horas</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="text-indigo fw-bold small text-uppercase tracking-wider">Growth Marketing</span>
+                            <h4 class="fw-bold text-slate mt-1 mb-3">E-Commerce & Crecimiento</h4>
+                            <p class="text-muted small">Estrategias de adquisición omnicanal, analítica web avanzada, embudos de conversión y automatización de retención.</p>
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-4">
+                                <div class="fw-bold text-indigo fs-5">$32.000 <span class="fs-7 text-muted fw-normal">/mes</span></div>
+                                <a href="#inscripcion" class="btn btn-outline-indigo btn-sm rounded-pill px-3">Ver Temario</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Curso 4: Inteligencia Artificial (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 course-card border-0 shadow-sm overflow-hidden">
+                        <div class="course-thumb position-relative">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=500&q=80" alt="AI & ML" class="img-fluid">
+                            <span class="badge bg-dark rounded-pill position-absolute top-0 end-0 m-3 fw-medium">40 Horas</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="text-indigo fw-bold small text-uppercase tracking-wider">Inteligencia Artificial</span>
+                            <h4 class="fw-bold text-slate mt-1 mb-3">Machine Learning Aplicado</h4>
+                            <p class="text-muted small">Modelos predictivos en Python, redes neuronales, automatización avanzada con LLMs e integración de APIs cognitivas en entornos reales.</p>
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-4">
+                                <div class="fw-bold text-indigo fs-5">$52.000 <span class="fs-7 text-muted fw-normal">/mes</span></div>
+                                <a href="#inscripcion" class="btn btn-outline-indigo btn-sm rounded-pill px-3">Ver Temario</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Curso 5: Ciberseguridad (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 course-card border-0 shadow-sm overflow-hidden">
+                        <div class="course-thumb position-relative">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=500&q=80" alt="Cybersecurity" class="img-fluid">
+                            <span class="badge bg-dark rounded-pill position-absolute top-0 end-0 m-3 fw-medium">28 Horas</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="text-indigo fw-bold small text-uppercase tracking-wider">Seguridad Informática</span>
+                            <h4 class="fw-bold text-slate mt-1 mb-3">Hacking Ético & Pentesting</h4>
+                            <p class="text-muted small">Auditorías de sistemas corporativos, análisis de vulnerabilidades OWASP, criptografía práctica avanzada y mitigación de amenazas.</p>
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-4">
+                                <div class="fw-bold text-indigo fs-5">$48.000 <span class="fs-7 text-muted fw-normal">/mes</span></div>
+                                <a href="#inscripcion" class="btn btn-outline-indigo btn-sm rounded-pill px-3">Ver Temario</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Curso 6: Data Science (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 course-card border-0 shadow-sm overflow-hidden">
+                        <div class="course-thumb position-relative">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" alt="Data Science" class="img-fluid">
+                            <span class="badge bg-dark rounded-pill position-absolute top-0 end-0 m-3 fw-medium">30 Horas</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="text-indigo fw-bold small text-uppercase tracking-wider">Ciencia de Datos</span>
+                            <h4 class="fw-bold text-slate mt-1 mb-3">Data Science & Big Data</h4>
+                            <p class="text-muted small">Procesamiento de grandes volúmenes de información estructurada y libre, visualización analítica de datos en Tableau e ingeniería de datos.</p>
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-4">
+                                <div class="fw-bold text-indigo fs-5">$42.000 <span class="fs-7 text-muted fw-normal">/mes</span></div>
+                                <a href="#inscripcion" class="btn btn-outline-indigo btn-sm rounded-pill px-3">Ver Temario</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Opiniones de la Comunidad -->
+    <section id="comunidad" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-indigo text-uppercase tracking-wider small fw-bold d-block mb-2">Comunidad Global</span>
+                <h2 class="fw-extrabold text-slate">Historias de Éxito Real</h2>
+                <div class="indigo-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 rounded-4 bg-soft-surface h-100 border border-light">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-circle bg-indigo text-white fw-bold">DR</div>
+                            <div>
+                                <h6 class="fw-bold mb-0 text-slate">Daniel Riquelme</h6>
+                                <small class="text-muted">Graduado Full-Stack — Frontend Dev en Stripe</small>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-0 fst-italic">"El programa superó mis expectativas. Pasar de proyectos personales a entender flujos CI/CD reales en la nube fue el catalizador para conseguir mi primer empleo internacional."</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 rounded-4 bg-soft-surface h-100 border border-light">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-circle bg-indigo text-white fw-bold">CM</div>
+                            <div>
+                                <h6 class="fw-bold mb-0 text-slate">Camila Morales</h6>
+                                <small class="text-muted">Graduada UI/UX — Product Designer en LATAM</small>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-0 fst-italic">"El enfoque en metodologías ágiles de diseño y el feedback constante de los mentores me dieron la solidez técnica para postular de forma segura a células de producto corporativas."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Preguntas Frecuentes (Accordion de Bootstrap) -->
+    <section id="faq" class="py-5 bg-soft-surface border-top">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2 class="fw-extrabold text-slate">Dudas Frecuentes</h2>
+                <p class="text-muted">Todo lo que necesitas saber antes de iniciar tu proceso de especialización.</p>
+            </div>
+            
+            <div class="accordion accordion-flush rounded-4 overflow-hidden shadow-sm border" id="accordionAcademy">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-slate" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem1">
+                            ¿Se necesitan conocimientos técnicos previos para inscribirse?
+                        </button>
+                    </h2>
+                    <div id="faqItem1" class="accordion-collapse collapse" data-bs-parent="#accordionAcademy">
+                        <div class="accordion-body text-muted">
+                            No. Todas nuestras carreras y programas independientes inician desde los fundamentos absolutos del área, estructurando el avance modularmente hacia la especialización avanzada.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-slate" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem2">
+                            ¿Los certificados de la academia tienen respaldo de la industria?
+                        </button>
+                    </h2>
+                    <div id="faqItem2" class="accordion-collapse collapse" data-bs-parent="#accordionAcademy">
+                        <div class="accordion-body text-muted">
+                            Sí. Nuestros certificados estáticos validan la compleción del plan de estudios y la aprobación del proyecto integrador final de código o interfaz evaluado minuciosamente por ingenieros líderes de la industria.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Inscripción Premium -->
+    <section id="inscripcion" class="py-5 bg-white">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="card border-0 card-form-gradient rounded-4 overflow-hidden p-4 p-md-5 shadow-xl text-white">
+                <div class="text-center mb-4">
+                    <h2 class="fw-extrabold mb-2">Asegura tu Cupo de Admisión</h2>
+                    <p class="mb-0 text-white-50">Completa la postulación para recibir una beca del 20% en tu primer ciclo académico.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Registro de admisión exitoso. Te enviaremos las credenciales de acceso al aula.');">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold">Nombre Completo</label>
+                            <input type="text" class="form-control academy-input" placeholder="Ej: Marcela Paz" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold">Correo Electrónico</label>
+                            <input type="email" class="form-control academy-input" placeholder="marcela@correo.com" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label small fw-semibold">Programa Académico de Interés</label>
+                            <select class="form-select academy-input" required>
+                                <option value="" selected disabled>Selecciona una opción...</option>
+                                <option>Carrera Full-Stack Engineer</option>
+                                <option>Diseño de Interfaces UI/UX</option>
+                                <option>E-Commerce & Crecimiento Digital</option>
+                                <option>Machine Learning Aplicado</option>
+                                <option>Hacking Ético & Pentesting</option>
+                                <option>Data Science & Big Data</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-white rounded-pill px-5 py-3 fw-bold shadow-sm text-indigo">
+                                Enviar Postulación <i class="bi bi-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer de la Academia -->
+    <footer class="bg-dark text-white-50 py-4 border-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p class="mb-0 small">&copy; 2026 EduStream Academy. Prototipo estático independiente de interfaz formativa.</p>
+            <a href="../index.html" class="text-indigo text-decoration-none fw-semibold small"><i class="bi bi-arrow-left-circle me-1"></i> Panel Portafolio</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

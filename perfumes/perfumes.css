@@ -1,0 +1,179 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: LUXURY BOUTIQUE PERFUMES
+   ========================================================================== */
+
+:root {
+    --gold-primary: #d4af37;        /* Oro Fino */
+    --gold-glow: #f3e5ab;           /* Oro Soft */
+    --boutique-black: #0d0d0f;     /* Negro Ópalo */
+    --boutique-surface: #141417;   /* Superficie Gris Mineral */
+    --text-gold-dim: #bba15c;
+}
+
+body {
+    background-color: var(--boutique-black);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Tipografías Especiales */
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.tracking-wide { letter-spacing: 2px; }
+.tracking-wider { letter-spacing: 3px; }
+.tracking-widest { letter-spacing: 4px; }
+.fs-7 { font-size: 0.75rem; }
+
+/* Topbar Superior */
+.luxury-topbar {
+    background-color: #000000;
+    color: var(--gold-primary);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+}
+
+/* Navbar Adaptada */
+.bg-transparent-custom {
+    background-color: rgba(13, 13, 15, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--gold-primary) !important;
+}
+.text-gold { color: var(--gold-primary); }
+.bg-gold { background-color: var(--gold-primary); }
+
+/* ==========================================================================
+   HERO SECTION EMBLEMÁTICO
+   ========================================================================== */
+.perfume-hero {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    /* Imagen de atmósfera fina, desenfoque y lujo de fondo */
+    background-image: url('https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Filtro de penumbra cinematográfica sobre la foto del Hero */
+.perfume-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(180deg, rgba(13, 13, 15, 0.4) 0%, var(--boutique-black) 100%);
+    z-index: 1;
+}
+
+.max-w-500 { max-width: 500px; }
+.text-light-muted { color: #cbd5e1; }
+
+/* ==========================================================================
+   ELEMENTOS DE LUJO (Botones y Separadores)
+   ========================================================================== */
+.badge-gold-outline {
+    border: 1px solid var(--gold-primary);
+    color: var(--gold-primary);
+    background: transparent;
+    border-radius: 0;
+}
+
+.gold-divider {
+    width: 50px;
+    height: 1px;
+    background-color: var(--gold-primary);
+    box-shadow: 0 0 8px var(--gold-primary);
+}
+
+/* Botonería Premium de Oro */
+.btn-gold {
+    background-color: var(--gold-primary);
+    color: #000000 !important;
+    border: 1px solid var(--gold-primary);
+    border-radius: 0; /* Estilo vanguardista cuadrado */
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn-gold:hover {
+    background-color: transparent;
+    color: var(--gold-primary) !important;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.btn-outline-gold {
+    border: 1px solid var(--gold-primary);
+    color: var(--gold-primary);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-gold:hover {
+    background-color: var(--gold-primary);
+    color: #000000 !important;
+}
+
+/* ==========================================================================
+   PRODUCT BOUTIQUE CARDS (Efectos de Revelación Automática)
+   ========================================================================== */
+.bg-boutique-dark { background-color: var(--boutique-black); }
+.bg-boutique-deep { background-color: #070708; }
+.border-gold-dim { border-color: rgba(212, 175, 55, 0.1) !important; }
+
+.product-boutique-card {
+    background-color: var(--boutique-surface) !important;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.02) !important;
+}
+
+.card-img-wrapper {
+    background-color: #000000;
+}
+
+.boutique-img {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.4s ease;
+    opacity: 0.9;
+}
+
+/* Cortina oscura interactiva al posar el cursor */
+.boutique-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+/* Comportamiento al interactuar (Hover) */
+.product-boutique-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.product-boutique-card:hover .boutique-img {
+    transform: scale(1.06);
+    filter: brightness(0.7);
+    opacity: 1;
+}
+
+.product-boutique-card:hover .boutique-overlay {
+    opacity: 1;
+}
+
+/* Enlaces sutiles */
+.hover-underline:hover {
+    text-decoration: underline !important;
+}

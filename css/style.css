@@ -1,0 +1,362 @@
+/* ==========================================================================
+   1. VARIABLES Y CONFIGURACIÓN GENERAL (Glow Tech Style)
+   ========================================================================== */
+:root {
+    --primary-glow: #0072ff;
+    --secondary-glow: #00f2fe;
+    --success-glow: #38ef7d;
+    --warning-glow: #ff9f43;
+    --danger-glow: #ff4757;
+    --dark-deep: #0a0c10;
+    --dark-card: #12161f;
+    --text-muted-custom: #94a3b8;
+    --transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-smooth: all 0.4s ease;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    background-color: var(--dark-deep);
+    color: #f8fafc;
+    scroll-behavior: smooth;
+}
+
+/* Selección de texto personalizada */
+::selection {
+    background: rgba(0, 242, 254, 0.3);
+    color: #fff;
+}
+
+/* Personalización de la barra de desplazamiento (Scrollbar) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dark-deep);
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-glow);
+}
+
+/* ==========================================================================
+   2. NAVBAR PERSONALIZADA (Glassmorphism Effect)
+   ========================================================================== */
+.navbar {
+    background-color: rgba(10, 12, 16, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 0.9rem 0;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    text-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7) !important;
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
+}
+
+/* Línea animada de neón debajo de los links */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+    transition: var(--transition-bounce);
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px var(--secondary-glow);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 90%;
+}
+
+/* ==========================================================================
+   3. HERO & CARRUSEL (Efectos Cinematográficos de Gradiente)
+   ========================================================================== */
+.hero-section {
+    height: calc(100vh - 74px);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animación Ken Burns (Zoom out e inclinación sutil) */
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 7s ease-out;
+    z-index: 1;
+}
+
+.carousel-item.active::before {
+    transform: scale(1.12);
+}
+
+/* URLs de las imágenes de fondo del Carrusel */
+.item-p1::before { background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1200&q=80'); }
+.item-p2::before { background-image: url('https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&w=1200&q=80'); }
+.item-p3::before { background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80'); }
+
+/* Superposición con gradiente cruzado para potenciar el modo oscuro */
+.carousel-caption-custom {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(135deg, rgba(10, 12, 16, 0.9) 20%, rgba(10, 12, 16, 0.6) 100%);
+}
+
+/* Animaciones de entrada estilizadas para los textos */
+.carousel-item.active h1 { animation: fadeInUpBlur 1s cubic-bezier(0.16, 1, 0.3, 1) backwards 0.2s; }
+.carousel-item.active p { animation: fadeInUpBlur 1s cubic-bezier(0.16, 1, 0.3, 1) backwards 0.4s; }
+.carousel-item.active .badge, 
+.carousel-item.active .btn { animation: fadeInUpBlur 1s cubic-bezier(0.16, 1, 0.3, 1) backwards 0.6s; }
+
+@keyframes fadeInUpBlur {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================================================
+   4. COMPONENTES DEL HERO (Botones de Neón y Badges)
+   ========================================================================== */
+.max-w-600 {
+    max-width: 680px;
+    color: #cbd5e1;
+}
+
+.tracking-wider {
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Botones con efectos de iluminación */
+.hero-section .btn {
+    padding: 0.9rem 2.2rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: var(--transition-bounce);
+}
+
+.hero-section .btn-primary {
+    background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 114, 255, 0.4);
+}
+
+.hero-section .btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 242, 254, 0.7);
+}
+
+.hero-section .btn-success {
+    background: linear-gradient(135deg, #11998e, var(--success-glow));
+    border: none;
+    box-shadow: 0 4px 20px rgba(56, 239, 125, 0.4);
+}
+
+.hero-section .btn-success:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(56, 239, 125, 0.7);
+}
+
+.hero-section .btn-warning {
+    background: linear-gradient(135deg, #f857a6, #ff5858); /* Cambiado a degradado llamativo */
+    color: white !important;
+    border: none;
+    box-shadow: 0 4px 20px rgba(255, 88, 88, 0.4);
+}
+
+.hero-section .btn-warning:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(248, 87, 166, 0.7);
+}
+
+.hero-section .btn-outline-light {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.hero-section .btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--dark-deep) !important;
+    transform: translateY(-4px);
+}
+
+/* Indicadores inferiores circulares activos */
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: var(--transition-bounce);
+}
+
+.carousel-indicators .active {
+    width: 35px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+    box-shadow: 0 0 10px var(--secondary-glow);
+}
+
+/* ==========================================================================
+   5. SECCIONES DE CONTENIDO (Sobre Mí & Grid)
+   ========================================================================== */
+#sobre-mi {
+    background: var(--dark-deep) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+#proyectos {
+    background: #0f131a !important; /* Un tono ligeramente diferente para contrastar */
+}
+
+/* Títulos principales con degradado futurista */
+h2.text-uppercase {
+    background: linear-gradient(120deg, #ffffff 30%, var(--secondary-glow) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2.text-uppercase::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--primary-glow);
+}
+
+/* ==========================================================================
+   6. TARJETAS DE PROYECTOS (Cyber Glowing Cards)
+   ========================================================================== */
+.project-card {
+    background-color: var(--dark-card) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+    position: relative;
+    transition: var(--transition-bounce);
+    z-index: 1;
+}
+
+/* Gradiente que se ilumina al pasar el cursor encima */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+    opacity: 0;
+    z-index: -1;
+    transition: var(--transition-smooth);
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: transparent !important;
+    box-shadow: 0 20px 40px rgba(0, 242, 254, 0.15) !important;
+}
+
+/* Despliega un contorno de color suave en hover */
+.project-card:hover::before {
+    opacity: 0.15;
+    filter: blur(1px);
+}
+
+.project-card .card-title {
+    color: #ffffff;
+}
+
+.project-card .card-text {
+    color: var(--text-muted-custom) !important;
+}
+
+/* Colores personalizados y efectos para los iconos de cada nicho */
+.project-card i {
+    transition: var(--transition-bounce);
+    display: inline-block;
+}
+
+.project-card:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Colores específicos para los iconos en modo neón */
+.bi-gem { text-shadow: 0 0 15px rgba(13, 110, 253, 0.4); }
+.bi-wrench-adjustable { color: var(--success-glow) !important; text-shadow: 0 0 15px rgba(56, 239, 125, 0.4); }
+.bi-journal-bookmark { color: #f857a6 !important; text-shadow: 0 0 15px rgba(248, 87, 166, 0.4); }
+.bi-capsule { color: var(--danger-glow) !important; text-shadow: 0 0 15px rgba(255, 71, 87, 0.4); }
+.bi-egg-fried { color: #00f2fe !important; text-shadow: 0 0 15px rgba(0, 242, 254, 0.4); }
+.bi-heart-pulse { color: #e4e4e7 !important; text-shadow: 0 0 15px rgba(255, 255, 255, 0.4); }
+
+/* Customización de botones dentro de las tarjetas */
+.project-card .btn-outline-primary,
+.project-card .btn-outline-success,
+.project-card .btn-outline-warning,
+.project-card .btn-outline-danger,
+.project-card .btn-outline-info,
+.project-card .btn-outline-secondary {
+    border-radius: 8px;
+    border-width: 2px;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+/* Cambios estéticos a los botones outline para que contrasten en fondo oscuro */
+.project-card .btn-outline-warning { color: #f857a6; border-color: #f857a6; }
+.project-card .btn-outline-warning:hover { background-color: #f857a6; color: white !important; }
+.project-card .btn-outline-secondary { color: #e4e4e7; border-color: #e4e4e7; }
+.project-card .btn-outline-secondary:hover { background-color: #e4e4e7; color: var(--dark-deep) !important; }

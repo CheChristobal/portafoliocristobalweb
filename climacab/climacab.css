@@ -1,0 +1,156 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: CLIMACAB HVAC (Industrial Safety Slate & Amber)
+   ========================================================================== */
+
+:root {
+    --amber-safety: #ff9f43;       /* Naranja / Ámbar de Alerta */
+    --amber-glow: rgba(255, 159, 67, 0.2);
+    --machinery-gray: #1a1e24;     /* Gris Maquinaria */
+    --machinery-dark: #121418;     /* Fondo Profundo de Planta */
+    --machinery-deep: #0b0c0e;
+    --silver-metalloid: #94a3b8;
+}
+
+body {
+    background-color: var(--machinery-dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Tipografías e Identidad */
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-amber { color: var(--amber-safety); }
+.text-silver { color: var(--silver-metalloid); }
+.text-xs { font-size: 0.75rem; letter-spacing: 1.5px; }
+
+/* Distribución de Capas */
+.bg-machinery { background-color: var(--machinery-gray); }
+.bg-machinery-dark { background-color: var(--machinery-dark); }
+.bg-machinery-deep { background-color: var(--machinery-deep); }
+.border-amber { border: 1px solid var(--amber-safety) !important; box-shadow: 0 0 12px var(--amber-glow); }
+.border-secondary-custom { border-color: rgba(255, 255, 255, 0.04) !important; }
+
+/* Icono de Ventilador Giratorio con CSS puro */
+.spinning-fan {
+    display: inline-block;
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Enlaces de la barra de navegación */
+.navbar-dark .nav-link {
+    color: var(--silver-metalloid);
+    transition: color 0.3s ease;
+}
+.navbar-dark .nav-link:hover, .navbar-dark .nav-link.active {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   HERO / METRICS DASHBOARD
+   ========================================================================== */
+.hvac-hero {
+    background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.hvac-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(180deg, rgba(18, 20, 24, 0.96) 50%, var(--machinery-dark) 100%);
+    z-index: 1;
+}
+
+.badge-amber {
+    border: 1px solid var(--amber-safety);
+    color: var(--amber-safety);
+    background-color: rgba(255, 159, 67, 0.05);
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+}
+
+.glow-text {
+    text-shadow: 0 0 15px var(--amber-glow);
+}
+
+/* Cajas de métricas industriales */
+.metric-box {
+    background-color: rgba(18, 20, 24, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+/* ==========================================================================
+   TABLA E INPUTS INDUSTRIALES (Rigid Aero Style)
+   ========================================================================== */
+.table-machinery-head {
+    background-color: #171c22 !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 159, 67, 0.03) !important;
+    color: #ffffff;
+}
+
+.btn-xs {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+}
+
+/* Inputs Técnicos */
+.hvac-input {
+    background-color: #0d0f12 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 0 !important;
+    padding: 0.8rem 1.1rem;
+    color: #ffffff !important;
+}
+.hvac-input:focus {
+    border-color: var(--amber-safety) !important;
+    box-shadow: 0 0 8px var(--amber-glow) !important;
+}
+select.hvac-input option {
+    background-color: var(--machinery-gray);
+    color: #ffffff;
+}
+
+/* Recuadro de Firma Electrónica Autenticada */
+.signature-mock {
+    background-color: #0d0f12;
+    border: 1px solid #10b981;
+    color: #10b981;
+    padding: 0.8rem !important;
+}
+
+/* Botonería Ámbar */
+.btn-amber {
+    background-color: var(--amber-safety);
+    color: #000000 !important;
+    font-weight: 700;
+    border-radius: 0;
+    border: 1px solid var(--amber-safety);
+    box-shadow: 0 4px 12px var(--amber-glow);
+    transition: all 0.3s ease;
+}
+.btn-amber:hover {
+    background-color: transparent;
+    color: var(--amber-safety) !important;
+    box-shadow: 0 0 15px var(--amber-safety);
+}
+
+.btn-outline-amber {
+    border: 1px solid var(--amber-safety);
+    color: var(--amber-safety);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-amber:hover {
+    background-color: var(--amber-safety);
+    color: #000000 !important;
+}

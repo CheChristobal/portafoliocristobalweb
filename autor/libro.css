@@ -1,0 +1,143 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: LANZAMIENTO EDITORIAL (Cream & Burgundy Style)
+   ========================================================================== */
+
+:root {
+    --burgundy-primary: #722f37;   /* Rojo Borgoña Fino */
+    --burgundy-glow: rgba(114, 47, 55, 0.1);
+    --cream-bg: #fdfbf7;           /* Blanco Crema / Textura Papel */
+    --cream-soft: #f5f1ea;         /* Crema Suave de Contraste */
+    --text-slate-dim: #334155;     /* Antracita Suave */
+    --border-editorial-color: rgba(114, 47, 55, 0.12);
+}
+
+body {
+    background-color: var(--cream-bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-slate-dim);
+}
+
+/* Tipografías e Identidades */
+.font-cinzel { font-family: 'Cinzel', serif; letter-spacing: 1px; }
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-burgundy { color: var(--burgundy-primary); }
+.text-dark-muted { color: #4a5568; }
+.tracking-wide { letter-spacing: 1.5px; }
+.tracking-wider { letter-spacing: 2px; }
+.tracking-widest { letter-spacing: 3px; }
+
+/* Contornos Editoriales */
+.bg-cream { background-color: var(--cream-bg); }
+.bg-editorial-soft { background-color: var(--cream-soft); }
+.border-editorial { border: 1px solid var(--burgundy-primary) !important; }
+.border-top-editorial { border-top: 1px solid var(--border-editorial-color) !important; }
+.border-bottom-editorial { border-bottom: 1px solid var(--border-editorial-color) !important; }
+
+/* Navbar Superior con Desenfoque Esmerilado Opaco */
+.bg-cream-blur {
+    background-color: rgba(253, 251, 247, 0.9) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.navbar-dark .nav-link {
+    color: var(--text-slate-dim) !important;
+    transition: color 0.3s ease;
+}
+.text-burgundy-hover:hover {
+    color: var(--burgundy-primary) !important;
+}
+
+/* ==========================================================================
+   HERO / COMPOSICIÓN LITERARIA Y MAQUETA DE LIBRO
+   ========================================================================== */
+.editorial-hero {
+    background: radial-gradient(circle at 10% 90%, #f3ece3 0%, var(--cream-bg) 60%);
+}
+
+.max-w-600 { max-width: 600px; }
+
+.badge-editorial {
+    border: 1px solid var(--burgundy-primary);
+    color: var(--burgundy-primary);
+    background-color: rgba(114, 47, 55, 0.03);
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
+
+.editorial-line {
+    width: 35px;
+    height: 1px;
+    background-color: var(--burgundy-primary);
+}
+
+/* Sombra e inclinación del Mockup del libro físico */
+.book-cover {
+    max-height: 440px;
+    border-radius: 2px 8px 8px 2px; /* Efecto lomo redondeado */
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.book-container:hover .book-cover {
+    transform: scale(1.02) rotate(-1deg);
+}
+.shadow-editorial-book {
+    box-shadow: 15px 25px 45px -5px rgba(114, 47, 55, 0.2), 
+                5px 10px 20px -10px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================================================
+   BOTONES Y COMPONENTES
+   ========================================================================== */
+.btn-burgundy {
+    background-color: var(--burgundy-primary);
+    color: #ffffff !important;
+    border-radius: 0; /* Corte de imprenta cuadrado */
+    border: 1px solid var(--burgundy-primary);
+    transition: all 0.3s ease;
+}
+.btn-burgundy:hover {
+    background-color: transparent;
+    color: var(--burgundy-primary) !important;
+    box-shadow: 0 4px 15px var(--burgundy-glow);
+}
+
+.btn-outline-burgundy {
+    border: 1px solid var(--burgundy-primary);
+    color: var(--burgundy-primary);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-burgundy:hover {
+    background-color: var(--burgundy-primary);
+    color: #ffffff !important;
+}
+
+.btn-outline-dark-editorial {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: var(--text-slate-dim);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-dark-editorial:hover {
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Cajas de críticas tipográficas */
+.review-editorial-box {
+    border-right: 1px solid var(--border-editorial-color);
+    border-left: 1px solid var(--border-editorial-color);
+}
+
+/* Inputs Editoriales */
+.editorial-input {
+    background-color: #ffffff !important;
+    border: 1px solid #d1c7bd !important;
+    border-radius: 0 !important;
+    padding: 0.8rem 1.1rem;
+}
+.editorial-input:focus {
+    border-color: var(--burgundy-primary) !important;
+    box-shadow: 0 0 0 3px var(--burgundy-glow) !important;
+}

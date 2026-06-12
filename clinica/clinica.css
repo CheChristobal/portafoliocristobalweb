@@ -1,0 +1,215 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: CLINICA SAN JAVIER (Premium Clean-Tech)
+   ========================================================================== */
+
+:root {
+    --primary-medical: #0d6efd;
+    --medical-gradient: linear-gradient(135deg, #0d6efd 0%, #00d2ff 100%);
+    --navy-clinical: #0f172a; /* Azul pizarra más profundo y moderno */
+    --medical-green: #10b981; /* Verde esmeralda vibrante */
+    --medical-accent: #f0fdf4;
+    --bg-soft-gray: #f8fafc;
+    --card-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.04), 0 20px 40px -10px rgba(15, 23, 42, 0.06);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #334155;
+}
+
+.text-navy {
+    color: var(--navy-clinical);
+}
+
+.bg-navy {
+    background-color: var(--navy-clinical);
+}
+
+/* Enlaces de Utilidades Superior */
+.hover-link {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+.hover-link:hover {
+    opacity: 1;
+    color: #00d2ff !important;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+/* ==========================================================================
+   HERO SECTION OPTIMIZADO
+   ========================================================================== */
+.clinic-hero {
+    background: radial-gradient(circle at 90% 10%, #f0f7ff 0%, #ffffff 60%);
+    position: relative;
+}
+
+/* Marco moderno y flotante para la imagen del médico */
+.main-clinic-img {
+    border-radius: 24px !important;
+    border: 8px solid #ffffff;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-bounce);
+}
+
+.main-clinic-img:hover {
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 30px 60px -15px rgba(13, 110, 253, 0.15);
+}
+
+/* Tarjeta flotante de Acreditación (Efecto Glassmorphic sutil) */
+.floating-badge {
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+    border-left: 5px solid var(--medical-green) !important;
+    animation: floatAnimation 5s ease-in-out infinite;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 14px; /* Cambiado a cuadrado redondeado moderno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes floatAnimation {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+/* ==========================================================================
+   TARJETAS DE ESPECIALIDADES (Glow & Slide Effect)
+   ========================================================================== */
+.medical-card {
+    background: #ffffff;
+    border-radius: 20px !important;
+    border: 1px solid #f1f5f9 !important;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-bounce);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Línea de color que aparece desde abajo en hover */
+.medical-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--medical-gradient);
+    transform: scaleX(0);
+    transition: var(--transition-smooth);
+}
+
+.medical-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 50px -10px rgba(15, 23, 42, 0.1);
+    border-color: #e2e8f0 !important;
+}
+
+.medical-card:hover::after {
+    transform: scaleX(1);
+}
+
+.medical-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--bg-soft-gray);
+    border-radius: 20px; /* Consistencia en curvas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-bounce);
+    color: var(--primary-medical) !important;
+}
+
+/* El ícono cambia de color dinámicamente con gradiente simulado */
+.medical-card:hover .medical-icon {
+    background: var(--medical-gradient);
+    color: #ffffff !important;
+    transform: scale(1.05) rotate(-3deg);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+}
+
+/* ==========================================================================
+   FORMULARIO DE RESERVAS (Premium Card)
+   ========================================================================== */
+#reserva .card {
+    border-radius: 24px !important;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 40px 80px -15px rgba(15, 23, 42, 0.08);
+}
+
+#reserva .bg-primary {
+    background: var(--medical-gradient) !important;
+}
+
+.form-control-lg, .form-select {
+    border: 2px solid #f1f5f9; /* Líneas más gruesas y limpias */
+    background-color: #f8fafc;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    transition: var(--transition-smooth);
+}
+
+.form-control-lg:focus, .form-select:focus {
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px -5px rgba(13, 110, 253, 0.1);
+    border-color: var(--primary-medical);
+}
+
+/* Customización de los botones de opción (Radio Buttons) */
+.form-check-input:checked {
+    background-color: var(--primary-medical);
+    border-color: var(--primary-medical);
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+}
+
+/* ==========================================================================
+   BOTONES Y ACCIONES ANIMADOS
+   ========================================================================== */
+.btn-primary {
+    background: var(--medical-gradient);
+    border: none;
+    border-radius: 12px;
+    transition: var(--transition-bounce);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -5px rgba(13, 110, 253, 0.4);
+    filter: brightness(1.05);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+    border: none;
+    border-radius: 12px;
+    transition: var(--transition-bounce);
+}
+
+.btn-danger:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -5px rgba(239, 68, 68, 0.4);
+}
+
+.dynamic-btn {
+    border-radius: 12px !important;
+    transition: var(--transition-bounce);
+}
+.dynamic-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+}

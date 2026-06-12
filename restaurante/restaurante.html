@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastro & Bistro | Terraza Ancestral</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="restaurante.css">
+</head>
+<body>
+
+    <!-- Cabecera / Navbar Gastronómica -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-bistro sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand font-playfair fw-bold tracking-wide text-white" href="#">
+                Ancestral<span class="text-terracotta">.</span>Bistro
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRestaurante">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarRestaurante">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 text-uppercase small tracking-wider fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carta">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#criticas">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reserva">Reservar Mesa</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-terracotta btn-sm px-4"><i class="bi bi-chevron-left"></i> Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada del Menú de Autor -->
+    <header class="bistro-hero d-flex align-items-center position-relative">
+        <div class="container text-center text-white position-relative z-2">
+            <span class="badge badge-terracotta mb-3 text-uppercase tracking-widest">Experiencia Culinaria Única</span>
+            <h1 class="display-1 font-playfair fw-bold mb-3">Sabores del Fuego</h1>
+            <p class="lead font-jakarta max-w-600 mx-auto text-light-muted mb-4 fw-light">Una cocina honesta inspirada en ingredientes nativos y técnicas de cocción lenta a la leña.</p>
+            <a href="#carta" class="btn btn-terracotta px-5 py-3 text-uppercase tracking-wider fw-medium">Explorar la Carta</a>
+        </div>
+    </header>
+
+    <!-- NUEVA SECCIÓN: Galería de Experiencia Conceptual -->
+    <section id="experiencia" class="py-5 bg-bistro-dark">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5 text-white">
+                <span class="text-terracotta text-uppercase tracking-widest small d-block mb-2">Concepto Gastronómico</span>
+                <h2 class="font-playfair display-6">De la Huerta a la Mesa</h2>
+                <div class="bistro-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-frame position-relative overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Cocina de humo" class="img-fluid gallery-img">
+                        <div class="gallery-overlay p-4 d-flex flex-column justify-content-end">
+                            <h5 class="font-playfair text-white mb-1">Técnicas Ancestrales</h5>
+                            <p class="font-jakarta text-light-muted small mb-0">Uso exclusivo de leña de peral y espino.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-frame position-relative overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=500&q=80" alt="Platillo gourmet" class="img-fluid gallery-img">
+                        <div class="gallery-overlay p-4 d-flex flex-column justify-content-end">
+                            <h5 class="font-playfair text-white mb-1">Diseño de Autor</h5>
+                            <p class="font-jakarta text-light-muted small mb-0">Cada ingrediente cuenta una historia local.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-frame position-relative overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=500&q=80" alt="Cava de vinos" class="img-fluid gallery-img">
+                        <div class="gallery-overlay p-4 d-flex flex-column justify-content-end">
+                            <h5 class="font-playfair text-white mb-1">Cava Privada</h5>
+                            <p class="font-jakarta text-light-muted small mb-0">Maridajes perfectos seleccionados por sommeliers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Carta Digital Ampliada por Pestañas -->
+    <section id="carta" class="py-5 bg-bistro-light">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5 text-white">
+                <h2 class="font-playfair display-5">Nuestro Menú de Estación</h2>
+                <div class="bistro-line mx-auto my-3"></div>
+                <p class="text-light-muted font-jakarta small">Platos modificados dinámicamente según la cosecha y la pesca fresca del día.</p>
+            </div>
+
+            <!-- Navegación de Pestañas Ampliada -->
+            <ul class="nav nav-tabs justify-content-center border-0 mb-5 gap-2 gap-md-3" id="menuTabs" role="tablist">
+                <li class="nav-item"><button class="nav-link active text-uppercase tracking-wider font-jakarta" id="entradas-tab" data-bs-toggle="tab" data-bs-target="#entradas">Entradas</button></li>
+                <li class="nav-item"><button class="nav-link text-uppercase tracking-wider font-jakarta" id="carnes-tab" data-bs-toggle="tab" data-bs-target="#carnes">Carnes</button></li>
+                <li class="nav-item"><button class="nav-link text-uppercase tracking-wider font-jakarta" id="mar-tab" data-bs-toggle="tab" data-bs-target="#mar">Del Mar</button></li>
+                <li class="nav-item"><button class="nav-link text-uppercase tracking-wider font-jakarta" id="postres-tab" data-bs-toggle="tab" data-bs-target="#postres">Postres</button></li>
+            </ul>
+
+            <!-- Contenido Dinámico Ampleado -->
+            <div class="tab-content text-white" id="menuTabsContent">
+                
+                <!-- Pestaña 1: Entradas -->
+                <div class="tab-pane fade show active" id="entradas" role="tabpanel">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="menu-item-box d-flex justify-content-between align-items-center p-3">
+                                <div>
+                                    <h5 class="font-playfair text-white mb-1">Tártaro de Ciervo Ahumado</h5>
+                                    <p class="text-light-muted small mb-0 font-jakarta fw-light">Con alcaparras crocantes, yema curada y tostadas de masa madre.</p>
+                                </div>
+                                <span class="menu-price font-playfair fs-4">$14.500</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="menu-item-box d-flex justify-content-between align-items-center p-3">
+                                <div>
+                                    <h5 class="font-playfair text-white mb-1">Setas del Bosque a la Parra</h5>
+                                    <p class="text-light-muted small mb-0 font-jakarta fw-light">Hongos silvestres salteados con ajo crocante y emulsión de trufa.</p>
+                                </div>
+                                <span class="menu-price font-playfair fs-4">$12.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 2: Carnes -->
+                <div class="tab-pane fade" id="carnes" role="tabpanel">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="menu-item-box d-flex justify-content-between align-items-center p-3">
+                                <div>
+                                    <h5 class="font-playfair text-white mb-1">Garrón de Cordero Braseado</h5>
+                                    <p class="text-light-muted small mb-0 font-jakarta fw-light">Cocción de 12 horas al vino tinto sobre puré rústico de papas nativas.</p>
+                                </div>
+                                <span class="menu-price font-playfair fs-4">$24.000</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="menu-item-box d-flex justify-content-between align-items-center p-3">
+                                <div>
+                                    <h5 class="font-playfair text-white mb-1">Asado de Tira Angus a la Cruz</h5>
+                                    <p class="text-light-muted small mb-0 font-jakarta fw-light">Sometido a 6 horas de fuego indirecto, servido con chimichurri de la casa.</p>
+                                </div>
+                                <span class="menu-price font-playfair fs-4">$26.500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 3: Mar -->
+                <div class="tab-pane fade" id="mar" role="tabpanel">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="menu-item-box d-flex justify-content-between align-items-center p-3">
+                                <div>
+                                    <h5 class="font-playfair text-white mb-1">Salmón Austral Sellado a la Leña</h5>
+                                    <p class="text-light-muted small mb-0 font-jakarta fw-light">Acompañado de vegetales ahumados de la huerta orgánica y salsa cítrica.</p>
+                                </div>
+                                <span class="menu-price font-playfair fs-4">$19.500</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="menu-item-box d-flex justify-content-between align-items-center p-3">
+                                <div>
+                                    <h5 class="font-playfair text-white mb-1">Pulpo al Olivo Quemado</h5>
+                                    <p class="text-light-muted small mb-0 font-jakarta fw-light">Brazos de pulpo grillados, papines dorados y alioli de olivas sevillanas.</p>
+                                </div>
+                                <span class="menu-price font-playfair fs-4">$21.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 4: Postres -->
+                <div class="tab-pane fade" id="postres" role="tabpanel">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="menu-item-box d-flex justify-content-between align-items-center p-3">
+                                <div>
+                                    <h5 class="font-playfair text-white mb-1">Texturas de Chocolate Amargo</h5>
+                                    <p class="text-light-muted small mb-0 font-jakarta fw-light">Mousse al 70%, tierra de cacao y helado artesanal de pimienta austral.</p>
+                                </div>
+                                <span class="menu-price font-playfair fs-4">$8.500</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="menu-item-box d-flex justify-content-between align-items-center p-3">
+                                <div>
+                                    <h5 class="font-playfair text-white mb-1">Peras al Azafrán Grilladas</h5>
+                                    <p class="text-light-muted small mb-0 font-jakarta fw-light">Reducción de almíbar especiado, crema montada y praliné de frutos secos.</p>
+                                </div>
+                                <span class="menu-price font-playfair fs-4">$7.900</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Reseñas y Críticas Gastronómicas -->
+    <section id="criticas" class="py-5 bg-bistro-dark text-white border-top border-bottom border-secondary-custom">
+        <div class="container py-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <span class="text-terracotta text-uppercase tracking-widest small d-block mb-2">Prestigio & Opinión</span>
+                    <h2 class="font-playfair">Lo Que Dicen los Expertos</h2>
+                    <div class="bistro-line mx-auto my-3"></div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="review-box p-4 bg-bistro border border-secondary-custom">
+                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="font-jakarta text-light-muted fst-italic mb-3">"Una verdadera oda al fuego. El garrón de cordero braseado logra un nivel de ternura y balance de sabores difícil de emular en la alta cocina urbana contemporánea."</p>
+                        <h6 class="font-playfair text-white mb-0">— Guía Gastronómica El Paladar</h6>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="review-box p-4 bg-bistro border border-secondary-custom">
+                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="font-jakarta text-light-muted fst-italic mb-3">"El diseño interior y su propuesta culinaria conversan en una sintonía rústica y sofisticada impecable. La selección de vinos de su cava privada es soberbia."</p>
+                        <h6 class="font-playfair text-white mb-0">— Reviewer Revista Hedonista</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo de Reserva de Mesas -->
+    <section id="reserva" class="py-5 bg-bistro-light">
+        <div class="container py-4" style="max-width: 700px;">
+            <div class="card bg-bistro border-terracotta p-4 p-md-5 text-white rounded-0 shadow-lg">
+                <div class="text-center mb-4">
+                    <h2 class="font-playfair text-uppercase text-white">Reserva de Salón Privado</h2>
+                    <p class="font-jakarta text-light-muted small">Planifica tu velada. Las reservas online se confirman vía correo de forma inmediata.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Mesa reservada. Se ha enviado un código de acceso QR a tu correo.');">
+                    <div class="row g-3 font-jakarta">
+                        <div class="col-md-6">
+                            <label class="form-label text-terracotta small tracking-wider text-uppercase fw-medium">Nombre de la Reserva</label>
+                            <input type="text" class="form-control bistro-input text-white" placeholder="Ej: Elena Rossi" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-terracotta small tracking-wider text-uppercase fw-medium">Número de Comensales</label>
+                            <select class="form-select bistro-input text-white" required>
+                                <option value="2">2 Personas</option>
+                                <option value="4">4 Personas</option>
+                                <option value="6">6 Personas</option>
+                                <option value="8">Mesa Corporativa (8+)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-terracotta small tracking-wider text-uppercase fw-medium">Fecha</label>
+                            <input type="date" class="form-control bistro-input text-white" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-terracotta small tracking-wider text-uppercase fw-medium">Horario</label>
+                            <select class="form-select bistro-input text-white" required>
+                                <option>13:30 (Almuerzo)</option>
+                                <option>15:00 (Almuerzo)</option>
+                                <option selected>20:30 (Cena)</option>
+                                <option>22:00 (Cena)</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-terracotta w-100 py-3 text-uppercase tracking-wider fw-semibold">Garantizar Mesa</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Ubicación e Información de Apertura -->
+    <section class="py-5 bg-bistro-dark text-white text-center text-md-start">
+        <div class="container py-3">
+            <div class="row g-4 justify-content-between">
+                <div class="col-md-6 font-jakarta">
+                    <h4 class="font-playfair text-white mb-3">Horarios de Atención</h4>
+                    <p class="mb-1 text-light-muted">Martes a Sábado: 13:00 - 16:00 | 20:00 - 00:00</p>
+                    <p class="mb-4 text-light-muted">Domingo: 13:00 - 17:00 (Solo Almuerzos)</p>
+                    <h4 class="font-playfair text-white mb-2">Dirección</h4>
+                    <p class="text-light-muted mb-0"><i class="bi bi-geo-alt text-terracotta me-2"></i>Pasaje de las Artes 412, Barrio Histórico</p>
+                </div>
+                <div class="col-md-5 text-md-end d-flex flex-column justify-content-center">
+                    <h5 class="font-playfair text-white mb-2">Contacto Directo</h5>
+                    <p class="text-terracotta fs-4 mb-1 font-jakarta fw-light">+56 9 8765 4321</p>
+                    <p class="small text-muted mb-0">contacto@ancestralbistro.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer del Bistro -->
+    <footer class="bg-bistro-light py-4 text-center border-top border-secondary-custom">
+        <div class="container text-white-50 font-jakarta small">
+            <p class="mb-1">ANCESTRAL BISTRO &copy; 2026 — Interfaz premium independiente maquetada para portafolio.</p>
+            <a href="../index.html" class="text-terracotta text-decoration-none font-jakarta"><i class="bi bi-chevron-left"></i> Volver a Panel Principal</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

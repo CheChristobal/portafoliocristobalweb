@@ -1,0 +1,175 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: HEXABIKES WORKSHOP (Enduro Grunge & Acid Style)
+   ========================================================================== */
+
+:root {
+    --acid-lime: #a3e635;         /* Verde Lima Eléctrico / Ácido */
+    --acid-glow: rgba(163, 230, 53, 0.2);
+    --dark-mud: #181a1b;          /* Gris Neumático Oscuro */
+    --dark-carbon: #0f1011;       /* Fondo Profundo */
+    --border-metal: #2d3135;
+    --silver-text: #cbd5e1;
+}
+
+body {
+    background-color: var(--dark-carbon);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Tipografías e Identidad */
+.font-barlow { font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.5px; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-acid { color: var(--acid-lime); }
+.text-silver { color: var(--silver-text); }
+.fw-black { font-weight: 900; }
+
+/* Contornos y Capas */
+.bg-mud { background-color: var(--dark-mud); }
+.bg-carbon-dark { background-color: #131516; }
+.bg-carbon-deep { background-color: var(--dark-carbon); }
+.border-acid { border: 1px solid var(--acid-lime) !important; box-shadow: 0 0 12px var(--acid-glow); }
+.border-secondary-custom { border-color: rgba(255, 255, 255, 0.03) !important; }
+
+/* Enlaces de navegación */
+.navbar {
+    background-color: rgba(15, 16, 17, 0.95) !important;
+    backdrop-filter: blur(8px);
+}
+.navbar-dark .nav-link {
+    color: var(--silver-text);
+    transition: color 0.3s ease;
+}
+.navbar-dark .nav-link:hover {
+    color: var(--acid-lime);
+    text-shadow: 0 0 8px var(--acid-glow);
+}
+
+/* ==========================================================================
+   HERO / BANNER GRUNGE
+   ========================================================================== */
+.bikes-hero {
+    height: 70vh;
+    background-image: url('https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.bikes-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(90deg, rgba(15, 16, 17, 0.98) 45%, rgba(15, 16, 17, 0.5) 100%);
+    z-index: 1;
+}
+
+/* Textura sutil simulada por CSS para el estilo grunge */
+.grunge-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 0);
+    background-size: 4px 4px;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.glow-text {
+    color: #ffffff;
+    text-shadow: 0 0 15px var(--acid-glow);
+}
+
+.badge-acid {
+    border: 1px solid var(--acid-lime);
+    color: var(--acid-lime);
+    background-color: rgba(163, 230, 53, 0.05);
+    border-radius: 0;
+    padding: 0.5rem 1.2rem;
+    letter-spacing: 1.5px;
+}
+
+.acid-line {
+    width: 45px;
+    height: 4px;
+    background-color: var(--acid-lime);
+}
+
+/* ==========================================================================
+   BOTONES Y TARJETAS MONOLÍTICAS
+   ========================================================================== */
+.btn-acid {
+    background-color: var(--acid-lime);
+    color: #000000 !important;
+    font-weight: 900;
+    border-radius: 0;
+    border: 1px solid var(--acid-lime);
+    box-shadow: 0 4px 14px var(--acid-glow);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn-acid:hover {
+    background-color: transparent;
+    color: var(--acid-lime) !important;
+    box-shadow: 0 0 20px var(--acid-lime);
+}
+
+.btn-outline-acid {
+    border: 1px solid var(--acid-lime);
+    color: var(--acid-lime);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-acid:hover {
+    background-color: var(--acid-lime);
+    color: #000000 !important;
+}
+
+.btn-outline-white {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--silver-text);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-white:hover {
+    border-color: #ffffff;
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Tarjetas Mecánicas del Taller */
+.bike-industrial-card {
+    background-color: var(--dark-mud) !important;
+    border: 1px solid var(--border-metal) !important;
+    border-radius: 0 !important;
+    transition: all 0.3s ease;
+}
+.bike-industrial-card:hover {
+    border-color: rgba(163, 230, 53, 0.3) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.bike-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(163, 230, 53, 0.03);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(163, 230, 53, 0.08);
+}
+
+/* Campos de Formulario (Mecanizados) */
+.bike-input {
+    background-color: #0d0e0f !important;
+    border: 1px solid var(--border-metal) !important;
+    border-radius: 0 !important;
+    padding: 0.8rem 1.1rem;
+    color: #ffffff !important;
+}
+.bike-input:focus {
+    border-color: var(--acid-lime) !important;
+    box-shadow: 0 0 8px var(--acid-glow) !important;
+}
+select.bike-input option {
+    background-color: var(--dark-mud);
+    color: #ffffff;
+}

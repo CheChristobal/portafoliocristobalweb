@@ -1,0 +1,204 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: SAAS & SYSTEMS (Neo-Corporate Slate Style)
+   ========================================================================== */
+
+:root {
+    --cyan-primary: #06b6d4;       /* Cian Eléctrico */
+    --cyan-hover: #0891b2;
+    --cyan-gradient: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%); /* Mix Cian & Azul Tech */
+    --slate-dark: #0f172a;         /* Gris Slate Corporativo */
+    --soft-gray-bg: #f8fafc;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #475569;
+}
+
+/* Tipografías e Identidades */
+.fw-extrabold { font-weight: 800; }
+.text-cyan { color: var(--cyan-primary); }
+.text-slate { color: var(--slate-dark); }
+.bg-slate { background-color: var(--slate-dark); }
+.bg-cyan-soft { background-color: rgba(6, 182, 212, 0.08); }
+.bg-soft-surface { background-color: var(--soft-gray-bg); }
+
+/* Gradiente de Color en Tipografía */
+.text-gradient-cyan {
+    background: var(--cyan-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navbar Esmerilada */
+.bg-blur {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* ==========================================================================
+   HERO / COMPONENTE FLOTANTE INTERACTIVO
+   ========================================================================== */
+.software-hero {
+    background: radial-gradient(100% 100% at 0% 0%, #ecfeff 0%, #ffffff 100%);
+}
+
+.main-hero-img {
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.08);
+}
+
+/* Widget Flotante de Servidores */
+.uptime-card {
+    position: absolute;
+    bottom: 25px;
+    left: -20px;
+    border-color: #f1f5f9 !important;
+    min-width: 240px;
+    animation: floatAnimation 6s ease-in-out infinite;
+}
+
+/* Punto intermitente verde simulando servidor en vivo */
+.pulse-indicator-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+    70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+@keyframes floatAnimation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* ==========================================================================
+   TARJETAS TÉCNICAS Y PRECIOS CORPORATIVOS
+   ========================================================================== */
+.cyan-line {
+    width: 45px;
+    height: 4px;
+    background: var(--cyan-gradient);
+    border-radius: 10px;
+}
+
+.core-tech-card {
+    background: #ffffff;
+    border-radius: 16px !important;
+    border: 1px solid #e2e8f0 !important;
+    transition: var(--transition-smooth);
+}
+.core-tech-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.06) !important;
+    border-color: #cbd5e1 !important;
+}
+
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(6, 182, 212, 0.05);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bloques de Tarifas */
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 20px !important;
+    transition: var(--transition-bounce);
+}
+.pricing-card:hover {
+    transform: translateY(-6px);
+}
+.featured-pricing {
+    border-width: 2px !important;
+    border-color: var(--cyan-primary) !important;
+    box-shadow: 0 25px 50px -12px rgba(6, 182, 212, 0.15) !important;
+}
+
+/* ==========================================================================
+   FORMULARIO DE ADMISIÓN DE DEMO Y BOTONES
+   ========================================================================== */
+.card-form-slate {
+    background: var(--slate-dark);
+    box-shadow: 0 30px 60px -15px rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.software-input {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+    padding: 0.8rem 1rem;
+    color: #ffffff !important;
+    font-size: 0.95rem;
+}
+.software-input::placeholder { color: rgba(255, 255, 255, 0.4); }
+.software-input:focus {
+    border-color: var(--cyan-primary) !important;
+    box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.15) !important;
+}
+select.software-input option {
+    background-color: var(--slate-dark);
+    color: #ffffff;
+}
+
+/* Botonera */
+.btn-cyan {
+    background: var(--cyan-gradient);
+    color: #ffffff !important;
+    border: none;
+    transition: var(--transition-smooth);
+}
+.btn-cyan:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+}
+.shadow-cyan { box-shadow: 0 10px 20px -5px rgba(6, 182, 212, 0.35); }
+
+.btn-white {
+    background-color: #ffffff;
+    color: var(--slate-dark) !important;
+    border: none;
+    transition: var(--transition-smooth);
+}
+.btn-white:hover {
+    background-color: var(--soft-gray-bg);
+    transform: translateY(-2px);
+}
+
+.btn-outline-slate {
+    border: 2px solid #e2e8f0;
+    color: var(--slate-dark);
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+.btn-outline-slate:hover {
+    border-color: var(--slate-dark);
+    background-color: var(--slate-dark);
+    color: #ffffff !important;
+}
+
+.btn-link-custom {
+    color: var(--slate-dark);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+.btn-link-custom:hover {
+    color: var(--cyan-primary);
+}

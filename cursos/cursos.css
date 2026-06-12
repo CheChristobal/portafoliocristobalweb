@@ -1,0 +1,222 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: PLATAFORMAS EDUCATIVAS (Minimalist Indigo Style)
+   ========================================================================== */
+
+:root {
+    --indigo-primary: #4f46e5;     /* Índigo Moderno */
+    --indigo-hover: #4338ca;
+    --purple-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    --slate-dark: #1e293b;         /* Gris Slate Corporativo */
+    --soft-gray-bg: #f8fafc;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #475569;
+}
+
+/* Tipografías y Utilidades */
+.fw-extrabold { font-weight: 800; }
+.text-indigo { color: var(--indigo-primary); }
+.text-slate { color: var(--slate-dark); }
+.bg-indigo-soft { background-color: rgba(79, 70, 229, 0.08); }
+.bg-warning-soft { background-color: #fffbeb; color: #d97706; }
+.bg-soft-surface { background-color: var(--soft-gray-bg); }
+
+/* Gradiente de Texto */
+.text-gradient-purple {
+    background: var(--purple-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navbar con efecto desenfoque traslúcido */
+.bg-blur {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* ==========================================================================
+   HERO / DISEÑO INTEGRAL DE APRENDIZAJE
+   ========================================================================== */
+.academy-hero {
+    background: radial-gradient(100% 100% at 0% 0%, #f5f3ff 0%, #ffffff 100%);
+}
+
+/* Círculos decorativos abstractos de fondo */
+.abstract-circles {
+    position: absolute;
+    top: -100px; right: -50px;
+    width: 300px; height: 300px;
+    background-color: rgba(124, 58, 237, 0.04);
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 1;
+}
+
+.main-hero-img {
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.05);
+}
+
+/* Tarjeta de Estadísticas Flotante */
+.stat-card {
+    position: absolute;
+    bottom: 25px;
+    left: -20px;
+    border: 1px solid #f1f5f9;
+    min-width: 210px;
+    animation: floatAnimation 6s ease-in-out infinite;
+}
+
+.badge-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes floatAnimation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* ==========================================================================
+   TARJETAS DE CURSOS (Cards Modernas)
+   ========================================================================== */
+.indigo-line {
+    width: 45px;
+    height: 4px;
+    background: var(--purple-gradient);
+    border-radius: 10px;
+}
+
+.course-card {
+    background: #ffffff;
+    border-radius: 20px !important;
+    border: 1px solid #e2e8f0 !important;
+    transition: var(--transition-smooth);
+}
+
+.course-card .course-thumb img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.08) !important;
+    border-color: #cbd5e1 !important;
+}
+
+.course-card:hover .course-thumb img {
+    transform: scale(1.03);
+}
+
+/* ==========================================================================
+   FORMULARIO Y BOTONERÍA PREMIUM
+   ========================================================================== */
+.card-form-gradient {
+    background: var(--purple-gradient);
+    box-shadow: 0 30px 60px -15px rgba(79, 70, 229, 0.3);
+}
+
+.academy-input {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 0.8rem 1rem;
+    color: #ffffff !important;
+}
+
+.academy-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.academy-input:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15) !important;
+}
+
+select.academy-input option {
+    background-color: #7c3aed;
+    color: #ffffff;
+}
+
+/* Botones Personalizados */
+.btn-indigo {
+    background-color: var(--indigo-primary);
+    color: #ffffff !important;
+    border: none;
+    transition: var(--transition-smooth);
+}
+.btn-indigo:hover {
+    background-color: var(--indigo-hover);
+    transform: translateY(-2px);
+}
+.shadow-indigo {
+    box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.4);
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: var(--indigo-primary) !important;
+    border: none;
+    transition: var(--transition-smooth);
+}
+.btn-white:hover {
+    background-color: var(--soft-gray-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.btn-outline-indigo {
+    border: 2px solid #e2e8f0;
+    color: var(--slate-dark);
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+.btn-outline-indigo:hover {
+    border-color: var(--indigo-primary);
+    background-color: transparent;
+    color: var(--indigo-primary) !important;
+}
+
+.btn-link-custom {
+    color: var(--slate-dark);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+.btn-link-custom:hover {
+    color: var(--indigo-primary);
+    background-color: rgba(79, 70, 229, 0.04);
+}
+
+/* Iniciales o Círculos de Avatar en testimonios */
+.avatar-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--purple-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+}
+
+/* Reajuste visual fino para el Accordion académico */
+.accordion-button:not(.collapsed) {
+    background-color: var(--soft-gray-bg) !important;
+    color: var(--indigo-primary) !important;
+    box-shadow: none;
+}
