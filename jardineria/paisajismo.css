@@ -1,0 +1,55 @@
+:root {
+    --leaf-green: #15803d;
+    --forest-green: #166534;
+    --light-bg: #fdfbf7;
+    --leaf-soft: #f0fdf4;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: #374151;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-playfair { font-family: 'Playfair Display', serif; }
+.text-leaf { color: var(--leaf-green); }
+.text-forest { color: var(--forest-green); }
+.bg-leaf-soft { background-color: var(--leaf-soft); }
+
+.garden-hero {
+    background: linear-gradient(rgba(22, 101, 52, 0.8), rgba(22, 101, 52, 0.8)), 
+                url('https://images.unsplash.com/photo-1598971833174-c30f3732f916?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.garden-card {
+    transition: 0.3s ease;
+    border: 1px solid #e5e7eb !important;
+}
+
+.garden-card:hover {
+    border-color: var(--leaf-green) !important;
+    transform: translateY(-5px);
+}
+
+.btn-leaf {
+    background-color: var(--leaf-green);
+    color: #fff;
+    padding: 0.8rem 2rem;
+}
+
+.btn-leaf:hover {
+    background-color: var(--forest-green);
+    color: #fff;
+}
+
+.btn-outline-leaf {
+    border: 1px solid var(--forest-green);
+    color: var(--forest-green);
+}
+
+.btn-outline-leaf:hover {
+    background-color: var(--forest-green);
+    color: #fff;
+}
