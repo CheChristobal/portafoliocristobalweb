@@ -1,0 +1,275 @@
+/* ==========================================================================
+   ESTILOS PREMIUM: LUXURY PARFUMS (Aura Pearl & Iridescent Organic)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Tenor+Sans&display=swap');
+
+:root {
+    /* Paleta Aura Pearl & Nude */
+    --pearl-bg: #fbfbfc;            /* Blanco Perla Inmaculado */
+    --pearl-surface: #f3f5f8;       /* Gris Alba Suave */
+    --nude-accent: #e5c3b2;         /* Nude / Oro Rosado Orgánico */
+    --nude-glow: rgba(229, 195, 178, 0.25);
+    --dark-editorial: #1a1e26;     /* Contraste suave para textos tipográficos */
+    --text-muted: #626d7a;
+    
+    /* Efecto Vidrio Iridiscente Soft */
+    --iridescent-gradient: linear-gradient(135deg, rgba(229,195,178,0.15) 0%, rgba(200,214,229,0.15) 50%, rgba(245,223,219,0.15) 100%);
+    --pearl-shadow: 0 30px 60px -20px rgba(98, 109, 122, 0.06);
+    --hover-shadow: 0 40px 70px -15px rgba(229, 195, 178, 0.3);
+    
+    /* Movimiento Fluido */
+    --motion-fluid: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--pearl-bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--dark-editorial);
+    letter-spacing: 0.1px;
+    overflow-x: hidden;
+}
+
+/* Tipografías e Identidad Escultórica */
+.font-cormorant { font-family: 'Tenor Sans', sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.font-xs { font-size: 0.76rem; letter-spacing: 1.2px; line-height: 1.6; }
+
+/* Adornos Lineales Orgánicos */
+.luxury-line {
+    width: 35px;
+    height: 2px;
+    background-color: var(--nude-accent);
+    border-radius: 10px;
+    box-shadow: 0 1px 6px var(--nude-glow);
+}
+
+/* Topbar Minimalista */
+.luxury-topbar {
+    background-color: var(--dark-editorial) !important;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+}
+
+/* ==========================================================================
+   NAVBAR: INTEGRACIÓN TRANSLÚCIDA ULTRA-PURE
+   ========================================================================== */
+.navbar {
+    background-color: rgba(251, 251, 252, 0.8) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    transition: var(--motion-fluid);
+}
+
+.navbar-brand {
+    letter-spacing: 1.5px;
+    color: var(--dark-editorial) !important;
+}
+
+.navbar .nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    transition: var(--motion-fluid);
+}
+
+.navbar .nav-link:hover {
+    color: var(--dark-editorial) !important;
+}
+
+/* Bolsa de compras con contador minimalista */
+.navbar .badge {
+    background-color: var(--dark-editorial) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   HERO / COMPOSICIÓN LUMINOSA DE ALTA GAMA
+   ========================================================================== */
+.luxury-hero {
+    background: radial-gradient(circle at 80% 30%, #f5eff2 0%, var(--pearl-bg) 60%);
+    padding-bottom: 70px;
+}
+
+.luxury-hero h1 span {
+    color: var(--nude-accent) !important;
+    font-style: normal !important;
+}
+
+/* Imagen de frasco esculpida con bordes suavizados Japandi */
+.main-perfume-img {
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 40px 40px 0 40px !important; /* Corte asimétrico moderno */
+    box-shadow: var(--pearl-shadow) !important;
+    border: 4px solid #ffffff;
+    transition: var(--motion-fluid);
+}
+
+.main-perfume-img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* ==========================================================================
+   FILTROS OLFATIVOS Y GRILLA DE PRODUCTOS IRIDISCENTE
+   ========================================================================== */
+.bg-light {
+    background-color: var(--pearl-surface) !important;
+}
+
+.link-luxury {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    transition: var(--motion-fluid);
+}
+
+.link-luxury:hover {
+    color: var(--dark-editorial) !important;
+    border-bottom: 1px solid var(--dark-editorial);
+}
+
+/* Envolturas de Producto (Efecto Cristal de Roca Iridiscente) */
+.product-luxury-wrapper {
+    background: var(--iridescent-gradient);
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    border-radius: 24px !important;
+    box-shadow: var(--pearl-shadow);
+    transition: var(--motion-fluid);
+}
+
+.product-luxury-wrapper:hover {
+    background: #ffffff;
+    border-color: var(--nude-accent) !important;
+    transform: translateY(-6px);
+    box-shadow: var(--hover-shadow);
+}
+
+/* Imagen del perfume adaptada */
+.perfume-item-img {
+    height: 270px;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Integra transparencias con el degradado de fondo */
+    transition: var(--motion-bounce);
+}
+
+.product-luxury-wrapper:hover .perfume-item-img {
+    transform: scale(1.04);
+}
+
+/* Badges flotantes internos */
+.product-luxury-wrapper .bg-dark {
+    background-color: var(--dark-editorial) !important;
+    border-radius: 30px;
+    font-size: 0.65rem !important;
+    padding: 0.35rem 0.9rem !important;
+}
+
+.product-luxury-wrapper .bg-white {
+    border-radius: 30px;
+    font-size: 0.65rem !important;
+    padding: 0.35rem 0.9rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* ==========================================================================
+   FORMULARIO MÓDULO SQUEEZE & BOTONERÍA ERGONÓMICA
+   ========================================================================== */
+.luxury-input {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 30px !important; /* Estilo píldora suave */
+    padding: 0.9rem 1.4rem;
+    font-size: 0.85rem;
+    color: var(--dark-editorial) !important;
+    letter-spacing: 0.5px;
+    transition: var(--motion-fluid);
+}
+
+.luxury-input:focus {
+    border-color: var(--nude-accent) !important;
+    box-shadow: 0 0 0 4px var(--nude-glow) !important;
+}
+
+/* Botonería Orgánica de Alta Conversión */
+.btn-dark {
+    background-color: var(--dark-editorial);
+    color: #ffffff !important;
+    border-radius: 30px !important;
+    border: none;
+    font-weight: 600;
+    transition: var(--motion-fluid);
+}
+
+.btn-dark:hover {
+    background-color: var(--nude-accent);
+    color: var(--dark-editorial) !important;
+    box-shadow: 0 10px 25px -5px var(--nude-glow);
+}
+
+.btn-dark-luxury {
+    background-color: var(--dark-editorial);
+    color: #ffffff !important;
+    border-radius: 30px;
+    border: 1px solid var(--dark-editorial);
+    font-weight: 600;
+    transition: var(--motion-fluid);
+}
+
+.btn-dark-luxury:hover {
+    background-color: transparent;
+    color: var(--dark-editorial) !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline-dark-luxury {
+    border: 2px solid var(--dark-editorial);
+    color: var(--dark-editorial);
+    border-radius: 30px;
+    font-weight: 600;
+    transition: var(--motion-fluid);
+}
+
+.btn-outline-dark-luxury:hover {
+    background-color: var(--dark-editorial);
+    color: #ffffff !important;
+}
+
+/* SECCIÓN RITUAL / EXPERIENCIA INMERSIVA */
+#ritual {
+    background: radial-gradient(circle at 80% 80%, rgba(229, 195, 178, 0.12) 0%, var(--pearl-bg) 60%) !important;
+}
+
+#ritual img {
+    border-radius: 32px !important;
+    box-shadow: var(--pearl-shadow);
+    border: 4px solid #ffffff;
+}
+
+/* CARDS DE TESTIMONIOS EDITORIALES */
+#reseñas .bg-light {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.02) !important;
+    border-radius: 24px;
+    box-shadow: var(--pearl-shadow);
+}
+
+/* FOOTER COHERENTE PURE BEAUTY */
+footer.bg-white {
+    background-color: var(--pearl-surface) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.02) !important;
+}
+
+footer.bg-white h5 {
+    color: var(--dark-editorial) !important;
+}
+
+footer.bg-white a {
+    color: var(--text-muted) !important;
+    transition: var(--motion-fluid);
+}
+
+footer.bg-white a:hover {
+    color: var(--dark-editorial) !important;
+}

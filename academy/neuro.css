@@ -1,0 +1,270 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: NEUROSAAS ACADEMY (Matrix Cyber-Glow - White Text Layout)
+   ========================================================================== */
+
+:root {
+    --cyber-black: #060813;         /* Fondo Espacial Oscuro */
+    --cyber-surface: #0f1326;       /* Capa Secundaria de Alta Costura */
+    --neon-cyan: #00f2fe;           /* Luces e Indicadores */
+    --cyber-blue: #0082ff;
+    --text-muted-slate: #94a3b8;    /* Sutil pero legible */
+    
+    /* Efectos Lumínicos Retro-Futuristas */
+    --cyan-glow: 0 0 25px rgba(0, 242, 254, 0.25);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--cyber-black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ffffff !important; /* Fuerza textos a blanco */
+    overflow-x: hidden;
+}
+
+/* Forzado General de Tipografías, Enlaces e Íconos a Blanco Coherente */
+.font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-muted, .text-muted-slate, .text-white-50 { color: #ffffff !important; opacity: 0.8; }
+.lead { color: #ffffff !important; opacity: 0.9; }
+.bi { color: #ffffff !important; }
+
+.text-neon-cyan {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.6), 0 0 20px rgba(0, 242, 254, 0.3);
+}
+.font-xs { font-size: 0.78rem; color: #ffffff !important; }
+
+/* Contornos y Píldoras de la Academia */
+.badge-academy {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.academy-line {
+    width: 50px;
+    height: 4px;
+    background: #ffffff !important;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* Topbar Superior */
+.academy-topbar {
+    background-color: #000000;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Navbar con Efecto Translucido Glassmorphism */
+.navbar-academy {
+    background-color: rgba(6, 8, 19, 0.85) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.navbar-academy .navbar-brand {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.navbar-academy .nav-link {
+    color: #ffffff !important;
+    opacity: 0.8;
+    font-weight: 600;
+    padding: 0.5rem 1.1rem !important;
+    border-radius: 20px;
+    transition: var(--motion-smooth);
+}
+
+.navbar-academy .nav-link:hover,
+.navbar-academy .nav-link.active {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.08);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================================
+   HERO / COMPOSICIÓN DE CONTENEDORES DE ESTIMULACIÓN CEREBRAL
+   ========================================================================== */
+.academy-hero {
+    background: radial-gradient(circle at 85% 25%, rgba(0, 130, 255, 0.12) 0%, rgba(0, 242, 254, 0.03) 45%, var(--cyber-black) 70%);
+    padding-bottom: 80px;
+}
+
+.main-academy-img {
+    border-radius: 32px !important;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.7) !important;
+    transition: var(--motion-smooth);
+    max-height: 440px;
+    object-fit: cover;
+}
+.main-academy-img:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Contenedores de Vidrio Esmerilado (Glassmorphism Completo) */
+.bg-glass {
+    background: linear-gradient(145deg, rgba(255,255,255,0.01) 0%, rgba(15,19,38,0.4) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Card Flotante Interna */
+.floating-academy-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    min-width: 270px;
+    background: rgba(15, 19, 38, 0.9) !important;
+    border-radius: 20px !important;
+    animation: academyFloat 6s ease-in-out infinite;
+}
+
+.academy-pulse-circle {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--cyber-blue) 0%, var(--neon-cyan) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--cyan-glow);
+}
+
+@keyframes academyFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+}
+
+/* Tarjetas de los Cursos Re-diseñadas */
+.academy-card {
+    transition: var(--motion-bounce);
+}
+
+.academy-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    background-color: #12182e !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.6), var(--cyan-glow) !important;
+}
+
+.academy-card h4, .academy-card h5, .academy-card p {
+    color: #ffffff !important;
+}
+
+.academy-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   TABLAS Y CAMPOS DE FORMULARIO DE ALTA RESOLUCIÓN
+   ========================================================================== */
+.table-responsive {
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 24px !important;
+}
+.table th, .table td {
+    color: #ffffff !important;
+}
+
+.bg-surface {
+    background-color: var(--cyber-surface);
+}
+.bg-surface-dark {
+    background-color: #0c0f1d;
+}
+
+/* Inputs Circulares */
+.academy-input {
+    background-color: #070914 !important;
+    border: 2px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 0.95rem 1.4rem;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    transition: var(--motion-smooth);
+}
+.academy-input::placeholder {
+    color: #ffffff !important;
+    opacity: 0.35;
+}
+.academy-input:focus {
+    border-color: #ffffff !important;
+    background-color: #10152b !important;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Botonería de Control de Foco */
+.btn-cyber {
+    background: #ffffff !important; /* Unificación a Blanco Sólido */
+    color: var(--cyber-black) !important;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border: none;
+    box-shadow: 0 10px 25px -6px rgba(255, 255, 255, 0.25);
+    transition: var(--motion-smooth);
+}
+
+.btn-cyber:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -4px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.1);
+}
+.shadow-cyber { box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.15); }
+
+.btn-outline-academy {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-outline-academy:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Acordiones Sinápticos overrides */
+.academy-accordion .accordion-item {
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    margin-bottom: 12px;
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+.academy-accordion .accordion-item:hover {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.academy-accordion .accordion-button {
+    padding: 1.4rem;
+    font-weight: 700;
+    color: #ffffff !important;
+}
+.academy-accordion .accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+.academy-accordion .accordion-button::after {
+    filter: invert(1) brightness(2) !important; /* Forzado de flecha a blanco nativo */
+}
+
+/* Footer Coherente */
+footer.bg-deep-dark {
+    background-color: #03040a !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.03) !important;
+}

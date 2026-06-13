@@ -1,0 +1,265 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: WEBPYME STUDIO (Headless SaaS Minimal Style)
+   ========================================================================== */
+
+:root {
+    --pyme-black: #090d16;          /* Gris Pizarra Oscuro Satén */
+    --pyme-surface: #121824;        /* Capa Secundaria de Componentes */
+    --blue-laser: #2563eb;          /* Azul de Conversión Fuerte */
+    --cyan-glow: #00f2fe;           /* Acento Cian para Destellos */
+    --text-muted-slate: #94a3b8;    /* Sutil y legible en entornos oscuros */
+    
+    /* Efectos Lumínicos Tecnológicos */
+    --laser-glow: 0 0 25px rgba(37, 99, 235, 0.3);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--pyme-black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ffffff !important; /* Forza textos base a blanco puro */
+    overflow-x: hidden;
+}
+
+/* Forzado General de Tipografías, Íconos y Enlaces a Blanco Coherente */
+.font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-muted, .text-muted-slate, .text-white-50 { color: #ffffff !important; opacity: 0.82; }
+.lead { color: #ffffff !important; opacity: 0.90; }
+.bi { color: #ffffff !important; }
+
+.text-laser-blue { color: var(--cyan-glow) !important; text-shadow: 0 0 8px rgba(0, 242, 254, 0.4); }
+.text-cyan-glow {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.5), 0 0 20px rgba(37, 99, 235, 0.3);
+}
+.font-xs { font-size: 0.78rem; color: #ffffff !important; }
+
+/* Contornos y Distintivos Rectangulares Suaves */
+.badge-pyme {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.pyme-line {
+    width: 45px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--blue-laser) 0%, var(--cyan-glow) 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+}
+
+/* Topbar Superior */
+.pyme-topbar {
+    background-color: #03060a;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+/* Navbar overrides Headless */
+.navbar-pyme {
+    background-color: rgba(9, 13, 22, 0.85) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.navbar-pyme .navbar-brand {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.navbar-pyme .nav-link {
+    color: #ffffff !important;
+    opacity: 0.8;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem !important;
+    border-radius: 8px;
+    transition: var(--motion-smooth);
+}
+
+.navbar-pyme .nav-link:hover,
+.navbar-pyme .nav-link.active {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.04);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* ==========================================================================
+   HERO / BANNER COMPOSITIVO DE ALTA CONVERSIÓN SaaS
+   ========================================================================== */
+.pyme-hero {
+    background: radial-gradient(circle at 85% 25%, rgba(37, 99, 235, 0.1) 0%, rgba(0, 242, 254, 0.02) 50%, var(--pyme-black) 75%);
+    padding-bottom: 80px;
+}
+
+.main-pyme-img {
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.8) !important;
+    transition: var(--motion-smooth);
+    max-height: 400px;
+    object-fit: cover;
+}
+.main-pyme-img:hover {
+    border-color: rgba(0, 242, 254, 0.3);
+}
+
+/* Vidrios Esmerilados Escuros (Dark Glassmorphism) */
+.bg-glass {
+    background: linear-gradient(145deg, rgba(255,255,255,0.01) 0%, rgba(18,24,36,0.5) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+/* Card Flotante del Score de Velocidad */
+.floating-pyme-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    min-width: 270px;
+    background: rgba(9, 13, 22, 0.95) !important;
+    border-radius: 12px !important;
+    animation: pymeFloat 6s ease-in-out infinite;
+}
+
+.pyme-pulse-circle {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--blue-laser) 0%, var(--cyan-glow) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--laser-glow);
+}
+
+@keyframes pymeFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* Tarjetas de Soluciones Tecnológicas */
+.pyme-card {
+    transition: var(--motion-bounce);
+}
+
+.pyme-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    background: #151e2e !important;
+    border-color: rgba(0, 242, 254, 0.2) !important;
+    box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.7), var(--laser-glow) !important;
+}
+
+.pyme-card h4, .pyme-card p {
+    color: #ffffff !important;
+}
+
+.pyme-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   TABLAS DE MÓDULOS E INPUTS DIGITALES
+   ========================================================================== */
+.table-responsive {
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+}
+.table th, .table td {
+    color: #ffffff !important;
+}
+
+.bg-surface {
+    background-color: var(--pyme-surface);
+}
+.bg-surface-dark {
+    background-color: #0c111c;
+}
+
+/* inputs del Formulario Analítico */
+.pyme-input {
+    background-color: #05080e !important;
+    border: 2px solid rgba(255, 255, 255, 0.05) !important;
+    padding: 0.9rem 1.3rem;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    transition: var(--motion-smooth);
+}
+.pyme-input::placeholder {
+    color: #ffffff !important;
+    opacity: 0.3;
+}
+.pyme-input:focus {
+    border-color: #ffffff !important;
+    background-color: #0f1625 !important;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1) !important;
+}
+.pyme-input option {
+    background-color: var(--pyme-surface) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   BOTONERÍA Y EXTRAS CON TOTAL CONVERSIÓN
+   ========================================================================== */
+.btn-laser {
+    background: #ffffff !important; /* Unificación a Blanco Sólido Radiante */
+    color: var(--pyme-black) !important;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border: none;
+    box-shadow: 0 10px 25px -6px rgba(255, 255, 255, 0.2);
+    transition: var(--motion-smooth);
+}
+
+.btn-laser:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -4px rgba(255, 255, 255, 0.35);
+}
+.shadow-laser { box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.1); }
+
+.btn-outline-pyme {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-outline-pyme:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Tarjetas de Planes Comerciales */
+.pyme-plan-card {
+    transition: var(--motion-smooth);
+}
+.pyme-plan-card.active {
+    border-color: var(--blue-laser) !important;
+    box-shadow: var(--laser-glow) !important;
+    background-color: rgba(37, 99, 235, 0.01) !important;
+}
+.pyme-plan-card:hover {
+    border-color: #ffffff !important;
+    transform: translateY(-4px);
+}
+
+/* Footer Coherente */
+footer.bg-deep-dark {
+    background-color: #03050b !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.03) !important;
+}

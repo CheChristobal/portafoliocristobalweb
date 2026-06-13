@@ -1,0 +1,260 @@
+/* ==========================================================================
+   ESTILOS PREMIUM: BUFETE CORPORATIVO (Luxury Executive Slate & Gold)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Paleta Cromática Institucional de Lujo */
+    --gold-primary: #c5a880;        /* Dorado Champán / Presidencial */
+    --gold-hover: #b3946d;
+    --gold-glow: rgba(197, 168, 128, 0.15);
+    --executive-slate: #0b0f19;    /* Azul Pizarra Profundo / Fondo Ejecutivo */
+    --surface-dark: #121826;       /* Capa secundaria oscura */
+    --marble-light: #fdfdfd;       /* Blanco Inmaculado */
+    --slate-text: #64748b;          /* Gris intermedio para descripciones */
+    --border-soft: rgba(197, 168, 128, 0.12);
+
+    /* Animaciones y Movimiento */
+    --motion-fluid: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--marble-light);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2c3545;
+    overflow-x: hidden;
+}
+
+/* Tipografías e Identidad Estilizada */
+.font-cinzel { font-family: 'Cinzel', serif; letter-spacing: 0.8px; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.bg-dark-slate { background-color: var(--executive-slate); }
+.bg-legal-soft { background-color: #f4f6f9; }
+.font-xs { font-size: 0.72rem; letter-spacing: 1.5px; }
+
+/* Contornos y Adornos Editoriales */
+.badge-legal {
+    border: 1px solid var(--gold-primary);
+    color: var(--gold-primary);
+    background-color: rgba(197, 168, 128, 0.04);
+    border-radius: 0;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+
+.legal-line {
+    width: 45px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold-primary) 0%, transparent 100%);
+}
+
+/* Topbar Superior */
+.legal-topbar {
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+/* ==========================================================================
+   NAVBAR: ESTÉTICA DE PRESTIGIO Y ALTA FIDELIDAD
+   ========================================================================== */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    transition: var(--motion-fluid);
+}
+
+.navbar-brand {
+    letter-spacing: 1.5px;
+}
+
+.navbar .nav-link {
+    color: #1e293b !important;
+    position: relative;
+    font-weight: 500;
+    transition: var(--motion-fluid);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--gold-primary) !important;
+}
+
+/* Línea animada inferior en enlaces */
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 50%; width: 0; height: 1px;
+    background-color: var(--gold-primary);
+    transition: var(--motion-fluid);
+    transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover::after {
+    width: 60%;
+}
+
+/* ==========================================================================
+   HERO / COMPOSICIÓN DE LUCES Y MONOLITO CORPORATIVO
+   ========================================================================== */
+.legal-hero {
+    background: radial-gradient(circle at 100% 0%, rgba(197, 168, 128, 0.06) 0%, var(--marble-light) 60%);
+}
+
+.monolith-element {
+    background-color: var(--executive-slate);
+    border: 1px solid var(--border-soft) !important;
+    color: var(--gold-primary) !important;
+    box-shadow: 0 30px 60px -15px rgba(11, 15, 25, 0.15);
+    position: relative;
+    transition: var(--motion-fluid);
+}
+
+.monolith-element::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    border: 1px solid rgba(197, 168, 128, 0.05);
+    margin: 8px;
+    pointer-events: none;
+}
+
+.monolith-element i {
+    color: var(--gold-primary) !important;
+    filter: drop-shadow(0 0 10px var(--gold-glow));
+}
+
+.monolith-element:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 40px 70px -10px rgba(11, 15, 25, 0.25);
+    border-color: var(--gold-primary) !important;
+}
+
+/* ==========================================================================
+   TARJETAS DE ÁREAS DE PRÁCTICA (Luxury Cards)
+   ========================================================================== */
+.legal-card {
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+    background-color: #ffffff;
+    box-shadow: 0 15px 35px -10px rgba(11, 15, 25, 0.02);
+    transition: var(--motion-fluid);
+}
+
+.legal-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--border-soft) !important;
+    background-color: var(--executive-slate);
+    box-shadow: 0 30px 60px -15px rgba(11, 15, 25, 0.15) !important;
+}
+
+/* Cambio de color de textos internos al hacer hover */
+.legal-card:hover h4 {
+    color: var(--gold-primary) !important;
+}
+
+.legal-card:hover p {
+    color: #94a3b8 !important;
+}
+
+.legal-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(197, 168, 128, 0.05);
+    border-radius: 0; /* Mantiene corte rígido formal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(197, 168, 128, 0.15);
+    transition: var(--motion-fluid);
+}
+
+.legal-card:hover .legal-icon {
+    background-color: var(--gold-primary);
+    color: var(--executive-slate) !important;
+    border-color: var(--gold-primary);
+    transform: scale(1.03);
+}
+
+/* ==========================================================================
+   FORMULARIO DE ADMISIÓN (Diseño de Autoridad Avanzado)
+   ========================================================================== */
+.legal-input {
+    background-color: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
+    transition: var(--motion-fluid);
+}
+
+.legal-input:focus {
+    background-color: #ffffff !important;
+    border-color: var(--gold-primary) !important;
+    box-shadow: 0 0 0 4px var(--gold-glow) !important;
+}
+
+select.legal-input option {
+    background-color: #ffffff;
+    color: var(--executive-slate);
+}
+
+/* ==========================================================================
+   BOTONERA E INTERACCIONES PREMIUM
+   ========================================================================== */
+.btn-dark-legal {
+    background-color: var(--executive-slate);
+    color: #ffffff !important;
+    border: 1px solid var(--executive-slate);
+    font-weight: 500;
+    transition: var(--motion-fluid);
+}
+
+.btn-dark-legal:hover {
+    background-color: var(--gold-primary);
+    border-color: var(--gold-primary);
+    color: var(--executive-slate) !important;
+    box-shadow: 0 8px 25px -4px var(--gold-glow);
+}
+
+.btn-outline-dark-legal {
+    border: 1px solid rgba(11, 15, 25, 0.15);
+    color: var(--executive-slate);
+    font-weight: 500;
+    transition: var(--motion-fluid);
+}
+
+.btn-outline-dark-legal:hover {
+    border-color: var(--gold-primary);
+    color: var(--gold-primary) !important;
+    background-color: rgba(197, 168, 128, 0.02);
+}
+
+/* ACORDION DE TRANSPARENCIA RE-DISEÑADO */
+.legal-accordion .accordion-item {
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    margin-bottom: 10px;
+}
+
+.legal-accordion .accordion-button {
+    background-color: #ffffff !important;
+    color: var(--executive-slate) !important;
+    font-weight: 600;
+    padding: 1.3rem;
+    transition: var(--motion-fluid);
+}
+
+.legal-accordion .accordion-button::after {
+    filter: sepia(1) saturate(0) brightness(0.2); /* Sincroniza flecha con gris corporativo */
+}
+
+.legal-accordion .accordion-button:not(.collapsed) {
+    background-color: #f8fafc !important;
+    color: var(--gold-primary) !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.legal-accordion .accordion-button:not(.collapsed)::after {
+    filter: sepia(1) saturate(2) hue-rotate(340deg) brightness(0.8); /* Tiñe la flecha a dorado */
+}

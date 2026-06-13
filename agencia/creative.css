@@ -1,0 +1,176 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: AGENCIA CREATIVA (Neo-Brutalism Avant-Garde Style)
+   ========================================================================== */
+
+:root {
+    /* Paleta Neo-Brutalista Saturada */
+    --brutal-black: #000000;
+    --brutal-white: #ffffff;
+    --brutal-cream: #f4f0fa;        /* Fondo base tipo hoja de revista */
+    --brutal-yellow: #ffde4d;       /* Amarillo Eléctrico Alerta */
+    --brutal-cyan: #4deeea;         /* Cian Láser */
+    --brutal-purple: #740cdc;       /* Púrpura Profundo Mamba */
+    
+    /* Configuración Estructural Brutalista */
+    --brutal-border-width: 3px;
+    --brutal-shadow: 6px 6px 0px #000000;
+    --brutal-shadow-sm: 4px 4px 0px #000000;
+    
+    /* Animación */
+    --motion-fast: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+body {
+    background-color: var(--brutal-white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--brutal-black);
+}
+
+/* Tipografías e Identidad de Bloques */
+.font-unbounded { font-family: 'Unbounded', sans-serif; font-weight: 900; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.bg-cream { background-color: var(--brutal-cream); }
+.bg-yellow { background-color: var(--brutal-yellow) !important; }
+.bg-cyan { background-color: var(--brutal-cyan) !important; }
+.bg-purple { background-color: var(--brutal-purple) !important; }
+.white-text { color: #ffffff !important; }
+.font-xs { font-size: 0.75rem; }
+
+/* Bordes Brutalistas Estrictos */
+.border-brutal-bottom { border-bottom: var(--brutal-border-width) solid var(--brutal-black); }
+.border-brutal-top { border-top: var(--brutal-border-width) solid var(--brutal-black); }
+.border-brutal { border: var(--brutal-border-width) solid var(--brutal-black) !important; }
+
+/* Etiquetas Sólidas (Tags) */
+.brutal-tag {
+    display: inline-block;
+    border: var(--brutal-border-width) solid var(--brutal-black);
+    padding: 0.4rem 1.2rem;
+    font-size: 0.8rem;
+    border-radius: 0 !important;
+}
+
+/* Animación del Marquee Superior */
+.brutal-marquee {
+    white-space: nowrap;
+}
+.marquee-inner {
+    display: inline-block;
+    padding-left: 100%;
+    animation: brutalMarquee linear 25s infinite;
+    color: #000000 !important;
+}
+@keyframes brutalMarquee {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+}
+
+/* ==========================================================================
+   NAVBAR & TOGGLERS REBELDES
+   ========================================================================== */
+.navbar-brutal {
+    background-color: var(--brutal-white) !important;
+}
+.navbar-brutal .nav-link {
+    color: var(--brutal-black) !important;
+    border: 2px solid transparent;
+    padding: 0.4rem 1rem !important;
+    transition: var(--motion-fast);
+}
+.navbar-brutal .nav-link:hover {
+    background-color: var(--brutal-yellow);
+    border: 2px solid var(--brutal-black);
+}
+.brutal-toggler {
+    border: var(--brutal-border-width) solid var(--brutal-black) !important;
+    background-color: var(--brutal-cyan);
+    padding: 0.3rem 0.6rem;
+}
+
+/* Imagen Hero Estilo Collage */
+.brutal-img {
+    border: var(--brutal-border-width) solid var(--brutal-black);
+    border-radius: 0 !important;
+    transition: var(--motion-fast);
+}
+.brutal-img:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0px #000000 !important;
+}
+
+/* ==========================================================================
+   TARJETAS DE ARMAMENTO DIGITAL (Brutal Cards)
+   ========================================================================== */
+.brutal-card {
+    border: var(--brutal-border-width) solid var(--brutal-black) !important;
+    border-radius: 0 !important;
+    transition: var(--motion-fast);
+}
+.brutal-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0px #000000 !important;
+    background-color: var(--brutal-cream) !important;
+}
+
+.brutal-card-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--brutal-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   SISTEMA DE ENTRADAS Y BOTONES CON SOMBRAS SÓLIDAS
+   ========================================================================== */
+.input-brutal {
+    background-color: var(--brutal-white) !important;
+    border: var(--brutal-border-width) solid var(--brutal-black) !important;
+    color: var(--brutal-black) !important;
+    padding: 0.85rem 1.1rem;
+    font-size: 0.95rem;
+    border-radius: 0 !important;
+}
+.input-brutal:focus {
+    background-color: var(--brutal-cream) !important;
+    box-shadow: var(--brutal-shadow-sm) !important;
+}
+
+/* Botonería con Sombras Macizas Paralelas */
+.btn-brutal {
+    border: var(--brutal-border-width) solid var(--brutal-black) !important;
+    border-radius: 0 !important;
+    font-weight: 800;
+    transition: var(--motion-fast);
+}
+.btn-brutal:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000 !important;
+}
+
+.btn-brutal-sm {
+    border: 2px solid var(--brutal-black) !important;
+    border-radius: 0 !important;
+    font-weight: 800;
+    transition: var(--motion-fast);
+}
+.btn-brutal-sm:hover {
+    background-color: var(--brutal-cyan) !important;
+}
+
+.brutal-btn-submit {
+    border: var(--brutal-border-width) solid var(--brutal-black) !important;
+    border-radius: 0 !important;
+    transition: var(--motion-fast);
+}
+.brutal-btn-submit:hover {
+    background-color: var(--brutal-cyan) !important;
+    color: var(--brutal-black) !important;
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0px #000000 !important;
+}
+
+/* Sombras Sólidas */
+.shadow-solid { box-shadow: var(--brutal-shadow); }
+.shadow-solid-sm { box-shadow: var(--brutal-shadow-sm); }

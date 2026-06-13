@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Podológica | Salud & Estética para tus Pies</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="clinica.css">
+</head>
+<body>
+
+    <!-- Topbar Informativo Sanitario -->
+    <div class="clinical-topbar py-2 text-white bg-teal text-center font-jakarta fw-semibold">
+        <div class="container small text-uppercase tracking-wider" style="font-size: 0.75rem;">
+            <i class="bi bi-shield-check-fill me-2"></i> Instrumental 100% esterilizado en autoclave de grado médico
+        </div>
+    </div>
+
+    <!-- Navbar de la Clínica -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white py-3 border-bottom border-light navbar-clinical">
+        <div class="container">
+            <a class="navbar-brand fw-extrabold font-jakarta text-dark fs-3 tracking-tight" href="#">
+                SAN<span class="text-teal">PEDRO</span> <span class="fw-light fs-4 text-muted">PODOLOGÍA</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPodologia">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPodologia">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta text-uppercase small tracking-wide fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#tratamientos">Tratamientos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#especialistas">Especialistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#agenda">Reservar Hora</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-teal btn-sm px-4 rounded-pill">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada de Confianza y Alivio -->
+    <header class="clinical-hero d-flex align-items-center position-relative py-5">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-clinical mb-3 text-uppercase font-jakarta rounded-pill">Salud &amp; Bienestar Caminar</span>
+                    <h1 class="display-4 font-jakarta text-dark fw-extrabold mb-3">La salud de tu cuerpo <br>comienza por <span class="text-teal">tus pies</span>.</h1>
+                    <p class="lead font-jakarta text-muted mb-4 fw-light lh-lg fs-5">Atención profesional para el tratamiento de afecciones ungueales y dérmicas. Especialistas en pie diabético, reconstrucción ungueal y plantillas ortopédicas a medida.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#agenda" class="btn btn-teal font-jakarta px-4 py-3 rounded-pill fw-bold text-white shadow-teal">Agendar Consulta</a>
+                        <a href="#tratamientos" class="btn btn-outline-clinical font-jakarta px-4 py-3 rounded-pill fw-semibold">Explorar Tratamientos</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Gabinete Podológico Clínico Limpio" class="img-fluid rounded-5 shadow-lg main-clinical-img">
+                        <!-- Tarjeta Flotante Sanitaria -->
+                        <div class="floating-clinical-card p-3 rounded-4 bg-white shadow-lg d-flex align-items-center gap-3 border">
+                            <div class="clinical-pulse-circle"><i class="bi bi-heart-pulse-fill text-white fs-5"></i></div>
+                            <div class="text-start font-jakarta">
+                                <h6 class="fw-bold text-dark mb-0">Podólogos Minsal</h6>
+                                <small class="text-muted">Acreditación de Salud Activa</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NUEVA SECCIÓN: Indicadores Clínicos -->
+    <section class="py-4 bg-white border-bottom text-center font-jakarta border-top">
+        <div class="container">
+            <div class="row g-4 justify-content-center fw-bold">
+                <div class="col-6 col-md-3">
+                    <h3 class="display-6 fw-extrabold text-teal mb-0">+5.000</h3>
+                    <span class="small text-muted text-uppercase tracking-wider" style="font-size: 0.75rem;">Atenciones Clínicas</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="display-6 fw-extrabold text-dark mb-0">100%</h3>
+                    <span class="small text-muted text-uppercase tracking-wider" style="font-size: 0.75rem;">Bioseguridad Autoclave</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="display-6 fw-extrabold text-teal mb-0">0%</h3>
+                    <span class="small text-muted text-uppercase tracking-wider" style="font-size: 0.75rem;">Dolor en Tratamientos</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="display-6 fw-extrabold text-dark mb-0">+12 Años</h3>
+                    <span class="small text-muted text-uppercase tracking-wider" style="font-size: 0.75rem;">De Rigor Clínico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Tratamientos Clínicos Ampliada a 6 Tarjetas -->
+    <section id="tratamientos" class="py-5 bg-clinical-soft">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-teal text-uppercase tracking-wider small fw-bold d-block mb-2">Especialidades Médicas</span>
+                <h2 class="font-jakarta fw-extrabold text-dark">Tratamientos Podológicos</h2>
+                <div class="clinical-line mx-auto my-3"></div>
+                <p class="text-muted font-jakarta small">Resolución de patologías mediante técnicas avanzadas no invasivas y con estricto rigor sanitario.</p>
+            </div>
+
+            <div class="row g-4 font-jakarta">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs clinical-card p-4 rounded-5">
+                        <div class="clinical-icon mb-3"><i class="bi bi-activity fs-2"></i></div>
+                        <h4 class="fw-bold text-dark fs-5">Podología Clínica General</h4>
+                        <p class="text-muted small mb-0 lh-lg">Evaluación integral del pie, corte correcto y técnico de uñas, remoción de hiperqueratosis (callosidades duras) y helomas mediante bisturí fino, seguido de exfoliación e hidratación profunda.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs clinical-card p-4 rounded-5">
+                        <div class="clinical-icon mb-3"><i class="bi bi-bandaid fs-2"></i></div>
+                        <h4 class="fw-bold text-dark fs-5">Tratamiento de Onicocriptosis</h4>
+                        <p class="text-muted small mb-0 lh-lg">Resolución técnica y permanente de la uña encarnada. Tratamiento indoloro mediante espiculotomía y reeducación ungueal (ortonixia) para guiar el crecimiento correcto sin recurrencia.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs clinical-card p-4 rounded-5">
+                        <div class="clinical-icon mb-3"><i class="bi bi-shield-plus fs-2"></i></div>
+                        <h4 class="fw-bold text-dark fs-5">Evaluación de Pie Diabético</h4>
+                        <p class="text-muted small mb-0 lh-lg">Atención preventiva especializada para pacientes diabéticos. Control riguroso de la sensibilidad táctil y térmica (monofilamento), prevención de úlceras y curaciones con máxima bioseguridad.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 (Nueva) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs clinical-card p-4 rounded-5">
+                        <div class="clinical-icon mb-3"><i class="bi bi-virus fs-2"></i></div>
+                        <h4 class="fw-bold text-dark fs-5">Tratamiento de Onicomicosis</h4>
+                        <p class="text-muted small mb-0 lh-lg">Abordaje clínico de hongos en las uñas mediante fresado mecánico controlado para remover el tejido dañado y aplicación de tratamientos tópicos de alta fijación sistémica.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5 (Nueva) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs clinical-card p-4 rounded-5">
+                        <div class="clinical-icon mb-3"><i class="bi bi-fingerprint fs-2"></i></div>
+                        <h4 class="fw-bold text-dark fs-5">Verrugas Plantares (Papilomas)</h4>
+                        <p class="text-muted solid clinical-card p-0 rounded-5">
+                        <p class="text-muted small mb-0 lh-lg">Eliminación controlada de verrugas plantares causadas por el VPH mediante cauterización química química o descamación del tejido afectado de forma segura y minimizando molestias.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6 (Nueva) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs clinical-card p-4 rounded-5">
+                        <div class="clinical-icon mb-3"><i class="bi bi-bounding-box-circles fs-2"></i></div>
+                        <h4 class="fw-bold text-dark fs-5">Estudio de la Pisada</h4>
+                        <p class="text-muted small mb-0 lh-lg">Análisis biomecánico estático y dinámico de la marcha. Diagnóstico preciso de puntos de presión crítica para el diseño y confección de plantillas ortopédicas correctivas a medida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Listado de Tarifas de la Clínica -->
+    <section id="servicios" class="py-5 bg-white border-bottom">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-teal text-uppercase tracking-wider small fw-bold d-block mb-2">Transparencia</span>
+                <h2 class="font-jakarta fw-extrabold text-dark">Aranceles del Gabinete</h2>
+                <div class="clinical-line mx-auto my-3"></div>
+            </div>
+            <div class="table-responsive border rounded-4 overflow-hidden shadow-xs bg-white font-jakarta">
+                <table class="table align-middle mb-0 small text-start">
+                    <thead class="bg-teal text-white">
+                        <tr>
+                            <th class="p-3 fs-6">Procedimiento</th>
+                            <th class="p-3 fs-6">Duración Aprox.</th>
+                            <th class="p-3 fs-6">Valor Fonasa / Isapre</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-muted fw-medium">
+                        <tr>
+                            <td class="p-3 fw-bold text-dark">Atención Podológica Clínica Integral</td>
+                            <td class="p-3">45 Minutos</td>
+                            <td class="p-3 text-teal fw-bold">$22.000</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-dark">Tratamiento Unilateral de Uña Encarnada</td>
+                            <td class="p-3">30 Minutos</td>
+                            <td class="p-3 text-teal fw-bold">$18.000</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-dark">Evaluación Avanzada de Pie Diabético</td>
+                            <td class="p-3">40 Minutos</td>
+                            <td class="p-3 text-teal fw-bold">$25.000</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-dark">Estudio de Marcha + Confección de Plantillas</td>
+                            <td class="p-3">60 Minutos</td>
+                            <td class="p-3 text-teal fw-bold">$65.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Equipo Clínico -->
+    <section id="especialistas" class="py-5 bg-clinical-soft border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-teal text-uppercase tracking-wider small fw-bold d-block mb-2">Profesionales de la Salud</span>
+                <h2 class="font-jakarta fw-extrabold text-dark">Nuestro Equipo de Podólogos</h2>
+                <div class="clinical-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 justify-content-center font-jakarta">
+                <div class="col-md-5 col-lg-4 text-center">
+                    <div class="p-4 bg-white border-0 shadow-xs rounded-5 h-100 d-flex flex-column align-items-center">
+                        <img src="https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&w=200&h=200&q=80" alt="Podóloga Clínica" class="rounded-circle mb-3 object-fit-cover shadow-xs border border-3 border-white" style="width: 120px; height: 120px;">
+                        <h5 class="fw-bold text-dark mb-1">Patricia Carvajal</h5>
+                        <small class="text-teal text-uppercase tracking-wider d-block small mb-3 fw-bold">Podóloga Clínica / Especialista Pie Diabético</small>
+                        <p class="text-muted small mb-0 fw-light">Profesional certificada con mención avanzada en manejo integral de heridas vasculares y reeducación de la lámina ungueal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Testimonios de Pacientes Reales -->
+    <section id="testimonios" class="py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-teal text-uppercase tracking-wider small fw-bold d-block mb-2">Casos Reales</span>
+                <h2 class="font-jakarta fw-extrabold text-dark">Voces de Alivio</h2>
+                <div class="clinical-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta justify-content-center text-start">
+                <div class="col-md-5">
+                    <div class="p-4 bg-clinical-soft rounded-5 border h-100 d-flex flex-column justify-content-between">
+                        <p class="text-muted small fst-italic lh-lg">"Llevaba meses sufriendo con una uña encarnada recurrente. La atención de la podóloga Patricia fue maravillosa; resolvió el problema de inmediato de forma totalmente indolora y la curación fue perfecta. Excelente rigor profesional."</p>
+                        <div class="fw-bold text-teal small mt-3">Héctor Sanhueza <span class="fw-light text-muted d-block" style="font-size: 0.75rem;">Paciente Clínico Integral</span></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 bg-clinical-soft rounded-5 border h-100 d-flex flex-column justify-content-between">
+                        <p class="text-muted small fst-italic lh-lg">"Como paciente con diabetes, cuido mucho mis pies. El nivel de limpieza, el uso de autoclave sellado en mi propia cara y la delicadeza con la que hacen el fresado me da una tranquilidad absoluta."</p>
+                        <div class="fw-bold text-teal small mt-3">Elena Balmaceda <span class="fw-light text-muted d-block" style="font-size: 0.75rem;">Control Preventivo Mensual</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: FAQ (Preguntas Frecuentes Sanitaria) -->
+    <section id="faq" class="py-5 bg-white border-bottom">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2 class="font-jakarta fw-extrabold text-dark">Preguntas de Pacientes</h2>
+                <p class="text-muted font-jakarta small">Información clave sobre el instrumental clínico, atención y reembolsos.</p>
+            </div>
+            
+            <div class="accordion accordion-flush clinical-accordion border rounded-5 overflow-hidden font-jakarta" id="podologiaAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark font-jakarta fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#podoFAQ1">
+                            ¿Cómo garantizan la esterilización del instrumental de corte?
+                        </button>
+                    </h2>
+                    <div id="podoFAQ1" class="accordion-collapse collapse" data-bs-parent="#podologiaAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Utilizamos un protocolo estricto de nivel hospitalario. Todo el instrumental (bisturíes reusables, gubias, alicates) pasa por lavado ultrasónico, empaque en bolsas termoselladas con indicador químico y esterilización física por vapor saturado a presión en un autoclave digital. La bolsa se abre estrictamente frente al paciente.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark font-jakarta fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#podoFAQ2">
+                            ¿Las boletas emitidas por la clínica son reembolsables en Isapre?
+                        </button>
+                    </h2>
+                    <div id="podoFAQ2" class="accordion-collapse collapse" data-bs-parent="#podologiaAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Sí. Al emitirse boletas de atención de salud autorizadas por profesionales registrados en la Superintendencia de Salud (Minsal), usted puede ingresarlas en su respectiva Isapre o seguro de salud complementario para optar al reembolso correspondiente según la cobertura de su plan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Squeeze: Formulario de Agenda de Turno Médico -->
+    <section id="agenda" class="py-5 bg-clinical-soft">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-white shadow-lg rounded-5">
+                <div class="text-center mb-4">
+                    <h2 class="font-jakarta fw-extrabold text-dark display-6">Solicitud de Cita Podológica</h2>
+                    <p class="font-jakarta text-muted small mt-2">Seleccione el servicio e indique sus datos. Un asistente del gabinete confirmará el bloque de horario definitivo mediante un mensaje o correo de confirmación.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Solicitud de hora registrada correctamente en el Gabinete Podológico. Nos comunicaremos contigo para confirmar el cupo.');">
+                    <div class="row g-3 font-jakarta fw-semibold text-start">
+                        <div class="col-md-6">
+                            <label class="form-label text-teal small text-uppercase">Nombre Completo del Paciente</label>
+                            <input type="text" class="form-control rounded-4 input-clinical" placeholder="Ej: Carlos Fuentes" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-teal small text-uppercase">Teléfono de Contacto</label>
+                            <input type="tel" class="form-control rounded-4 input-clinical" placeholder="+56 9 8765 4321" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-teal small text-uppercase">Tipo de Tratamiento Requerido</label>
+                            <select class="form-select rounded-4 input-pet input-clinical" required>
+                                <option value="" selected disabled>Selecciona el procedimiento...</option>
+                                <option>Podología Clínica Integral General</option>
+                                <option>Tratamiento de Uña Encarnada (Onicocriptosis)</option>
+                                <option>Atención Especializada de Pie Diabético</option>
+                                <option>Evaluación Biomecánica de la Pisada</option>
+                                <option>Tratamiento de Hongos (Onicomicosis)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-teal small text-uppercase">Correo de Respaldo</label>
+                            <input type="email" class="form-control rounded-4 input-clinical" placeholder="carlos@correo.cl" required>
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-teal w-100 py-3 text-uppercase tracking-wider fw-bold text-white rounded-pill shadow-teal">Solicitar Reserva de Hora</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Clínico -->
+    <footer class="bg-white py-5 text-center border-top font-jakarta border-light">
+        <div class="container text-muted">
+            <p class="mb-2 small">&copy; 2026 San Pedro Podología Clínica. Prototipo estático estructural de servicios médicos para exhibición de portafolio web UI.</p>
+            <a href="../index.html" class="text-teal text-decoration-none fw-bold tracking-tight small"><i class="bi bi-arrow-left-circle me-1"></i> Panel de Portafolio</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

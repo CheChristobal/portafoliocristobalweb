@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaBikes &amp; Motors | Taller Mecánico de Precisión &amp; Ciclismo Élite</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="mecanica.css">
+</head>
+<body>
+
+    <!-- Topbar de Seguridad Técnica -->
+    <div class="torque-topbar py-2 text-center text-uppercase font-jakarta fw-semibold">
+        <div class="container small tracking-widest" style="font-size: 0.7rem;">
+            <i class="bi bi-exclamation-triangle-fill text-amber me-2"></i> Torque regulado bajo especificaciones de fábrica • Purgado hidráulico y diagnósticos con escáner OBD2
+        </div>
+    </div>
+
+    <!-- Navbar Tipo Estación de Servicio -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3 navbar-torque">
+        <div class="container">
+            <a class="navbar-brand fw-bold font-grotesk tracking-tight fs-3 text-white" href="#">
+                HEXA<span class="text-amber">BIKES</span> <span class="fw-light fs-6 text-white-50">&amp; MOTORS</span>
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTorque">
+                <i class="bi bi-list fs-2 text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTorque">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta small tracking-wider fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#ingenieria">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tarifas">Mantenciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bitacora">Bitácora Técnica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#repuestos">Existencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#presupuesto">Cotizar Ficha</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-torque btn-sm px-4 rounded-0 text-white border-secondary font-xs">Salir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada Industrial Pesada -->
+    <header class="torque-hero d-flex align-items-center position-relative py-5 overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-torque mb-3 text-uppercase font-jakarta rounded-0">High-Performance Mechanical Center</span>
+                    <h1 class="display-4 font-grotesk text-white fw-bold mb-3 lh-tight">Ingeniería mecánica <br>fina para <span class="text-amber-glow">alto rendimiento</span>.</h1>
+                    <p class="lead font-jakarta text-muted-slate mb-4 fw-light lh-lg fs-5">Mantenimiento preventivo, ajuste de motores y calibración estructural para vehículos urbanos y bicicletas de competencia. Sangrado de frenos hidráulicos, configuración de transmisiones electrónicas y reparación con repuestos certificados.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#presupuesto" class="btn btn-amber font-jakarta px-4 py-3 text-uppercase tracking-wider fw-bold text-dark rounded-0 shadow-amber">Ingresar Vehículo</a>
+                        <a href="#bitacora" class="btn btn-outline-torque font-jakarta px-4 py-3 text-uppercase tracking-wider fw-semibold text-white rounded-0">Bitácora de Servicios</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="position-relative d-inline-block">
+                    <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=600&q=80" alt="Inspección técnica de frenos y componentes de precisión en taller" class="img-fluid main-torque-img shadow-lg">                        <!-- Widget Flotante de Presión Mecánica -->
+                        <div class="floating-torque-card p-3 rounded-0 bg-glass shadow-lg d-flex align-items-center gap-3 border border-secondary">
+                            <div class="torque-pulse-circle"><i class="bi bi-wrench-adjustable text-dark fs-5"></i></div>
+                            <div class="text-start font-jakarta">
+                                <h6 class="fw-bold text-white mb-0">Calibración Certificada</h6>
+                                <small class="text-amber font-mono fw-bold">Torque de Precisión en Nm</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Módulo de Especialidades Técnicas (6 Tarjetas) -->
+    <section id="ingenieria" class="py-5 bg-torque-dark border-top border-bottom border-secondary-subtle">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-amber text-uppercase tracking-widest small fw-bold d-block mb-2">[ Servicio Técnico ]</span>
+                <h2 class="font-grotesk text-white fs-2">Líneas de Intervención Mecánica</h2>
+                <div class="torque-line mx-auto my-3"></div>
+            </div>
+
+            <div class="row g-4 font-jakarta text-white">
+                <!-- Bloque 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 torque-card p-4 rounded-0">
+                        <div class="torque-card-icon text-amber mb-3"><i class="bi bi-shield-fill-check fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Frenos Hidráulicos &amp; Purga</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Sangrado de circuitos con fluidos minerales u DOT específicos, instalación de pastillas ventiladas y rectificación micrométrica de discos para frenadas de alta fricción.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 torque-card p-4 rounded-0">
+                        <div class="torque-card-icon text-amber mb-3"><i class="bi bi-cpu-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Diagnóstico Computarizado</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Escaneo mediante módulos OBD2 para borrado de fallas lógicas, lectura de sensores de oxígeno en tiempo real y ajuste de parámetros de inyección electrónica.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 torque-card p-4 rounded-0">
+                        <div class="torque-card-icon text-amber mb-3"><i class="bi bi-activity fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Suspensión &amp; Amortiguadores</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Desarmado completo de horquillas, sustitución técnica de retenes de alta presión, cambio de fluidos y calibración estática de rebote para pistas o ciudad.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 torque-card p-4 rounded-0">
+                        <div class="torque-card-icon text-amber mb-3"><i class="bi bi-gear-wide-connected fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Transmisión Electrónica</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Sincronización y ajuste fino para desviadores digitales (Shimano Di2 / SRAM AXS) o cajas de cambio mecánicas automotrices tradicionales.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 torque-card p-4 rounded-0">
+                        <div class="torque-card-icon text-amber mb-3"><i class="bi bi-lightning-charge-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Ajuste de Motor &amp; Torque</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Ajustes estructurales de culatas, cambios de empaquetaduras y calibración manual con llaves dinamométricas de alta gama según la ficha técnica de la marca.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 torque-card p-4 rounded-0">
+                        <div class="torque-card-icon text-amber mb-3"><i class="bi bi-tools fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Mantención Express Kilométrica</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Pautas estáticas de revisión a los 10k, 20k o 50k kilómetros. Cambios de filtros de aire, fluidos sintéticos de motor y lavado preventivo de componentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pautas de Mantención Estructuradas -->
+    <section id="tarifas" class="py-5 bg-deep-dark border-bottom border-secondary-subtle">
+        <div class="container py-4" style="max-width: 850px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-amber text-uppercase tracking-widest small fw-bold d-block mb-2">[ Tarifario Transparente ]</span>
+                <h2 class="font-grotesk text-white fs-2">Planes Preventivos &amp; Overhaul</h2>
+                <div class="torque-line mx-auto my-3"></div>
+            </div>
+            
+            <div class="row g-4 font-jakarta text-white justify-content-center">
+                <!-- Ciclistas -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-glass border border-secondary text-center h-100 d-flex flex-column justify-content-between rounded-0 torque-plan-card">
+                        <div>
+                            <h5 class="fw-bold font-grotesk text-white mb-1">Ajuste Full Ciclismo</h5>
+                            <p class="text-muted-slate font-xs mb-3">MTB / Ruta Élite</p>
+                        </div>
+                        <div class="border-top border-secondary-subtle pt-3 mt-3">
+                            <span class="text-muted-slate d-block small mb-1">Desarmado completo + Engrase</span>
+                            <h4 class="text-amber font-grotesk fw-bold mb-0">$45.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tuning Motor -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-glass border border-amber text-center h-100 d-flex flex-column justify-content-between rounded-0 position-relative torque-plan-card active">
+                        <span class="position-absolute top-0 start-50 translate-middle badge bg-amber text-dark text-uppercase font-xs fw-bold rounded-0">Más Solicitado</span>
+                        <div>
+                            <h5 class="fw-bold font-grotesk text-white mb-1 mt-2">Mantención Motor Base</h5>
+                            <p class="text-muted-slate font-xs mb-3">Vehículos Urbanos</p>
+                        </div>
+                        <div class="border-top border-secondary-subtle pt-3 mt-3">
+                            <span class="text-muted-slate d-block small mb-1">Filtros + Aceite Sintético 5W30</span>
+                            <h4 class="text-amber font-grotesk fw-bold mb-0">$68.900</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Overhaul -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-glass border border-secondary text-center h-100 d-flex flex-column justify-content-between rounded-0 torque-plan-card">
+                        <div>
+                            <h5 class="fw-bold font-grotesk text-white mb-1">Diagnóstico &amp; Frenos</h5>
+                            <p class="text-muted-slate font-xs mb-3">Seguridad Frenado Full</p>
+                        </div>
+                        <div class="border-top border-secondary-subtle pt-3 mt-3">
+                            <span class="text-muted-slate d-block small mb-1">Escáner OBD2 + Rectificado</span>
+                            <h4 class="text-amber font-grotesk fw-bold mb-0">$35.000</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Bitácora Simulada de Órdenes de Trabajo Recientes -->
+    <section id="bitacora" class="py-5 bg-black border-bottom border-secondary-subtle text-white">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-amber text-uppercase tracking-widest small fw-bold d-block mb-2">[ Historial Log ]</span>
+                <h2 class="font-grotesk text-white display-5">Órdenes de Trabajo en Taller</h2>
+                <div class="torque-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta text-start justify-content-center">
+                <!-- OT 1 -->
+                <div class="col-md-5">
+                    <div class="p-4 bg-glass rounded-0 border border-secondary h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-success-subtle text-success text-uppercase rounded-0 font-xs mb-2">Completado - Listo para Entrega</span>
+                            <h5 class="fw-bold text-white font-grotesk fs-5 mb-1">Mantención de Frenos Hidráulicos</h5>
+                            <p class="text-white-50 small lh-lg mb-0">Reemplazo de pastillas Shimano de resina, sangrado completo de líneas con aceite mineral legítimo y reapriete del cárter inferior a 9 Nm de fuerza estática con torquímetro digital. Rendimiento OK.</p>
+                        </div>
+                        <div class="fw-bold text-amber small mt-3 border-top border-secondary pt-2">Operador: Franklin Vargas <span class="fw-light text-muted-slate d-block" style="font-size: 0.75rem;">Mecánica HexaBikes</span></div>
+                    </div>
+                </div>
+                <!-- OT 2 -->
+                <div class="col-md-5">
+                    <div class="p-4 bg-glass rounded-0 border border-secondary h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-warning-subtle text-warning text-uppercase rounded-0 font-xs mb-2">En Espera de Repuestos</span>
+                            <h5 class="fw-bold text-white font-grotesk fs-5 mb-1">Ajuste de Transmisión &amp; Escáner</h5>
+                            <p class="text-white-50 small lh-lg mb-0">Lectura de códigos mediante escáner arrojó anomalía transitoria en sensor de oxígeno. Se posterga calibración final hasta el arribo de empaquetaduras de culata desde el proveedor central en Santiago.</p>
+                        </div>
+                        <div class="fw-bold text-amber small mt-3 border-top border-secondary pt-2">Supervisor: Marcelo Astudillo <span class="fw-light text-muted-slate d-block" style="font-size: 0.75rem;">Mecánica Motors</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla de Control de Existencias de Componentes y Líquidos -->
+    <section id="repuestos" class="py-5 bg-torque-dark border-bottom border-secondary-subtle text-white">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-amber text-uppercase tracking-widest small fw-bold d-block mb-2">[ Technical Spec Sheet ]</span>
+                <h2 class="font-grotesk text-white">Trazabilidad de Líquidos &amp; Fluidos</h2>
+                <div class="torque-line mx-auto my-3"></div>
+            </div>
+            <div class="table-responsive border border-secondary rounded-0 bg-surface font-jakarta">
+                <table class="table table-dark align-middle mb-0 small text-start">
+                    <thead class="bg-surface-dark text-white font-jakarta">
+                        <tr>
+                            <th class="p-3 fs-6">Insumo / Componente</th>
+                            <th class="p-3 fs-6 text-center">Tipo de Base</th>
+                            <th class="p-3 fs-6 text-center">Rango Térmico / Viscosidad</th>
+                            <th class="p-3 fs-6 text-center">Estándar de Seguridad</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-muted-slate">
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Líquido de Frenos DOT 5.1 Pro</td>
+                            <td class="p-3 text-center text-amber fw-bold">Glicol Altamente Refinado</td>
+                            <td class="p-3 text-center font-mono">Punto de Ebullición 270°C</td>
+                            <td class="p-3 text-center">Normativa de seguridad FMVSS 116</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Aceite de Motor Sintético 5W30</td>
+                            <td class="p-3 text-center text-white fw-bold">Hidrocraqueado Custom</td>
+                            <td class="p-3 text-center font-mono">Viscosidad SAE 5W-30</td>
+                            <td class="p-3 text-center">Certificación técnica API SP / ACEA C3</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Grasa de Montaje Premium Grease</td>
+                            <td class="p-3 text-center text-white fw-bold">Complejo de Litio / Teflón</td>
+                            <td class="p-3 text-center font-mono">Anticorrosión Humedad</td>
+                            <td class="p-3 text-center">Protección hidrofóbica de rodamientos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Squeeze de Ficha de Ingreso de Vehículo -->
+    <section id="presupuesto" class="py-5 bg-black">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-glass text-center rounded-0 border border-secondary-subtle">
+                <div class="mb-4">
+                    <h2 class="font-grotesk text-white fs-3">Abrir Orden de Trabajo de Inspección</h2>
+                    <p class="font-jakarta text-muted-slate small mt-2">Registra las especificaciones técnicas estáticas de tu máquina. Un mecánico de la división de recepción de HexaBikes &amp; Motors pre-clasificará tu ficha técnica.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Orden de inspección estática generada en el panel del taller. Por favor, acuda en el bloque asignado con el carnet de propiedad o patente del vehículo.');">
+                    <div class="row g-3 font-jakarta fw-semibold">
+                        <div class="col-md-6">
+                            <label class="form-label text-white small text-uppercase text-start d-block">Nombre del Propietario</label>
+                            <input type="text" class="form-control rounded-0 torque-input" placeholder="Ej: Cristóbal Echeverría" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-white small text-uppercase text-start d-block">Comuna del Solicitante</label>
+                            <select class="form-select rounded-0 torque-input text-start" required>
+                                <option value="" selected disabled>Selecciona comuna...</option>
+                                <option>Conchalí (Ubicación Taller HEXA-Bikes)</option>
+                                <option>Independencia</option>
+                                <option>Santiago Centro</option>
+                                <option>Otras comunas (Sujeto a transporte)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <label class="form-label text-white small text-uppercase text-start d-block">Tipo de Vehículo &amp; Síntoma General</label>
+                            <select class="form-select rounded-0 torque-input text-start" required>
+                                <option value="" selected disabled>Selecciona categoría...</option>
+                                <option>Bicicleta de Alta Gama (Purgado, Transmisión Electrónica)</option>
+                                <option>Automóvil Urbano (Cambio de Fluidos, Pauta Kilométrica)</option>
+                                <option>Diagnóstico Computarizado Completo (Falla Check Engine)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <label class="form-label text-white small text-uppercase text-start d-block">Correo de Envío de Presupuesto Técnico</label>
+                            <input type="email" class="form-control rounded-0 torque-input" placeholder="mecanica@hexa.cl" required>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-amber w-100 py-3 text-uppercase tracking-wider font-grotesk text-dark rounded-0 shadow-amber">Ingresar Solicitud de Orden de Trabajo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer del Taller -->
+    <footer class="bg-deep-dark text-white-50 py-5 font-jakarta border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row g-4 text-start mb-4">
+                <div class="col-md-8">
+                    <h5 class="font-grotesk text-white tracking-wide mb-3">HEXABIKES &amp; MOTORS LABS</h5>
+                    <p class="small text-muted-slate lh-lg mb-0">HexaBikes &amp; Motors es una plataforma de maquetación estática de servicios mecánicos industriales e ingeniería de componentes de fricción de forma independiente. Las pautas de torque, bitácoras de órdenes de trabajo y diluciones químicas forman parte de una demostración avanzada para exhibición de portafolio UI profesional.</p>
+                </div>
+                <div class="col-md-4 text-md-end d-flex flex-column justify-content-center">
+                    <a href="../index.html" class="text-white text-decoration-none font-jakarta fw-bold small"><i class="bi bg-arrow-left me-1"></i> Volver al Panel Central</a>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25">
+            <p class="mb-0 small text-center text-uppercase tracking-wider" style="font-size: 0.65rem;">&copy; 2026 HexaBikes Engineering. Todos los derechos reservados bajo la precisión del diseño responsivo de alto rendimiento.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

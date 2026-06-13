@@ -1,0 +1,41 @@
+:root {
+    --bg-dark: #050608;
+    --darker: #0c0e12;
+    --cyan: #00f2fe;
+    --text-white: #e2e8f0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bg-darker { background-color: var(--darker); }
+.text-cyan { color: var(--cyan); }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+.fixcore-hero {
+    background: linear-gradient(180deg, rgba(0, 242, 254, 0.05) 0%, var(--bg-dark) 100%);
+}
+
+.fixcore-card {
+    border: 1px solid #1a1e26 !important;
+    transition: 0.3s ease;
+}
+
+.fixcore-card:hover {
+    border-color: var(--cyan) !important;
+    transform: translateY(-5px);
+}
+
+.btn-outline-cyan {
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    border-radius: 0;
+}
+
+.btn-outline-cyan:hover {
+    background-color: var(--cyan);
+    color: #000;
+}

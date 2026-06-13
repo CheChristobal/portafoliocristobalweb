@@ -1,0 +1,157 @@
+/* ==========================================================================
+   ESTILOS PREMIUM: LITERARY EDITORIAL (Aura Rose & Editorial Minimalist)
+   ========================================================================== */
+
+:root {
+    --pearl-bg: #fdfdfd;            /* Blanco Perla Limpio */
+    --novel-soft-bg: #faf7f2;       /* Tono Crema / Papel Lino */
+    --nude-accent: #e5c3b2;         /* Nude / Oro Rosado */
+    --nude-glow: rgba(229, 195, 178, 0.2);
+    --novel-dark: #191c21;          /* Texto Editorial Fluido */
+    --text-muted: #5c6470;
+    
+    /* Degradado Iridiscente Soft */
+    --iridescent-gradient: linear-gradient(135deg, rgba(229,195,178,0.12) 0%, rgba(210,218,226,0.12) 50%, rgba(245,225,222,0.12) 100%);
+    --motion-fluid: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+    background-color: var(--pearl-bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--novel-dark);
+}
+
+/* Tipografías Editoriales */
+.font-cormorant { font-family: 'Cormorant Garamond', serif; letter-spacing: 0.2px; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.font-xs { font-size: 0.76rem; letter-spacing: 1.2px; line-height: 1.6; }
+
+/* Adornos de Línea Finos */
+.novel-line {
+    width: 35px;
+    height: 2px;
+    background-color: var(--nude-accent);
+    border-radius: 10px;
+}
+
+/* Topbar Superior */
+.novel-topbar {
+    background-color: var(--novel-dark) !important;
+    letter-spacing: 1.5px;
+}
+
+/* Navbar overrides */
+.navbar-novel {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+}
+.navbar-novel .nav-link {
+    color: var(--text-muted) !important;
+    transition: var(--motion-fluid);
+}
+.navbar-novel .nav-link:hover {
+    color: var(--novel-dark) !important;
+}
+
+/* Hero Release */
+.novel-hero {
+    background: radial-gradient(circle at 80% 30%, #f7f1ed 0%, var(--pearl-bg) 65%);
+}
+
+.product-novel-wrapper {
+    background: var(--iridescent-gradient);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.04);
+}
+
+.main-novel-img {
+    max-height: 440px;
+    object-fit: cover;
+    box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.15) !important;
+    transition: var(--motion-fluid);
+}
+.main-novel-img:hover {
+    transform: scale(1.02);
+}
+
+/* Catálogo / Book Grid */
+.bg-novel-soft {
+    background-color: var(--novel-soft-bg) !important;
+}
+
+.novel-book-card {
+    border: 1px solid rgba(0, 0, 0, 0.02) !important;
+    background-color: #ffffff;
+    transition: var(--motion-fluid);
+}
+.novel-book-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.08) !important;
+}
+
+.book-item-img {
+    height: 260px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+.novel-book-card:hover .book-item-img {
+    transform: scale(1.03);
+}
+
+/* Inputs y Formularios Libres */
+.novel-input {
+    background-color: transparent !important;
+    border: 1px solid var(--novel-dark) !important;
+    border-radius: 0 !important;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+.novel-input:focus {
+    box-shadow: 0 0 0 3px var(--nude-glow) !important;
+}
+
+/* Botonería Selectiva */
+.btn-dark {
+    background-color: var(--novel-dark);
+    color: #ffffff;
+    border-radius: 0 !important;
+    border: 1px solid var(--novel-dark);
+    transition: var(--motion-fluid);
+}
+.btn-dark:hover {
+    background-color: transparent;
+    color: var(--novel-dark) !important;
+}
+
+.btn-dark-novel {
+    background-color: var(--novel-dark);
+    color: #ffffff !important;
+    border-radius: 0;
+    border: 1px solid var(--novel-dark);
+    transition: var(--motion-fluid);
+}
+.btn-dark-novel:hover {
+    background-color: transparent;
+    color: var(--novel-dark) !important;
+}
+
+.btn-outline-dark-novel {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: var(--novel-dark);
+    border-radius: 0;
+    transition: var(--motion-fluid);
+}
+.btn-outline-dark-novel:hover {
+    border-color: var(--novel-dark);
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* Tabla del Índice overrides */
+.table-responsive {
+    border-radius: 0 !important;
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(229, 195, 178, 0.08) !important;
+}

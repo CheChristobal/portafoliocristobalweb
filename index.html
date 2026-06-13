@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio Web | Soluciones Digitales</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">HexaCore <span class="text-primary">Dev</span></a>
-            
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
@@ -33,47 +37,63 @@
     </nav>
 
     <header class="hero-section">
-        <div id="carouselProyectos" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="6000">
-            
+        <div id="carouselProyectos" class="carousel slide carousel-fade h-100" data-bs-ride="carousel"
+            data-bs-interval="6000">
+
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Proyecto 1"></button>
-                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1" aria-label="Proyecto 2"></button>
-                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2" aria-label="Proyecto 3"></button>
+                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Proyecto 1"></button>
+                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1"
+                    aria-label="Proyecto 2"></button>
+                <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"
+                    aria-label="Proyecto 3"></button>
             </div>
 
             <div class="carousel-inner h-100">
-                
+
                 <div class="carousel-item active h-100 item-p1">
-                    <div class="carousel-caption-custom d-flex flex-column justify-content-center align-items-center h-100 text-center text-white px-3">
-                        <span class="badge bg-primary mb-3 px-3 py-2 text-uppercase tracking-wider">E-Commerce Premium</span>
+                    <div
+                        class="carousel-caption-custom d-flex flex-column justify-content-center align-items-center h-100 text-center text-white px-3">
+                        <span class="badge bg-primary mb-3 px-3 py-2 text-uppercase tracking-wider">E-Commerce
+                            Premium</span>
                         <h1 class="display-4 fw-bold mb-3 text-uppercase">Boutique & Perfumes</h1>
-                        <p class="lead mb-4 max-w-600">Plataforma elegante de venta minorista con catálogo interactivo, carrito de compras integrado y pasarela de pago simulada.</p>
+                        <p class="lead mb-4 max-w-600">Plataforma elegante de venta minorista con catálogo interactivo,
+                            carrito de compras integrado y pasarela de pago simulada.</p>
                         <div class="d-flex gap-3 justify-content-center flex-wrap">
-                            <a href="perfumes/perfumes.html" class="btn btn-primary btn-lg px-4 fw-bold shadow">Ver Demo Live</a>
+                            <a href="perfumes/perfumes.html" class="btn btn-primary btn-lg px-4 fw-bold shadow">Ver Demo
+                                Live</a>
                             <a href="#proyectos" class="btn btn-outline-light btn-lg px-4">Explorar Catálogo</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item h-100 item-p2">
-                    <div class="carousel-caption-custom d-flex flex-column justify-content-center align-items-center h-100 text-center text-white px-3">
-                        <span class="badge bg-success mb-3 px-3 py-2 text-uppercase tracking-wider">Sistemas de Gestión</span>
+                    <div
+                        class="carousel-caption-custom d-flex flex-column justify-content-center align-items-center h-100 text-center text-white px-3">
+                        <span class="badge bg-success mb-3 px-3 py-2 text-uppercase tracking-wider">Sistemas de
+                            Gestión</span>
                         <h1 class="display-4 fw-bold mb-3 text-uppercase">Taller & Soporte Técnico</h1>
-                        <p class="lead mb-4 max-w-600">Módulos de agendamiento de horas, órdenes de trabajo para servicio técnico automotriz o de bicicletas, y control de inventarios.</p>
+                        <p class="lead mb-4 max-w-600">Módulos de agendamiento de horas, órdenes de trabajo para
+                            servicio técnico automotriz o de bicicletas, y control de inventarios.</p>
                         <div class="d-flex gap-3 justify-content-center flex-wrap">
-                            <a href="talleres/talleres.html" class="btn btn-success btn-lg px-4 fw-bold shadow">Ver Demo Live</a>
+                            <a href="talleres/talleres.html" class="btn btn-success btn-lg px-4 fw-bold shadow">Ver Demo
+                                Live</a>
                             <a href="#proyectos" class="btn btn-outline-light btn-lg px-4">Ver Características</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item h-100 item-p3">
-                    <div class="carousel-caption-custom d-flex flex-column justify-content-center align-items-center h-100 text-center text-white px-3">
-                        <span class="badge bg-warning text-dark mb-3 px-3 py-2 text-uppercase tracking-wider">E-Learning</span>
+                    <div
+                        class="carousel-caption-custom d-flex flex-column justify-content-center align-items-center h-100 text-center text-white px-3">
+                        <span
+                            class="badge bg-warning text-dark mb-3 px-3 py-2 text-uppercase tracking-wider">E-Learning</span>
                         <h1 class="display-4 fw-bold mb-3 text-uppercase">Academia Digital</h1>
-                        <p class="lead mb-4 max-w-600">Aulas virtuales dinámicas destinadas a la venta de cursos en línea, streaming de lecciones y descarga de material pedagógico.</p>
+                        <p class="lead mb-4 max-w-600">Aulas virtuales dinámicas destinadas a la venta de cursos en
+                            línea, streaming de lecciones y descarga de material pedagógico.</p>
                         <div class="d-flex gap-3 justify-content-center flex-wrap">
-                            <a href="cursos/cursos.html" class="btn btn-warning btn-lg px-4 fw-bold shadow">Ver Demo Live</a>
+                            <a href="cursos/cursos.html" class="btn btn-warning btn-lg px-4 fw-bold shadow">Ver Demo
+                                Live</a>
                             <a href="#proyectos" class="btn btn-outline-light btn-lg px-4">Estructura Curricular</a>
                         </div>
                     </div>
@@ -81,11 +101,13 @@
 
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
@@ -96,7 +118,9 @@
         <div class="container text-center py-4">
             <h2 class="fw-bold mb-4 text-dark text-uppercase">Soluciones Tecnológicas para Emprendedores</h2>
             <p class="text-muted mx-auto fs-5 lh-lg" style="max-width: 800px;">
-                Desarrollo arquitecturas web a medida diseñadas para potenciar la digitalización de pymes, comercios locales y entidades de salud. Cada demo representa una solución integral enfocada en la experiencia de usuario (UX) y optimización de procesos.
+                Desarrollo arquitecturas web a medida diseñadas para potenciar la digitalización de pymes, comercios
+                locales y entidades de salud. Cada demo representa una solución integral enfocada en la experiencia de
+                usuario (UX) y optimización de procesos.
             </p>
         </div>
     </section>
@@ -105,28 +129,32 @@
         <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="fw-bold text-uppercase">Líneas de Desarrollo Tecnológico</h2>
-                <p class="text-muted">Soluciones optimizadas e independientes para la modernización de flujos de trabajo.</p>
+                <p class="text-muted">Soluciones optimizadas e independientes para la modernización de flujos de
+                    trabajo.</p>
             </div>
             <div class="row g-4 text-start">
                 <div class="col-md-4">
                     <div class="p-4 border border-secondary h-100">
                         <i class="bi bi-code-slash text-primary fs-1 mb-3 d-block"></i>
                         <h4 class="fw-bold">Aplicaciones Full-Stack</h4>
-                        <p class="text-muted mb-0">Estructuración de backends dinámicos y paneles de control robustos enfocados en la manipulación ágil de datos y lógica compleja de negocios.</p>
+                        <p class="text-muted mb-0">Estructuración de backends dinámicos y paneles de control robustos
+                            enfocados en la manipulación ágil de datos y lógica compleja de negocios.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border border-secondary h-100">
                         <i class="bi bi-database-check text-success fs-1 mb-3 d-block"></i>
                         <h4 class="fw-bold">Gestión de Inventarios</h4>
-                        <p class="text-muted mb-0">Despliegue de bases de datos centralizadas, integraciones de registros de activos mediante códigos de barra y automatización de reportes.</p>
+                        <p class="text-muted mb-0">Despliegue de bases de datos centralizadas, integraciones de
+                            registros de activos mediante códigos de barra y automatización de reportes.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border border-secondary h-100">
                         <i class="bi bi-device-ssd text-info fs-1 mb-3 d-block"></i>
                         <h4 class="fw-bold">E-Commerce & Checkout</h4>
-                        <p class="text-muted mb-0">Modelado de vitrinas interactivas de alta gama con filtrado fluido de productos, control de bolsas de compra y simulaciones de pago seguras.</p>
+                        <p class="text-muted mb-0">Modelado de vitrinas interactivas de alta gama con filtrado fluido de
+                            productos, control de bolsas de compra y simulaciones de pago seguras.</p>
                     </div>
                 </div>
             </div>
@@ -137,11 +165,12 @@
         <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="fw-bold text-uppercase">Ecosistema de Páginas Maquetadas</h2>
-                <p class="text-muted">Selecciona un modelo de negocio para explorar su interfaz funcional e independiente.</p>
+                <p class="text-muted">Selecciona un modelo de negocio para explorar su interfaz funcional e
+                    independiente.</p>
             </div>
 
             <div class="row g-4">
-                
+
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 project-card">
                         <div class="card-body p-4 d-flex flex-column">
@@ -149,8 +178,10 @@
                                 <i class="bi bi-gem text-primary fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">E-Commerce Perfumes</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Diseño enfocado en marcas de lujo. Incluye vitrina de productos, filtros avanzados y flujo estático de checkout.</p>
-                            <a href="perfumes/perfumes.html" class="btn btn-outline-primary w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Diseño enfocado en marcas de lujo. Incluye
+                                vitrina de productos, filtros avanzados y flujo estático de checkout.</p>
+                            <a href="perfumes/perfumes.html" class="btn btn-outline-primary w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -162,8 +193,11 @@
                                 <i class="bi bi-wrench-adjustable text-success fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Talleres Técnicos</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Interfaz para talleres mecánicos o de bicicletas. Gestión de cotizaciones de repuestos y estado de reparaciones en tiempo real.</p>
-                            <a href="talleres/talleres.html" class="btn btn-outline-success w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Interfaz para talleres mecánicos o de
+                                bicicletas. Gestión de cotizaciones de repuestos y estado de reparaciones en tiempo
+                                real.</p>
+                            <a href="talleres/talleres.html" class="btn btn-outline-success w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -175,8 +209,11 @@
                                 <i class="bi bi-journal-bookmark text-warning fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Plataformas de Cursos</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Landing page educativa idónea para infoproductores. Vista de malla curricular, perfiles de instructores y pasarela de inscripción.</p>
-                            <a href="cursos/cursos.html" class="btn btn-outline-warning text-dark w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Landing page educativa idónea para
+                                infoproductores. Vista de malla curricular, perfiles de instructores y pasarela de
+                                inscripción.</p>
+                            <a href="cursos/cursos.html"
+                                class="btn btn-outline-warning text-dark w-100 mt-3 fw-bold">Explorar Demo</a>
                         </div>
                     </div>
                 </div>
@@ -188,8 +225,10 @@
                                 <i class="bi bi-capsule text-danger fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Farmacias & Delivery</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Buscador integrado de medicamentos, gestión de recetas digitales retenidas y categorización clara por laboratorios.</p>
-                            <a href="farmacia/farmacia.html" class="btn btn-outline-danger w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Buscador integrado de medicamentos, gestión de
+                                recetas digitales retenidas y categorización clara por laboratorios.</p>
+                            <a href="farmacia/farmacia.html" class="btn btn-outline-danger w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -201,8 +240,10 @@
                                 <i class="bi bi-egg-fried text-info fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Gastronomía & Menús</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Carta digital interactiva con QR, reservas de mesas en línea y galerías fotográficas de alta resolución para platos de autor.</p>
-                            <a href="restaurante/restaurante.html" class="btn btn-outline-info w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Carta digital interactiva con QR, reservas de
+                                mesas en línea y galerías fotográficas de alta resolución para platos de autor.</p>
+                            <a href="restaurante/restaurante.html"
+                                class="btn btn-outline-info w-100 mt-3 fw-bold">Explorar Demo</a>
                         </div>
                     </div>
                 </div>
@@ -214,8 +255,10 @@
                                 <i class="bi bi-heart-pulse text-secondary fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Clínicas & Hospitales</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Portal de salud profesional. Agendamiento de telemedicina, visualización de exámenes clínicos e información corporativa médica.</p>
-                            <a href="clinica/clinica.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Portal de salud profesional. Agendamiento de
+                                telemedicina, visualización de exámenes clínicos e información corporativa médica.</p>
+                            <a href="clinica/clinica.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -227,8 +270,11 @@
                                 <i class="bi bi-car-front text-info fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Detailing & Estética</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Interfaz premium para centros de estética automotriz. Módulos de cotización por tamaño de vehículo y tablas de dilución química.</p>
-                            <a href="detailing/detailing.html" class="btn btn-outline-info w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Interfaz premium para centros de estética
+                                automotriz. Módulos de cotización por tamaño de vehículo y tablas de dilución química.
+                            </p>
+                            <a href="detailing/detailing.html" class="btn btn-outline-info w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -240,8 +286,11 @@
                                 <i class="bi bi-window-stack text-primary fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Sistemas Core & ERP</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Estructura SaaS para empresas de tecnología. Tablas de planes de precios, pasarela de suscripción mensual y bloques de arquitectura de servidores.</p>
-                            <a href="software/software.html" class="btn btn-outline-primary w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Estructura SaaS para empresas de tecnología.
+                                Tablas de planes de precios, pasarela de suscripción mensual y bloques de arquitectura
+                                de servidores.</p>
+                            <a href="software/software.html" class="btn btn-outline-primary w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -253,8 +302,11 @@
                                 <i class="bi bi-fan text-warning fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Servicios Climatización</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Generador de informes técnicos de HVAC. Incluye bitácoras de fallas, firmas de autorización digital simuladas e inventarios por códigos QR.</p>
-                            <a href="climacab/climacab.html" class="btn btn-outline-warning text-dark w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Generador de informes técnicos de HVAC. Incluye
+                                bitácoras de fallas, firmas de autorización digital simuladas e inventarios por códigos
+                                QR.</p>
+                            <a href="climacab/climacab.html"
+                                class="btn btn-outline-warning text-dark w-100 mt-3 fw-bold">Explorar Demo</a>
                         </div>
                     </div>
                 </div>
@@ -266,8 +318,11 @@
                                 <i class="bi bi-bicycle text-success fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Boutique de Ciclismo</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Interfaz para talleres de ciclismo técnico. Agendamiento de mantención de horquillas, ensamble de transmisiones y fichas de componentes.</p>
-                            <a href="hexabikes/taller.html" class="btn btn-outline-success w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Interfaz para talleres de ciclismo técnico.
+                                Agendamiento de mantención de horquillas, ensamble de transmisiones y fichas de
+                                componentes.</p>
+                            <a href="hexabikes/taller.html" class="btn btn-outline-success w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -279,8 +334,11 @@
                                 <i class="bi bi-book-half text-secondary fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Lanzamiento Editorial</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Landing page para venta de libros y novelas. Vista interactiva de sinopsis, descarga de primer capítulo de muestra y enlaces de redirección externa.</p>
-                            <a href="autor/libro.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Landing page para venta de libros y novelas.
+                                Vista interactiva de sinopsis, descarga de primer capítulo de muestra y enlaces de
+                                redirección externa.</p>
+                            <a href="autor/libro.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -292,13 +350,420 @@
                                 <i class="bi bi-clipboard2-pulse text-danger fs-2 me-3"></i>
                                 <h5 class="card-title fw-bold mb-0">Estética & Podología</h5>
                             </div>
-                            <p class="card-text text-muted flex-grow-1">Portal para servicios de atención podológica o estética. Módulo de reserva de turnos, catálogo de tratamientos especializados e informaciones de contacto.</p>
-                            <a href="podologia/clinica.html" class="btn btn-outline-danger w-100 mt-3 fw-bold">Explorar Demo</a>
+                            <p class="card-text text-muted flex-grow-1">Portal para servicios de atención podológica o
+                                estética. Módulo de reserva de turnos, catálogo de tratamientos especializados e
+                                informaciones de contacto.</p>
+                            <a href="podologia/clinica.html" class="btn btn-outline-danger w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 13: Inmobiliaria & Real Estate (Estilo Elegant Slate) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-building-up text-indigo fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Boutique Inmobiliaria</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Interfaz de corretaje premium para propiedades
+                                exclusivas. Módulos de filtrado por zonas, calculadoras de dividendos simuladas e iconos
+                                de especificaciones técnicas.</p>
+                            <a href="inmobiliaria/propiedades.html"
+                                class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 14: Coworking & Oficinas Flexibles (Estilo Neo-Glass Urbano) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-laptop text-dark fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Espacios de Cowork</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing page para arriendo de oficinas
+                                compartidas y salas de reuniones. Incluye selectores de planes por membresías y mapa de
+                                distribución de puestos de trabajo.</p>
+                            <a href="cowork/espacios.html" class="btn btn-outline-dark w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 15: FitTech & Academias de Crossfit (Estilo Dark Cyber Neon) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-lightning-fill text-warning fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Box de Crossfit & Fit</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Estética agresiva en modo oscuro para gimnasios.
+                                Sistema de agendamiento de clases diarias (WODs) por horarios, perfiles de entrenadores
+                                y contadores de cupos limitados.</p>
+                            <a href="gimnasio/box.html"
+                                class="btn btn-outline-warning text-dark w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 16: LegalTech & Firmas de Abogados (Estilo Monocromático Solemne) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-briefcase text-secondary fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Estudio Jurídico</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Portal corporativo para bufetes de abogados
+                                corporativos. Desglose de áreas de práctica, agenda de consultoría inicial confidencial
+                                y sección de artículos legales.</p>
+                            <a href="legal/estudio.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 17: Eco-Turismo & Glampings (Estilo Minimalista Orgánico) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-tree text-success fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Eco-Glamping & Hoteles</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Plataforma de reservas estáticas para hoteles
+                                sustentables y cabañas. Galería integrada con enfoque inmersivo, tablas de tarifas
+                                estacionales y bloques de experiencias.</p>
+                            <a href="turismo/glamping.html" class="btn btn-outline-success w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 18: PetShop & Clínicas Veterinarias (Estilo Soft Pastel Alegre) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-heart-fill text-danger fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Veterinaria & PetShop</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Interfaz moderna orientada al cuidado de
+                                mascotas. Formulario de inscripción para historial médico animal, agenda de
+                                peluquería/vacunas y vitrina de insumos.</p>
+                            <a href="veterinaria/clinica.html"
+                                class="btn btn-outline-danger w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 19: Taller de Bicicletas & Ciclismo Urbano (Estilo Hexa Engineering) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-bicycle text-success fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Taller de Bicicletas Pro</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Interfaz técnica para mantenimiento y mecánica
+                                de bicicletas. Incluye desglose de servicios (sangrado hidráulico, transmisión),
+                                tarifario de mantenciones y agenda de taller.</p>
+                            <a href="hexabikes/taller.html" class="btn btn-outline-success w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 20: E-Commerce de Perfumes de Lujo (Estilo Minimalista High-End) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-gem text-dark fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Boutique de Perfumes</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Simulación de tienda premium de alta perfumería.
+                                Vitrina con efectos visuales refinados, filtrado por notas olfativas, carrito flotante
+                                animado y pasarela de pago simulada.</p>
+                            <a href="perfumes2/luxury.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 21: Consulta de Podología o Salud Estética (Estilo Clínico Soft) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-heart-pulse text-info fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Gabinete de Podología</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing page para servicios de salud y cuidado
+                                del pie. Fichas explicativas de tratamientos clínicos, sección de prevención,
+                                testimonios y formulario de reserva de horas médicas.</p>
+                            <a href="podologia2/clinica.html" class="btn btn-outline-info w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 22: Gastronomía & Delivery de Autor (Estilo Bistro Moderno) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-egg-fried text-warning fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Restaurante &amp; Bistro</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Carta digital interactiva con pestañas para
+                                filtrado de platos. Módulo estático para pedidos de delivery, reserva de mesas en tiempo
+                                real y selector de alérgenos.</p>
+                            <a href="bistro/menu.html"
+                                class="btn btn-outline-warning text-dark w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 23: Landing para Aplicaciones Móviles / SaaS (Estilo Tech Gradient) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-phone text-primary fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Fintech Mobile App</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Página de conversión para el lanzamiento de una
+                                app móvil bancaria. Incluye maquetas de pantallas del software, grilla de beneficios de
+                                seguridad, FAQ y botones de descarga directa.</p>
+                            <a href="app/fintech.html" class="btn btn-outline-primary w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 24: Agencia de Marketing & Contenido Digital (Estilo Neo-Brutalismo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-megaphone text-purple fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Agencia Creativa</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Diseño disruptivo con tipografías masivas e
+                                interacciones audaces. Muestra de portafolio de marcas, desglose de estrategias
+                                SEO/Growth y formulario interactivo de briefing.</p>
+                            <a href="agencia/creative.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 25: Centro de Estética Automotriz (Estilo Industrial Glossy) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-car-front text-danger fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Detailing Automotriz</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing page premium para servicios de estética vehicular. Tarjetas técnicas de tratamientos (cerámico, corrección de barniz), tablas de diluciones y selector estático de citas por tamaño de vehículo.</p>
+                            <a href="detaling/lab.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 26: Academia de Neuroplasticidad & Aprendizaje (Estilo Cyber-Elearning) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-brain text-info fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Neuro-Educación SaaS</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Interfaz interactiva de cursos enfocados en potenciar la creatividad y la memoria. Grilla de módulos autodidactas, acordeones explicativos de sinapsis y formulario de inscripción a boletín científico.</p>
+                            <a href="academy/neuro.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 27: Editorial Independiente & Autores KDP (Estilo Novela Romántica / Minimal Ilustrado) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-book text-warning fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Lanzamiento Literario</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing promocional para autores autoeditados en Amazon KDP. Presentación estética de capítulos de novelas de época, sinopsis inmersiva y enlaces estáticos directos a la tienda digital.</p>
+                            <a href="editorial/novela.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 28: Empresa de Climatización & HVAC Industrial (Estilo Corporativo Blue-Collar Riguroso) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-wind text-primary fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Sistemas de Climatización</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Portal corporativo para mantenimiento e instalación de chillers y HVAC industrial. Muestra de bitácoras técnicas de servicio, tablas de protocolos de bioseguridad y cotizador estático de proyectos.</p>
+                            <a href="climacab2/hvac.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 29: Estudio de Videojuegos Independientes (Estilo Arcade Retro 8-Bit) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-controller text-success fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Indie Game Dev Showcase</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing promocional para un videojuego pirata retro en 2D. Desglose técnico de mecánicas de juego (combate naval, inventario), hoja de ruta de parches y formulario para tester de la versión Alpha.</p>
+                            <a href="games/pirates.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 30: Plataforma ERP & Sistema de Inventarios Web (Estilo Dashboard Analytic Clean) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-qr-code-scan text-dark fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">HexaCore ERP Solutions</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing page para comercializar un software de control de existencias con tecnología QR. Grilla de módulos comerciales integrados, tablas analíticas de stock y formulario interactivo para solicitar una demo guiada.</p>
+                            <a href="hexacore/erp.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-droplet-blur text-info fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">EcoWash Delivery</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing page para servicio premium de estética automotriz a domicilio. Desglose técnico de lavado ecológico sin agua, tarifas modulares por tipo de carrocería y agenda interactiva de agendamiento geolocalizado.</p>
+                            <a href="lavado/ecowash.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-scissors text-dark fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">The Shave Club</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Interfaz inmersiva para barbería de autor con estética oscura urbana. Catálogo visual de cortes y perfiles de barba, grilla de barberos disponibles en tiempo real y formulario de reserva con selector estático de bloques horarios.</p>
+                            <a href="barberia/shave.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-heart-pulse text-danger fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Grooming Canino Pro</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Portal estático para centro de estética y spa canino. Tablas de procesos sanitarios y desparasitación, planes estructurados según peso de la mascota y formulario interactivo para fichas de salud animal.</p>
+                            <a href="mascotas/grooming.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-code-slash text-primary fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">WebPyme Dev Studio</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing page corporativa enfocada en la digitalización de pequeños comercios. Grilla de integraciones de pasarelas de pago, cotizador de planes de desarrollo a medida y formulario de análisis de velocidad de carga.</p>
+                            <a href="desarrollo/webpyme.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-egg-fried text-warning fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">La Cocina de la Abuela</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Plataforma digital para minutas de platos caseros tradicionales. Menú semanal dinámico con control estático de porciones, declaración de alérgenos por plato y módulo de pedidos para banquetes u oficinas.</p>
+                            <a href="cocina/catering.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-wrench-adjustable text-warning fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">HexaBikes &amp; Motors</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing page para taller mecánico multimarca y de bicicletas de gama alta. Bitácora estática de reparaciones (frenos hidráulicos, motores), tarifario de mantenciones preventivas y cotizador de repuestos.</p>
+                            <a href="taller/mecanica.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-gift text-success fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Orígenes Artesanías</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">E-commerce simulation para productos manufacturados a mano con identidad local. Vitrina de piezas en mármol, gredas y maderas, fichas de trazabilidad del artesano y pasarela de pago simulada.</p>
+                            <a href="artesanias/origenes.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-cpu-fill text-info fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">FixCore Tech Lab</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Landing de servicio técnico de hardware y optimización lógica de equipos informáticos. Formulario interactivo de diagnóstico por síntomas, catálogo de componentes y logs estáticos de reparaciones.</p>
+                            <a href="computacion/fixcore.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-tree text-success fs-2 me-3"></i>
+                                <h5 class="card-title fw-bold mb-0">Raíces Verdes Paisajismo</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1">Portal para servicios de diseño de jardines, paisajismo y mantención de áreas verdes. Guía estática de especies botánicas por estación, cotizador por metros cuadrados de césped e inscripción a talleres de huerto orgánico.</p>
+                            <a href="jardineria/paisajismo.html" class="btn btn-outline-secondary w-100 mt-3 fw-bold">Explorar Demo</a>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+
         </div>
     </section>
 
@@ -308,6 +773,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

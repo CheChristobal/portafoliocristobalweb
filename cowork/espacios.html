@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub & Spoke | Espacios de Coworking & Oficinas Flexibles</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="espacios.css">
+</head>
+<body>
+
+    <!-- Navbar Estilo Neo-Glass -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-cowork">
+        <div class="container">
+            <a class="navbar-brand fw-extrabold font-outfit text-dark fs-4" href="#">
+                HUB<span class="text-violet">&amp;SPOKE</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCowork">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCowork">
+                <ul class="navbar-nav ms-auto align-items-center gap-3 font-outfit small tracking-wide fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#membresias">Membresías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reserva">Agendar Tour</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-dark btn-sm rounded-pill px-4"><i class="bi bi-arrow-left-short"></i> Portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Lanzamiento Urbano -->
+    <header class="cowork-hero d-flex align-items-center position-relative overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge bg-violet-soft text-violet rounded-pill px-3 py-2 text-uppercase font-outfit fw-bold mb-3 tracking-wide">Productividad sin límites</span>
+                    <h1 class="display-4 font-outfit fw-black text-dark mb-3">El espacio ideal para mentes <span class="text-gradient-violet">creativas e independientes</span>.</h1>
+                    <p class="lead font-outfit text-muted mb-4 fw-light">Oficinas privadas, salas de juntas equipadas y zonas compartidas de alta conectividad arquitectónica para freelancers, startups y corporaciones modernas.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#membresias" class="btn btn-violet font-outfit px-4 py-3 rounded-pill fw-bold text-white shadow-violet">Ver Planes</a>
+                        <a href="#reserva" class="btn btn-outline-dark font-outfit px-4 py-3 rounded-pill fw-semibold">Reservar Pase de Día</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80" alt="Espacio de Trabajo Abierto" class="img-fluid rounded-4 shadow-xl main-cowork-img">
+                        
+                        <!-- Tarjeta Flotante Inalámbrica -->
+                        <div class="wifi-card p-3 rounded-4 bg-white shadow-lg d-flex align-items-center gap-3 border">
+                            <div class="pulse-violet-circle"><i class="bi bi-wifi text-white fs-5"></i></div>
+                            <div class="text-start font-outfit">
+                                <h6 class="fw-bold text-dark mb-0">Fibra Óptica 1 Gbps</h6>
+                                <small class="text-muted">Conectividad simétrica redundante</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Beneficios / Amenidades -->
+    <section id="beneficios" class="py-5 bg-light-surface border-top border-bottom">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <h2 class="font-outfit fw-extrabold text-dark text-uppercase">Tu Oficina, Mejorada</h2>
+                <div class="violet-line mx-auto my-3"></div>
+                <p class="text-muted font-outfit fs-5">Olvídate de los gastos comunes y las complejidades operativas. Todo lo que necesitas está incluido.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 cowork-benefit-card border-0 shadow-sm p-4 rounded-4">
+                        <div class="benefit-icon text-violet mb-3"><i class="bi bi-door-open-fill fs-2"></i></div>
+                        <h4 class="font-outfit fw-bold text-dark">Acceso 24/7</h4>
+                        <p class="text-muted font-outfit small mb-0">Trabaja a tu propio ritmo. Nuestras llaves digitales criptográficas te permiten ingresar de forma segura a cualquier hora.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 cowork-benefit-card border-0 shadow-sm p-4 rounded-4">
+                        <div class="benefit-icon text-violet mb-3"><i class="bi bi-cup-hot-fill fs-2"></i></div>
+                        <h4 class="font-outfit fw-bold text-dark">Café de Especialidad Libre</h4>
+                        <p class="text-muted font-outfit small mb-0">Barra libre de espresso, infusiones orgánicas y snacks saludables en nuestras cafeterías comunitarias abiertas para la red.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 cowork-benefit-card border-0 shadow-sm p-4 rounded-4">
+                        <div class="benefit-icon text-violet mb-3"><i class="bi bi-people-fill fs-2"></i></div>
+                        <h4 class="font-outfit fw-bold text-dark">Eventos de Networking</h4>
+                        <p class="text-muted font-outfit small mb-0">Conecta con mentores, inversionistas y otros emprendedores en nuestros talleres y charlas de comunidad semanales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla de Membresías y Planes -->
+    <section id="membresias" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <h2 class="font-outfit fw-extrabold text-dark text-uppercase">Planes Flexibles</h2>
+                <div class="violet-line mx-auto my-3"></div>
+                <p class="text-muted font-outfit">Escoge la modalidad de espacio comercial que mejor se adapte al tamaño actual de tu equipo.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center align-items-center">
+                <!-- Hot Desk -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="card pricing-cowork border border-light p-4 shadow-sm text-center rounded-4">
+                        <h4 class="font-outfit fw-bold text-dark mb-2">Hot Desk</h4>
+                        <p class="text-muted font-outfit small mb-4">Acceso flexible a zonas compartidas.</p>
+                        <div class="font-outfit display-5 fw-extrabold text-dark mb-1">$85.000 <span class="fs-6 text-muted fw-normal">/mes</span></div>
+                        <hr class="my-4">
+                        <ul class="list-unstyled text-start small font-outfit text-muted mb-4 gap-2 d-flex flex-column">
+                            <li><i class="bi bi-check2 text-violet me-2"></i>Escritorio libre por orden de llegada</li>
+                            <li><i class="bi bi-check2 text-violet me-2"></i>Conexión Wi-Fi 6 de alta velocidad</li>
+                            <li><i class="bi bi-check2 text-violet me-2"></i>Cafetería y áreas comunes</li>
+                            <li class="text-decoration-line-through opacity-50"><i class="bi bi-x text-danger me-2"></i>Créditos mensuales de salas de juntas</li>
+                        </ul>
+                        <a href="#reserva" class="btn btn-outline-dark rounded-pill w-100 py-2 fw-semibold font-outfit">Seleccionar Plan</a>
+                    </div>
+                </div>
+                <!-- Dedicated Desk (Destacado) -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="card pricing-cowork border-violet featured-cowork p-4 shadow-lg text-center position-relative rounded-4">
+                        <span class="position-absolute top-0 start-50 translate-middle badge bg-violet text-white text-uppercase tracking-wider rounded-pill px-3 py-2 font-outfit">Más Popular</span>
+                        <h4 class="font-outfit fw-bold text-dark mt-2 mb-2">Dedicated Desk</h4>
+                        <p class="text-muted font-outfit small mb-4">Tu puesto fijo reservado exclusivamente para ti.</p>
+                        <div class="font-outfit display-5 fw-extrabold text-dark mb-1">$150.000 <span class="fs-6 text-muted fw-normal">/mes</span></div>
+                        <hr class="my-4">
+                        <ul class="list-unstyled text-start small font-outfit text-muted mb-4 gap-2 d-flex flex-column">
+                            <li><i class="bi bi-check2 text-violet me-2"></i><strong>Puesto fijo exclusivo + Locker</strong></li>
+                            <li><i class="bi bi-check2 text-violet me-2"></i>Domicilio comercial e institucional</li>
+                            <li><i class="bi bi-check2 text-violet me-2"></i>12 horas de salas de juntas/mes</li>
+                            <li><i class="bi bi-check2 text-violet me-2"></i>Acceso prioritario a eventos corporativos</li>
+                        </ul>
+                        <a href="#reserva" class="btn btn-violet rounded-pill w-100 py-2 text-white fw-bold shadow-violet font-outfit">Contratar Puesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo de Preguntas Frecuentes (FAQ) -->
+    <section id="faq" class="py-5 bg-white border-top">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2 class="font-outfit fw-extrabold text-dark">Preguntas Frecuentes</h2>
+                <p class="text-muted font-outfit small">Respuestas rápidas para resolver tus inquietudes operativas.</p>
+            </div>
+            
+            <div class="accordion accordion-flush rounded-4 overflow-hidden shadow-sm border border-light font-outfit" id="coworkAccordion">
+                <div class="accordion-item mb-2 border rounded-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark font-outfit" type="button" data-bs-toggle="collapse" data-bs-target="#coworkFAQ1">
+                            ¿Existen contratos forzados a largo plazo?
+                        </button>
+                    </h2>
+                    <div id="coworkFAQ1" class="accordion-collapse collapse" data-bs-parent="#coworkAccordion">
+                        <div class="accordion-body text-muted small">
+                            No. Nuestras membresías de Hot Desk y Dedicated Desk se renuevan mes a mes mediante suscripción flexible. Puedes cancelar, pausar o escalar tu espacio al final del ciclo comercial sin multas asociadas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2 border rounded-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark font-outfit" type="button" data-bs-toggle="collapse" data-bs-target="#coworkFAQ2">
+                            ¿Puedo invitar a clientes externos a reuniones?
+                        </button>
+                    </h2>
+                    <div id="coworkFAQ2" class="accordion-collapse collapse" data-bs-parent="#coworkAccordion">
+                        <div class="accordion-body text-muted small">
+                            Sí. Al reservar una sala de juntas privada utilizando tus créditos mensuales o pagando tarifa adicional, tus invitados tienen acceso al complejo y a las barras de café de forma gratuita durante la duración de la junta.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario para Agendar un Tour Presencial -->
+    <section id="reserva" class="py-5 bg-light-surface border-top">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="card border-0 card-form-cowork rounded-4 overflow-hidden p-4 p-md-5 shadow-xl text-white">
+                <div class="text-center mb-4">
+                    <h2 class="font-outfit fw-extrabold mb-2">Ven a Conocer los Boxes</h2>
+                    <p class="mb-0 text-white-50">Agenda una visita guiada estática con nuestro community manager y recibe un pase libre de cortesía para probar el espacio por todo un día.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Solicitud registrada. Un anfitrión de HUB&SPOKE confirmará tu pase de cortesía vía correo electrónico.');">
+                    <div class="row g-3 font-outfit">
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold">Nombre Completo</label>
+                            <input type="text" class="form-control cowork-input" placeholder="Ej: Fernando Rojas" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold">Correo de Negocios</label>
+                            <input type="email" class="form-control cowork-input" placeholder="fernando@startup.cl" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label small fw-semibold">Interés Principal</label>
+                            <select class="form-select cowork-input" required>
+                                <option value="" selected disabled>Selecciona una opción...</option>
+                                <option>Membresía Hot Desk (Flexible)</option>
+                                <option>Puesto Fijo Dedicated Desk</option>
+                                <option>Oficina Privada Corporativa</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-white rounded-pill px-5 py-3 fw-bold text-violet shadow-sm">
+                                Confirmar Fecha del Tour <i class="bi bi-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo -->
+    <footer class="bg-dark text-white-50 py-4 font-outfit">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p class="mb-0 small">&copy; 2026 HUB&SPOKE Spaces. Maqueta estática de portafolio para simulación de flujos flexibles.</p>
+            <a href="../index.html" class="text-violet text-decoration-none fw-semibold small"><i class="bi bi-arrow-left-circle me-1"></i> Panel Portafolio</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

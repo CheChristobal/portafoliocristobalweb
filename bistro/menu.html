@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raíces Bistro | Cocina de Autor & Experiencia Gastronómica</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <!-- Topbar Sutil de Anuncios -->
+    <div class="bistro-topbar py-2 text-white text-center font-jakarta fw-medium text-uppercase">
+        <div class="container small tracking-wider" style="font-size: 0.72rem;">
+            <i class="bi bi-stars text-terracotta me-2"></i> Reservas abiertas para esta semana • Menú estacional de invierno
+        </div>
+    </div>
+
+    <!-- Navbar Minimalista de Autor -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white py-3 border-bottom border-light navbar-bistro">
+        <div class="container">
+            <a class="navbar-brand font-playfair fw-bold text-dark fs-3 tracking-tight" href="#">
+                RAÍCES <span class="fw-light text-muted fs-4">BISTRÓ</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBistro">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarBistro">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta text-uppercase small tracking-wide fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#filosofia">Origen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carta">La Carta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#atmosfera">Atmósfera</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#criticas">Críticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#delivery">Delivery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reserva">Reservar Mesa</a></li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link pe-2" href="#" onclick="event.preventDefault(); alert('Simulación: Abriendo resumen de pedido para delivery...');">
+                            <i class="bi bi-cart3 fs-5 text-dark"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-bistro font-mono" style="font-size: 0.6rem; padding: 0.25rem 0.4rem;">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-bistro btn-sm px-4 rounded-pill">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada Gastronómica Elegante -->
+    <header class="bistro-hero d-flex align-items-center position-relative py-5">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-bistro mb-3 text-uppercase font-jakarta rounded-pill">Cocina Honesta</span>
+                    <h1 class="display-3 font-playfair text-dark fw-bold mb-3">Sabores genuinos <br>forjados con <span class="text-terracotta fst-italic">origen</span>.</h1>
+                    <p class="lead font-jakarta text-muted mb-4 fw-light lh-lg fs-5">Descubre una propuesta gastronómica que rinde tributo a los ingredientes locales y de temporada. Platos de autor estructurados con técnicas contemporáneas y un maridaje de excelencia.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#reserva" class="btn btn-bistro font-jakarta px-4 py-3 rounded-pill fw-bold text-white shadow-bistro">Reservar una Mesa</a>
+                        <a href="#carta" class="btn btn-outline-bistro-hero font-jakarta px-4 py-3 rounded-pill fw-semibold">Explorar la Carta</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Plato Gourmet de Autor" class="img-fluid rounded-5 shadow-lg main-bistro-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NUEVA SECCIÓN: Filosofía KM 0 & Origen -->
+    <section id="filosofia" class="py-5 bg-white text-center">
+        <div class="container py-4" style="max-width: 800px;">
+            <span class="text-uppercase font-jakarta tracking-widest text-terracotta small fw-bold d-block mb-2">Trazabilidad Absoluta</span>
+            <h2 class="font-playfair display-5 text-dark">La Tierra en el Plato (Kilómetro Zero)</h2>
+            <div class="bistro-line mx-auto my-3"></div>
+            <p class="font-jakarta text-muted fw-light lh-lg fs-5 mb-0">No creemos en la producción masiva. Mantenemos alianzas directas con recolectores de la costa de Valparaíso, recolectores micológicos de los bosques nativos y pequeños huertos orgánicos de comunas rurales de Santiago. Esta cercanía nos permite estructurar un menú vivo, honesto y cambiante que evoluciona de forma madura según el pulso natural de las estaciones del año.</p>
+        </div>
+    </section>
+
+    <!-- Carta Digital Interactiva Ampliada a 6 Alternativas Plenas -->
+    <section id="carta" class="py-5 bg-bistro-soft border-top border-bottom">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-terracotta text-uppercase tracking-wider small fw-bold d-block mb-2">Menú de Invierno</span>
+                <h2 class="font-playfair display-5 text-dark">Nuestra Carta</h2>
+                <div class="bistro-line mx-auto my-3"></div>
+            </div>
+
+            <!-- Filtros Rápidos de la Carta -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5 font-jakarta text-uppercase small tracking-wide fw-bold">
+                <button class="btn btn-bistro-filter active px-4 py-2 rounded-pill">Ver Todos</button>
+                <button class="btn btn-bistro-filter px-4 py-2 rounded-pill" onclick="alert('Filtrando estáticamente por Entradas Frías/Calientes...')">Entradas</button>
+                <button class="btn btn-bistro-filter px-4 py-2 rounded-pill" onclick="alert('Filtrando estáticamente por Platos Fondos de Autor...')">Fondos</button>
+                <button class="btn btn-bistro-filter px-4 py-2 rounded-pill" onclick="alert('Filtrando estáticamente por Postres Artesanales...')">Postres</button>
+            </div>
+
+            <div class="row g-4 font-jakarta">
+                <!-- Plato 1 -->
+                <div class="col-md-6">
+                    <div class="card border-0 p-4 rounded-4 bistro-menu-card bg-white shadow-xs h-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1 font-playfair fs-4">Tartar de Ciervo &amp; Avellanas</h5>
+                                <p class="text-muted small mb-2">Cortado a cuchillo de forma milimétrica, emulsionado con aceite de trufa blanca local, yema curada en sal de mar de Cáhuil y crocante crujiente de avellanas del sur.</p>
+                                <span class="badge bg-allergen text-dark rounded-pill font-xs me-1"><i class="bi bi-egg-fried"></i> Huevo</span>
+                                <span class="badge bg-allergen text-dark rounded-pill font-xs"><i class="bi bi-nut"></i> Frutos Secos</span>
+                            </div>
+                            <span class="font-playfair fw-bold text-terracotta fs-4">$14.500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plato 2 -->
+                <div class="col-md-6">
+                    <div class="card border-0 p-4 rounded-4 bistro-menu-card bg-white shadow-xs h-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1 font-playfair fs-4">Pulpo al Rescoldo</h5>
+                                <p class="text-muted small mb-2">Brazos de pulpo de roca grillados suavemente al carbón de espino, sobre un puré aterciopelado de papas nativas al mortero, aceite de pimentón ahumado y brotes de huerto.</p>
+                                <span class="badge bg-allergen text-dark rounded-pill font-xs"><i class="bi bi-water"></i> Mariscos</span>
+                            </div>
+                            <span class="font-playfair fw-bold text-terracotta fs-4">$18.900</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plato 3 -->
+                <div class="col-md-6">
+                    <div class="card border-0 p-4 rounded-4 bistro-menu-card bg-white shadow-xs h-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1 font-playfair fs-4">Garrón de Cordero Magallánico</h5>
+                                <p class="text-muted small mb-2">Macerado en hierbas de la patagonia por 24 horas, braseado a fuego ultra-lento con reducción de vino Carménère y miel de ulmo pura, acompañado de vegetales de raíz asados.</p>
+                                <span class="badge bg-teal-subtle text-teal rounded-pill font-xs fw-bold"><i class="bi bi-award"></i> Destacado</span>
+                            </div>
+                            <span class="font-playfair fw-bold text-terracotta fs-4">$22.500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plato 4 -->
+                <div class="col-md-6">
+                    <div class="card border-0 p-4 rounded-4 bistro-menu-card bg-white shadow-xs h-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1 font-playfair fs-4">Tortellini de Zapallo Camote</h5>
+                                <p class="text-muted small mb-2">Pasta artesanal hecha a mano rellena de zapallo camote asado, ricota cremosa especiada, castañas confitadas y una delicada emulsión caliente de mantequilla de salvia fresca.</p>
+                                <span class="badge bg-allergen text-dark rounded-pill font-xs"><i class="bi bi-egg-fried"></i> Gluten</span>
+                            </div>
+                            <span class="font-playfair fw-bold text-terracotta fs-4">$15.200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plato 5 (Nuevo) -->
+                <div class="col-md-6">
+                    <div class="card border-0 p-4 rounded-4 bistro-menu-card bg-white shadow-xs h-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1 font-playfair fs-4">Pescado de Roca &amp; Caldillo Espeso</h5>
+                                <p class="text-muted small mb-2">Pesca selectiva del día sellada por el lado de la piel, servida sobre un caldillo concentrado de crustáceos marinos, algas de roca y papas crujientes al hilo.</p>
+                                <span class="badge bg-allergen text-dark rounded-pill font-xs"><i class="bi bi-water"></i> Mariscos</span>
+                            </div>
+                            <span class="font-playfair fw-bold text-terracotta fs-4">$17.800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plato 6 (Nuevo) -->
+                <div class="col-md-6">
+                    <div class="card border-0 p-4 rounded-4 bistro-menu-card bg-white shadow-xs h-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1 font-playfair fs-4">Texturas de Chocolate &amp; Murta</h5>
+                                <p class="text-muted small mb-2">Ganache cremosa de chocolate amargo al 70%, tierra crujiente de cacao orgánico, helado artesanal de murta y láminas finas de merengue horneado secado.</p>
+                                <span class="badge bg-allergen text-dark rounded-pill font-xs"><i class="bi bi-egg-fried"></i> Lácteos</span>
+                            </div>
+                            <span class="font-playfair fw-bold text-terracotta fs-4">$7.200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Galería de Atmósfera & Salón Privado -->
+    <section id="atmosfera" class="py-5 bg-white text-center">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-uppercase font-jakarta tracking-widest text-muted small d-block mb-2">Nuestras Mesas</span>
+                <h2 class="font-playfair display-5 text-dark">El Salón &amp; La Cava</h2>
+                <div class="bistro-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta">
+                <div class="col-md-4">
+                    <div class="p-4 bg-bistro-soft rounded-4 border h-100">
+                        <i class="bi bi-brightness-low text-terracotta fs-2 mb-2 d-block"></i>
+                        <h6 class="fw-bold text-dark fs-5 mb-2">Salón Principal</h6>
+                        <p class="text-muted small mb-0 lh-lg">Diseño minimalista cálido con vigas expuestas de madera nativa e iluminación tenue pensada para resguardar la intimidad de tu velada.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-bistro-soft rounded-4 border h-100">
+                        <i class="bi bi-cup-straw text-terracotta fs-2 mb-2 d-block"></i>
+                        <h6 class="fw-bold text-dark fs-5 mb-2">La Barra de Autor</h6>
+                        <p class="text-muted small mb-0 lh-lg">Espacio interactivo frente a nuestra cocina de producción donde podrás presenciar el ensamblado de platos e interactuar de forma directa con el Chef.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-bistro-soft rounded-4 border h-100">
+                        <i class="bi bi-vignette text-terracotta fs-2 mb-2 d-block"></i>
+                        <h6 class="fw-bold text-dark fs-5 mb-2">Cava Subterránea</h6>
+                        <p class="text-muted small mb-0 lh-lg">Una colección privada estática de más de 120 etiquetas de viñas independientes chilenas enfocadas en cepas patrimoniales tradicionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Reseñas de la Crítica Gastronómica -->
+    <section id="criticas" class="py-5 bg-bistro-soft border-top border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-uppercase font-jakarta tracking-widest text-terracotta small fw-bold d-block mb-2">Prensa Especializada</span>
+                <h2 class="font-playfair text-dark display-5">Opiniones de Expertos</h2>
+                <div class="bistro-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta justify-content-center text-start">
+                <div class="col-md-5">
+                    <div class="p-4 bg-white rounded-5 shadow-xs border h-100 d-flex flex-column justify-content-between">
+                        <p class="text-muted small fst-italic lh-lg">"Raíces se consolida como la apertura más honesta de la temporada. El Tartar de Ciervo y Avellanas demuestra un entendimiento superlativo del balance entre la grasa, la acidez y las texturas crujientes del bosque."</p>
+                        <div class="fw-bold text-dark small mt-3 border-top pt-2">— CRÓNICA GASTRONÓMICA EL MERCURIO</div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 bg-white rounded-5 shadow-xs border h-100 d-flex flex-column justify-content-between">
+                        <p class="text-muted small fst-italic lh-lg">"Una oda a la cocina de cercanía Kilómetro Zero ejecutada con precisión técnica milimétrica. La curación de su cava subterránea por cepas patrimoniales merece una mención honorífica aparte."</p>
+                        <div class="fw-bold text-dark small mt-3 border-top pt-2">— REVISTA CULINARIA APETITO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selector y Declaración de Alérgenos -->
+    <section id="alergenos" class="py-5 bg-white text-center">
+        <div class="container py-3" style="max-width: 800px;">
+            <div class="p-4 bg-bistro-soft rounded-5 border border-light-subtle">
+                <i class="bi bi-info-circle-fill text-terracotta display-6 mb-2 d-block"></i>
+                <h4 class="font-playfair fw-bold text-dark mb-2">Cocina Segura &amp; Alérgenos</h4>
+                <p class="font-jakarta text-muted small lh-lg mb-0">En Raíces asumimos con total seriedad tu seguridad alimentaria. Las etiquetas de nuestra carta digital indican la presencia de alérgenos comunes. Si posees alguna condición celíaca, alergia severa o restricción alimentaria estricta, por favor infórmalo a tu anfitrión al momento de ordenar o indícalo en el formulario de reserva.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Estático de Delivery de Autor Ampliado -->
+    <section id="delivery" class="py-5 bg-bistro-soft border-top border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-terracotta text-uppercase tracking-wider small fw-bold d-block mb-2">Bistro en tu Mesa</span>
+                <h2 class="font-playfair display-5 text-dark">Pedidos Express al Hogar</h2>
+                <div class="bistro-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta justify-content-center">
+                <!-- Box 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 rounded-5 p-4 h-100 shadow-xs text-center d-flex flex-column justify-content-between bg-white">
+                        <div>
+                            <span class="badge bg-secondary-subtle text-dark rounded-pill font-xs mb-2">Para Dos</span>
+                            <h5 class="font-playfair fw-bold text-dark fs-4 mb-2">Box Degustación Bistró</h5>
+                            <p class="text-muted small lh-lg mb-3">Una experiencia completa empacada al vacío lista para el toque final de emplatado. Incluye una entrada premium, dos fondos seleccionados y postre.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-3">
+                            <span class="font-playfair fw-bold text-dark fs-4">$36.000</span>
+                            <button class="btn btn-bistro px-3 py-2 text-white font-xs rounded-pill" onclick="alert('Box Degustación añadido al pedido de delivery.')">Pedir Box</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 rounded-5 p-4 h-100 shadow-xs text-center d-flex flex-column justify-content-between bg-white">
+                        <div>
+                            <span class="badge bg-warning-subtle text-warning rounded-pill font-xs mb-2 fw-bold">Maridaje</span>
+                            <h5 class="font-playfair fw-bold text-dark fs-4 mb-2">Caja Maridaje de Cepa</h5>
+                            <p class="text-muted small lh-lg mb-3">Selección exclusiva estática de dos botellas de vino de pequeños viticultores independientes, acompañados de una tabla de quesos maduros artesanales.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-3">
+                            <span class="font-playfair fw-bold text-dark fs-4">$28.000</span>
+                            <button class="btn btn-bistro px-3 py-2 text-white font-xs rounded-pill" onclick="alert('Caja Maridaje añadida al pedido de delivery.')">Pedir Caja</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Reservas de Mesas -->
+    <section id="reserva" class="py-5 bg-white">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-bistro-soft shadow-lg rounded-5">
+                <div class="text-center mb-4">
+                    <h2 class="font-playfair text-dark display-5 fw-bold">Reservar una Mesa</h2>
+                    <p class="font-jakarta text-muted small mt-2">Planifica tu visita con antelación. Las solicitudes estáticas de reserva garantizan el salón principal por un bloque de 2 horas.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Solicitud de reserva de mesa enviada. El equipo de Raíces Bistró validará los cupos del salón y te confirmará por vía telefónica o correo.');">
+                    <div class="row g-3 font-jakarta fw-semibold text-start">
+                        <div class="col-md-6">
+                            <label class="form-label text-dark small text-uppercase">Nombre del Comensal</label>
+                            <input type="text" class="form-control rounded-4 input-bistro" placeholder="Ej: Amparo Vergara" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-dark small text-uppercase">Número de Invitados</label>
+                            <select class="form-select rounded-4 input-bistro" required>
+                                <option value="" selected disabled>Selecciona cupos...</option>
+                                <option>1 Persona (Barra de Autor)</option>
+                                <option>2 Personas</option>
+                                <option>3 a 4 Personas</option>
+                                <option>5 o más (Sujeto a confirmación)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-dark small text-uppercase">Requerimientos Especiales o Alergias</label>
+                            <textarea class="form-control rounded-4 input-bistro" rows="3" placeholder="Ej: Intolerancia al gluten, mesa en la terraza, silla para bebés..."></textarea>
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-bistro w-100 py-3 text-uppercase tracking-wider fw-bold text-white rounded-pill shadow-bistro">Solicitar Confirmación de Mesa</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo Gastronómico -->
+    <footer class="bg-bistro-soft py-5 text-center border-top font-jakarta border-light">
+        <div class="container text-muted">
+            <p class="mb-2 small">&copy; 2026 Raíces Bistró de Origen. Prototipo estático estructural de gastronomía fina para exhibición de portafolio UI profesional.</p>
+            <a href="../index.html" class="text-terracotta text-decoration-none fw-bold small"><i class="bi bi-arrow-left-circle me-1"></i> Volver a Portafolio</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

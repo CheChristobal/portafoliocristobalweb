@@ -1,0 +1,277 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: HEXABIKES MECHANICA (Industrial Torque Style)
+   ========================================================================== */
+
+:root {
+    --torque-black: #0c0e12;         /* Negro Titanio Base */
+    --torque-surface: #141822;       /* Gris Asfalto / Superficie Industrial */
+    --amber-safety: #f59e0b;         /* Ámbar de Alerta e Indicadores */
+    --amber-hover: #d97706;
+    --text-muted-slate: #94a3b8;    /* Sutil y legible */
+    
+    /* Resplandores Mecánicos */
+    --amber-glow: 0 0 25px rgba(245, 158, 11, 0.25);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--torque-black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ffffff !important; /* Fuerza textos base a blanco puro */
+    overflow-x: hidden;
+}
+
+/* Forzado General de Tipografías, Enlaces e Íconos a Blanco Coherente */
+.font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-muted, .text-muted-slate, .text-white-50 { color: #ffffff !important; opacity: 0.82; }
+.lead { color: #ffffff !important; opacity: 0.90; }
+.bi { color: #ffffff !important; }
+
+.text-amber { color: var(--amber-safety) !important; }
+.text-amber-glow {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.6), 0 0 20px rgba(245, 158, 11, 0.3);
+}
+.font-xs { font-size: 0.78rem; color: #ffffff !important; }
+
+/* Contornos y Distintivos Tipo Píldora de Fricción */
+.badge-torque {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Badges Soft de Estado Adaptativas */
+.badge.bg-success-subtle { background: rgba(16, 185, 129, 0.15) !important; color: #34d399 !important; border: 1px solid rgba(16, 185, 129, 0.3); }
+.badge.bg-warning-subtle { background: rgba(245, 158, 11, 0.15) !important; color: #fbbf24 !important; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+.torque-line {
+    width: 50px;
+    height: 4px;
+    background: #ffffff !important;
+    border-radius: 0;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* Topbar Superior de Límites Térmicos */
+.torque-topbar {
+    background-color: #000000;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+/* Navbar de la Estación de Servicio */
+.navbar-torque {
+    background-color: rgba(12, 14, 18, 0.95) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.navbar-torque .navbar-brand {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.navbar-torque .nav-link {
+    color: #ffffff !important;
+    opacity: 0.8;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem !important;
+    transition: var(--motion-smooth);
+}
+
+.navbar-torque .nav-link:hover,
+.navbar-torque .nav-link.active {
+    opacity: 1 !important;
+    background-color: rgba(245, 158, 11, 0.08);
+    color: var(--amber-safety) !important;
+}
+
+/* ==========================================================================
+   HERO / DISEÑO COMPOSITIVO DE ALTA PRECISIÓN INDUSTRIAL
+   ========================================================================== */
+.torque-hero {
+    background: radial-gradient(circle at 85% 25%, rgba(245, 158, 11, 0.06) 0%, rgba(234, 88, 12, 0.01) 45%, var(--torque-black) 70%);
+    padding-bottom: 80px;
+}
+
+.main-torque-img {
+    border-radius: 0 !important; /* Estética recta pesada */
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.8) !important;
+    transition: var(--motion-smooth);
+    max-height: 420px;
+    object-fit: cover;
+}
+.main-torque-img:hover {
+    border-color: var(--amber-safety);
+}
+
+/* Contenedores Estilo Cristal Ahumado (Glassmorphism Oscuro) */
+.bg-glass {
+    background: linear-gradient(145deg, rgba(255,255,255,0.01) 0%, rgba(20,24,34,0.6) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+/* Card Flotante del Torquímetro */
+.floating-torque-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    min-width: 270px;
+    background: rgba(12, 14, 18, 0.95) !important;
+    border-radius: 0 !important;
+    animation: torqueFloat 6s ease-in-out infinite;
+}
+
+.torque-pulse-circle {
+    width: 44px;
+    height: 44px;
+    background: var(--amber-safety);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--amber-glow);
+}
+
+@keyframes torqueFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* Tarjetas de Especialidades Mecánicas */
+.torque-card {
+    transition: var(--motion-bounce);
+}
+
+.torque-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    background-color: #181d2a !important;
+    border-color: rgba(245, 158, 11, 0.25) !important;
+    box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.7), var(--amber-glow) !important;
+}
+
+.torque-card h4, .torque-card p {
+    color: #ffffff !important;
+}
+
+.torque-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   TABLAS DE TORQUE Y FLUIDOS DE ALTA FRICCIÓN
+   ========================================================================== */
+.table-responsive {
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 0 !important;
+}
+.table th, .table td {
+    color: #ffffff !important;
+}
+
+.bg-surface {
+    background-color: var(--torque-surface);
+}
+.bg-surface-dark {
+    background-color: #0b0d14;
+}
+
+.table-dark {
+    --bs-table-bg: var(--torque-surface) !important;
+}
+
+.table th {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08) !important;
+    color: var(--amber-safety) !important;
+}
+
+/* Campos de Formulario Industriales (Inputs) */
+.torque-input {
+    background-color: #06080b !important;
+    border: 2px solid rgba(255, 255, 255, 0.05) !important;
+    padding: 0.9rem 1.3rem;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    border-radius: 0 !important;
+    transition: var(--motion-smooth);
+}
+.torque-input::placeholder {
+    color: #ffffff !important;
+    opacity: 0.3;
+}
+.torque-input:focus {
+    border-color: #ffffff !important;
+    background-color: #0f121a !important;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1) !important;
+}
+.torque-input option {
+    background-color: var(--torque-surface) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   BOTONERÍA MONOLÍTICA DE ALTA TENSIÓN
+   ========================================================================== */
+.btn-amber {
+    background-color: var(--amber-safety) !important;
+    color: var(--torque-black) !important;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 10px 25px -6px rgba(245, 158, 11, 0.35);
+    transition: var(--motion-smooth);
+}
+
+.btn-amber:hover {
+    background-color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: var(--amber-glow);
+}
+.shadow-amber { box-shadow: var(--amber-glow); }
+
+.btn-outline-torque {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    font-weight: 700;
+    border-radius: 0;
+    transition: var(--motion-smooth);
+}
+.btn-outline-torque:hover {
+    border-color: var(--amber-safety);
+    color: var(--amber-safety) !important;
+    background-color: rgba(245, 158, 11, 0.02);
+    box-shadow: var(--amber-glow);
+}
+
+/* Tarjetas de Plan de Mantenciones */
+.torque-plan-card {
+    transition: var(--motion-smooth);
+}
+.torque-plan-card.active {
+    border-color: var(--amber-safety) !important;
+    box-shadow: var(--amber-glow) !important;
+    background-color: rgba(245, 158, 11, 0.01) !important;
+}
+
+/* Footer Coherente */
+footer.bg-deep-dark {
+    background-color: #040508 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.03) !important;
+}

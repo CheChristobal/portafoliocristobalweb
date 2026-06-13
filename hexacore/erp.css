@@ -1,0 +1,338 @@
+/* ==========================================================================
+   ESTILOS PREMIUM: HEXACORE ERP (Dark Mode Intelligent Dashboard & Neon Core)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+    /* Paleta Avanzada Modo Oscuro Enterprise */
+    --slate-dark: #090d16;          /* Fondo Base Profundo */
+    --slate-surface: #111726;       /* Superficie de Componentes y Paneles */
+    --blue-electric: #2563eb;       /* Azul Enfoque */
+    --blue-laser: #00f2fe;          /* Azul Láser Analítico */
+    --success-neon: #10b981;        /* Verde Operacional Estatus */
+    
+    /* Sistema de Textos de Alta Legibilidad Cronométrica */
+    --text-main-light: #ffffff;     /* Blanco Puro para fondos oscuros */
+    --text-muted-light: #94a3b8;    /* Gris Plata para descripciones en fondo oscuro */
+    --text-main-dark: #0f172a;      /* Grafito Profundo para componentes claros */
+    --text-muted-dark: #475569;     /* Gris Mate para subtítulos en fondo claro */
+    
+    /* Iluminación Ambiental y Sombras Volumétricas */
+    --laser-glow: 0 0 25px rgba(0, 242, 254, 0.15);
+    --surface-glow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    
+    /* Sistema de Movimiento Fluido */
+    --motion-fluid: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.28);
+}
+
+body {
+    background-color: var(--slate-dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-main-light);
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   SISTEMA TIPOGRÁFICO ADAPTATIVO SEGÚN ENTORNO (FONDO)
+   ========================================================================== */
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+.font-xs { font-size: 0.75rem; }
+
+/* Control de Textos sobre Secciones o Cards de Fondo Oscuro (Por Defecto) */
+.text-slate { color: var(--text-main-light) !important; }
+.text-muted { color: var(--text-muted-light) !important; }
+.lead { color: var(--text-muted-light) !important; }
+.text-blue-electric { color: var(--blue-laser); filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.3)); }
+.text-success-neon { color: var(--success-neon); filter: drop-shadow(0 0 6px var(--success-neon)); }
+
+/* CONTROL ESTRICTO: Ajuste de textos dentro de la sección blanca de la App Hero */
+.container-dashboard-preview {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.4) !important;
+}
+.container-dashboard-preview .text-slate,
+.container-dashboard-preview fw-extrabold {
+    color: var(--text-main-dark) !important; /* Forza a Grafito sobre Fondo Blanco */
+}
+.container-dashboard-preview .text-muted,
+.container-dashboard-preview small {
+    color: var(--text-muted-dark) !important; /* Forza a Gris Mate sobre Fondo Blanco */
+}
+.container-dashboard-preview h4 {
+    color: var(--text-main-dark) !important;
+}
+.container-dashboard-preview .bg-light {
+    background-color: #f8fafc !important; /* Fondo interno claro para las subcards */
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* ==========================================================================
+   COMPONENTES DE DISEÑO INDUSTRIAL SAAAS
+   ========================================================================== */
+.bg-erp-soft { background-color: #0d121f; }
+
+.badge-erp {
+    border: 1px solid var(--blue-laser) !important;
+    color: var(--blue-laser) !important;
+    background-color: rgba(0, 242, 254, 0.05) !important;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 8px !important;
+    box-shadow: var(--laser-glow);
+}
+
+/* Badges de Alerta de Stock con contraste adaptado */
+.bg-danger-soft { background: rgba(239, 68, 68, 0.15) !important; color: #f87171 !important; border: 1px solid rgba(239, 68, 68, 0.3); }
+.bg-success-soft { background: rgba(16, 185, 129, 0.15) !important; color: #34d399 !important; border: 1px solid rgba(16, 185, 129, 0.3); }
+.bg-warning-soft { background: rgba(245, 158, 11, 0.15) !important; color: #fbbf24 !important; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+.erp-line {
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--blue-electric) 0%, var(--blue-laser) 100%);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
+/* Topbar Superior de Seguridad */
+.erp-topbar {
+    background-color: #000000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    color: var(--text-muted-light) !important;
+}
+
+.animate-pulse { animation: erpPulse 2s infinite; }
+@keyframes erpPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+/* ==========================================================================
+   NAVBAR: PANEL DE COMANDO FLOTANTE TRANSLÚCIDO
+   ========================================================================== */
+.navbar-erp {
+    background-color: rgba(9, 13, 22, 0.85) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.navbar-erp .navbar-brand {
+    color: var(--text-main-light) !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-erp .nav-link {
+    color: var(--text-muted-light) !important;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem !important;
+    border-radius: 8px;
+    transition: var(--motion-fluid);
+}
+
+.navbar-erp .nav-link:hover,
+.navbar-erp .nav-link.active {
+    color: var(--text-main-light) !important;
+    background-color: rgba(255, 255, 255, 0.03);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* ==========================================================================
+   HERO & TARJETAS DE MÓDULOS (Estructura de Rejilla Tecnológica)
+   ========================================================================== */
+.erp-hero {
+    background: radial-gradient(circle at 90% 20%, rgba(37, 99, 235, 0.12) 0%, var(--slate-dark) 60%);
+}
+
+.erp-card {
+    background-color: var(--slate-surface) !important;
+    border: 1px solid rgba(255, 255, 255, 0.03) !important;
+    border-radius: 16px !important;
+    box-shadow: var(--surface-glow);
+    transition: var(--motion-bounce);
+}
+
+.erp-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(0, 242, 254, 0.2) !important;
+    box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.6), var(--laser-glow) !important;
+}
+
+.erp-card h4 { color: var(--text-main-light) !important; }
+.erp-card p { color: var(--text-muted-light) !important; }
+
+.erp-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background-color: rgba(37, 99, 235, 0.08);
+    color: var(--blue-laser);
+    border: 1px solid rgba(0, 242, 254, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--motion-fluid);
+}
+
+.erp-card:hover .erp-icon {
+    background: linear-gradient(135deg, var(--blue-electric) 0%, var(--blue-laser) 100%);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+    border-color: transparent;
+}
+
+/* ==========================================================================
+   TABLAS LOGÍSTICAS Y ENTRADAS CONTROLADAS (Inputs)
+   ========================================================================== */
+.table-responsive {
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5);
+}
+
+.table {
+    --bs-table-bg: var(--slate-surface) !important;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.table th {
+    background-color: #0b0f19 !important;
+    color: var(--text-main-light) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.table td {
+    color: #cbd5e1 !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 242, 254, 0.02) !important;
+}
+
+/* Cajas de Texto de Captación de Formularios */
+.input-erp {
+    background-color: #070a10 !important;
+    border: 2px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 12px !important;
+    padding: 0.9rem 1.3rem;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    transition: var(--motion-fluid);
+}
+
+.input-erp::placeholder {
+    color: var(--text-muted-light) !important;
+    opacity: 0.35;
+}
+
+.input-erp:focus {
+    background-color: #0d121f !important;
+    border-color: var(--blue-laser) !important;
+    box-shadow: 0 0 0 5px rgba(0, 242, 254, 0.15) !important;
+}
+
+/* Select option overrides nativas */
+.input-erp option {
+    background-color: var(--slate-surface) !important;
+    color: var(--text-main-light) !important;
+}
+
+/* ==========================================================================
+   BOTONERÍA DE CONTROL INDUSTRIAL Y ACORDIONES
+   ========================================================================== */
+.btn-erp {
+    background: linear-gradient(135deg, var(--blue-electric) 0%, var(--blue-laser) 100%);
+    border: none;
+    color: #ffffff !important;
+    font-weight: 700;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -6px rgba(37, 99, 235, 0.4);
+    transition: var(--motion-fluid);
+}
+
+.btn-erp:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -4px rgba(0, 242, 254, 0.4);
+}
+.shadow-erp { box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.3); }
+
+.btn-outline-erp {
+    border: 2px solid var(--blue-laser);
+    color: var(--blue-laser);
+    font-weight: 700;
+    border-radius: 12px;
+    transition: var(--motion-fluid);
+}
+
+.btn-outline-erp:hover {
+    background: linear-gradient(135deg, var(--blue-electric) 0%, var(--blue-laser) 100%);
+    color: #ffffff !important;
+    box-shadow: var(--laser-glow);
+    border-color: transparent;
+}
+
+.btn-outline-erp-hero {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-main-light);
+    font-weight: 600;
+    border-radius: 12px;
+    transition: var(--motion-fluid);
+}
+
+.btn-outline-erp-hero:hover {
+    border-color: var(--blue-laser);
+    color: var(--blue-laser) !important;
+    background-color: rgba(0, 242, 254, 0.02);
+    box-shadow: var(--laser-glow);
+}
+
+/* Nodos de Acordeones Colapsables de Seguridad */
+.erp-accordion .accordion-item {
+    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+    background-color: var(--slate-surface) !important;
+    margin-bottom: 12px;
+    border-radius: 16px !important;
+    overflow: hidden;
+}
+
+.erp-accordion .accordion-item:hover {
+    border-color: rgba(0, 242, 254, 0.15) !important;
+}
+
+.erp-accordion .accordion-button {
+    padding: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main-light) !important;
+    background-color: transparent !important;
+}
+
+.erp-accordion .accordion-button:not(.collapsed) {
+    color: var(--blue-laser) !important;
+    background-color: rgba(0, 242, 254, 0.02) !important;
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.3);
+}
+
+.erp-accordion .accordion-button::after {
+    filter: invert(1) brightness(2); /* Fuerza la flecha nativa a blanco puro */
+}
+
+.erp-accordion .accordion-body {
+    color: var(--text-muted-light) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* FOOTER COHERENTE */
+footer.bg-white {
+    background-color: #05070f !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+footer.bg-white .text-muted {
+    color: var(--text-muted-light) !important;
+}

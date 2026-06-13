@@ -1,0 +1,176 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: INDIE GAME SHOWCASE (Retro Arcade 8-Bit Style)
+   ========================================================================== */
+
+:root {
+    --arcade-bg: #08090c;           /* Fondo Negro Monitor Apagado */
+    --terminal-black: #0c0e14;      /* Fondo Caja Consola */
+    --pixel-green: #39ff14;         /* Verde Fósforo Radiante */
+    --pixel-green-dim: rgba(57, 255, 20, 0.15);
+    
+    /* Configuración Visual Estricta */
+    --pixel-border: 2px solid var(--pixel-green);
+    --pixel-glow: 0 0 20px rgba(57, 255, 20, 0.35);
+    --motion-fast: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+body {
+    background-color: var(--arcade-bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ffffff;
+}
+
+/* Tipografías e Identidades Arcade */
+.font-arcade { font-family: 'VT323', monospace; letter-spacing: 1px; }
+.font-mono { font-family: monospace, sans-serif; }
+.text-pixel { color: var(--pixel-green) !important; text-shadow: 0 0 8px rgba(57, 255, 20, 0.5); }
+.bg-arcade-dark { background-color: #050608; }
+.bg-terminal { background-color: var(--terminal-black) !important; }
+
+/* Contornos y Distintivos Tipo Píldora Rectangular */
+.badge-arcade {
+    border: 1px solid var(--pixel-green);
+    color: var(--pixel-green);
+    background: var(--pixel-green-dim);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-family: monospace;
+    border-radius: 0;
+    box-shadow: var(--pixel-glow);
+}
+
+.arcade-line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--pixel-green);
+    border-radius: 0;
+    box-shadow: var(--pixel-glow);
+}
+
+/* Topbar Superior */
+.arcade-topbar {
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(57, 255, 20, 0.2);
+}
+
+/* Navbar overrides Consola */
+.navbar-arcade {
+    background-color: rgba(12, 14, 20, 0.95) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.03);
+}
+.navbar-arcade .nav-link {
+    color: #94a3b8 !important;
+    padding: 0.4rem 1rem !important;
+    transition: var(--motion-fast);
+}
+.navbar-arcade .nav-link:hover,
+.navbar-arcade .nav-link.active {
+    color: var(--pixel-green) !important;
+    background-color: var(--pixel-green-dim);
+}
+
+/* Hero Section */
+.arcade-hero {
+    background: radial-gradient(circle at 80% 30%, rgba(57, 255, 20, 0.05) 0%, var(--arcade-bg) 65%);
+}
+
+.bg-terminal-frame {
+    background-color: #11141d;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+.main-arcade-img {
+    border-radius: 0 !important;
+    border: 1px solid rgba(57, 255, 20, 0.1);
+    transition: var(--motion-fast);
+}
+.main-arcade-img:hover {
+    border-color: var(--pixel-green);
+}
+
+/* Tarjetas de Mecánicas de Consola (Boxes) */
+.border-pixel-soft {
+    border: 1px solid rgba(57, 255, 20, 0.15) !important;
+}
+
+.card.bg-terminal {
+    transition: var(--motion-fast);
+}
+.card.bg-terminal:hover {
+    transform: scale(1.02);
+    border-color: var(--pixel-green) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), var(--pixel-glow) !important;
+}
+
+.arcade-card-icon {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(57, 255, 20, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(57, 255, 20, 0.02);
+}
+
+/* Inputs de Formulario Arcade */
+.arcade-input {
+    background-color: #000000 !important;
+    border: 2px solid rgba(57, 255, 20, 0.3) !important;
+    border-radius: 0 !important;
+    padding: 0.9rem 1.4rem;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    transition: var(--motion-fast);
+}
+.arcade-input:focus {
+    border-color: var(--pixel-green) !important;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.2) !important;
+}
+
+/* Botonería Monocromática Fósforo */
+.btn-pixel {
+    background-color: var(--pixel-green) !important;
+    color: var(--arcade-bg) !important;
+    border-radius: 0 !important;
+    border: none;
+    font-weight: 800;
+    transition: var(--motion-fast);
+}
+.btn-pixel:hover {
+    background-color: #ffffff !important;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+.shadow-pixel { box-shadow: var(--pixel-glow); }
+
+.btn-outline-pixel {
+    border: 1px solid var(--pixel-green);
+    color: var(--pixel-green);
+    border-radius: 0 !important;
+    transition: var(--motion-fast);
+}
+.btn-outline-pixel:hover {
+    background-color: var(--pixel-green);
+    color: var(--arcade-bg) !important;
+}
+
+.btn-outline-arcade-hero {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0 !important;
+    transition: var(--motion-fast);
+}
+.btn-outline-arcade-hero:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Sincronización con Tablas de Roadmap */
+.table-responsive {
+    border-color: rgba(57, 255, 20, 0.2) !important;
+    border-radius: 0 !important;
+}
+.table {
+    --bs-table-bg: transparent !important;
+}

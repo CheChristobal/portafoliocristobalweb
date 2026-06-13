@@ -1,0 +1,285 @@
+/* ==========================================================================
+   ESTILOS PREMIUM: FINTECH LANDING (Matrix Cyber-Glow - All White Text)
+   ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Paleta Cromática y Fondos Oscuros */
+    --fintech-black: #050811;       /* Negro Cibernético Profundo */
+    --fintech-surface: #0f1322;     /* Antracita Sólida Eléctrica */
+    --cyan-neon: #00f2fe;           /* Utilizado solo en luces de fondo */
+    --magenta-neon: #ff007f;        /* Utilizado solo en luces de fondo */
+    --purple-neon: #7928ca;
+    
+    /* Iluminación Ambiental de Fondo */
+    --neon-glow: 0 0 35px rgba(255, 0, 127, 0.2), 0 0 70px rgba(0, 242, 254, 0.12);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.3);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+    background-color: var(--fintech-black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ffffff !important; /* Fuerza todo el texto base a blanco */
+    overflow-x: hidden;
+}
+
+/* Forzado General de Tipografías e Íconos a Blanco */
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-muted, .text-muted-slate, .text-white-50, .small { color: #ffffff !important; opacity: 0.85; }
+.lead { color: #ffffff !important; opacity: 0.90; }
+.bi { color: #ffffff !important; } /* Todos los Bootstrap Icons en blanco */
+
+/* Títulos y Elementos Gradientes de Fondo (Texto Blanco Iluminado) */
+.text-gradient {
+    color: #ffffff !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(0, 242, 254, 0.3);
+}
+.font-xs { font-size: 0.78rem; color: #ffffff !important; }
+
+/* Contornos y Etiquetas Tipo Píldora */
+.badge-fintech {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.fintech-line {
+    width: 60px;
+    height: 4px;
+    background: #ffffff !important;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Topbar Superior de Seguridad */
+.fintech-topbar {
+    background-color: #000000;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.7rem;
+}
+
+/* ==========================================================================
+   NAVBAR: ESTILO CRISTAL PURO CON TEXTOS BLANCOS
+   ========================================================================== */
+.navbar-fintech {
+    background-color: rgba(5, 8, 17, 0.85) !important;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-fintech .navbar-brand {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.navbar-fintech .nav-link {
+    color: #ffffff !important;
+    opacity: 0.8;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem !important;
+    border-radius: 20px;
+    transition: var(--motion-smooth);
+}
+
+.navbar-fintech .nav-link:hover,
+.navbar-fintech .nav-link.active {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.08);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Contador de la bolsa de compras */
+.navbar-fintech .badge {
+    background-color: #ffffff !important;
+    color: var(--fintech-black) !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* ==========================================================================
+   HERO / COMPOSICIÓN DE MAQUETA SMARTPHONE
+   ========================================================================== */
+.fintech-hero {
+    background: radial-gradient(circle at 85% 30%, rgba(121, 40, 202, 0.12) 0%, rgba(0, 242, 254, 0.04) 40%, var(--fintech-black) 70%);
+    padding-bottom: 80px;
+}
+
+/* Contenedor del Celular */
+.mockup-container {
+    max-width: 320px;
+    background: linear-gradient(180deg, #111524 0%, #080a12 100%) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.9) !important;
+    position: relative;
+    transition: var(--motion-smooth);
+}
+
+/* Tarjeta Interna del Smartphone */
+.card-balance {
+    background: linear-gradient(135deg, #16142e 0%, #1f0822 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: inset 0 1px 20px rgba(255, 255, 255, 0.05);
+}
+.card-balance h2, .card-balance small {
+    color: #ffffff !important;
+}
+
+.bg-surface-dark {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px !important;
+    color: #ffffff !important;
+}
+.bg-surface-dark:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+}
+
+/* ==========================================================================
+   TARJETAS DE BENEFICIOS (Cápsulas de Vidrio Esmerilado)
+   ========================================================================== */
+.bg-glass {
+    background: linear-gradient(145deg, rgba(255,255,255,0.02) 0%, rgba(15,19,34,0.4) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+.fintech-card {
+    border-radius: 32px !important;
+    transition: var(--motion-bounce);
+}
+.fintech-card h4, .fintech-card p {
+    color: #ffffff !important;
+}
+
+.fintech-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    background: #111629 !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.7), var(--neon-glow) !important;
+}
+
+/* Íconos circulares dentro de las tarjetas */
+.fintech-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================================================
+   TABLAS Y CAMPOS DE FORMULARIO (Inputs)
+   ========================================================================== */
+.table-responsive {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 24px !important;
+}
+.table th, .table td {
+    color: #ffffff !important;
+}
+
+.bg-surface {
+    background-color: var(--fintech-surface);
+}
+
+/* Cajas de Texto (Formularios) */
+.fintech-input {
+    background-color: #0b0f19 !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 30px !important;
+    padding: 0.95rem 1.5rem;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    transition: var(--motion-smooth);
+}
+.fintech-input::placeholder {
+    color: #ffffff !important;
+    opacity: 0.4;
+}
+.fintech-input:focus {
+    border-color: #ffffff !important;
+    background-color: #0f1426 !important;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.15) !important;
+}
+
+/* ==========================================================================
+   BOTONERÍA BLANCA RADIANTE Y ACORDIONES
+   ========================================================================== */
+.btn-gradient {
+    background: #ffffff !important; /* El botón principal pasa a ser blanco sólido */
+    color: var(--fintech-black) !important; /* Texto interno oscuro para contraste */
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border: none;
+    box-shadow: 0 10px 25px -6px rgba(255, 255, 255, 0.3);
+    transition: var(--motion-smooth);
+}
+
+.btn-gradient:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -4px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline-fintech {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-outline-fintech:hover {
+    background-color: #ffffff !important;
+    color: var(--fintech-black) !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Acordiones colapsables */
+.fintech-accordion .accordion-item {
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    margin-bottom: 12px;
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+.fintech-accordion .accordion-item:hover {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.fintech-accordion .accordion-button {
+    padding: 1.4rem;
+    font-weight: 700;
+    color: #ffffff !important;
+}
+.fintech-accordion .accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+.fintech-accordion .accordion-button::after {
+    filter: invert(1) brightness(2) !important; /* Mantiene la flecha nativa en blanco puro */
+}
+
+/* Footer e íconos de descarga */
+footer.bg-deep-dark {
+    background-color: #03050a !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+.hover-white:hover {
+    color: #ffffff !important;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    cursor: pointer;
+}

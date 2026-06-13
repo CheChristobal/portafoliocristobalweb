@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volt Box | Crossfit & High Intensity Training</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900;1,900&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+
+    <!-- Navbar de Alto Impacto -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 navbar-kinetic">
+        <div class="container">
+            <a class="navbar-brand font-barlow fw-black italic text-white fs-3" href="#">
+                VOLT<span class="text-neon">_BOX</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarGym">
+                <ul class="navbar-nav ms-auto align-items-center gap-3 font-barlow text-uppercase fw-bold tracking-wider">
+                    <li class="nav-item"><a class="nav-link" href="#wod">WOD Hoy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#coaches">Coaches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tarifas">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reserva">Reservar Clase</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-neon btn-sm px-4 rounded-0"><i class="bi bi-arrow-left"></i> Portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Kinetic Section -->
+    <header class="gym-hero d-flex align-items-center position-relative overflow-hidden">
+        <div class="glow-ambience"></div>
+        <div class="container position-relative z-2 text-center text-lg-start">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-white">
+                    <span class="badge badge-neon mb-3 text-uppercase font-barlow tracking-widest">No Excuses . Only Results</span>
+                    <h1 class="display-1 font-barlow fw-black text-uppercase text-white mb-2 italic">Rompe tus <span class="text-neon text-glow">Límites</span></h1>
+                    <p class="lead font-jakarta text-silver mb-4 fw-normal fs-5">Entrenamientos brutales, comunidad de hierro y entrenadores certificados dedicados a forjar tu mejor versión física y mental.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#reserva" class="btn btn-neon font-barlow px-4 py-3 text-uppercase fs-5">Clase de Prueba Gratis</a>
+                        <a href="#wod" class="btn btn-outline-white font-barlow px-4 py-3 text-uppercase fs-5">Ver WOD de Hoy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Módulo Central: El WOD del Día -->
+    <section id="wod" class="py-5 bg-cyber-dark text-white border-bottom border-dark">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="card bg-kinetic-surface border-neon p-4 p-md-5 rounded-0 shadow-lg text-center position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle badge bg-neon text-black font-barlow text-uppercase tracking-wider px-4 py-2 fs-6 fw-bold">Workout of the Day</div>
+                
+                <h3 class="font-barlow fw-black text-uppercase display-5 italic mt-3 mb-1 text-white">"THE KINETIC CRUSH"</h3>
+                <span class="font-mono text-muted small d-block mb-4">Modalidad: AMRAP 20 Minutos (As Many Rounds As Possible)</span>
+                
+                <div class="row g-3 justify-content-center text-start font-barlow fs-4 tracking-wide text-silver">
+                    <div class="col-md-8 border-start border-neon border-3 ps-3">
+                        <div class="mb-2"><i class="bi bi-activity text-neon me-3"></i> 400m Carrera de Velocidad</div>
+                        <div class="mb-2"><i class="bi bi-box-seam text-neon me-3"></i> 24 Box Jumps (Saltos al Cajón)</div>
+                        <div class="mb-2"><i class="bi bi-person-walking text-neon me-3"></i> 16 Kettlebell Swings (24kg / 16kg)</div>
+                        <div class="mb-0"><i class="bi bi-chevron-double-up text-neon me-3"></i> 12 Toes-to-Bar (Pies a la Barra)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Coaches / Atletas -->
+    <section id="coaches" class="py-5 bg-cyber-black">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5 text-white">
+                <h2 class="font-barlow display-4 fw-black text-uppercase italic">Líderes de la Tribu</h2>
+                <div class="neon-line mx-auto my-3"></div>
+                <p class="font-jakarta text-silver">Atletas de élite certificados para guiar tu técnica de forma segura y exigente.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 gym-card rounded-0 overflow-hidden text-center p-4">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=200&h=200&q=80" alt="Head Coach" class="rounded-circle mx-auto mb-3 object-fit-cover shadow-neon-soft" style="width: 130px; height: 130px;">
+                        <h4 class="font-barlow text-white text-uppercase fs-3 mb-1">Roco Valenzuela</h4>
+                        <small class="text-neon font-barlow text-uppercase tracking-wider small fw-bold mb-3 d-block">Head Coach / CrossFit L3</small>
+                        <p class="font-jakarta text-silver small mb-0 fw-light">Especialista en halterofilia olímpica y programación competitiva de alto rendimiento.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 gym-card rounded-0 overflow-hidden text-center p-4">
+                        <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=200&h=200&q=80" alt="Coach" class="rounded-circle mx-auto mb-3 object-fit-cover shadow-neon-soft" style="width: 130px; height: 130px;">
+                        <h4 class="font-barlow text-white text-uppercase fs-3 mb-1">Macarena Ossa</h4>
+                        <small class="text-neon font-barlow text-uppercase tracking-wider small fw-bold mb-3 d-block">Coach / Gimnasia &amp; Endurance</small>
+                        <p class="font-jakarta text-silver small mb-0 fw-light">Experta en movimientos gimnásticos complejos y optimización de resistencia cardiovascular.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla de Tarifas / Planes Corporativos -->
+    <section id="tarifas" class="py-5 bg-cyber-dark border-top border-bottom border-dark">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5 text-white">
+                <h2 class="font-barlow display-4 fw-black text-uppercase italic">Membresías Volt</h2>
+                <div class="neon-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <div class="card pricing-gym border border-dark p-4 shadow-sm text-center rounded-0 text-white">
+                        <h4 class="font-barlow fw-bold text-uppercase fs-3 mb-2">Plan 3X</h4>
+                        <p class="text-muted small mb-4 font-jakarta">Entrena 3 veces por semana de forma flexible.</p>
+                        <div class="font-barlow display-5 fw-black text-white mb-1">$42.000 <span class="fs-6 text-muted font-jakarta fw-normal">/mes</span></div>
+                        <hr class="my-4 border-secondary opacity-25">
+                        <ul class="list-unstyled text-start small font-jakarta text-silver mb-4 gap-2 d-flex flex-column">
+                            <li><i class="bi bi-check2 text-neon me-2"></i> 12 Clases mensuales reservables</li>
+                            <li><i class="bi bi-check2 text-neon me-2"></i> Acceso completo a vestuarios y duchas</li>
+                            <li><i class="bi bi-check2 text-neon me-2"></i> App de tracking de marcas (Volt App)</li>
+                        </ul>
+                        <a href="#reserva" class="btn btn-outline-white rounded-0 w-100 py-2 font-barlow text-uppercase fw-bold">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="card pricing-gym border-neon featured-gym p-4 shadow-lg text-center rounded-0 text-white">
+                        <h4 class="font-barlow fw-bold text-uppercase fs-3 mb-2 text-neon">Plan Unlimited</h4>
+                        <p class="text-muted small mb-4 font-jakarta">Acceso irrestricto y boxes libres.</p>
+                        <div class="font-barlow display-5 fw-black text-white mb-1">$58.000 <span class="fs-6 text-muted font-jakarta fw-normal">/mes</span></div>
+                        <hr class="my-4 border-secondary opacity-25">
+                        <ul class="list-unstyled text-start small font-jakarta text-silver mb-4 gap-2 d-flex flex-column">
+                            <li><i class="bi bi-check2 text-neon me-2"></i> <strong>Clases ilimitadas mensuales</strong></li>
+                            <li><i class="bi bi-check2 text-neon me-2"></i> Acceso libre a zona de Open Box</li>
+                            <li><i class="bi bi-check2 text-neon me-2"></i> 1 Evaluación nutricional bimensual</li>
+                            <li><i class="bi bi-check2 text-neon me-2"></i> Descuentos oficiales en seminarios</li>
+                        </ul>
+                        <a href="#reserva" class="btn btn-neon rounded-0 w-100 py-2 text-black fw-black font-barlow text-uppercase">Comprar Pase Ilimitado</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Reserva de Clase de Prueba -->
+    <section id="reserva" class="py-5 bg-cyber-black">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card bg-kinetic-surface border-neon p-4 p-md-5 text-white rounded-0 shadow-lg">
+                <div class="text-center mb-4">
+                    <h2 class="font-barlow text-uppercase text-white display-5 fw-black italic">Reservar Cupo en Boxes</h2>
+                    <p class="font-jakarta text-silver small">Cupos críticos limitados por hora para resguardar el espacio de entrenamiento.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Reserva estática registrada en boxes de entrenamiento Volt. Te esperamos 10 minutos antes del inicio.');">
+                    <div class="row g-3 font-jakarta">
+                        <div class="col-md-6">
+                            <label class="form-label text-neon text-uppercase font-barlow fs-5 fw-bold">Atleta</label>
+                            <input type="text" class="form-control gym-input text-white" placeholder="Ej: Lucas Mendoza" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-neon text-uppercase font-barlow fs-5 fw-bold">Bloque de Horario</label>
+                            <select class="form-select gym-input text-white" required>
+                                <option value="" selected disabled>Seleccionar hora...</option>
+                                <option>Bloque AM: 07:00 a 08:00 (Quedan 4 cupos)</option>
+                                <option>Bloque AM: 08:30 a 09:30 (Quedan 7 cupos)</option>
+                                <option>Bloque PM: 19:00 a 20:00 (Quedan 2 cupos - Crítico)</option>
+                                <option>Bloque PM: 20:30 a 21:30 (Quedan 9 cupos)</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-neon font-barlow w-100 py-3 text-uppercase fs-4 fw-black">Asegurar mi Reserva</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Box -->
+    <footer class="bg-cyber-dark py-4 text-center border-top border-secondary-custom">
+        <div class="container text-muted font-jakarta small">
+            <p class="mb-1">VOLT BOX &copy; 2026 — Arquitectura estática cinética para portafolio profesional.</p>
+            <a href="../index.html" class="text-neon text-decoration-none font-barlow tracking-wider small fw-bold text-uppercase"><i class="bi bi-chevron-left"></i> Volver a Portafolio</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

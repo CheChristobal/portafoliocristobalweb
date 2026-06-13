@@ -1,0 +1,314 @@
+/* ==========================================================================
+   ESTILOS PREMIUM: CLINICA PODOLÓGICA (Neo-Medical Smooth Mint Style)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Paleta Sanitaria Avanzada y Energética */
+    --clinical-teal: #0f766e;        /* Turquesa Clínico Base */
+    --clinical-mint: #0d9488;        /* Menta Vibrante para Interacciones */
+    --clinical-soft-bg: #f0fdfa;    /* Fondo Limpio Menta (Teal 50) */
+    --mint-glow: rgba(13, 148, 136, 0.15);
+    --surface-white: #ffffff;
+    --dark-slate: #1e293b;           /* Contraste de Alta Legibilidad */
+    --text-muted: #64748b;
+    
+    /* Sombras Blandas Complejas */
+    --soft-bubble-shadow: 0 20px 40px -10px rgba(15, 118, 110, 0.06);
+    --hover-bubble-shadow: 0 30px 50px -15px rgba(13, 148, 136, 0.18);
+    --border-clinical-color: rgba(15, 118, 110, 0.05);
+    
+    /* Sistema de Transiciones Reactivas */
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.28);
+}
+
+body {
+    background-color: #fafcfb;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #334155;
+    overflow-x: hidden;
+}
+
+/* Identidades y Tipografía Esculpida */
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-teal { color: var(--clinical-teal); }
+.bg-teal { background: linear-gradient(135deg, var(--clinical-teal) 0%, var(--clinical-mint) 100%); }
+.bg-clinical-soft { background-color: var(--clinical-soft-bg); }
+
+/* Distintivos Dinámicos (Pill Badges) */
+.badge-clinical {
+    border: 2px dashed rgba(15, 118, 110, 0.25);
+    color: var(--clinical-teal);
+    background-color: var(--clinical-soft-bg);
+    padding: 0.6rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 30px;
+    transition: var(--motion-smooth);
+}
+
+.clinical-line {
+    width: 50px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--clinical-teal) 0%, var(--clinical-mint) 100%);
+    border-radius: 20px;
+}
+
+/* Topbar Sanitaria de Alta Fidelidad */
+.clinical-topbar {
+    background: linear-gradient(90deg, var(--clinical-teal) 0%, #115e59 100%) !important;
+    box-shadow: 0 2px 10px rgba(15, 118, 110, 0.1);
+}
+
+/* ==========================================================================
+   NAVBAR: INTERFAZ FLOTANTE TRANSLÚCIDA
+   ========================================================================== */
+.navbar-clinical {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 2px solid rgba(15, 118, 110, 0.02);
+    transition: var(--motion-smooth);
+}
+
+.navbar-clinical .nav-link {
+    color: #475569 !important;
+    position: relative;
+    padding: 0.5rem 1.1rem !important;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: var(--motion-smooth);
+}
+
+.navbar-clinical .nav-link:hover,
+.navbar-clinical .nav-link.active {
+    color: var(--clinical-teal) !important;
+    background-color: var(--clinical-soft-bg);
+}
+
+/* ==========================================================================
+   HERO / BANNER ORGÁNICO INTERACTIVO
+   ========================================================================== */
+.clinical-hero {
+    background: radial-gradient(circle at 90% 10%, #e6fbf7 0%, #fafcfb 60%);
+    padding-bottom: 70px;
+}
+
+/* Imagen médica suavizada con silueta orgánica fluida */
+.main-clinical-img {
+    border-radius: 40px 80px 40px 80px !important; /* Esquinas asimétricas de vanguardia */
+    box-shadow: 0 35px 70px -20px rgba(15, 118, 110, 0.15) !important;
+    border: 6px solid var(--surface-white);
+    transition: var(--motion-smooth);
+}
+
+.main-clinical-img:hover {
+    transform: scale(1.01) translateY(-4px);
+    border-radius: 60px !important;
+}
+
+/* Tarjeta Flotante Minsal con Ondas de Pulso */
+.floating-clinical-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    min-width: 280px;
+    border-radius: 24px !important;
+    box-shadow: 0 25px 45px -10px rgba(30, 41, 59, 0.08) !important;
+    animation: clinicalFloat 6s ease-in-out infinite;
+}
+
+.clinical-pulse-circle {
+    width: 46px;
+    height: 46px;
+    background: linear-gradient(135deg, var(--clinical-teal) 0%, var(--clinical-mint) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(15, 118, 110, 0.25);
+    position: relative;
+    z-index: 2;
+}
+
+/* Simulación de onda médica dinámica detrás del círculo */
+.clinical-pulse-circle::before {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    background: inherit;
+    border-radius: 50%;
+    z-index: -1;
+    animation: medicalPulse 2.5s infinite;
+}
+
+@keyframes medicalPulse {
+    0% { transform: scale(1); opacity: 0.4; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes clinicalFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(0.5deg); }
+}
+
+/* ==========================================================================
+   TARJETAS DE TRATAMIENTO (Burbujas Reactivas de Alivio)
+   ========================================================================== */
+.clinical-card {
+    background-color: var(--surface-white);
+    border: 2px solid transparent !important;
+    border-radius: 32px !important;
+    box-shadow: var(--soft-bubble-shadow);
+    transition: var(--motion-bounce);
+}
+
+.clinical-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    border-color: rgba(13, 148, 136, 0.2) !important;
+    box-shadow: var(--hover-bubble-shadow) !important;
+}
+
+.clinical-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    background-color: var(--clinical-soft-bg);
+    color: var(--clinical-teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--motion-bounce);
+    box-shadow: inset 0 0 0 1px rgba(15, 118, 110, 0.05);
+}
+
+.clinical-card:hover .clinical-icon {
+    background: linear-gradient(135deg, var(--clinical-teal) 0%, var(--clinical-mint) 100%);
+    color: var(--surface-white);
+    transform: scale(1.1) rotate(4deg);
+    box-shadow: 0 8px 16px var(--mint-glow);
+}
+
+/* ==========================================================================
+   FORMULARIO DE ADMISIÓN & ARANCELES ERGONÓMICOS
+   ========================================================================== */
+#agenda .card {
+    border-radius: 40px !important;
+    border: 2px solid var(--clinical-soft-bg) !important;
+    box-shadow: 0 35px 60px -20px rgba(15, 118, 110, 0.08);
+}
+
+.input-clinical {
+    background-color: #f8fafc !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 16px !important; /* Esquinas suavizadas */
+    padding: 0.9rem 1.3rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--dark-slate) !important;
+    transition: var(--motion-smooth);
+}
+
+.input-clinical::placeholder {
+    color: rgba(30, 41, 59, 0.35);
+}
+
+.input-clinical:focus {
+    background-color: var(--surface-white) !important;
+    border-color: var(--clinical-mint) !important;
+    box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.15) !important;
+}
+
+/* TABLA DE ARANCELES TIPO CÁPSULA */
+.table-responsive {
+    border: 2px solid #e6f5f2 !important;
+    border-radius: 24px !important;
+    box-shadow: var(--soft-bubble-shadow);
+    overflow: hidden;
+}
+
+.table thead {
+    background: linear-gradient(135deg, var(--clinical-teal) 0%, var(--clinical-mint) 100%);
+}
+
+/* ==========================================================================
+   BOTONERÍA DE ALTA CONVERSIÓN & ACORDIONES
+   ========================================================================== */
+.btn-teal {
+    background: linear-gradient(135deg, var(--clinical-teal) 0%, var(--clinical-mint) 100%);
+    color: var(--surface-white) !important;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 10px 25px -5px rgba(15, 118, 110, 0.35);
+    transition: var(--motion-smooth);
+}
+
+.btn-teal:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -4px rgba(13, 148, 136, 0.45);
+}
+
+.btn-outline-teal {
+    border: 2px solid var(--clinical-teal);
+    color: var(--clinical-teal);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+
+.btn-outline-teal:hover {
+    background: linear-gradient(135deg, var(--clinical-teal) 0%, var(--clinical-mint) 100%);
+    color: var(--surface-white) !important;
+    box-shadow: 0 10px 20px var(--mint-glow);
+}
+
+.btn-outline-clinical {
+    border: 1px solid rgba(15, 118, 110, 0.25);
+    color: var(--clinical-teal);
+    transition: var(--motion-smooth);
+}
+
+.btn-outline-clinical:hover {
+    border-color: var(--clinical-mint);
+    color: var(--clinical-mint) !important;
+    background-color: transparent;
+    transform: translateY(-2px);
+}
+
+/* ACORDION DE PREGUNTAS CLÍNICAS (Bubble Style) */
+.clinical-accordion .accordion-item {
+    border: 2px solid #f1f5f9 !important;
+    margin-bottom: 12px;
+    border-radius: 24px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.005);
+    transition: var(--motion-smooth);
+}
+
+.clinical-accordion .accordion-item:hover {
+    border-color: var(--clinical-soft-bg) !important;
+}
+
+.clinical-accordion .accordion-button {
+    background-color: var(--surface-white) !important;
+    color: var(--dark-slate) !important;
+    font-weight: 700;
+    padding: 1.4rem;
+    transition: var(--motion-smooth);
+}
+
+.clinical-accordion .accordion-button::after {
+    filter: sepia(1) saturate(2) hue-rotate(130deg); /* Sincroniza flecha nativa al look turquesa */
+}
+
+.clinical-accordion .accordion-button:not(.collapsed) {
+    background-color: var(--clinical-soft-bg) !important;
+    box-shadow: none;
+    color: var(--clinical-teal) !important;
+}

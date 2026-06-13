@@ -1,0 +1,279 @@
+/* ==========================================================================
+   ESTILOS PREMIUM: PAWS & CLAWS (Creative Playful Bubble & Vibrant Soft)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /* Paleta Pastel Vitaminada y Energética */
+    --teal-main: #0d9488;          /* Turquesa Médico Activo */
+    --teal-light: #e6fbf7;         /* Menta Eléctrico Suave */
+    --coral-main: #f43f5e;         /* Coral Dulce Vibrante */
+    --coral-light: #fff1f2;        /* Rosa Bebé */
+    --purple-main: #8b5cf6;        /* Púrpura Juguetón */
+    --purple-light: #f5f3ff;       /* Lavanda Claro */
+    --dark-text: #1e293b;          /* Gris Pizarra Profundo */
+    --bg-creme: #fafbfc;           /* Fondo Base Orgánico */
+
+    /* Sombras Blandas Volumétricas */
+    --bubble-shadow: 0 20px 40px -10px rgba(13, 148, 136, 0.08);
+    --coral-glow: 0 15px 30px -5px rgba(244, 63, 94, 0.15);
+    
+    /* Dinámicas de Movimiento */
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.28);
+}
+
+body {
+    background-color: var(--bg-creme);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #475569;
+    overflow-x: hidden;
+}
+
+/* Tipografías e Identidades Blandas */
+.font-fredoka { font-family: 'Fredoka', sans-serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-teal { color: var(--teal-main); }
+.text-coral { color: var(--coral-main); }
+.text-purple { color: var(--purple-main); }
+.bg-pet-soft { background-color: #f1f5f9; }
+
+/* Contornos Tipo Píldora Re-diseñados */
+.badge-pet {
+    border: 2px dashed rgba(13, 148, 136, 0.3);
+    color: var(--teal-main);
+    background-color: var(--teal-light);
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+.pet-line {
+    width: 50px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--coral-main) 0%, var(--purple-main) 100%);
+    border-radius: 20px;
+}
+
+/* Topbar Informativa */
+.pet-topbar {
+    background: linear-gradient(90deg, var(--coral-main) 0%, #e11d48 100%);
+    box-shadow: 0 2px 10px rgba(244, 63, 94, 0.2);
+}
+
+/* ==========================================================================
+   NAVBAR: ESTILO FLOTANTE "SOFT GLASS"
+   ========================================================================== */
+.navbar-pet {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 2px solid rgba(13, 148, 136, 0.03);
+    transition: var(--motion-smooth);
+}
+
+.navbar-pet .nav-link {
+    color: #475569 !important;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: var(--motion-smooth);
+}
+
+.navbar-pet .nav-link:hover,
+.navbar-pet .nav-link.active {
+    color: var(--teal-main) !important;
+    background-color: var(--teal-light);
+}
+
+/* ==========================================================================
+   HERO / COMPOSICIÓN DINÁMICA DE MASCOTAS
+   ========================================================================== */
+.pet-hero {
+    background: radial-gradient(circle at 90% 10%, var(--teal-light) 0%, var(--bg-creme) 60%);
+    padding-bottom: 70px;
+}
+
+/* Marco asimétrico orgánico imitando una burbuja fluida */
+.main-pet-img {
+    border-radius: 60% 40% 40% 60% / 50% 60% 40% 50% !important;
+    box-shadow: 0 30px 60px -20px rgba(13, 148, 136, 0.15) !important;
+    border: 6px solid #ffffff;
+    transition: var(--motion-smooth);
+}
+
+.main-pet-img:hover {
+    transform: scale(1.02) rotate(1deg);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% !important;
+}
+
+/* Widget Clínico Flotante Exclusivo */
+.floating-pet-card {
+    position: absolute;
+    bottom: 20px;
+    left: -10px;
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    min-width: 270px;
+    border-radius: 24px !important;
+    box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.08) !important;
+    animation: petFloat 6s ease-in-out infinite;
+}
+
+.icon-circle-pet {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(13, 148, 136, 0.15);
+}
+
+@keyframes petFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(-0.5deg); }
+}
+
+/* ==========================================================================
+   TARJETAS DE SERVICIO (Burbujas Interactivas)
+   ========================================================================== */
+.pet-card {
+    background-color: #ffffff;
+    border: 2px solid transparent !important;
+    border-radius: 32px !important;
+    box-shadow: var(--bubble-shadow);
+    transition: var(--motion-bounce);
+}
+
+.pet-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 30px 50px -15px rgba(13, 148, 136, 0.12) !important;
+}
+
+/* Colores de bordes dinámicos condicionales al hacer hover */
+.col-md-6:nth-child(1) .pet-card:hover { border-color: var(--teal-main) !important; }
+.col-md-6:nth-child(2) .pet-card:hover { border-color: var(--coral-main) !important; }
+.col-md-6:nth-child(3) .pet-card:hover { border-color: var(--purple-main) !important; }
+
+.pet-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--motion-bounce);
+}
+
+.pet-card:hover .pet-icon {
+    transform: scale(1.1) rotate(4deg);
+}
+
+.bg-teal-soft { background-color: var(--teal-light); }
+.bg-coral-soft { background-color: var(--coral-light); }
+.bg-purple-soft { background-color: var(--purple-light); }
+
+/* ==========================================================================
+   FORMULARIO E INPUTS SOFT-SHAPE
+   ========================================================================== */
+#historial .card {
+    border-radius: 40px !important;
+    border: 2px solid var(--teal-light) !important;
+    box-shadow: 0 30px 60px -20px rgba(13, 148, 136, 0.1);
+}
+
+.input-pet {
+    background-color: #f8fafc !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
+    transition: var(--motion-smooth);
+}
+
+.input-pet:focus {
+    background-color: #ffffff !important;
+    border-color: var(--teal-main) !important;
+    box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.15) !important;
+}
+
+/* ==========================================================================
+   BOTONERÍA ERGONÓMICA VIBRANTE
+   ========================================================================== */
+.btn-teal {
+    background: linear-gradient(135deg, var(--teal-main) 0%, #0f766e 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 10px 20px -5px rgba(13, 148, 136, 0.3);
+    transition: var(--motion-smooth);
+}
+
+.btn-teal:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px -4px rgba(13, 148, 136, 0.4);
+}
+
+.btn-outline-teal {
+    border: 2px solid var(--teal-main);
+    color: var(--teal-main);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+
+.btn-outline-teal:hover {
+    background: linear-gradient(135deg, var(--teal-main) 0%, #0f766e 100%);
+    color: #ffffff !important;
+    box-shadow: 0 8px 20px rgba(13, 148, 136, 0.2);
+}
+
+.btn-outline-coral {
+    border: 2px solid var(--coral-main);
+    color: var(--coral-main);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+
+.btn-outline-coral:hover {
+    background-color: var(--coral-main);
+    color: #ffffff !important;
+    box-shadow: var(--coral-glow);
+    transform: translateY(-2px);
+}
+
+/* ACORDION MÉDICO RE-DISEÑADO (Bubble Items) */
+.pet-accordion .accordion-item {
+    border: 2px solid #f1f5f9 !important;
+    margin-bottom: 12px;
+    border-radius: 24px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    transition: var(--motion-smooth);
+}
+
+.pet-accordion .accordion-item:hover {
+    border-color: var(--teal-light) !important;
+}
+
+.pet-accordion .accordion-button {
+    background-color: #ffffff !important;
+    color: var(--dark-text) !important;
+    font-weight: 700;
+    padding: 1.4rem;
+    transition: var(--motion-smooth);
+}
+
+.pet-accordion .accordion-button::after {
+    filter: sepia(1) saturate(2) hue-rotate(140deg); /* Fuerza la flecha nativa a tono turquesa */
+}
+
+.pet-accordion .accordion-button:not(.collapsed) {
+    background-color: var(--teal-light) !important;
+    box-shadow: none;
+    color: var(--teal-main) !important;
+}

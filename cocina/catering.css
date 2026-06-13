@@ -1,0 +1,214 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: CATERING ARTISANAL (Rustic Gourmet & Warm Cream Style)
+   ========================================================================== */
+
+:root {
+    --catering-cream: #fdfbf7;      /* Fondo Base Lino Suave */
+    --catering-soft-bg: #f5f1e9;    /* Capa Crema Tostada */
+    --terracota-main: #c85a32;      /* Terracota Orgánico */
+    --terracota-hover: #b04925;
+    --slate-text-dark: #292524;     /* Grafito de Alta Lectura WCAG AA */
+    --slate-text-muted: #57534e;    /* Gris Tierra para Descripciones */
+    
+    /* Efectos de Sombras Blandas */
+    --terracota-glow: 0 10px 25px -5px rgba(200, 90, 50, 0.25);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--catering-cream);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--slate-text-dark);
+}
+
+/* Tipografías e Identidad Orgánica */
+.font-playfair { font-family: 'Playfair Display', serif; letter-spacing: 0.1px; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-slate { color: var(--slate-text-dark) !important; }
+.text-slate-muted { color: var(--slate-text-muted) !important; }
+.text-terracota { color: var(--terracota-main) !important; }
+.bg-catering-soft { background-color: var(--catering-soft-bg); }
+.font-xs { font-size: 0.76rem; }
+
+/* Adornos de Línea Rústicos */
+.badge-catering {
+    border: 1px solid var(--terracota-main);
+    color: var(--terracota-main);
+    background-color: rgba(200, 90, 50, 0.04);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.catering-line {
+    width: 40px;
+    height: 3px;
+    background-color: var(--terracota-main);
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(200, 90, 50, 0.15);
+}
+
+/* Topbar Superior de Trazabilidad */
+.catering-topbar {
+    background-color: #1c1917;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar overrides Gourmet */
+.navbar-catering {
+    background-color: rgba(253, 251, 247, 0.96) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+}
+.navbar-catering .nav-link {
+    color: var(--slate-text-dark) !important;
+    font-weight: 600;
+    transition: var(--motion-smooth);
+}
+.navbar-catering .nav-link:hover {
+    color: var(--terracota-main) !important;
+}
+
+/* Composición de Imagen Principal Platos */
+.main-catering-img {
+    border-radius: 24px !important;
+    box-shadow: 0 30px 60px -15px rgba(41, 37, 36, 0.15) !important;
+    transition: var(--motion-smooth);
+    border: 6px solid #ffffff;
+}
+.main-catering-img:hover {
+    transform: scale(1.01);
+}
+
+/* Vidrios Esmerilados Claros (Soft Glassmorphism) */
+.bg-glass {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Card Flotante del Despacho */
+.floating-catering-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    min-width: 270px;
+    animation: cateringFloat 5s ease-in-out infinite;
+}
+
+.catering-pulse-circle {
+    width: 44px;
+    height: 44px;
+    background-color: var(--terracota-main);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--terracota-glow);
+}
+
+@keyframes cateringFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Tarjetas de Especialidades Gourmet */
+.catering-card {
+    transition: var(--motion-bounce);
+    border: 1px solid rgba(0, 0, 0, 0.02) !important;
+    box-shadow: 0 15px 35px -5px rgba(41, 37, 36, 0.03);
+}
+.catering-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -10px rgba(41, 37, 36, 0.08), var(--terracota-glow) !important;
+}
+
+.catering-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: var(--catering-soft-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Campos de Formulario Redondos (Inputs) */
+.catering-input {
+    background-color: #f5f1e9 !important;
+    border: 2px solid transparent !important;
+    padding: 0.85rem 1.4rem;
+    font-size: 0.95rem;
+    color: var(--slate-text-dark) !important;
+}
+.catering-input:focus {
+    background-color: #ffffff !important;
+    border-color: var(--terracota-main) !important;
+    box-shadow: 0 0 0 4px rgba(200, 90, 50, 0.15) !important;
+}
+
+/* Botonería Terracota */
+.btn-terracota {
+    background-color: var(--terracota-main);
+    border: none;
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-terracota:hover {
+    background-color: var(--terracota-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--terracota-glow);
+}
+.shadow-terracota { box-shadow: var(--terracota-glow); }
+
+.btn-outline-catering {
+    border: 2px solid var(--slate-text-dark);
+    color: var(--slate-text-dark);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-outline-catering:hover {
+    background-color: var(--slate-text-dark);
+    color: #ffffff !important;
+}
+
+.btn-outline-catering-hero {
+    border: 2px solid rgba(41, 37, 36, 0.15);
+    color: var(--slate-text-dark);
+    font-weight: 600;
+    transition: var(--motion-smooth);
+}
+.btn-outline-catering-hero:hover {
+    border-color: var(--slate-text-dark);
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* Tablas Administrativas Gourmet overrides */
+.table-responsive {
+    border-color: rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 40px -15px rgba(41, 37, 36, 0.04);
+}
+.bg-surface { background-color: #ffffff; }
+.bg-surface-dark { background-color: #292524; }
+.table-dark th { background-color: #292524 !important; color: #ffffff !important; }
+
+/* Tarjetas de Plan de Minutas Semanales */
+.catering-plan-card {
+    transition: var(--motion-smooth);
+}
+.catering-plan-card.active {
+    border-color: var(--terracota-main) !important;
+    box-shadow: var(--terracota-glow) !important;
+    background-color: rgba(200, 90, 50, 0.01) !important;
+}
+
+/* Footer Corporativo Slate Profundo */
+footer.bg-slate {
+    background-color: #1c1917 !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+}

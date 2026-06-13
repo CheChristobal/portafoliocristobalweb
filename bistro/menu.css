@@ -1,0 +1,159 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: RAÍCES BISTRÓ (Warm Terracotta Culinary Style)
+   ========================================================================== */
+
+:root {
+    --bistro-dark: #1e1e24;         /* Grafito Carbono */
+    --terracotta-main: #cc6644;     /* Arcilla Terracota */
+    --terracotta-hover: #b35536;
+    --terracotta-glow: rgba(204, 102, 68, 0.15);
+    --bistro-cream: #faf6f0;        /* Crema / Lino Suave */
+    --border-light: rgba(204, 102, 68, 0.08);
+    
+    /* Dinámicas de Movimiento */
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #43403c;
+}
+
+/* Tipografías e Identidades */
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-terracotta { color: var(--terracotta-main); }
+.bg-bistro-soft { background-color: var(--bistro-cream); }
+.bg-bistro { background: linear-gradient(135deg, var(--terracotta-main) 0%, #b35536 100%); }
+.font-xs { font-size: 0.75rem; }
+
+/* Contornos y Distintivos Tipo Píldora */
+.badge-bistro {
+    border: 1px solid var(--terracotta-main);
+    color: var(--terracotta-main);
+    background-color: rgba(204, 102, 68, 0.04);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.bg-allergen {
+    background-color: #f1ede4;
+    color: #5c5651;
+    font-weight: 500;
+}
+
+.bistro-line {
+    width: 45px;
+    height: 3px;
+    background-color: var(--terracotta-main);
+    border-radius: 10px;
+}
+
+/* Topbar Bistro */
+.bistro-topbar {
+    background-color: var(--bistro-dark);
+}
+
+/* Navbar links */
+.navbar-bistro .nav-link {
+    color: #4a4540 !important;
+    transition: var(--motion-smooth);
+}
+.navbar-bistro .nav-link:hover {
+    color: var(--terracotta-main) !important;
+}
+.navbar-bistro .badge {
+    background-color: var(--terracotta-main) !important;
+    color: #ffffff !important;
+}
+
+/* Hero Section */
+.bistro-hero {
+    background: radial-gradient(circle at 100% 0%, #fbf3eb 0%, #ffffff 65%);
+}
+
+.main-bistro-img {
+    border-radius: 40px !important;
+    box-shadow: 0 35px 70px -15px rgba(204, 102, 68, 0.15) !important;
+    border: 4px solid #ffffff;
+    transition: var(--motion-smooth);
+}
+.main-bistro-img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 45px 80px -10px rgba(204, 102, 68, 0.2) !important;
+}
+
+/* Botones de Filtrado de la Carta */
+.btn-bistro-filter {
+    background-color: #ffffff;
+    color: #5c5651;
+    border: 1px solid #e1dad0;
+    transition: var(--motion-smooth);
+}
+.btn-bistro-filter:hover,
+.btn-bistro-filter.active {
+    background-color: var(--bistro-dark);
+    color: #ffffff !important;
+    border-color: var(--bistro-dark);
+}
+
+/* Tarjetas de los Platos de la Carta */
+.bistro-menu-card {
+    border: 1px solid rgba(204, 102, 68, 0.04) !important;
+    transition: var(--motion-bounce);
+}
+.bistro-menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -10px rgba(204, 102, 68, 0.08) !important;
+    border-color: rgba(204, 102, 68, 0.15) !important;
+}
+
+/* Formulario e Inputs Ergonómicos */
+.input-bistro {
+    background-color: #ffffff !important;
+    border: 2px solid #e1dad0 !important;
+    padding: 0.85rem 1.1rem;
+    font-size: 0.95rem;
+    color: var(--bistro-dark) !important;
+}
+.input-bistro:focus {
+    border-color: var(--terracotta-main) !important;
+    box-shadow: 0 0 0 4px var(--terracotta-glow) !important;
+}
+
+/* Botonería Culinaria */
+.btn-bistro {
+    background: linear-gradient(135deg, var(--terracotta-main) 0%, #b35536 100%);
+    border: none;
+    transition: var(--motion-smooth);
+}
+.btn-bistro:hover {
+    filter: brightness(1.04);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -4px var(--terracotta-glow);
+}
+.shadow-bistro { box-shadow: 0 10px 25px -5px var(--terracotta-glow); }
+
+.btn-outline-bistro {
+    border: 2px solid var(--terracotta-main);
+    color: var(--terracotta-main);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-outline-bistro:hover {
+    background-color: var(--terracotta-main);
+    color: #ffffff !important;
+}
+
+.btn-outline-bistro-hero {
+    border: 1px solid rgba(204, 102, 68, 0.25);
+    color: var(--bistro-dark);
+    transition: var(--motion-smooth);
+}
+.btn-outline-bistro-hero:hover {
+    border-color: var(--bistro-dark);
+    background-color: rgba(0, 0, 0, 0.02);
+}

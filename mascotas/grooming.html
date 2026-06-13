@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws &amp; Glow | Grooming Canino Pro &amp; Spa Veterinario</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="grooming.css">
+</head>
+<body>
+
+    <!-- Topbar de Seguridad Sanitaria -->
+    <div class="groom-topbar py-2 text-center text-uppercase font-jakarta fw-semibold">
+        <div class="container small tracking-wide" style="font-size: 0.72rem;">
+            <i class="bi bi-heart-pulse-fill text-coral me-2"></i> Instalaciones sanitizadas bajo estándares médico-veterinarios • Estética libre de estrés
+        </div>
+    </div>
+
+    <!-- Navbar Playful Soft -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3 navbar-groom">
+        <div class="container">
+            <a class="navbar-brand fw-bold font-fredoka tracking-tight fs-3 text-slate" href="#">
+                PAWS &amp; <span class="text-coral">GLOW</span>
+            </a>
+            <button class="navbar-toggler border-0 text-slate" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGroom">
+                <i class="bi bi-grid-fill fs-3"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarGroom">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta small tracking-wide fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#tratamientos">Tratamientos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planes">Planes por Peso</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#protocolos">Protocolos Clínicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comunidad">Mascotas Felices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ficha">Ficha de Ingreso</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-groom btn-sm px-4 rounded-pill font-xs">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada de Confianza y Ternura -->
+    <header class="groom-hero d-flex align-items-center position-relative py-5 overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-groom mb-3 text-uppercase font-jakarta rounded-pill">Professional Pet Styling</span>
+                    <h1 class="display-4 font-fredoka text-slate fw-bold mb-3 lh-tight">Cuidado integral <br>que hace <span class="text-coral">mover su colita</span>.</h1>
+                    <p class="lead font-jakarta text-slate-muted mb-4 fw-normal lh-lg fs-5">No es solo un corte de pelo. Brindamos una experiencia terapéutica de spa canino con baños de agua temperada, secado acústico silencioso, corte según estándar de raza y masajes de relajación muscular.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#ficha" class="btn btn-coral font-jakarta px-4 py-3 text-uppercase tracking-wider fw-bold text-white rounded-pill shadow-coral">Reservar Cita</a>
+                        <a href="#planes" class="btn btn-outline-groom-hero font-jakarta px-4 py-3 text-uppercase tracking-wider fw-semibold rounded-pill">Ver Tarifas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80" alt="Peluquería canina pro" class="img-fluid main-groom-img shadow-lg">
+                        <!-- Widget Flotante de Confort -->
+                        <div class="floating-groom-card p-3 rounded-4 bg-glass shadow-lg d-flex align-items-center gap-3 border border-white">
+                            <div class="groom-pulse-circle"><i class="bi bi-scissors text-white fs-5"></i></div>
+                            <div class="text-start font-jakarta">
+                                <h6 class="fw-bold text-slate mb-0">Corte &amp; Drenaje</h6>
+                                <small class="text-coral font-mono fw-bold">Libre de Ansiedad</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Módulo de Tratamientos Especializados (6 Bloques) -->
+    <section id="tratamientos" class="py-5 bg-groom-soft border-top border-bottom border-light">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-coral text-uppercase tracking-widest small fw-bold d-block mb-2">Estética Saludable</span>
+                <h2 class="font-fredoka text-slate fs-2">Servicios Especializados de Spa</h2>
+                <div class="groom-line mx-auto my-3"></div>
+            </div>
+
+            <div class="row g-4 font-jakarta">
+                <!-- Bloque 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 groom-card p-4 rounded-4 bg-white">
+                        <div class="groom-card-icon text-coral mb-3"><i class="bi bi-droplet-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-slate font-fredoka">Baño Dermoprotector</h4>
+                        <p class="text-slate-muted small mb-0 lh-lg">Utilizamos champús hipoalergénicos con pH balanceado específico para la dermis canina. Incluye limpieza de glándulas anales y oídos de forma segura.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 groom-card p-4 rounded-4 bg-white">
+                        <div class="groom-card-icon text-coral mb-3"><i class="bi bi-scissors fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-slate font-fredoka">Corte Estándar de Raza</h4>
+                        <p class="text-slate-muted small mb-0 lh-lg">Modelado de manto con tijera y máquinas de alta gama por estilistas certificados. Acabados impecables respetando la anatomía y necesidades de ventilación del pelaje.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 groom-card p-4 rounded-4 bg-white">
+                        <div class="groom-card-icon text-coral mb-3"><i class="bi bi-shield-plus fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-slate font-fredoka">Desparasitación Tópica</h4>
+                        <p class="text-slate-muted small mb-0 lh-lg">Aplicación preventiva o correctiva de baños sanitarios contra pulgas y garrapatas utilizando compuestos médicos veterinarios certificados que resguardan su salud.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 groom-card p-4 rounded-4 bg-white">
+                        <div class="groom-card-icon text-coral mb-3"><i class="bi bi-activity fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-slate font-fredoka">Corte de Uñas &amp; Limado</h4>
+                        <p class="text-slate-muted small mb-0 lh-lg">Desbaste técnico de esppolones y uñas con herramientas de tope de seguridad para evitar vasos sanguíneos, seguido de un limado suavizante.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 groom-card p-4 rounded-4 bg-white">
+                        <div class="groom-card-icon text-coral mb-3"><i class="bi bi-stars fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-slate font-fredoka">Desenredado &amp; Deslanado</h4>
+                        <p class="text-slate-muted small mb-0 lh-lg">Remoción profesional del subpelo muerto acumulado, previniendo nudos dolorosos y mejorando drásticamente la transpiración natural de la piel.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 groom-card p-4 rounded-4 bg-white">
+                        <div class="groom-card-icon text-coral mb-3"><i class="bi bi-sparkles fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-slate font-fredoka">Sesión Hidromasaje</h4>
+                        <p class="text-slate-muted small mb-0 lh-lg">Circuito de ozonoterapia en tina de burbujas temperadas para relajar tensiones musculares, ideal para perritos senior o de alta carga ansiosa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifas por Segmento de Peso de la Mascota -->
+    <section id="planes" class="py-5 bg-white border-bottom">
+        <div class="container py-4" style="max-width: 850px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-coral text-uppercase tracking-widest small fw-bold d-block mb-2">Estructura de Valores</span>
+                <h2 class="font-fredoka text-slate fs-2">Aranceles según Envergadura</h2>
+                <div class="groom-line mx-auto my-3"></div>
+            </div>
+            
+            <div class="row g-4 font-jakarta text-slate justify-content-center">
+                <!-- Pequeño -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-light border border-light-subtle text-center h-100 d-flex flex-column justify-content-between rounded-4 groom-plan-card">
+                        <div>
+                            <h5 class="fw-bold font-fredoka text-slate mb-1">Raza Pequeña</h5>
+                            <p class="text-slate-muted font-xs mb-3">Hasta 10 kg (Poodle, Yorkie)</p>
+                        </div>
+                        <div class="border-top border-light-subtle pt-3 mt-3">
+                            <span class="text-slate-muted d-block small mb-1">Baño + Corte Completo</span>
+                            <h4 class="text-coral font-fredoka fw-bold mb-0">$16.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mediano -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-light border border-coral text-center h-100 d-flex flex-column justify-content-between rounded-4 position-relative groom-plan-card active">
+                        <span class="position-absolute top-0 start-50 translate-middle badge bg-coral text-white text-uppercase font-xs fw-bold rounded-pill">Más Solicitado</span>
+                        <div>
+                            <h5 class="fw-bold font-fredoka text-slate mb-1 mt-2">Raza Mediana</h5>
+                            <p class="text-slate-muted font-xs mb-3">11 a 22 kg (Cocker, Frenchie)</p>
+                        </div>
+                        <div class="border-top border-light-subtle pt-3 mt-3">
+                            <span class="text-slate-muted d-block small mb-1">Baño + Corte Completo</span>
+                            <h4 class="text-coral font-fredoka fw-bold mb-0">$22.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grande -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-light border border-light-subtle text-center h-100 d-flex flex-column justify-content-between rounded-4 groom-plan-card">
+                        <div>
+                            <h5 class="fw-bold font-fredoka text-slate mb-1">Raza Grande</h5>
+                            <p class="text-slate-muted font-xs mb-3">Más de 23 kg (Golden, Pastor)</p>
+                        </div>
+                        <div class="border-top border-light-subtle pt-3 mt-3">
+                            <span class="text-slate-muted d-block small mb-1">Baño + Corte Completo</span>
+                            <h4 class="text-coral font-fredoka fw-bold mb-0">$28.000</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla de Protocolos Clínicos Sanitarios -->
+    <section id="protocolos" class="py-5 bg-groom-soft border-bottom text-slate">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-coral text-uppercase tracking-widest small fw-bold d-block mb-2">Rigor y Bioseguridad</span>
+                <h2 class="font-fredoka text-slate">Protocolo de Admisión e Higiene</h2>
+                <div class="groom-line mx-auto my-3"></div>
+            </div>
+            <div class="table-responsive border border-light-subtle rounded-4 overflow-hidden bg-white font-jakarta">
+                <table class="table align-middle mb-0 small text-start">
+                    <thead class="bg-slate text-white font-jakarta">
+                        <tr>
+                            <th class="p-3 fs-6">Dimensión Controlada</th>
+                            <th class="p-3 fs-6 text-center">Frecuencia / Proceso</th>
+                            <th class="p-3 fs-6 text-center">Estándar Clínico Aplicado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-muted">
+                        <tr>
+                            <td class="p-3 fw-bold text-slate">Esterilización de Herramientas</td>
+                            <td class="p-3 text-center">Post-Servicio Inmediato</td>
+                            <td class="p-3 text-center text-coral fw-bold">Autoclave de calor seco y spray germicida de grado médico</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-slate">Validación de Vacunas</td>
+                            <td class="p-3 text-center">Ingreso Inicial</td>
+                            <td class="p-3 text-center text-slate fw-bold">Carnet sanitario al día (Sextuple/Antirrábica obligatoria)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-slate">Desinfección de Bañeras y Caniles</td>
+                            <td class="p-3 text-center">Cada 45 Minutos</td>
+                            <td class="p-3 text-center text-slate fw-bold">Lavado con amonio cuaternario de quinta generación</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios de la Comunidad -->
+    <section id="comunidad" class="py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-coral text-uppercase tracking-widest small fw-bold d-block mb-2">Familias Felices</span>
+                <h2 class="font-fredoka text-slate">Testimonios de la Manada</h2>
+                <div class="groom-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta text-start justify-content-center">
+                <div class="col-md-5">
+                    <div class="p-4 bg-light rounded-4 border border-light-subtle h-100 d-flex flex-column justify-content-between">
+                        <p class="text-slate-muted small fst-italic lh-lg">"Llevé a mi Poodle hiperactivo que siempre salía temblando de las peluquerías tradicionales. En Paws & Glow el trato fue increíble; tienen secadores silenciosos y salas vidriadas donde pude ver todo el proceso de corte con tijera. Salió feliz y oliendo exquisito."</p>
+                        <div class="small fw-bold text-slate mt-3 border-top border-light-subtle pt-2">Cristóbal Echeverría <span class="fw-light text-coral d-block font-mono" style="font-size: 0.72rem;">Propietario de "Toby" (Poodle)</span></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 bg-light rounded-4 border border-light-subtle h-100 d-flex flex-column justify-content-between">
+                        <p class="text-slate-muted small fst-italic lh-lg">"Tengo un Golden Retriever que suleta muchísimo pelo por el cambio de estación. El servicio estático de deslanado profundo redujo la caída de pelaje en la casa de forma total. El personal técnico es muy cariñoso y riguroso con los caniles de espera."</p>
+                        <div class="small fw-bold text-slate mt-3 border-top border-light-subtle pt-2">Patricia Carvajal <span class="fw-light text-coral d-block font-mono" style="font-size: 0.72rem;">Propietario de "Luna" (Golden)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Squeeze: Ficha de Ingreso Estática -->
+    <section id="ficha" class="py-5 bg-groom-soft">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-white rounded-5 border border-light-subtle shadow-sm">
+                <div class="text-center mb-4">
+                    <h2 class="font-fredoka text-slate fs-3">Ficha de Pre-Ingreso al Spa</h2>
+                    <p class="font-jakarta text-slate-muted small mt-2">Registra las especificaciones biológicas de tu mascota. El sistema tabulará las variables del peso y condiciones dermatológicas para asignarte un bloque exclusivo con el estilista idóneo.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Ficha de pre-ingreso canina enviada correctamente. El equipo de Paws & Glow confirmará el bloque de spa asignado vía telefónica en menos de 2 horas.');">
+                    <div class="row g-3 font-jakarta fw-semibold text-slate text-start">
+                        <div class="col-md-6">
+                            <label class="form-label text-coral small text-uppercase">Nombre de la Mascota</label>
+                            <input type="text" class="form-control rounded-pill groom-input" placeholder="Ej: Toby" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-coral small text-uppercase">Raza / Tipo de Manto</label>
+                            <input type="text" class="form-control rounded-pill groom-input" placeholder="Ej: Poodle / Pelo Crespo" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-coral small text-uppercase">Rango de Peso Estimado</label>
+                            <select class="form-select rounded-pill groom-input" required>
+                                <option value="" selected disabled>Selecciona envergadura...</option>
+                                <option>Raza Pequeña (Menos de 10 kg)</option>
+                                <option>Raza Mediana (11 a 22 kg)</option>
+                                <option>Raza Grande / Gigante (Más de 23 kg)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-coral small text-uppercase">Correo de Contacto del Tutor</label>
+                            <input type="email" class="form-control rounded-pill groom-input" placeholder="tutor@hexa.cl" required>
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-coral w-100 py-3 text-uppercase tracking-wider font-fredoka text-white rounded-pill shadow-coral">Enviar Registro de Reserva</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Emprendimiento canino -->
+    <footer class="bg-slate text-white-50 py-5 font-jakarta border-top border-light">
+        <div class="container">
+            <div class="row g-4 text-start mb-4">
+                <div class="col-md-8">
+                    <h5 class="font-fredoka text-white tracking-wide mb-3">PAWS &amp; GLOW PET SPA</h5>
+                    <p class="small text-slate-muted lh-lg mb-0">Paws &amp; Glow es una plataforma de simulación estática para centros de acondicionamiento y peluquería canina independiente. Los precios, tablas microbiológicas y fichas técnicas forman parte de una demostración de portafolio web UI front-end profesional.</p>
+                </div>
+                <div class="col-md-4 text-md-end d-flex flex-column justify-content-center">
+                    <a href="../index.html" class="text-white text-decoration-none font-jakarta fw-bold small"><i class="bi bi-arrow-left me-1"></i> Volver a Panel Principal</a>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25">
+            <p class="mb-0 small text-center">&copy; 2026 Paws &amp; Glow Chile. Maquetación fluida y accesible orientada a pequeños emprendimientos comerciales.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

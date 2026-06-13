@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shave Club | Barbería de Autor &amp; Cuidado Masculino Premium</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="shave.css">
+</head>
+<body>
+
+    <!-- Topbar Superior de Protocolos de Reserva -->
+    <div class="shave-topbar py-2 text-center text-uppercase font-jakarta fw-semibold">
+        <div class="container small tracking-widest" style="font-size: 0.7rem;">
+            <i class="bi bi-clock-history text-bronze me-2"></i> Atención exclusiva mediante reserva previa • Bloques de 45 minutos por cliente
+        </div>
+    </div>
+
+    <!-- Navbar Estilo Club Privado -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3 navbar-shave">
+        <div class="container">
+            <a class="navbar-brand fw-bold font-cinzel tracking-wide fs-3 text-white" href="#">
+                THE SHAVE <span class="text-bronze">CLUB</span>
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarShave">
+                <i class="bi bi-list fs-2 text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarShave">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta text-uppercase small tracking-wider fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#barberas">Especialistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reserva">Reservar Cita</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-shave btn-sm px-4 font-xs text-white border-secondary">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada Inmersiva de Tradición Urbana -->
+    <header class="shave-hero d-flex align-items-center position-relative py-5 overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-shave mb-3 text-uppercase font-jakarta">Grooming &amp; Razor Heritage</span>
+                    <h1 class="display-4 font-cinzel text-white fw-bold mb-3 lh-tight">Navaja, tijera <br>y <span class="text-bronze-glow">tradición urbana</span>.</h1>
+                    <p class="lead font-jakarta text-muted-slate mb-4 fw-light lh-lg fs-5">Redefinimos el ritual del cuidado masculino combinando técnicas clásicas de barbería con las tendencias urbanas de corte texturizado. Toallas calientes, afeitado tradicional a navaja libre y un ambiente diseñado para desconectarte.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#reserva" class="btn btn-bronze font-jakarta px-4 py-3 text-uppercase tracking-wider fw-bold text-white shadow-bronze">Agendar una Hora</a>
+                        <a href="#servicios" class="btn btn-outline-shave font-jakarta px-4 py-3 text-uppercase tracking-wider fw-semibold text-white">Ver el Menú</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Barbería clásica de autor" class="img-fluid main-shave-img shadow-lg">
+                        <!-- Widget Flotante de Estatus de Espera -->
+                        <div class="floating-shave-card p-3 rounded-0 bg-glass shadow-lg d-flex align-items-center gap-3 border border-secondary">
+                            <div class="shave-pulse-circle"><i class="bi bi-scissors text-white fs-5"></i></div>
+                            <div class="text-start font-jakarta">
+                                <h6 class="fw-bold text-white mb-0">Atención Premium</h6>
+                                <small class="text-bronze font-mono">Corte &amp; Café Cortada Incluido</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Módulo de Menú de Servicios (6 Bloques Estructurados) -->
+    <section id="servicios" class="py-5 bg-shave-dark border-top border-bottom border-secondary-subtle">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-bronze text-uppercase tracking-widest small fw-bold d-block mb-2">The Menu</span>
+                <h2 class="font-cinzel text-white fs-2">Servicios de Corte &amp; Afeitado</h2>
+                <div class="shave-line mx-auto my-3"></div>
+            </div>
+
+            <div class="row g-4 font-jakarta text-white">
+                <!-- Servicio 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 shave-card p-4 rounded-0">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="fw-bold fs-5 text-white font-cinzel mb-0">Corte de Autor</h4>
+                            <span class="text-bronze fw-bold font-mono">$15.000</span>
+                        </div>
+                        <p class="text-muted-slate small mb-0 lh-lg">Asesoría de imagen según tu fisonomía de rostro. Incluye lavado técnico, secado texturizado con productos premium de fijación mate y peinado.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 shave-card p-4 rounded-0">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="fw-bold fs-5 text-white font-cinzel mb-0">Ritual de Barba</h4>
+                            <span class="text-bronze fw-bold font-mono">$12.000</span>
+                        </div>
+                        <p class="text-muted-slate small mb-0 lh-lg">Perfilado técnico con tijera y máquina. Incluye aplicación de aceites esenciales hidratantes, toallas calientes y afeitado de contornos a navaja libre.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 shave-card p-4 rounded-0">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="fw-bold fs-5 text-white font-cinzel mb-0">Combo Club Pro</h4>
+                            <span class="text-bronze fw-bold font-mono">$24.000</span>
+                        </div>
+                        <p class="text-muted-slate small mb-0 lh-lg">La experiencia completa del club. Combina nuestro servicio de Corte de Autor con el Ritual de Barba completo. Optimización de tiempo y acabado impecable.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 shave-card p-4 rounded-0">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="fw-bold fs-5 text-white font-cinzel mb-0">Corte de Barba Simple</h4>
+                            <span class="text-bronze fw-bold font-mono">$8.000</span>
+                        </div>
+                        <p class="text-muted-slate small mb-0 lh-lg">Rebaje de volumen uniforme con trimmer y afeitadora de láminas. Ideal para mantenciones rápidas semanales sin perfilado a navaja.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 shave-card p-4 rounded-0">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="fw-bold fs-5 text-white font-cinzel mb-0">Afeitado Classic</h4>
+                            <span class="text-bronze fw-bold font-mono">$14.000</span>
+                        </div>
+                        <p class="text-muted-slate small mb-0 lh-lg">Afeitado completo al ras emulando el formato tradicional. Doble toalla caliente, espuma densa batida en taza y loción balsámica refrescante post-navaja.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 shave-card p-4 rounded-0">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="fw-bold fs-5 text-white font-cinzel mb-0">Camuflaje de Canas</h4>
+                            <span class="text-bronze fw-bold font-mono">$16.000</span>
+                        </div>
+                        <p class="text-muted-slate small mb-0 lh-lg">Matización sutil y discreta de canas en cabello o barba mediante lociones de pigmentación semipermanente de acabado mate muy natural.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Grilla Estática de Barberos Especialistas -->
+    <section id="barberas" class="py-5 bg-black border-bottom border-secondary-subtle">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-bronze text-uppercase tracking-widest small fw-bold d-block mb-2">Master Barberers</span>
+                <h2 class="font-cinzel text-white fs-2">Especialistas de Turno</h2>
+                <div class="shave-line mx-auto my-3"></div>
+            </div>
+            
+            <div class="row g-4 font-jakarta text-white justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="p-4 bg-glass border border-secondary rounded-0 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <i class="bi bi-person-bounding-box text-bronze display-5 mb-2"></i>
+                        <h5 class="fw-bold font-cinzel text-white mb-1">Marcus Barber</h5>
+                        <small class="text-bronze text-uppercase tracking-wider font-mono d-block small mb-2 fw-bold">Especialista en Navaja</small>
+                        <p class="text-muted-slate font-xs mb-0 fw-light">12 años de trayectoria en el afeitado clásico y manejo experto de contornos tradicionales con toallas calientes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 bg-glass border border-bronze rounded-0 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <i class="bi bi-person-bounding-box text-white display-5 mb-2"></i>
+                        <h5 class="fw-bold font-cinzel text-white mb-1">Alex Fade</h5>
+                        <small class="text-bronze text-uppercase tracking-wider font-mono d-block small mb-2 fw-bold">Experto en Texturizados</small>
+                        <p class="text-muted-slate font-xs mb-0 fw-light">Maestro de las transiciones pulcras, cortes degradados urbanos modernos (skin fades) y asesoría de visagismo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Catálogo de Productos y Pomadas -->
+    <section id="productos" class="py-5 bg-shave-dark border-bottom border-secondary-subtle text-white">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-bronze text-uppercase tracking-widest small fw-bold d-block mb-2">Apothecary &amp; Care</span>
+                <h2 class="font-cinzel fs-3 text-white">Línea de Fijación &amp; Tratamiento</h2>
+                <div class="shave-line mx-auto my-3"></div>
+            </div>
+            <div class="table-responsive border border-secondary rounded-0 bg-surface font-jakarta">
+                <table class="table table-dark align-middle mb-0 small text-start">
+                    <thead class="bg-surface-dark text-white font-jakarta">
+                        <tr>
+                            <th class="p-3 fs-6">Producto / Ungüento</th>
+                            <th class="p-3 fs-6 text-center">Tipo de Fijación</th>
+                            <th class="p-3 fs-6 text-center">Acabado Visual</th>
+                            <th class="p-3 fs-6 text-center">Formato / Peso</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-muted-slate">
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Pomada Matte Clay Extra Hold</td>
+                            <td class="p-3 text-center">Alta / Fuerte</td>
+                            <td class="p-3 text-center text-bronze fw-bold">Opaco Mate Sin Brillo</td>
+                            <td class="p-3 text-center font-mono">100 grs</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Aceite Hidratante Beard Serum</td>
+                            <td class="p-3 text-center">Nutritiva Suave</td>
+                            <td class="p-3 text-center text-white fw-bold">Sutil Brillo Natural</td>
+                            <td class="p-3 text-center font-mono">30 ml</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Tónico Capilar Hair Tonic</td>
+                            <td class="p-3 text-center">Estimulante Ligera</td>
+                            <td class="p-3 text-center text-white fw-bold">Limpio / Confort</td>
+                            <td class="p-3 text-center font-mono">250 ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Squeeze de Reserva Interactiva -->
+    <section id="reserva" class="py-5 bg-black">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-glass text-center rounded-0 border border-secondary shadow-lg">
+                <div class="mb-4">
+                    <h2 class="font-cinzel text-white fs-3">Solicitar Reserva de Sillón</h2>
+                    <p class="font-jakarta text-muted-slate small mt-2">Selecciona el servicio y tu barbero de preferencia. Nuestro sistema estático registrará tu bloque en la agenda exclusiva para garantizar una atención puntual sin filas de espera.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Reserva de sillón ingresada correctamente en el sistema interno de The Shave Club. Te enviaremos un SMS recordatorio con los detalles de tu cita.');">
+                    <div class="row g-3 font-jakarta text-white text-start">
+                        <div class="col-md-6">
+                            <label class="form-label text-bron small fw-bold text-uppercase">Nombre del Cliente</label>
+                            <input type="text" class="form-control rounded-0 shave-input" placeholder="Ej: Cristóbal Echeverría" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-bron small fw-bold text-uppercase">Especialista Requerido</label>
+                            <select class="form-select rounded-0 shave-input" required>
+                                <option value="" selected disabled>Selecciona barbero...</option>
+                                <option>Marcus Barber (Afeitados &amp; Clásicos)</option>
+                                <option>Alex Fade (Degradados &amp; Tendencias)</option>
+                                <option>Cualquier Barbero Disponible</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-bron small fw-bold text-uppercase">Servicio Principal del Menú</label>
+                            <select class="form-select rounded-0 shave-input" required>
+                                <option value="" selected disabled>Selecciona el tratamiento...</option>
+                                <option>Corte de Autor + Lavado Técnico</option>
+                                <option>Ritual de Barba a Navaja y Toalla Caliente</option>
+                                <option>Combo Club Pro (Corte + Barba Full)</option>
+                                <option>Camuflaje de Canas Mate</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-bron small fw-bold text-uppercase">Teléfono de Contacto (SMS de Respaldo)</label>
+                            <input type="tel" class="form-control rounded-0 shave-input" placeholder="+56 9 1234 5678" required>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-bronze w-100 py-3 text-uppercase tracking-wider fw-bold text-white rounded-0 shadow-bronze">Confirmar Reserva en la Agenda</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Club de Autor -->
+    <footer class="bg-deep-dark text-white-50 py-5 font-jakarta border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row g-4 text-start mb-4">
+                <div class="col-md-8">
+                    <h5 class="font-cinzel text-white fs-5 mb-3">THE SHAVE CLUB AUTOMOTIVE</h5>
+                    <p class="small text-muted-slate lh-lg mb-0">The Shave Club es un espacio estático independiente de simulación para el cuidado de estética masculina. Los precios, especialistas de turno y sistemas de agenda forman parte de una maqueta avanzada para demostración de arquitectura UI y portafolio front-end profesional.</p>
+                </div>
+                <div class="col-md-4 text-md-end d-flex flex-column justify-content-center">
+                    <a href="../index.html" class="text-white text-decoration-none font-jakarta fw-bold small"><i class="bi bi-arrow-left me-1"></i> Volver a Panel Principal</a>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25">
+            <p class="mb-0 small text-center">&copy; 2026 The Shave Club Studio. Prototipo estático de alta fidelidad construido bajo entornos responsivos.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

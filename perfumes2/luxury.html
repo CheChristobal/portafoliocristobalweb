@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Luxury | Alta Perfumería & Fragancias de Colección</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="luxury.css">
+</head>
+<body>
+
+    <!-- Topbar Editorial sutil -->
+    <div class="luxury-topbar py-2 text-center text-uppercase font-jakarta tracking-widest fw-light text-white bg-dark">
+        <div class="container small" style="font-size: 0.7rem;">
+            Envío de cortesía y empaque de regalo en compras superiores a $150.000
+        </div>
+    </div>
+
+    <!-- Navbar de Alta Gama -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white py-3 border-bottom border-light">
+        <div class="container">
+            <a class="navbar-brand font-cormorant fw-bold text-dark fs-2 tracking-wide" href="#">
+                MAISON <span class="fw-light text-muted">LUXURY</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLuxury">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarLuxury">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta text-uppercase small tracking-widest fw-normal">
+                    <li class="nav-item"><a class="nav-link" href="#manifiesto">Manifiesto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#coleccion">Colección</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ritual">Discovery Set</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reseñas">Críticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exclusivo">Club Privé</a></li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link position-relative pe-2" href="#" onclick="event.preventDefault(); alert('Simulación: Abriendo bolsa de compras de alta gama...');">
+                            <i class="bi bi-bag fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-white font-mono" style="font-size: 0.6rem; padding: 0.25rem 0.4rem;">2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-dark btn-sm rounded-0 px-4 font-jakarta font-xs">Salir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada de Revista de Alta Costura -->
+    <header class="luxury-hero d-flex align-items-center position-relative py-5">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="text-uppercase font-jakarta text-muted tracking-widest d-block mb-3 small" style="font-size: 0.75rem;">Haute Parfumerie</span>
+                    <h1 class="display-3 font-cormorant text-dark fw-normal mb-3">La firma invisible <br>de tu <span class="fst-italic text-secondary">presencia</span>.</h1>
+                    <p class="lead font-jakarta text-muted mb-4 fw-light lh-lg fs-5">Fragancias de nicho elaboradas artesanalmente con esencias puras extraídas en Grasse, Francia. Una oda a la atemporalidad, el misterio y la opulencia sensorial.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#coleccion" class="btn btn-dark-luxury font-jakarta px-4 py-3 text-uppercase tracking-widest rounded-0">Explorar Extractos</a>
+                        <a href="#exclusivo" class="btn btn-outline-dark-luxury font-jakarta px-4 py-3 text-uppercase tracking-widest rounded-0">Membresía Privé</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=500&q=80" alt="Frasco de Perfume de Alta Gama" class="img-fluid rounded-0 shadow-lg main-perfume-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NUEVA SECCIÓN: Manifiesto de Marca Editorial -->
+    <section id="manifiesto" class="py-5 bg-white text-center border-bottom">
+        <div class="container py-4" style="max-width: 800px;">
+            <span class="text-uppercase font-jakarta tracking-widest text-muted small d-block mb-3">Filosofía de Creación</span>
+            <h2 class="font-cormorant display-5 text-dark fw-normal mb-4">Maceración Lenta &amp; Pureza Botánica</h2>
+            <p class="font-jakarta text-muted fw-light lh-lg fs-5 mb-0">No diseñamos aromas comerciales. Estructuramos acordes moleculares que evolucionan de forma única en la piel de cada individuo. Cada lote reposa en barricas de cristal oscuro durante doce meses, permitiendo que absolutos nobles de jazmín, maderas raras y resinas sagradas alcancen su máxima plenitud y fijación natural.</p>
+        </div>
+    </section>
+
+    <!-- Filtros de Familias Olfativas Técnicas -->
+    <section id="notas" class="py-4 bg-light border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-3 font-jakarta text-uppercase tracking-widest small">
+                <button class="btn btn-link text-dark text-decoration-none px-3 py-1 border-bottom border-dark rounded-0 fw-semibold">Ver Todos</button>
+                <button class="btn btn-link text-muted text-decoration-none px-3 py-1 rounded-0 link-luxury" onclick="alert('Filtrando estáticamente por fragancias Amaderadas &amp; Resinas...')">Amaderados</button>
+                <button class="btn btn-link text-muted text-decoration-none px-3 py-1 rounded-0 link-luxury" onclick="alert('Filtrando estáticamente por extractos Florales absolutos...')">Florales Nobles</button>
+                <button class="btn btn-link text-muted text-decoration-none px-3 py-1 rounded-0 link-luxury" onclick="alert('Filtrando estáticamente por notas de Especias Exóticas y Ámbar...')">Orientales</button>
+                <button class="btn btn-link text-muted text-decoration-none px-3 py-1 rounded-0 link-luxury" onclick="alert('Filtrando estáticamente por acordes Cítricos de la Riviera...')">Cítricos Fresh</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vitrina de Perfumes Exclusivos Ampliada a 6 Productos -->
+    <section id="coleccion" class="py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <h2 class="font-cormorant display-4 text-dark fw-normal">Extractos de Alta Costura</h2>
+                <div class="luxury-line mx-auto my-3"></div>
+                <p class="text-muted font-jakarta small tracking-wide">Ediciones limitadas numeradas a mano. Concentración Pure Parfum de larga fijación molecular.</p>
+            </div>
+
+            <div class="row g-5 font-jakarta">
+                <!-- Perfume 1 -->
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="product-luxury-wrapper mb-3 position-relative overflow-hidden bg-light p-4">
+                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=350&q=80" alt="Oud Absolu" class="img-fluid perfume-item-img">
+                        <span class="position-absolute top-0 start-0 m-3 text-uppercase font-jakarta tracking-wider text-white bg-dark px-2 py-1" style="font-size: 0.6rem;">Best Seller</span>
+                    </div>
+                    <span class="text-muted text-uppercase tracking-widest font-xs d-block mb-1">Maison Luxury</span>
+                    <h4 class="font-cormorant text-dark fw-semibold fs-4 mb-2">Oud &amp; Noir Absolu</h4>
+                    <p class="text-muted font-xs px-3 mb-3 fw-light">Notas intensas de resina de Oud camboyano, cuero cepillado, tabaco cubano y sutil rosa de Damasco negra.</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <span class="fw-semibold font-mono text-dark">$185.000 <small class="text-muted font-jakarta fw-light">/ 100ml</small></span>
+                    </div>
+                    <button class="btn btn-dark rounded-0 w-100 mt-3 text-uppercase font-jakarta tracking-widest font-xs py-2" onclick="alert('Añadido: Oud &amp; Noir Absolu integrado a tu bolsa.')">Añadir a la Bolsa</button>
+                </div>
+
+                <!-- Perfume 2 -->
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="product-luxury-wrapper mb-3 position-relative overflow-hidden bg-light p-4">
+                        <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=350&q=80" alt="Ambre Imperial" class="img-fluid perfume-item-img">
+                    </div>
+                    <span class="text-muted text-uppercase tracking-widest font-xs d-block mb-1">Maison Luxury</span>
+                    <h4 class="font-cormorant text-dark fw-semibold fs-4 mb-2">Ambre Impérial Pure</h4>
+                    <p class="text-muted font-xs px-3 mb-3 fw-light">Una fusión magnética de ámbar gris mineral, vainilla de Madagascar en vaina, haba tonka tostada y cardamomo.</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <span class="fw-semibold font-mono text-dark">$165.000 <small class="text-muted font-jakarta fw-light">/ 100ml</small></span>
+                    </div>
+                    <button class="btn btn-dark rounded-0 w-100 mt-3 text-uppercase font-jakarta tracking-widest font-xs py-2" onclick="alert('Añadido: Ambre Impérial Pure integrado a tu bolsa.')">Añadir a la Bolsa</button>
+                </div>
+
+                <!-- Perfume 3 -->
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="product-luxury-wrapper mb-3 position-relative overflow-hidden bg-light p-4">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=350&q=80" alt="Blanc Neroli" class="img-fluid perfume-item-img">
+                        <span class="position-absolute top-0 start-0 m-3 text-uppercase font-jakarta tracking-wider text-muted bg-white border px-2 py-1" style="font-size: 0.6rem;">Limited</span>
+                    </div>
+                    <span class="text-muted text-uppercase tracking-widest font-xs d-block mb-1">Maison Luxury</span>
+                    <h4 class="font-cormorant text-dark fw-semibold fs-4 mb-2">Blanc Néroli Riviera</h4>
+                    <p class="text-muted font-xs px-3 mb-3 fw-light">Acordes luminosos de flor de azahar del naranjo, bergamota de Calabria, almizcle blanco y cedro de Virginia.</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <span class="fw-semibold font-mono text-dark">$155.000 <small class="text-muted font-jakarta fw-light">/ 100ml</small></span>
+                    </div>
+                    <button class="btn btn-dark rounded-0 w-100 mt-3 text-uppercase font-jakarta tracking-widest font-xs py-2" onclick="alert('Añadido: Blanc Néroli Riviera integrado a tu bolsa.')">Añadir a la Bolsa</button>
+                </div>
+
+                <!-- Perfume 4 (Nuevo) -->
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="product-luxury-wrapper mb-3 position-relative overflow-hidden bg-light p-4">
+                        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=350&q=80" alt="Santal Imperial" class="img-fluid perfume-item-img">
+                    </div>
+                    <span class="text-muted text-uppercase tracking-widest font-xs d-block mb-1">Maison Luxury</span>
+                    <h4 class="font-cormorant text-dark fw-semibold fs-4 mb-2">Santal Impérial Miel</h4>
+                    <p class="text-muted font-xs px-3 mb-3 fw-light">Sándalo sedoso de Mysore, sutiles hilos de miel silvestre, corteza de canela de Ceylán y acordes lácteos suaves.</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <span class="fw-semibold font-mono text-dark">$170.000 <small class="text-muted font-jakarta fw-light">/ 100ml</small></span>
+                    </div>
+                    <button class="btn btn-dark rounded-0 w-100 mt-3 text-uppercase font-jakarta tracking-widest font-xs py-2" onclick="alert('Añadido: Santal Impérial Miel integrado a tu bolsa.')">Añadir a la Bolsa</button>
+                </div>
+
+                <!-- Perfume 5 (Nuevo) -->
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="product-luxury-wrapper mb-3 position-relative overflow-hidden bg-light p-4">
+                        <img src="https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=350&q=80" alt="Cuir Tabac" class="img-fluid perfume-item-img">
+                    </div>
+                    <span class="text-muted text-uppercase tracking-widest font-xs d-block mb-1">Maison Luxury</span>
+                    <h4 class="font-cormorant text-dark fw-semibold fs-4 mb-2">Cuir Tabac Épicé</h4>
+                    <p class="text-muted font-xs px-3 mb-3 fw-light">Hojas de tabaco rubio seco, cuero ruso curtido, clavo de olor picante y sutiles resinas balsámicas orientales.</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <span class="fw-semibold font-mono text-dark">$190.000 <small class="text-muted font-jakarta fw-light">/ 100ml</small></span>
+                    </div>
+                    <button class="btn btn-dark rounded-0 w-100 mt-3 text-uppercase font-jakarta tracking-widest font-xs py-2" onclick="alert('Añadido: Cuir Tabac Épicé integrado a tu bolsa.')">Añadir a la Bolsa</button>
+                </div>
+
+                <!-- Perfume 6 (Nuevo) -->
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="product-luxury-wrapper mb-3 position-relative overflow-hidden bg-light p-4">
+                        <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=350&q=80" alt="Rose de Nuit" class="img-fluid perfume-item-img">
+                    </div>
+                    <span class="text-muted text-uppercase tracking-widest font-xs d-block mb-1">Maison Luxury</span>
+                    <h4 class="font-cormorant text-dark fw-semibold fs-4 mb-2">Rose de Nuit Velvet</h4>
+                    <p class="text-muted font-xs px-3 mb-3 fw-light">Pétalos de rosa aterciopelada de Grasse macerados en pachulí oscuro, azafrán iraní e incienso de iglesia.</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <span class="fw-semibold font-mono text-dark">$175.000 <small class="text-muted font-jakarta fw-light">/ 100ml</small></span>
+                    </div>
+                    <button class="btn btn-dark rounded-0 w-100 mt-3 text-uppercase font-jakarta tracking-widest font-xs py-2" onclick="alert('Añadido: Rose de Nuit Velvet integrado a tu bolsa.')">Añadir a la Bolsa</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Discovery Set / Ritual de Descubrimiento -->
+    <section id="ritual" class="py-5 bg-light border-bottom">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-uppercase font-jakarta text-muted tracking-widest d-block mb-2 small">Prueba en Piel</span>
+                    <h2 class="font-cormorant display-4 text-dark fw-normal mb-3">The Discovery Set</h2>
+                    <p class="text-muted font-jakarta fw-light lh-lg small mb-4">Antes de comprometerse con un frasco completo, le invitamos a experimentar nuestra antología completa. Reciba viales de 2ml de nuestros 6 extractos estelares en un estuche de lino editorial. El costo total del set se abonará como crédito estático completo para su próxima adquisición.</p>
+                    <div class="h3 font-mono text-dark mb-4">$25.000</div>
+                    <button class="btn btn-dark rounded-0 px-4 py-2 font-jakarta text-uppercase tracking-widest font-xs" onclick="alert('Simulación: Añadiendo Discovery Set a tu orden de compra.')">Adquirir Set de Muestras</button>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=400&q=80" alt="Discovery Set Box" class="img-fluid border shadow-xs" style="max-height: 280px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Críticas Editoriales / Reseñas Privadas -->
+    <section id="reseñas" class="py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-uppercase font-jakarta text-muted tracking-widest small d-block mb-2">Opiniones de la Crítica</span>
+                <h2 class="font-cormorant text-dark display-5 fw-normal">Reseñas Editoriales</h2>
+                <div class="luxury-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta text-start justify-content-center">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light border-0 h-100 d-flex flex-column justify-content-between">
+                        <p class="text-muted font-xs fst-italic lh-lg">"Oud &amp; Noir Absolu es una obra maestra de la perfumería de nicho moderna. La fijación molecular sobrepasa las 12 horas en piel, dejando un rastro magnético inolvidable."</p>
+                        <span class="d-block text-dark font-xs fw-bold tracking-widest text-uppercase border-top pt-2 mt-3">— REVISTA REVUE OLFACTIVE</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light border-0 h-100 d-flex flex-column justify-content-between">
+                        <p class="text-muted font-xs fst-italic lh-lg">"La pulcritud minimalista de Maison Luxury se refleja no solo en el diseño editorial de sus frascos, sino en el balance perfecto de sus aceites esenciales de Grasse."</p>
+                        <span class="d-block text-dark font-xs fw-bold tracking-widest text-uppercase border-top pt-2 mt-3">— HAUTE ACCORD JOURNAL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Squeeze: Membresía Club Privé -->
+    <section id="exclusivo" class="py-5 bg-light">
+        <div class="container py-4" style="max-width: 650px;">
+            <div class="text-center mb-4">
+                <span class="text-muted text-uppercase tracking-widest d-block small mb-2" style="font-size: 0.7rem;">Private Release</span>
+                <h2 class="font-cormorant text-dark display-5 fw-normal">Acceso al Club Privé</h2>
+                <p class="font-jakarta text-muted small mt-2 lh-lg">Suscríbase a nuestra lista editorial confidencial para recibir invitaciones prioritarias a ventas de lote de barril único, catas olfativas privadas y lanzamientos de edición limitada.</p>
+            </div>
+            <form action="#" onsubmit="event.preventDefault(); alert('Inscripción completada. Ha sido incorporado a la lista de lanzamientos exclusivos de Maison Luxury.');">
+                <div class="row g-2 justify-content-center font-jakarta">
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control rounded-0 luxury-input" placeholder="INGRESE SU CORREO ELECTRÓNICO" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-dark w-100 py-3 text-uppercase tracking-widest font-xs rounded-0">Suscribirme</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer de Perfumería de Alta Gama -->
+    <footer class="bg-white py-5 font-jakarta border-top border-light">
+        <div class="container">
+            <div class="row g-4 text-start mb-4">
+                <div class="col-md-6">
+                    <h5 class="font-cormorant text-dark tracking-wide fs-4 fw-bold mb-3">MAISON LUXURY EDITORIAL</h5>
+                    <p class="small text-muted lh-lg mb-0" style="font-size: 0.8rem;">Estudio de curación olfativa y distribución selectiva de fragancias de nicho de alta fidelidad. Todos los extractos son despachados en cajas de madera lacada certificada con sello de autenticidad criptográfico.</p>
+                </div>
+                <div class="col-md-6 text-md-end d-flex flex-column justify-content-center">
+                    <a href="../index.html" class="text-dark text-decoration-none font-cormorant tracking-wider fs-4"><i class="bi bi-arrow-left me-2"></i> Volver al Panel Principal</a>
+                </div>
+            </div>
+            <hr class="opacity-10 my-4">
+            <p class="mb-0 text-muted font-xs text-center">&copy; 2026 Maison Luxury Parfums. Prototipo estático de simulación comercial premium para portafolio profesional.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

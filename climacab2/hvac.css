@@ -1,0 +1,168 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: CLIMACAB HVAC (Steel Blue-Collar & Rigorous Tech Style)
+   ========================================================================== */
+
+:root {
+    --blue-steel-main: #1e3a8a;     /* Azul Acero / Corporativo Riguroso */
+    --blue-steel-hover: #172554;
+    --cyan-accent: #06b6d4;         /* Cian Helado para Contraste Térmico */
+    --hvac-soft-gray: #f8fafc;      /* Fondo Clínico Limpio */
+    --hvac-glow: rgba(30, 58, 138, 0.12);
+    
+    /* Variables de Animación */
+    --motion-fluid: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #334155;
+}
+
+/* Identidades y Tipografía Esculpida */
+.font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-blue-steel { color: var(--blue-steel-main); }
+.bg-blue-steel { background-color: var(--blue-steel-main); }
+.bg-hvac-soft { background-color: var(--hvac-soft-gray); }
+.text-cyan { color: var(--cyan-accent); }
+.font-xs { font-size: 0.75rem; }
+
+/* Distintivos y Adornos Sanitarios */
+.badge-hvac {
+    border: 2px solid var(--blue-steel-main);
+    color: var(--blue-steel-main);
+    background-color: rgba(30, 58, 138, 0.04);
+    padding: 0.6rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.hvac-line {
+    width: 45px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--blue-steel-main) 0%, var(--cyan-accent) 100%);
+    border-radius: 10px;
+}
+
+/* Topbar Superior Climacab */
+.hvac-topbar {
+    background: linear-gradient(90deg, var(--blue-steel-main) 0%, #1e40af 100%) !important;
+    box-shadow: 0 2px 10px rgba(30, 58, 138, 0.1);
+}
+
+/* Navbar overrides */
+.navbar-hvac {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 2px solid rgba(30, 58, 138, 0.02);
+}
+.navbar-hvac .nav-link {
+    color: #475569 !important;
+    font-weight: 600;
+    transition: var(--motion-fluid);
+}
+.navbar-hvac .nav-link:hover {
+    color: var(--blue-steel-main) !important;
+}
+
+/* Hero Section */
+.hvac-hero {
+    background: radial-gradient(circle at 100% 0%, #eef2ff 0%, #ffffff 65%);
+}
+
+.main-hvac-img {
+    border-radius: 36px !important;
+    box-shadow: 0 30px 60px -15px rgba(30, 58, 138, 0.15) !important;
+    border: 5px solid #ffffff;
+    transition: var(--motion-fluid);
+}
+.main-hvac-img:hover {
+    transform: translateY(-3px);
+}
+
+/* Tarjetas Técnicas de Servicios (Burbujas de Rigor) */
+.hvac-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(30, 58, 138, 0.06) !important;
+    border-radius: 24px !important;
+    transition: var(--motion-bounce);
+}
+.hvac-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(30, 58, 138, 0.2) !important;
+    box-shadow: 0 25px 50px -12px rgba(30, 58, 138, 0.08) !important;
+}
+
+.hvac-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    background-color: #eff6ff;
+    color: var(--blue-steel-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--motion-fluid);
+}
+.hvac-card:hover .hvac-icon {
+    background-color: var(--blue-steel-main);
+    color: #ffffff;
+}
+
+/* Inputs Ergonómicos del Formulario */
+.input-hvac {
+    background-color: #f8fafc !important;
+    border: 2px solid #e2e8f0 !important;
+    padding: 0.85rem 1.1rem;
+    font-size: 0.95rem;
+    color: var(--blue-steel-main) !important;
+}
+.input-hvac:focus {
+    background-color: #ffffff !important;
+    border-color: var(--blue-steel-main) !important;
+    box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.1) !important;
+}
+
+/* Tablas Corporativas */
+.table-responsive {
+    border: 2px solid #e2e8f0 !important;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.03);
+}
+
+/* Botonería de Alta Conversión */
+.btn-hvac {
+    background: linear-gradient(135deg, var(--blue-steel-main) 0%, #1e40af 100%);
+    border: none;
+    transition: var(--motion-fluid);
+}
+.btn-hvac:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -4px rgba(30, 58, 138, 0.35);
+}
+.shadow-hvac { box-shadow: 0 10px 20px -5px rgba(30, 58, 138, 0.3); }
+
+.btn-outline-hvac {
+    border: 2px solid var(--blue-steel-main);
+    color: var(--blue-steel-main);
+    font-weight: 700;
+    transition: var(--motion-fluid);
+}
+.btn-outline-hvac:hover {
+    background-color: var(--blue-steel-main);
+    color: #ffffff !important;
+}
+
+.btn-outline-hvac-hero {
+    border: 1px solid rgba(30, 58, 138, 0.25);
+    color: #334155;
+    transition: var(--motion-fluid);
+}
+.btn-outline-hvac-hero:hover {
+    border-color: var(--blue-steel-main);
+    background-color: rgba(30, 58, 138, 0.02);
+}

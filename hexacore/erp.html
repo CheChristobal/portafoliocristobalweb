@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaCore ERP | Control de Inventarios, Logística &amp; Trazabilidad QR</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="erp.css">
+</head>
+<body>
+
+    <!-- Topbar de Estatus de Servidores SaaS -->
+    <div class="erp-topbar py-2 text-center font-jakarta">
+        <div class="container small text-uppercase tracking-wider" style="font-size: 0.72rem;">
+            <i class="bi bi-circle-fill text-success-neon small me-2 animate-pulse"></i> Servidores Globales: OPERACIONALES • Conectividad de API Sincronizada con Centrales logísticas
+        </div>
+    </div>
+
+    <!-- Navbar Minimalista Flotante Translúcida -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3 navbar-erp">
+        <div class="container">
+            <a class="navbar-brand fw-extrabold font-jakarta tracking-tight fs-3 text-slate" href="#">
+                HEXA<span class="text-blue-electric">CORE</span> <span class="fw-light fs-5 text-muted tracking-wide">ERP</span>
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarErp">
+                <i class="bi bi-list fs-2 text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarErp">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta text-uppercase small tracking-wide fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#modulos">Módulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inventario">Control QR</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#analitica">Métricas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#seguridad">Seguridad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#demo">Solicitar Demo</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-erp btn-sm px-4 rounded-3">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada con Simulación Avanzada de Dashboard -->
+    <header class="erp-hero d-flex align-items-center position-relative py-5">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-erp mb-3 text-uppercase font-jakarta">Cloud Enterprise Asset Management</span>
+                    <h1 class="display-4 font-jakarta text-slate fw-extrabold mb-3">Toma el control absoluto <br>de tu <span class="text-blue-electric">inventario corporativo</span>.</h1>
+                    <p class="lead font-jakarta text-muted mb-4 fw-light lh-lg fs-5">Sincroniza múltiples bodegas, automatiza órdenes de compra y gestiona existencias críticas en tiempo real mediante tecnología de escaneo QR inteligente. Un entorno analítico robusto diseñado para flujos logísticos de alta velocidad.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#demo" class="btn btn-erp font-jakarta px-4 py-3 rounded-3 fw-bold text-white shadow-erp">Agendar Demo Guiada</a>
+                        <a href="#inventario" class="btn btn-outline-erp-hero font-jakarta px-4 py-3 rounded-3 fw-semibold">Ver Flujo de Stock</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <!-- Simulación Estática de Widget Analítico UI (Contrasta Letras Oscuras sobre Fondo Blanco Interno) -->
+                    <div class="p-4 bg-white border rounded-4 shadow-lg text-start font-jakarta container-dashboard-preview">
+                        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
+                            <span class="fw-extrabold text-slate fs-5"><i class="bi bi-grid-1x2-fill text-blue-electric me-2"></i> Existencias Críticas</span>
+                            <span class="badge bg-danger-soft text-danger small rounded-pill fw-bold">3 Alertas Activas</span>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="p-3 bg-light rounded-3 border">
+                                    <small class="text-muted text-uppercase d-block mb-1 font-xs fw-bold">Stock Total Indexado</small>
+                                    <h4 class="fw-extrabold text-slate font-mono mb-0">148.520 <span class="fs-6 text-success fw-normal">+2.4%</span></h4>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-light rounded-3 border">
+                                    <small class="text-muted text-uppercase d-block mb-1 font-xs fw-bold">Efectividad de Picking</small>
+                                    <h4 class="fw-extrabold text-slate font-mono mb-0">99.85%</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Módulo de Componentes ERP (Grid de Rejilla Tecnológica Oscura) -->
+    <section id="modulos" class="py-5 bg-erp-soft">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-blue-electric text-uppercase tracking-wider small fw-bold d-block mb-2">Ecosistema Modular Integrado</span>
+                <h2 class="font-jakarta fw-extrabold text-slate">Módulos Administrativos Core</h2>
+                <div class="erp-line mx-auto my-3"></div>
+            </div>
+
+            <div class="row g-4 font-jakarta">
+                <!-- Módulo 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 erp-card p-4">
+                        <div class="erp-icon mb-3"><i class="bi bi-box-seam fs-3"></i></div>
+                        <h4 class="fw-bold text-slate fs-5">Multi-Almacén Inteligente</h4>
+                        <p class="text-muted small mb-0 lh-lg">Control centralizado y mapeo tridimensional estático de ubicaciones físicas (racks/pasillos) para redes logísticas complejas distribuidas geográficamente.</p>
+                    </div>
+                </div>
+
+                <!-- Módulo 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 erp-card p-4">
+                        <div class="erp-icon mb-3"><i class="bi bi-qr-code-scan fs-3"></i></div>
+                        <h4 class="fw-bold text-slate fs-5">Trazabilidad por QR / Código</h4>
+                        <p class="text-muted small mb-0 lh-lg">Generación e impresión automatizada de etiquetas dinámicas vinculadas a números de lote, fechas de vencimiento y números de serie de fábrica.</p>
+                    </div>
+                </div>
+
+                <!-- Módulo 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 erp-card p-4">
+                        <div class="erp-icon mb-3"><i class="bi bi-arrow-repeat fs-3"></i></div>
+                        <h4 class="fw-bold text-slate fs-5">Abastecimiento Predictivo</h4>
+                        <p class="text-muted small mb-0 lh-lg">Cálculo de niveles de reposición óptimos para evitar quiebres de stock. Emisión automática de pre-órdenes de compra basadas en históricos de consumo.</p>
+                    </div>
+                </div>
+
+                <!-- Módulo 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 erp-card p-4">
+                        <div class="erp-icon mb-3"><i class="bi bi-receipt-cutoff fs-3"></i></div>
+                        <h4 class="fw-bold text-slate fs-5">Facturación &amp; Despachos</h4>
+                        <p class="text-muted small mb-0 lh-lg">Integración directa de flujos de venta con emisión de guías de despacho, rebajando de forma inmediata y automática las existencias del inventario físico.</p>
+                    </div>
+                </div>
+
+                <!-- Módulo 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 erp-card p-4">
+                        <div class="erp-icon mb-3"><i class="bi bi-graph-up fs-3"></i></div>
+                        <h4 class="fw-bold text-slate fs-5">Auditorías &amp; Cuadraturas</h4>
+                        <p class="text-muted small mb-0 lh-lg">Herramientas digitales optimizadas para la ejecución de inventarios cíclicos rotativos, cálculo de mermas e identificación de discrepancias de stock.</p>
+                    </div>
+                </div>
+
+                <!-- Módulo 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 erp-card p-4">
+                        <div class="erp-icon mb-3"><i class="bi bi-plugin fs-3"></i></div>
+                        <h4 class="fw-bold text-slate fs-5">API REST Webhooks</h4>
+                        <p class="text-muted small mb-0 lh-lg">Estructura modular abierta para conectar de forma transparente las bases de datos del ERP con plataformas e-commerce globales (Shopify, WooCommerce).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consola Operativa de Productos (Tabla Dark con Contraste de Celdas) -->
+    <section id="inventario" class="py-5 bg-deep-dark border-bottom border-dark">
+        <div class="container py-4" style="max-width: 850px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-blue-electric text-uppercase tracking-wider small fw-bold d-block mb-2">Simulación de Flujo</span>
+                <h2 class="font-jakarta fw-extrabold text-white">Consola Operativa de Productos</h2>
+                <div class="erp-line mx-auto my-3"></div>
+            </div>
+            <div class="table-responsive border border-secondary bg-surface font-jakarta">
+                <table class="table table-dark align-middle mb-0 small text-start table-hover">
+                    <thead>
+                        <tr>
+                            <th class="p-3 fs-6">SKU / QR Token</th>
+                            <th class="p-3 fs-6">Descripción del Activo</th>
+                            <th class="p-3 fs-6 text-center">Ubicación Física</th>
+                            <th class="p-3 fs-6 text-center">Stock Actual</th>
+                            <th class="p-3 fs-6 text-center">Estado Crítico</th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-mono">
+                        <tr>
+                            <td class="p-3 fw-bold text-white"><i class="bi bi-qr-code text-blue-electric me-2"></i> HXC-9420-A</td>
+                            <td class="p-3 font-jakarta fw-bold text-white">Procesador Lógico Core V2</td>
+                            <td class="p-3 text-center text-white-50">Rack B - Pasillo 4</td>
+                            <td class="p-3 text-center fw-bold text-white">1.240 Unidades</td>
+                            <td class="p-3 text-center"><span class="badge bg-success-soft text-success rounded-pill font-jakarta font-xs px-3">Óptimo</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white"><i class="bi bi-qr-code text-blue-electric me-2"></i> HXC-1890-B</td>
+                            <td class="p-3 font-jakarta fw-bold text-white">Placa Madre Multipuerto X5</td>
+                            <td class="p-3 text-center text-white-50">Rack A - Pasillo 2</td>
+                            <td class="p-3 text-center fw-bold text-danger">42 Unidades</td>
+                            <td class="p-3 text-center"><span class="badge bg-danger-soft text-danger rounded-pill font-jakarta font-xs px-3">Stock Bajo</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white"><i class="bi bi-qr-code text-blue-electric me-2"></i> HXC-5200-C</td>
+                            <td class="p-3 font-jakarta fw-bold text-white">Módulo Memoria Caché 32GB</td>
+                            <td class="p-3 text-center text-white-50">Rack E - Pasillo 1</td>
+                            <td class="p-3 text-center fw-bold text-warning">410 Unidades</td>
+                            <td class="p-3 text-center"><span class="badge bg-warning-soft text-warning rounded-pill font-jakarta font-xs px-3">Reordenar</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Métricas Consolidadas de Eficiencia -->
+    <section id="analitica" class="py-5 bg-erp-soft border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-blue-electric text-uppercase tracking-wider small fw-bold d-block mb-2">Rendimiento Operativo</span>
+                <h2 class="font-jakarta fw-extrabold text-slate">Métricas Consolidadas de Eficiencia</h2>
+                <div class="erp-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta text-start justify-content-center">
+                <div class="col-md-5">
+                    <div class="p-4 erp-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-blue-electric text-uppercase tracking-wider font-xs d-block mb-2 fw-bold">Eficiencia en Tiempos</span>
+                            <h5 class="fw-extrabold text-slate mb-2">Reducción del Lead Time de Picking</h5>
+                            <p class="text-muted small lh-lg mb-0">La centralización modular de almacenes de HexaCore reduce el tiempo promedio de recolección interna desde los 18 minutos hasta los 3.4 minutos por orden de despacho certificada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 erp-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-blue-electric text-uppercase tracking-wider font-xs d-block mb-2 fw-bold">Precisión Analítica</span>
+                            <h5 class="fw-extrabold text-slate mb-2">Cuadratura Contable Automatizada</h5>
+                            <p class="text-muted small lh-lg mb-0">Los sistemas de cruce por escaneo QR dinámico reducen las pérdidas o mermas desconocidas a un margen histórico inferior al 0.05% de la carga de bodega anual consolidada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acordeón de Seguridad Cloud -->
+    <section id="seguridad" class="py-5 bg-deep-dark border-bottom">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2 class="font-jakarta fw-extrabold text-white">Ciberseguridad &amp; Respaldos de Datos</h2>
+                <p class="text-muted font-jakarta small">Detalle técnico sobre la arquitectura de persistencia e integridad de existencias.</p>
+            </div>
+            
+            <div class="accordion accordion-flush erp-accordion border rounded-4 overflow-hidden font-jakarta" id="erpAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-white font-jakarta fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#erpFAQ1">
+                            ¿Cada cuánto tiempo se ejecutan las réplicas de inventario en la nube?
+                        </button>
+                    </h2>
+                    <div id="erpFAQ1" class="accordion-collapse collapse" data-bs-parent="#erpAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Nuestra infraestructura SaaS ejecuta copias de seguridad de datos incrementales delta cada 60 segundos en servidores en la nube encriptados de forma redundante. Ante contingencias físicas o caídas críticas locales de energía de tu planta, la información comercial se recupera intacta al último minuto transaccionado.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-white font-jakarta fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#erpFAQ2">
+                            ¿El sistema cuenta con niveles y logs de auditoría por usuario?
+                        </button>
+                    </h2>
+                    <div id="erpFAQ2" class="accordion-collapse collapse" data-bs-parent="#erpAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Sí. El sistema implementa un control estricto de acceso basado en roles (RBAC). Cada movimiento físico de inventario, ingreso manual de stock, modificación de aranceles o escaneo de código QR queda registrado de forma indeleble con fecha, hora exacta, dirección IP y el ID único del operador logístico.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario Comercial Sandbox -->
+    <section id="demo" class="py-5 bg-erp-soft">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-white shadow-lg rounded-4 container-dashboard-preview">
+                <div class="text-center mb-4">
+                    <h2 class="font-jakarta fw-extrabold text-slate display-6">Solicitar Acceso a Demo de HexaCore</h2>
+                    <p class="font-jakarta text-muted small mt-2">Dinos las dimensiones estáticas operativas de tu compañía. Un ingeniero de procesos SaaS estructurará un entorno sandbox de simulación adaptado con perfiles QR de prueba para tu negocio.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Solicitud de demo procesada correctamente. Un analista corporativo te enviará las credenciales de acceso sandbox al correo electrónico provisto.');">
+                    <div class="row g-3 font-jakarta fw-semibold text-start">
+                        <div class="col-md-6">
+                            <label class="form-label text-blue-electric small text-uppercase">Nombre del Solicitante</label>
+                            <input type="text" class="form-control rounded-3 input-erp" placeholder="Ej: Diego Silva" style="background-color: #f8fafc !important; color: #0f172a !important;" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-blue-electric small text-uppercase">Razón Social de la Empresa</label>
+                            <input type="text" class="form-control rounded-3 input-erp" placeholder="Ej: Distribuidora Central Ltda." style="background-color: #f8fafc !important; color: #0f172a !important;" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-blue-electric small text-uppercase">Volumen Estimado de Existencias Mensuales</label>
+                            <select class="form-select rounded-3 input-erp" style="background-color: #f8fafc !important; color: #0f172a !important;" required>
+                                <option value="" selected disabled>Selecciona escala de stock...</option>
+                                <option>Escala Básica (Menos de 5.000 SKU státicos)</option>
+                                <option>Escala Comercial Corporativa (5.000 a 50.000 SKU)</option>
+                                <option>Logística Compleja Industrial (Más de 50.000 SKU distribuidos)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label text-blue-electric small text-uppercase">Correo Corporativo de Contacto</label>
+                            <input type="email" class="form-control rounded-3 input-erp" placeholder="diego@empresa.com" style="background-color: #f8fafc !important; color: #0f172a !important;" required>
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-erp w-100 py-3 text-uppercase tracking-wider fw-bold text-white rounded-3 shadow-erp">Solicitar Credenciales Sandbox</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo Analítico -->
+    <footer class="bg-white py-5 text-center border-top font-jakarta">
+        <div class="container text-muted">
+            <p class="mb-2 small">&copy; 2026 HexaCore ERP Solutions. Espacio maquetado estático independiente de arquitectura analítica para exhibición de portafolio web UI.</p>
+            <a href="../index.html" class="text-blue-electric text-decoration-none fw-bold tracking-tight small"><i class="bi bi-arrow-left-circle me-1"></i> Volver a Panel Principal</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

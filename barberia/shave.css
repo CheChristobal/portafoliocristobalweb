@@ -1,0 +1,247 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: THE SHAVE CLUB (Urban Vintage & Razor Contrast Style)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --shave-black: #0a0c10;         /* Negro Asfalto Base */
+    --shave-surface: #12151c;       /* Antracita / Madera Quemada */
+    --bronze-accent: #c5a880;       /* Oro Bronce Bruñido Premium */
+    --bronze-hover: #b3956b;
+    
+    /* Variables de Texto Adaptativas según Fondo */
+    --text-light-main: #ffffff;     /* Blanco Puro para fondos oscuros */
+    --text-light-muted: #94a3b8;    /* Gris Plata para descripciones en fondo oscuro */
+    --text-dark-main: #1c1917;      /* Grafito Profundo para componentes claros */
+    --text-dark-muted: #44403c;     /* Sepia Mate para textos secundarios claros */
+    
+    /* Efectos de Iluminación Clásica */
+    --bronze-glow: 0 0 25px rgba(197, 168, 128, 0.2);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--shave-black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-light-muted);
+}
+
+/* ==========================================================================
+   SISTEMA TIPOGRÁFICO ADAPTATIVO CON CONTRASTE CONTROLADO
+   ========================================================================== */
+.font-cinzel { font-family: 'Cinzel', serif; font-weight: 700; letter-spacing: 0.5px; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.font-xs { font-size: 0.78rem; }
+
+/* Control de Textos sobre Secciones Oscuras (Por Defecto) */
+.text-white { color: var(--text-light-main) !important; }
+.text-muted-slate { color: var(--text-light-muted) !important; }
+.lead { color: var(--text-light-muted) !important; }
+.text-bronze { color: var(--bronze-accent) !important; }
+
+.text-bronze-glow {
+    color: var(--text-light-main) !important;
+    text-shadow: 0 0 10px rgba(197, 168, 128, 0.6), 0 0 20px rgba(197, 168, 128, 0.3);
+}
+
+/* CONTROL DE ADAPTACIÓN: Forzado de contraste sobre fondos claros / Badges Soft */
+.badge.bg-success-subtle,
+.badge.bg-warning-subtle,
+.badge.bg-danger-subtle,
+.badge.bg-mint {
+    color: var(--text-dark-main) !important; /* Forza legibilidad oscura en micro-fondos claros */
+    font-weight: 700 !important;
+}
+
+/* Ajuste específico para el contenedor estático claro de la previsualización */
+.container-dashboard-preview {
+    background-color: #ffffff !important;
+    color: var(--text-dark-main) !important;
+}
+.container-dashboard-preview .text-slate,
+.container-dashboard-preview .fw-extrabold {
+    color: var(--text-dark-main) !important;
+}
+.container-dashboard-preview .text-muted,
+.container-dashboard-preview small {
+    color: var(--text-dark-muted) !important;
+}
+.container-dashboard-preview h4 {
+    color: var(--text-dark-main) !important;
+}
+.container-dashboard-preview .bg-light {
+    background-color: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* ==========================================================================
+   ESTRUCTURA VISUAL URBAN VINTAGE
+   ========================================================================== */
+.bg-shave-dark { background-color: #06070a; }
+.bg-deep-dark { background-color: #030405; }
+.bg-black { background-color: #000000 !important; }
+
+/* Distintivos y Adornos Rectilíneos */
+.badge-shave {
+    border: 1px solid var(--bronze-accent);
+    color: var(--bronze-accent);
+    background: rgba(197, 168, 128, 0.04);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+}
+
+.shave-line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--bronze-accent);
+    border-radius: 0;
+    box-shadow: var(--bronze-glow);
+}
+
+/* Topbar Superior */
+.shave-topbar {
+    background-color: #000000;
+    color: var(--text-light-main);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+    letter-spacing: 1.5px;
+}
+
+/* Navbar overrides Club Privado */
+.navbar-shave {
+    background-color: rgba(10, 12, 16, 0.9) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+.navbar-shave .nav-link {
+    color: var(--text-light-muted) !important;
+    transition: var(--motion-smooth);
+}
+.navbar-shave .nav-link:hover,
+.navbar-shave .nav-link.active {
+    color: var(--text-light-main) !important;
+}
+
+/* Contenedores con Efecto Cristal Oscuro */
+.bg-glass {
+    background: rgba(18, 21, 28, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+/* Composición de Imagen Principal Recta */
+.main-shave-img {
+    border-radius: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.8) !important;
+    transition: var(--motion-smooth);
+}
+.main-shave-img:hover {
+    border-color: var(--bronze-accent);
+}
+
+/* Widget Flotante del Sillón */
+.floating-shave-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    min-width: 280px;
+}
+
+.shave-pulse-circle {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #1e2330 0%, var(--shave-surface) 100%);
+    border: 1px solid var(--bronze-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--bronze-glow);
+}
+
+/* Tarjetas de Menú / Servicios */
+.shave-card {
+    transition: var(--motion-bounce);
+}
+.shave-card:hover {
+    transform: translateY(-4px);
+    background-color: var(--shave-surface) !important;
+    border-color: rgba(197, 168, 128, 0.2) !important;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7), var(--bronze-glow) !important;
+}
+
+/* Campos de Formulario de Sillón (Inputs) */
+.shave-input {
+    background-color: #050608 !important;
+    border: 2px solid rgba(255, 255, 255, 0.05) !important;
+    color: var(--text-light-main) !important;
+    padding: 0.9rem 1.3rem;
+    font-size: 0.95rem;
+}
+.shave-input:focus {
+    border-color: var(--bronze-accent) !important;
+    box-shadow: 0 0 0 4px rgba(197, 168, 128, 0.12) !important;
+}
+.shave-input option {
+    background-color: var(--shave-surface) !important;
+    color: var(--text-light-main) !important;
+}
+
+/* Botonería de Alta Gama */
+.btn-bronze {
+    background-color: var(--bronze-accent);
+    border: 1px solid var(--bronze-accent);
+    color: var(--shave-black) !important; /* Texto oscuro sobre botón dorado */
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-bronze:hover {
+    background-color: var(--bronze-hover);
+    border-color: var(--bronze-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--bronze-glow);
+}
+.shadow-bronze { box-shadow: 0 10px 20px -5px rgba(197, 168, 128, 0.2); }
+
+.btn-outline-shave {
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    color: var(--text-light-main);
+    font-weight: 600;
+    transition: var(--motion-smooth);
+}
+.btn-outline-shave:hover {
+    border-color: var(--bronze-accent);
+    color: var(--bronze-accent) !important;
+    background-color: rgba(197, 168, 128, 0.02);
+}
+
+/* Sincronización con Tablas de Pomadas */
+.table-responsive {
+    border-color: rgba(255, 255, 255, 0.04) !important;
+}
+.bg-surface { background-color: var(--shave-surface); }
+.bg-surface-dark { background-color: #0b0d13; }
+
+/* Control de textos internos en tablas */
+.table th {
+    color: var(--text-light-main) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05) !important;
+}
+.table td {
+    color: var(--text-light-muted) !important;
+}
+.table-dark {
+    --bs-table-bg: var(--shave-surface) !important;
+}
+
+/* Footer Coherente */
+footer border-top {
+    border-color: rgba(255, 255, 255, 0.04) !important;
+}

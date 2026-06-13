@@ -1,0 +1,132 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: BOUTIQUE INMOBILIARIA (Elegant Slate Style)
+   ========================================================================== */
+
+:root {
+    --slate-primary: #0f172a;      /* Slate Profundo */
+    --indigo-accent: #4f46e5;      /* Índigo Arquitectónico */
+    --indigo-glow: rgba(79, 70, 229, 0.1);
+    --soft-gray-bg: #f8fafc;
+    --border-light-color: #e2e8f0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #475569;
+}
+
+/* Tipografías e Identidades Visuales */
+.font-marcellus { font-family: 'Marcellus', serif; letter-spacing: 0.5px; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-slate { color: var(--slate-primary); }
+.text-indigo { color: var(--indigo-accent); }
+.bg-slate { background-color: var(--slate-primary); }
+.bg-estate-soft { background-color: var(--soft-gray-bg); }
+
+/* Contornos y Divisores */
+.badge-estate {
+    border: 1px solid var(--slate-primary);
+    color: var(--slate-primary);
+    background-color: rgba(15, 23, 42, 0.03);
+    border-radius: 0;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.75rem;
+}
+
+.estate-line {
+    width: 40px;
+    height: 1px;
+    background-color: var(--slate-primary);
+}
+
+/* Hero & Maquetación Visual */
+.estate-hero {
+    background: radial-gradient(circle at 100% 100%, #f1f5f9 0%, #ffffff 70%);
+}
+
+.main-estate-img {
+    border-radius: 0 !important;
+    box-shadow: 20px 20px 40px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Tarjetas de Propiedades Monolíticas */
+.estate-card {
+    border: 1px solid var(--border-light-color) !important;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+.estate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06) !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* Modificación de Campos de Entrada */
+.input-estate {
+    background-color: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+}
+.input-estate:focus {
+    background-color: #ffffff !important;
+    border-color: var(--indigo-accent) !important;
+    box-shadow: 0 0 0 3px var(--indigo-glow) !important;
+}
+
+/* Botonería Real Estate */
+.btn-slate {
+    background-color: var(--slate-primary);
+    color: #ffffff !important;
+    border-radius: 0;
+    border: 1px solid var(--slate-primary);
+    transition: all 0.3s ease;
+}
+.btn-slate:hover {
+    background-color: transparent;
+    color: var(--slate-primary) !important;
+}
+
+.btn-indigo {
+    background-color: var(--indigo-accent);
+    color: #ffffff !important;
+    border-radius: 0;
+    border: 1px solid var(--indigo-accent);
+    transition: all 0.3s ease;
+}
+.btn-indigo:hover {
+    background-color: transparent;
+    color: var(--indigo-accent) !important;
+    box-shadow: 0 4px 15px var(--indigo-glow);
+}
+
+.btn-outline-slate {
+    border: 1px solid var(--slate-primary);
+    color: var(--slate-primary);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-slate:hover {
+    background-color: var(--slate-primary);
+    color: #ffffff !important;
+}
+
+.btn-outline-indigo-estate {
+    border: 1px solid rgba(79, 70, 229, 0.3);
+    color: var(--indigo-accent);
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-outline-indigo-estate:hover {
+    border-color: var(--indigo-accent);
+    background-color: rgba(79, 70, 229, 0.02);
+}
+
+/* Navbar links override */
+.navbar-light .navbar-nav .nav-link {
+    color: #475569;
+    transition: color 0.2s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--indigo-accent);
+}

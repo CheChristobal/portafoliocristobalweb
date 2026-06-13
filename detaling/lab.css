@@ -1,0 +1,167 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: DETAIL LAB (Cyber Industrial Carbon Style)
+   ========================================================================== */
+
+:root {
+    --carbon-black: #0f1115;        /* Negro Carbono Base */
+    --carbon-surface: #161920;      /* Capa Gris Industrial */
+    --nitro-red: #ff2a44;           /* Rojo Nitro Vibrante */
+    --nitro-hover: #e01b33;
+    --text-muted-slate: #8a95a5;    /* Gris técnico de alta lectura */
+    
+    /* Configuración Visual */
+    --nitro-glow: 0 0 25px rgba(255, 42, 68, 0.25);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--carbon-black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #cbd5e1;
+}
+
+/* Tipografías e Identidad Industrial */
+.font-syncopate { font-family: 'Syncopate', sans-serif; font-weight: 700; letter-spacing: 1px; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-nitro { color: var(--nitro-red); }
+.bg-carbon { background-color: #0b0d10; }
+.bg-deep-dark { background-color: #07080a; }
+.font-xs { font-size: 0.78rem; }
+
+/* Contornos y Distintivos Técnicos Rectos */
+.badge-lab {
+    border: 1px solid var(--nitro-red);
+    color: var(--nitro-red);
+    background: rgba(255, 42, 68, 0.04);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 0;
+}
+
+.lab-line {
+    width: 45px;
+    height: 3px;
+    background-color: var(--nitro-red);
+    border-radius: 0;
+    box-shadow: var(--nitro-glow);
+}
+
+/* Topbar Superior */
+.lab-topbar {
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 42, 68, 0.15);
+}
+
+/* Navbar Estilo Industrial overrides */
+.navbar-lab {
+    background-color: rgba(15, 17, 21, 0.9) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+.navbar-lab .nav-link {
+    color: var(--text-muted-slate) !important;
+    transition: var(--motion-smooth);
+}
+.navbar-lab .nav-link:hover,
+.navbar-lab .nav-link.active {
+    color: #ffffff !important;
+}
+
+/* Contenedores con Efecto de Refracción de Luz (Glassmorphism Oscuro) */
+.bg-glass {
+    background: rgba(22, 25, 32, 0.75) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Composición de Imagen Principal */
+.main-lab-img {
+    border-radius: 0 !important; /* Estética minimalista angular rectilínea */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.7) !important;
+    transition: var(--motion-smooth);
+}
+.main-lab-img:hover {
+    border-color: var(--nitro-red);
+}
+
+/* Widget Flotante del Habitáculo */
+.floating-lab-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    min-width: 270px;
+    animation: labFloat 6s ease-in-out infinite;
+}
+
+@keyframes labFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* Tarjetas de Tratamientos Químicos */
+.lab-card {
+    transition: var(--motion-bounce);
+}
+.lab-card:hover {
+    transform: translateY(-6px);
+    background-color: var(--carbon-surface) !important;
+    border-color: rgba(255, 42, 68, 0.2) !important;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6), var(--nitro-glow) !important;
+}
+
+/* Campos de Formulario Industriales */
+.lab-input {
+    background-color: #090a0d !important;
+    border: 2px solid rgba(255, 255, 255, 0.06) !important;
+    color: #ffffff !important;
+    padding: 0.9rem 1.3rem;
+    font-size: 0.95rem;
+}
+.lab-input:focus {
+    border-color: var(--nitro-red) !important;
+    box-shadow: 0 0 0 4px rgba(255, 42, 68, 0.15) !important;
+}
+
+/* Botonería de Rendimiento Extremo */
+.btn-nitro {
+    background-color: var(--nitro-red);
+    border: 1px solid var(--nitro-red);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-nitro:hover {
+    background-color: var(--nitro-hover);
+    border-color: var(--nitro-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--nitro-glow);
+}
+
+.btn-outline-lab {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    font-weight: 600;
+    transition: var(--motion-smooth);
+}
+.btn-outline-lab:hover {
+    border-color: var(--nitro-red);
+    color: var(--nitro-red) !important;
+    background-color: rgba(255, 42, 68, 0.02);
+    box-shadow: var(--nitro-glow);
+}
+
+/* Sincronización con Tablas de pH */
+.table-responsive {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+.bg-surface {
+    background-color: var(--carbon-surface);
+}
+.bg-surface-dark {
+    background-color: #0b0d11;
+}

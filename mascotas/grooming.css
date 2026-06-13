@@ -1,0 +1,214 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: PAWS & GLOW (Playful Soft Pastel & Medical Care Style)
+   ========================================================================== */
+
+:root {
+    --groom-cream: #fbfbf9;         /* Blanco Lino Confort */
+    --groom-bg-soft: #f4f6fb;       /* Azul Cielo Lavanda de Fondo */
+    --coral-main: #ff7a6a;          /* Rosa Coral Amistoso */
+    --coral-hover: #e56556;
+    --slate-text-dark: #1e293b;     /* Grafito de Alta Lectura WCAG AA */
+    --slate-text-muted: #64748b;    /* Gris Suave para Descripciones */
+    
+    /* Efectos de Movimiento y Sombras Blandas */
+    --coral-glow: 0 10px 25px -5px rgba(255, 122, 106, 0.3);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--groom-cream);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--slate-text-dark);
+}
+
+/* Tipografías e Identidad Amistosa */
+.font-fredoka { font-family: 'Fredoka', sans-serif; letter-spacing: 0.2px; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-slate { color: var(--slate-text-dark) !important; }
+.text-slate-muted { color: var(--slate-text-muted) !important; }
+.text-coral { color: var(--coral-main) !important; }
+.bg-groom-soft { background-color: var(--groom-bg-soft); }
+.font-xs { font-size: 0.76rem; }
+
+/* Contornos y Píldoras de Bienestar Canino */
+.badge-groom {
+    border: 1px solid var(--coral-main);
+    color: var(--coral-main);
+    background-color: rgba(255, 122, 106, 0.05);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.groom-line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--coral-main);
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(255, 122, 106, 0.2);
+}
+
+/* Topbar Superior Sanitaria */
+.groom-topbar {
+    background-color: #121829;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar Confortable overrides */
+.navbar-groom {
+    background-color: rgba(251, 251, 249, 0.95) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+.navbar-groom .nav-link {
+    color: var(--slate-text-dark) !important;
+    font-weight: 600;
+    transition: var(--motion-smooth);
+}
+.navbar-groom .nav-link:hover {
+    color: var(--coral-main) !important;
+}
+
+/* Composición de Imagen Orgánica */
+.main-groom-img {
+    border-radius: 40px !important; /* Estética fluida y blanda libre de aristas duras */
+    box-shadow: 0 30px 60px -15px rgba(30, 41, 59, 0.12) !important;
+    transition: var(--motion-smooth);
+    border: 6px solid #ffffff;
+}
+.main-groom-img:hover {
+    transform: scale(1.01);
+}
+
+/* Contenedores Blandos (Glassmorphism Suave Claro) */
+.bg-glass {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Card Flotante del Perrito */
+.floating-groom-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    min-width: 270px;
+    animation: groomFloat 5s ease-in-out infinite;
+}
+
+.groom-pulse-circle {
+    width: 44px;
+    height: 44px;
+    background-color: var(--coral-main);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--coral-glow);
+}
+
+@keyframes groomFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Tarjetas de Tratamientos Clínicos */
+.groom-card {
+    transition: var(--motion-bounce);
+    border: 1px solid rgba(0, 0, 0, 0.02) !important;
+    box-shadow: 0 15px 35px -5px rgba(30, 41, 59, 0.04);
+}
+.groom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -10px rgba(30, 41, 59, 0.08), var(--coral-glow) !important;
+}
+
+.groom-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: var(--groom-bg-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Campos de Formulario Redondos (Inputs) */
+.groom-input {
+    background-color: #f1f5f9 !important;
+    border: 2px solid transparent !important;
+    padding: 0.85rem 1.4rem;
+    font-size: 0.95rem;
+    color: var(--slate-text-dark) !important;
+}
+.groom-input:focus {
+    background-color: #ffffff !important;
+    border-color: var(--coral-main) !important;
+    box-shadow: 0 0 0 4px rgba(255, 122, 106, 0.15) !important;
+}
+
+/* Botonería Coral Blandas */
+.btn-coral {
+    background-color: var(--coral-main);
+    border: none;
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-coral:hover {
+    background-color: var(--coral-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--coral-glow);
+}
+.shadow-coral { box-shadow: var(--coral-glow); }
+
+.btn-outline-groom {
+    border: 2px solid var(--slate-text-dark);
+    color: var(--slate-text-dark);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-outline-groom:hover {
+    background-color: var(--slate-text-dark);
+    color: #ffffff !important;
+}
+
+.btn-outline-groom-hero {
+    border: 2px solid rgba(30, 41, 59, 0.15);
+    color: var(--slate-text-dark);
+    font-weight: 600;
+    transition: var(--motion-smooth);
+}
+.btn-outline-groom-hero:hover {
+    border-color: var(--slate-text-dark);
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* Tablas Clínicas Sanitarias overrides */
+.table-responsive {
+    border-color: rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 20px 40px -15px rgba(30, 41, 59, 0.05);
+}
+.bg-surface { background-color: #ffffff; }
+.bg-surface-dark { background-color: #1e293b; }
+.table-dark th { background-color: #1e293b !important; color: #ffffff !important; }
+
+/* Tarjetas de Plan / Peso */
+.groom-plan-card {
+    transition: var(--motion-smooth);
+}
+.groom-plan-card.active {
+    border-color: var(--coral-main) !important;
+    box-shadow: var(--coral-glow) !important;
+    background-color: rgba(255, 122, 106, 0.01) !important;
+}
+
+/* Footer Corporativo Slate */
+footer.bg-slate {
+    background-color: #0f172a !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}

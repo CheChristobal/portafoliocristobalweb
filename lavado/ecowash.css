@@ -1,0 +1,263 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: ECOWASH DELIVERY (Eco Clean & Hydro-Glow Style)
+   ========================================================================== */
+
+:root {
+    --eco-black: #0b1528;           /* Fondo Espacial Hidrodinámico */
+    --eco-surface: #13223f;         /* Capa Azul Secundaria Sólida */
+    --mint-neon: #10b981;           /* Verde Menta Ecológico */
+    --cyan-neon: #06b6d4;           /* Cian de Resplandor Fluido */
+    --text-muted-slate: #94a3b8;    /* Gris de alta legibilidad técnica */
+    
+    /* Efectos de Iluminación Ambientales */
+    --mint-glow: 0 0 25px rgba(16, 185, 129, 0.25);
+    --motion-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body {
+    background-color: var(--eco-black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ffffff !important; /* Fuerza todo el texto a blanco puro */
+    overflow-x: hidden;
+}
+
+/* Forzado General de Tipografías e Íconos a Blanco Coherente */
+.font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.text-muted, .text-muted-slate, .text-white-50 { color: #ffffff !important; opacity: 0.85; }
+.lead { color: #ffffff !important; opacity: 0.90; }
+.bi { color: #ffffff !important; }
+
+.text-mint { color: var(--mint-neon) !important; filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.4)); }
+.text-cyan-glow {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.6), 0 0 20px rgba(6, 182, 212, 0.3);
+}
+.font-xs { font-size: 0.78rem; color: #ffffff !important; }
+
+/* Contornos y Distintivos Neón Tipo Píldora */
+.badge-eco {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.eco-line {
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--mint-neon) 0%, var(--cyan-neon) 100%);
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
+}
+
+/* Topbar Superior */
+.eco-topbar {
+    background-color: #050b14;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Navbar con Efecto Glassmorphism */
+.navbar-eco {
+    background-color: rgba(11, 21, 40, 0.85) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.navbar-eco .navbar-brand {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-eco .nav-link {
+    color: #ffffff !important;
+    opacity: 0.8;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem !important;
+    border-radius: 20px;
+    transition: var(--motion-smooth);
+}
+
+.navbar-eco .nav-link:hover,
+.navbar-eco .nav-link.active {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================================
+   HERO / PORTADA CON SIMULACIÓN DE DETALLE AMBIENTAL
+   ========================================================================== */
+.eco-hero {
+    background: radial-gradient(circle at 85% 30%, rgba(6, 182, 212, 0.1) 0%, rgba(16, 185, 129, 0.02) 45%, var(--eco-black) 70%);
+    padding-bottom: 80px;
+}
+
+.main-eco-img {
+    border-radius: 32px !important;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.7) !important;
+    transition: var(--motion-smooth);
+}
+.main-eco-img:hover {
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Contenedores de Vidrio Esmerilado (Glassmorphism) */
+.bg-glass {
+    background: linear-gradient(145deg, rgba(255,255,255,0.01) 0%, rgba(19,34,63,0.4) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Card Flotante Interna */
+.floating-eco-card {
+    position: absolute;
+    bottom: 25px;
+    left: -15px;
+    min-width: 260px;
+    background: rgba(11, 21, 40, 0.95) !important;
+    border-radius: 16px !important;
+    animation: ecoFloat 6s ease-in-out infinite;
+}
+
+.eco-pulse-circle {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--mint-neon) 0%, var(--cyan-neon) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--mint-glow);
+}
+
+@keyframes ecoFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* Tarjetas de Características Metodológicas */
+.eco-card {
+    transition: var(--motion-bounce);
+}
+
+.eco-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    background: #111e3b !important;
+    border-color: rgba(16, 185, 129, 0.2) !important;
+    box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.6), var(--mint-glow) !important;
+}
+
+.eco-card h4, .eco-card p {
+    color: #ffffff !important;
+}
+
+.eco-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   TABLAS Y CAMPOS DE FORMULARIO ERGONÓMICOS (Inputs)
+   ========================================================================== */
+.table-responsive {
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 24px !important;
+}
+.table th, .table td {
+    color: #ffffff !important;
+}
+
+.bg-surface {
+    background-color: var(--eco-surface);
+}
+.bg-surface-dark {
+    background-color: #090f1d;
+}
+
+/* Cajas de Formulario Circulares */
+.eco-input {
+    background-color: #060c18 !important;
+    border: 2px solid rgba(255, 255, 255, 0.06) !important;
+    padding: 0.95rem 1.4rem;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    transition: var(--motion-smooth);
+}
+.eco-input::placeholder {
+    color: #ffffff !important;
+    opacity: 0.35;
+}
+.eco-input:focus {
+    border-color: #ffffff !important;
+    background-color: #0d192d !important;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.12) !important;
+}
+.eco-input option {
+    background-color: var(--eco-surface) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   BOTONERÍA Y EXTRAS COHERENTES
+   ========================================================================== */
+.btn-mint {
+    background: #ffffff !important; /* Unificación a Blanco Radiante */
+    color: var(--eco-black) !important;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border: none;
+    box-shadow: 0 10px 25px -6px rgba(255, 255, 255, 0.25);
+    transition: var(--motion-smooth);
+}
+
+.btn-mint:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -4px rgba(255, 255, 255, 0.4);
+}
+.shadow-mint { box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.15); }
+
+.btn-outline-eco {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    font-weight: 700;
+    transition: var(--motion-smooth);
+}
+.btn-outline-eco:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Tarjetas de Plan de Lavado */
+.eco-plan-card {
+    transition: var(--motion-smooth);
+}
+.eco-plan-card.active {
+    border-color: var(--mint-neon) !important;
+    box-shadow: var(--mint-glow) !important;
+    background-color: rgba(16, 185, 129, 0.02) !important;
+}
+.eco-plan-card:hover {
+    border-color: #ffffff !important;
+    transform: translateY(-3px);
+}
+
+/* Footer Coherente */
+footer.bg-deep-dark {
+    background-color: #040811 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.03) !important;
+}

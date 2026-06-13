@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaPay | Tu Ecosistema Financiero Digital Avanzado</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="fintech.css">
+</head>
+<body>
+
+    <!-- Topbar Superior de Seguridad -->
+    <div class="fintech-topbar py-2 text-center text-uppercase font-jakarta fw-semibold">
+        <div class="container small tracking-widest" style="font-size: 0.7rem;">
+            <i class="bi bi-shield-lock-fill text-cyan me-2"></i> Regulado por la Comisión para el Mercado Financiero (CMF) • Encriptación AES-256
+        </div>
+    </div>
+
+    <!-- Navbar Futurista Flotante -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3 navbar-fintech">
+        <div class="container">
+            <a class="navbar-brand fw-extrabold font-jakarta tracking-tight fs-3 text-white" href="#">
+                HEXA<span class="text-gradient">PAY</span>
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFintech">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarFintech">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta small tracking-wide fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#simulador">Simulador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#integraciones">API Connect</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tarifas">Comisiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Validación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Seguridad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#descarga">Descargar App</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-light btn-sm px-4 rounded-pill font-xs text-white">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada de Alto Impacto Tecnológico -->
+    <header class="fintech-hero d-flex align-items-center position-relative py-5 overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-fintech mb-3 text-uppercase font-jakarta rounded-pill">Fintech SaaS Evolution</span>
+                    <h1 class="display-3 font-jakarta text-white fw-extrabold mb-3 lh-tight">El futuro de tu dinero, <br><span class="text-gradient">sin fricciones</span>.</h1>
+                    <p class="lead font-jakarta text-muted-slate mb-4 fw-light lh-lg fs-5">Gestiona tus finanzas personales, invierte en activos globales y realiza transferencias internacionales instantáneas. Todo desde una tarjeta virtual encriptada y controlada por inteligencia artificial predictiva.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#descarga" class="btn btn-gradient font-jakarta px-4 py-3 rounded-pill fw-bold text-white shadow-neon">Obtener Cuenta Gratis</a>
+                        <a href="#beneficios" class="btn btn-outline-fintech font-jakarta px-4 py-3 rounded-pill fw-semibold text-white">Ver Cómo Funciona</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <!-- Simulación de Pantalla de la Aplicación Móvil -->
+                    <div class="mockup-container mx-auto p-3 bg-glass rounded-5 shadow-lg border border-light-subtle">
+                        <div class="mockup-header d-flex justify-content-between text-muted-slate small font-jakarta mb-3 px-2">
+                            <span>08:02 AM</span>
+                            <div class="d-flex gap-2"><i class="bi bi-wifi"></i><i class="bi bi-battery-full"></i></div>
+                        </div>
+                        <div class="card-balance p-4 rounded-4 text-start text-white mb-3">
+                            <span class="small font-jakarta text-white-50 text-uppercase tracking-wider d-block mb-1">Balance Disponible</span>
+                            <h2 class="font-jakarta fw-extrabold display-6 mb-0">$3.450.800 <small class="fs-6 text-cyan fw-normal font-mono"><i class="bi bi-arrow-up-right"></i> +4.2%</small></h2>
+                        </div>
+                        <div class="row g-2 font-jakarta text-white mb-2">
+                            <div class="col-4">
+                                <div class="p-2 bg-surface-dark rounded-3 font-xs"><i class="bi bi-send text-cyan d-block mb-1 fs-5"></i> Enviar</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-2 bg-surface-dark rounded-3 font-xs"><i class="bi bi-wallet2 text-purple d-block mb-1 fs-5"></i> Cargar</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-2 bg-surface-dark rounded-3 font-xs"><i class="bi bi-graph-up-arrow text-warning d-block mb-1 fs-5"></i> Invertir</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Módulo de Beneficios / Pilares Técnicos Ampliado a 6 Características -->
+    <section id="beneficios" class="py-5 bg-deep-dark border-bottom border-secondary-subtle">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-cyan text-uppercase tracking-widest small fw-bold d-block mb-2">Ingeniería Financiera</span>
+                <h2 class="font-jakarta fw-extrabold text-white">Características del Ecosistema</h2>
+                <div class="fintech-line mx-auto my-3"></div>
+            </div>
+
+            <div class="row g-4 font-jakarta text-white">
+                <!-- Beneficio 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 fintech-card p-4 rounded-5">
+                        <div class="fintech-icon bg-cyan-soft text-cyan mb-3"><i class="bi bi-lightning-charge-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white">Cero Comisiones Ocultas</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Apertura y mantenimiento 100% digital y sin costos mensuales base. Transferencias ilimitadas entre usuarios de la red de forma instantánea y gratuita.</p>
+                    </div>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 fintech-card p-4 rounded-5">
+                        <div class="fintech-icon bg-purple-soft text-purple mb-3"><i class="bi bi-shield-check fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white">Seguridad de Grado Militar</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Autenticación biométrica mediante huella/FaceID, tarjetas virtuales dinámicas de un solo uso (CVV rotativo) y bloqueo instantáneo desde el panel de control.</p>
+                    </div>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 fintech-card p-4 rounded-5">
+                        <div class="fintech-icon bg-warning-soft text-warning mb-3"><i class="bi bi-cpu-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white">IA para Ahorro Predictivo</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Nuestros algoritmos analizan tus patrones de gasto estáticos para optimizar flujos automáticos de ahorro, ayudándote a cumplir metas financieras sin esfuerzo.</p>
+                    </div>
+                </div>
+
+                <!-- Beneficio 4 (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 fintech-card p-4 rounded-5">
+                        <div class="fintech-icon bg-cyan-soft text-cyan mb-3"><i class="bi bi-globe2 fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-jakarta">Bóveda Multi-Divisa</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Mantén balances en Pesos, Dólares y Euros simultáneamente. Convierte divisas con el tipo de cambio interbancario real sin recargos abusivos de intermediación.</p>
+                    </div>
+                </div>
+
+                <!-- Beneficio 5 (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 fintech-card p-4 rounded-5">
+                        <div class="fintech-icon bg-purple-soft text-purple mb-3"><i class="bi bi-credit-card-2-front-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-jakarta">Tarjetas Desechables</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Genera tarjetas virtuales que se autodestruyen inmediatamente después de realizar una compra online, blindando tu cuenta principal contra fraudes.</p>
+                    </div>
+                </div>
+
+                <!-- Beneficio 6 (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 fintech-card p-4 rounded-5">
+                        <div class="fintech-icon bg-warning-soft text-warning mb-3"><i class="bi bi-pie-chart-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-jakarta">Reportes de Contabilidad</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Clasificación automática de egresos mediante tags predictivos. Exporta reportes consolidados en PDF/CSV listos para procesos de rendición tributaria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Simulador Estático de Retornos de Capital -->
+    <section id="simulador" class="py-5 bg-black border-bottom border-secondary-subtle text-white">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-glass rounded-5 border border-secondary-subtle">
+                <div class="text-center mb-4">
+                    <span class="text-cyan text-uppercase tracking-widest small fw-bold d-block mb-2">Inversión Inteligente</span>
+                    <h3 class="font-jakarta fw-extrabold text-white">Simulador de Fondos Indexados IA</h3>
+                    <p class="text-muted-slate small mt-2">Calcula la proyección estática ponderada de tu patrimonio bajo un perfil de portafolio automatizado de crecimiento moderado.</p>
+                </div>
+                <div class="row g-4 font-jakarta align-items-center">
+                    <div class="col-md-6">
+                        <label class="form-label text-white small fw-bold text-uppercase">Capital Inicial a Simular</label>
+                        <select class="form-select bg-surface border-secondary text-white rounded-pill p-3" onchange="alert('Simulación estática recalculada para este rango de patrimonio.')">
+                            <option>$500.000 CLP</option>
+                            <option selected>$5.000.000 CLP</option>
+                            <option>$20.000.000 CLP</option>
+                            <option>$50.000.000 CLP</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-surface-dark rounded-4 text-center border border-secondary-subtle">
+                            <span class="font-xs text-muted-slate text-uppercase d-block mb-1 fw-bold">Retorno Estimado (AÑO 1)</span>
+                            <h4 class="text-gradient fw-extrabold mb-0">+ $415.000 CLP</h4>
+                            <small class="text-white-50" style="font-size: 0.65rem;">Proyección basada en tasa histórica del 8.3% anual</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Conectividad API Core para Desarrolladores -->
+    <section id="integraciones" class="py-5 bg-deep-dark border-bottom border-secondary-subtle">
+        <div class="container py-4">
+            <div class="row align-items-center g-5 font-jakarta text-white">
+                <div class="col-lg-6">
+                    <span class="text-purple text-uppercase tracking-widest small fw-bold d-block mb-2">Para Desarrolladores</span>
+                    <h2 class="fw-extrabold text-white">Estructura API REST &amp; Webhooks</h2>
+                    <p class="text-muted-slate small lh-lg mb-4">Integra el motor de dispersión de pagos de HexaPay directo en las plataformas o ERP corporativos de tu empresa. Nuestra documentación técnica cuenta con SDKs nativos para múltiples entornos de programación, permitiendo automatizar transferencias mediante firmas criptográficas seguras.</p>
+                    <div class="d-flex gap-3 text-start font-mono text-white-50 font-xs">
+                        <div><i class="bi bi-braces text-cyan me-2"></i> JSON payloads</div>
+                        <div><i class="bi bi-key-fill text-purple me-2"></i> API Keys de entorno</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Código simulado estilizado en contenedor glass -->
+                    <div class="p-4 bg-surface border border-secondary rounded-4 font-mono font-xs text-start text-white overflow-hidden shadow-lg">
+                        <span class="text-white-50 small d-block border-bottom border-secondary pb-2 mb-2"><i class="bi bi-terminal-fill me-2"></i> hexapay-endpoint.sh</span>
+                        <div class="text-white-50"><span class="text-purple">curl</span> -X POST https://api.hexapay.cl/v1/disburse \</div>
+                        <div class="text-white-50">&nbsp;&nbsp;-H <span class="text-cyan">"Authorization: Bearer sec_key_live"</span> \</div>
+                        <div class="text-white-50">&nbsp;&nbsp;-d <span class="text-success">"amount=150000&amp;currency=CLP"</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla Transparente de Comisiones (SaaS Fair-Play) -->
+    <section id="tarifas" class="py-5 bg-black border-bottom border-secondary-subtle">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-purple text-uppercase tracking-widest small fw-bold d-block mb-2">Transparencia Radical</span>
+                <h2 class="font-jakarta fw-extrabold text-white">Estructura de Comisiones</h2>
+                <div class="fintech-line mx-auto my-3"></div>
+            </div>
+            <div class="table-responsive border border-secondary rounded-4 overflow-hidden bg-surface font-jakarta">
+                <table class="table table-dark align-middle mb-0 small text-start">
+                    <thead class="bg-surface-dark text-white font-jakarta">
+                        <tr>
+                            <th class="p-3 fs-6">Servicio / Operación</th>
+                            <th class="p-3 fs-6 text-center">Cuenta Estándar</th>
+                            <th class="p-3 fs-6 text-center">Cuenta Hexa Pro</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-muted-slate">
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Apertura y Mantención Digital</td>
+                            <td class="p-3 text-center text-cyan fw-bold">$0 Costo</td>
+                            <td class="p-3 text-center text-cyan fw-bold">$0 Costo</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Transferencias Interbancarias nacionales</td>
+                            <td class="p-3 text-center text-cyan">$0 comisión</td>
+                            <td class="p-3 text-center text-cyan">$0 comisión</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Inversiones en Fondos Mutuos IA</td>
+                            <td class="p-3 text-center font-mono">0.45% TA</td>
+                            <td class="p-3 text-center font-mono text-purple fw-bold">0.20% TA</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Compras Internacionales (Moneda extranjera)</td>
+                            <td class="p-3 text-center font-mono">1.2% + IVA</td>
+                            <td class="p-3 text-center text-cyan fw-bold">0% Comisión</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Validación Corporativa / Testimonios SaaS -->
+    <section id="testimonios" class="py-5 bg-deep-dark border-bottom border-secondary-subtle">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-cyan text-uppercase tracking-widest small fw-bold d-block mb-2">Casos Reales</span>
+                <h2 class="font-jakarta fw-extrabold text-white">Validado por Profesionales</h2>
+                <div class="fintech-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta text-start justify-content-center">
+                <div class="col-md-5">
+                    <div class="p-4 bg-glass rounded-5 border h-100 d-flex flex-column justify-content-between">
+                        <p class="text-white-50 small fst-italic lh-lg">"Migramos todo el flujo de dispersión de honorarios de nuestra startup hacia la API de HexaPay. Logramos automatizar las transferencias interbancarias de fin de mes, reduciendo los tiempos de operación contable en un 80% de forma segura."</p>
+                        <div class="small fw-bold text-white mt-3 border-top border-secondary pt-2">Alejandro Pavez <span class="fw-light text-muted-slate d-block" style="font-size: 0.75rem;">CTO &amp; Co-Founder de TechSol</span></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 bg-glass rounded-5 border h-100 d-flex flex-column justify-content-between">
+                        <p class="text-white-50 small fst-italic lh-lg">"El uso de las tarjetas virtuales desechables con CVV rotativo de HexaPay cambió por completo la forma en que gestionamos las suscripciones de software de marketing de la agencia. Seguridad absoluta contra cobros indebidos."</p>
+                        <div class="small fw-bold text-white mt-3 border-top border-secondary pt-2">Amparo Vergara <span class="fw-light text-muted-slate d-block" style="font-size: 0.75rem;">Directora de Finanzas en NovaMedia</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acordeón de Seguridad y FAQs de Encriptación -->
+    <section id="faq" class="py-5 bg-black border-bottom border-secondary-subtle">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2 class="font-jakarta fw-extrabold text-white">Protocolos de Infraestructura</h2>
+                <p class="text-muted-slate font-jakarta small">Respuestas sobre la custodia de fondos corporativos y criptografía.</p>
+            </div>
+            
+            <div class="accordion accordion-flush fintech-accordion border border-secondary rounded-5 overflow-hidden font-jakarta" id="fintechAccordion">
+                <div class="accordion-item bg-glass text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-white font-jakarta fs-5 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#fintechFAQ1">
+                            ¿Dónde se custodian los fondos depositados por los usuarios?
+                        </button>
+                    </h2>
+                    <div id="fintechFAQ1" class="accordion-collapse collapse" data-bs-parent="#fintechAccordion">
+                        <div class="accordion-body text-muted-slate small lh-lg border-top border-secondary">
+                            HexaPay no presta ni arriesga tu dinero en carteras especulativas. El 100% de los fondos líquidos de los usuarios están resguardados bajo cuentas de custodia de segregación total en bancos soberanos de primer nivel nacionales, asegurando su disponibilidad de retiro 24/7.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-glass text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-white font-jakarta fs-5 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#fintechFAQ2">
+                            ¿Qué tecnologías blindan la aplicación contra ciberataques?
+                        </button>
+                    </h2>
+                    <div id="fintechFAQ2" class="accordion-collapse collapse" data-bs-parent="#fintechAccordion">
+                        <div class="accordion-body text-muted-slate small lh-lg border-top border-secondary">
+                            Nuestra arquitectura backend opera en servidores descentralizados en la nube con encriptación simétrica AES-256 de extremo a extremo. Además, incorporamos tokens dinámicos vinculados al chip de tu dispositivo móvil y auditorías automatizadas de denegación de servicio (DDoS) en tiempo real.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Squeeze de Conversión / Descarga -->
+    <section id="descarga" class="py-5 bg-black">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-glass text-center rounded-5 border border-secondary-subtle">
+                <div class="mb-4">
+                    <h2 class="font-jakarta text-white fw-extrabold display-6">Únete a la Revolución de HexaPay</h2>
+                    <p class="font-jakarta text-muted-slate small mt-2">Introduce tu correo corporativo o personal para recibir el enlace seguro de descarga cifrada directo a tu smartphone.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Enlace de descarga segura enviado. Revisa tu bandeja de entrada o spam para instalar el APK/Firma digital validada en tu dispositivo móvil.');">
+                    <div class="row g-3 font-jakarta">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control rounded-pill fintech-input" placeholder="INGRESA TU CORREO ELECTRÓNICO" required>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-gradient w-100 py-3 text-uppercase tracking-wider font-jakarta fw-bold text-white rounded-pill shadow-neon">Enviar Enlace</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-center gap-4 mt-4 text-muted-slate fs-4">
+                    <i class="bi bi-apple cursor-pointer hover-white" onclick="alert('Redirigiendo de forma simulada a la App Store...')"></i>
+                    <i class="bi bi-google-play cursor-pointer hover-white" onclick="alert('Redirigiendo de forma simulada a Google Play Store...')"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Tecnológico -->
+    <footer class="bg-deep-dark text-white-50 py-5 font-jakarta border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row g-4 text-start mb-4">
+                <div class="col-md-8">
+                    <h5 class="font-jakarta text-white fw-extrabold tracking-wide mb-3">HEXAPAY SAAS TECHNOLOGIES</h5>
+                    <p class="small text-muted-slate lh-lg mb-0">HexaPay es una plataforma de servicios tecnológicos e infraestructura financiera. Las tarjetas de prepago virtuales e instrumentos de inversión son emitidos y structured por entidades financieras aliadas autorizadas y supervisadas por los entes reguladores pertinentes.</p>
+                </div>
+                <div class="col-md-4 text-md-end d-flex flex-column justify-content-center">
+                    <a href="../index.html" class="text-white text-decoration-none font-jakarta fw-bold small"><i class="bi bg-arrow-left me-1"></i> Volver al Portal de Proyectos</a>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25">
+            <p class="mb-0 small text-center">&copy; 2026 HexaPay FinTech App. Maqueta estática avanzada para demostración de arquitectura UI y portafolio front-end.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

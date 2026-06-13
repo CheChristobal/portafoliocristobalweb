@@ -1,0 +1,123 @@
+/* ==========================================================================
+   ESTILOS PREMIUM: ORÍGENES (Boho-Luxe & Organic Texture)
+   ========================================================================== */
+
+:root {
+    --craft-bg: #fdfbf7;
+    --moss-green: #4a5d4e;
+    --clay-orange: #c85a32;
+    --text-dark: #2d2a26;
+    --soft-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    --motion: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+    background-color: var(--craft-bg);
+    color: var(--text-dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Tipografías e Identidad */
+.font-lora { font-family: 'Lora', serif; font-weight: 700; }
+.text-moss { color: var(--moss-green); letter-spacing: 2px; }
+.text-clay { color: var(--clay-orange); }
+
+/* Hero con efecto de profundidad */
+.craft-hero {
+    background: radial-gradient(circle at 50% -20%, #f3efe9, var(--craft-bg));
+    padding: 6rem 0;
+}
+
+.craft-hero h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+}
+
+/* Tarjetas de Producto Estilo "Clay-Card" */
+.craft-card {
+    background: #ffffff;
+    border-radius: 40px 10px 40px 10px !important; /* Esquinas orgánicas */
+    transition: var(--motion);
+    overflow: hidden;
+    box-shadow: var(--soft-shadow);
+    border: 1px solid rgba(0,0,0,0.03) !important;
+}
+
+.craft-card img {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.craft-card:hover {
+    transform: translateY(-15px) rotate(1deg);
+    box-shadow: 0 30px 50px rgba(200, 90, 50, 0.15);
+}
+
+.craft-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Tabla con diseño de papel antiguo */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.table tbody tr {
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    transition: var(--motion);
+}
+
+.table tbody tr:hover {
+    transform: scale(1.01);
+    background: #fdfbf7;
+}
+
+/* Formulario artesanal */
+.card-form {
+    background: #ffffff;
+    border-radius: 0 60px 0 60px !important;
+    padding: 3rem !important;
+    border: none !important;
+    box-shadow: var(--soft-shadow);
+}
+
+.form-control {
+    background: #fdfbf7;
+    border: 1px solid #e5e0d8;
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    border-color: var(--clay-orange);
+    box-shadow: none;
+}
+
+/* Botones Premium */
+.btn-dark {
+    background-color: var(--text-dark);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    transition: var(--motion);
+}
+
+.btn-dark:hover {
+    background-color: var(--clay-orange);
+    letter-spacing: 4px;
+}
+
+.btn-outline-craft {
+    border: 1px solid var(--text-dark);
+    color: var(--text-dark);
+    transition: var(--motion);
+}
+
+.btn-outline-craft:hover {
+    background-color: var(--text-dark);
+    color: #ffffff;
+}

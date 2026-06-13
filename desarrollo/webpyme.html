@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPyme Dev Studio | Sitios Web y Tiendas Digitales de Alta Velocidad</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="webpyme.css">
+</head>
+<body>
+
+    <!-- Topbar de Estatus de Tecnologías -->
+    <div class="pyme-topbar py-2 text-center text-uppercase font-jakarta fw-semibold">
+        <div class="container small tracking-widest" style="font-size: 0.7rem;">
+            <i class="bi bi-lightning-charge-fill text-cyan me-2"></i> Sitios optimizados para Core Web Vitals • Estructura responsiva y hosting en la nube ultra veloz
+        </div>
+    </div>
+
+    <!-- Navbar Minimalista Tech -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3 navbar-pyme">
+        <div class="container">
+            <a class="navbar-brand fw-bold font-grotesk tracking-tight fs-3 text-white" href="#">
+                WEB<span class="text-laser-blue">PYME</span> <span class="fw-light fs-6 text-white-50">STUDIO</span>
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPyme">
+                <i class="bi bi-list fs-2 text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPyme">
+                <ul class="navbar-nav ms-auto align-items-center gap-4 font-jakarta small tracking-wider fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Soluciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#integraciones">Integraciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#casos">Casos de Éxito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#auditoria">Auditoría Gratis</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-pyme btn-sm px-4 rounded-3 text-white border-secondary font-xs">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada de Alta Conversión -->
+    <header class="pyme-hero d-flex align-items-center position-relative py-5 overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-pyme mb-3 text-uppercase font-jakarta rounded-3">Pyme Digitalization Engine</span>
+                    <h1 class="display-4 font-grotesk text-white fw-bold mb-3 lh-tight">Lleva tu pyme al <br>entorno digital <span class="text-cyan-glow">con velocidad</span>.</h1>
+                    <p class="lead font-jakarta text-muted-slate mb-4 fw-light lh-lg fs-5">Desarrollamos páginas web de alto rendimiento y tiendas virtuales e-commerce optimizadas para vender de forma constante. Estructuras SEO nativas, pasarelas de pago integradas y paneles de administración limpios para autogestionar tus productos.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#auditoria" class="btn btn-laser font-jakarta px-4 py-3 text-uppercase tracking-wider fw-bold text-white rounded-3 shadow-laser">Agendar Asesoría</a>
+                        <a href="#servicios" class="btn btn-outline-pyme font-jakarta px-4 py-3 text-uppercase tracking-wider fw-semibold text-white rounded-3">Ver Soluciones</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Desarrollo web profesional para pymes" class="img-fluid main-pyme-img shadow-lg">
+                        <!-- Widget Flotante de Rendimiento Lógico -->
+                        <div class="floating-pyme-card p-3 rounded-3 bg-glass shadow-lg d-flex align-items-center gap-3 border border-secondary">
+                            <div class="pyme-pulse-circle"><i class="bi bi-speedometer2 text-white fs-5"></i></div>
+                            <div class="text-start font-jakarta">
+                                <h6 class="fw-bold text-white mb-0">Rendimiento Core</h6>
+                                <small class="text-laser-blue font-mono fw-bold">Score 100% PageSpeed</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Módulo de Soluciones Técnicas (6 Tarjetas) -->
+    <section id="servicios" class="py-5 bg-pyme-dark border-top border-bottom border-secondary-subtle">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-laser-blue text-uppercase tracking-widest small fw-bold d-block mb-2">Desarrollo a Medida</span>
+                <h2 class="font-grotesk text-white fs-2">Servicios Digitales Corporativos</h2>
+                <div class="pyme-line mx-auto my-3"></div>
+            </div>
+
+            <div class="row g-4 font-jakarta text-white">
+                <!-- Solución 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 pyme-card p-4 rounded-3">
+                        <div class="pyme-card-icon text-laser-blue mb-3"><i class="bi bi-window-fullscreen fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Sitios Corporativos Premium</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Diseño y maquetación de landings y sitios web multi-sección enfocados en captar clientes las 24 horas del día. Arquitecturas livianas libres de sobrecarga de plantillas.</p>
+                    </div>
+                </div>
+
+                <!-- Solución 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 pyme-card p-4 rounded-3">
+                        <div class="pyme-card-icon text-laser-blue mb-3"><i class="bi bi-cart3 fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Tiendas E-commerce Autogestionables</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Montaje de carros de compra robustos conectados a inventarios físicos o ERPs de la empresa. Interfaz fluida para añadir stock, categorías y cupones de descuento.</p>
+                    </div>
+                </div>
+
+                <!-- Solución 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 pyme-card p-4 rounded-3">
+                        <div class="pyme-card-icon text-laser-blue mb-3"><i class="bi bi-google fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Optimización SEO Local</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Indexación avanzada en los motores de búsqueda para posicionar los servicios de la pyme en comunas específicas de Santiago u otras regiones, multiplicando el tráfico orgánico.</p>
+                    </div>
+                </div>
+
+                <!-- Solución 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 pyme-card p-4 rounded-3">
+                        <div class="pyme-card-icon text-laser-blue mb-3"><i class="bi bi-shield-lock-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Certificación SSL &amp; Seguridad</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Blindaje del código frente a ataques e inyecciones maliciosas. Configuración estática de certificados HTTPS oficiales para transferencias de datos encriptados.</p>
+                    </div>
+                </div>
+
+                <!-- Solución 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 pyme-card p-4 rounded-3">
+                        <div class="pyme-card-icon text-laser-blue mb-3"><i class="bi bi-bar-chart-line-fill fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Métricas e Integración de Analytics</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Conexión limpia con Google Analytics 4 y Meta Pixel para rastrear el comportamiento real de tus visitas, conversiones de campañas de marketing y leads generados.</p>
+                    </div>
+                </div>
+
+                <!-- Solución 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 bg-glass border-0 pyme-card p-4 rounded-3">
+                        <div class="pyme-card-icon text-laser-blue mb-3"><i class="bi bi-headset fs-3"></i></div>
+                        <h4 class="fw-bold fs-5 text-white font-grotesk">Soporte Técnico Continuo</h4>
+                        <p class="text-muted-slate small mb-0 lh-lg">Mantenimiento preventivo mensual para actualizar librerías lógicas, renovar dominios, corregir textos y asegurar la disponibilidad del sitio sin interrupciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifas Estructuradas Transparentes -->
+    <section id="planes" class="py-5 bg-deep-dark border-bottom border-secondary-subtle">
+        <div class="container py-4" style="max-width: 850px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-laser-blue text-uppercase tracking-widest small fw-bold d-block mb-2">Precios Claros</span>
+                <h2 class="font-grotesk text-white fs-2">Planes de Desarrollo Transparentes</h2>
+                <div class="pyme-line mx-auto my-3"></div>
+            </div>
+            
+            <div class="row g-4 font-jakarta text-white justify-content-center">
+                <!-- Landing -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-glass border border-secondary text-center h-100 d-flex flex-column justify-content-between rounded-3 pyme-plan-card">
+                        <div>
+                            <h5 class="fw-bold font-grotesk text-white mb-1">Landing Corporativa</h5>
+                            <p class="text-muted-slate font-xs mb-3">Enfoque en Conversión Directa</p>
+                        </div>
+                        <div class="border-top border-secondary pt-3 mt-3">
+                            <span class="text-muted-slate d-block small mb-1">Sección Única Optimizada</span>
+                            <h4 class="text-laser-blue font-grotesk fw-bold mb-0">$180.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Web Pyme -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-glass border border-laser text-center h-100 d-flex flex-column justify-content-between rounded-3 position-relative pyme-plan-card active">
+                        <span class="position-absolute top-0 start-50 translate-middle badge bg-laser-blue text-white text-uppercase font-xs fw-bold rounded-3">Más Solicitado</span>
+                        <div>
+                            <h5 class="fw-bold font-grotesk text-white mb-1 mt-2">Sitio Corporativo Full</h5>
+                            <p class="text-muted-slate font-xs mb-3">Ideal para Empresas de Servicios</p>
+                        </div>
+                        <div class="border-top border-secondary pt-3 mt-3">
+                            <span class="text-muted-slate d-block small mb-1">Multi-secciones + SEO Local</span>
+                            <h4 class="text-laser-blue font-grotesk fw-bold mb-0">$320.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- E-commerce -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-glass border border-secondary text-center h-100 d-flex flex-column justify-content-between rounded-3 pyme-plan-card">
+                        <div>
+                            <h5 class="fw-bold font-grotesk text-white mb-1">E-commerce Pro</h5>
+                            <p class="text-muted-slate font-xs mb-3">Carro de Compras Automatizado</p>
+                        </div>
+                        <div class="border-top border-secondary pt-3 mt-3">
+                            <span class="text-muted-slate d-block small mb-1">Pasarelas de Pago Integradas</span>
+                            <h4 class="text-laser-blue font-grotesk fw-bold mb-0">$450.000</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla de Integraciones y Pasarelas de Pago -->
+    <section id="integraciones" class="py-5 bg-black border-bottom border-secondary-subtle text-white">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-laser-blue text-uppercase tracking-widest small fw-bold d-block mb-2">Conectividad Total</span>
+                <h2 class="font-grotesk text-white">Ecosistema de Módulos e Integración</h2>
+                <div class="pyme-line mx-auto my-3"></div>
+            </div>
+            <div class="table-responsive border border-secondary rounded-3 overflow-hidden bg-surface font-jakarta">
+                <table class="table table-dark align-middle mb-0 small text-start">
+                    <thead class="bg-surface-dark text-white font-jakarta">
+                        <tr>
+                            <th class="p-3 fs-6">Pasarela / Proveedor</th>
+                            <th class="p-3 fs-6 text-center">Tipo de Conectividad</th>
+                            <th class="p-3 fs-6 text-center">Método Técnico</th>
+                            <th class="p-3 fs-6 text-center">Propósito Comercial</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-muted-slate">
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Webpay Plus (Transbank)</td>
+                            <td class="p-3 text-center text-laser-blue fw-bold">API Sincrónico Nnativo</td>
+                            <td class="p-3 text-center font-mono">REST Webhooks</td>
+                            <td class="p-3 text-center">Cobros con Tarjetas de Crédito, Débito y Prepago en Chile de forma directa.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Mercado Pago</td>
+                            <td class="p-3 text-center text-laser-blue fw-bold">SDK Oficial Cloud</td>
+                            <td class="p-3 text-center font-mono">OAuth 2.0 Auth</td>
+                            <td class="p-3 text-center">Procesamiento de pagos inmediato con wallet digital y protección antifraudes.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fw-bold text-white">Stripe Core</td>
+                            <td class="p-3 text-center text-white fw-bold">API Global Rest</td>
+                            <td class="p-3 text-center font-mono">Webhooks JSON</td>
+                            <td class="p-3 text-center">Procesamiento internacional de transacciones multidivisas para exportación de servicios.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Éxito Locales -->
+    <section id="casos" class="py-5 bg-pyme-dark border-bottom border-secondary-subtle text-white">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-laser-blue text-uppercase tracking-widest small fw-bold d-block mb-2">Pymes Digitalizadas</span>
+                <h2 class="font-grotesk text-white">Casos de Éxito Recientes</h2>
+                <div class="pyme-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta text-start justify-content-center">
+                <div class="col-md-5">
+                    <div class="p-4 bg-glass rounded-3 border border-secondary h-100 d-flex flex-column justify-content-between">
+                        <p class="text-white-50 small fst-italic lh-lg">"Teníamos un taller de bicicletas en Conchalí con cero presencia en internet. WebPyme desarrolló nuestra web con catálogo integrado y un cotizador estático excelente. En menos de 3 meses duplicamos las solicitudes de mantenciones hidráulicas."</p>
+                        <div class="small fw-bold text-white mt-3 border-top border-secondary pt-2">HEXA-Bikes Studio <span class="fw-light text-laser-blue d-block font-mono" style="font-size: 0.72rem;">Sitio Corporativo + SEO Local Implementado</span></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 bg-glass rounded-3 border border-secondary h-100 d-flex flex-column justify-content-between">
+                        <p class="text-white-50 small fst-italic lh-lg">"Lanzamos nuestra tienda de perfumes premium simulados y la fluidez del carro de compras superó nuestras expectativas. No tiene retrasos y el panel de administración nos permite cambiar precios en segundos de forma autogestionable."</p>
+                        <div class="small fw-bold text-white mt-3 border-top border-secondary pt-2">Luxury Perfumes <span class="fw-light text-laser-blue d-block font-mono" style="font-size: 0.72rem;">E-commerce Store Autogestionable</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Squeeze de Auditoría Digital Gratuita -->
+    <section id="auditoria" class="py-5 bg-black">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-glass text-center rounded-4 border border-secondary-subtle">
+                <div class="mb-4">
+                    <h2 class="font-grotesk text-white fs-3">Solicitar Auditoría de Velocidad Gratis</h2>
+                    <p class="font-jakarta text-muted-slate small mt-2">Ingresa los datos actuales de tu negocio. Nuestro equipo técnico estático analizará la factibilidad de desarrollo para estructurarte una propuesta técnica a la medida.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Solicitud de auditoría de rendimiento ingresada con éxito en WebPyme Dev Studio. Nos comunicaremos contigo en menos de 24 horas para entregarte el reporte de velocidad de carga.');">
+                    <div class="row g-3 font-jakarta fw-semibold">
+                        <div class="col-md-6">
+                            <label class="form-label text-white small text-uppercase text-start d-block">Nombre del Fundador / Socio</label>
+                            <input type="text" class="form-control rounded-3 pyme-input" placeholder="Ej: Cristóbal Echeverría" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-white small text-uppercase text-start d-block">Giro o Rubro de la Pyme</label>
+                            <select class="form-select rounded-3 pyme-input text-start" required>
+                                <option value="" selected disabled>Selecciona rubro...</option>
+                                <option>Servicios Técnicos (Climatización, Mecánica, Detailing)</option>
+                                <option>Comercio de Productos / Tienda Física</option>
+                                <option>Profesionales Independientes / Educación / Salud</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <label class="form-label text-white small text-uppercase text-start d-block">Correo Corporativo de Respuesta</label>
+                            <input type="email" class="form-control rounded-3 pyme-input" placeholder="tu-pyme@hexa.cl" required>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-laser w-100 py-3 text-uppercase tracking-wider font-grotesk text-white rounded-3 shadow-laser">Solicitar Diagnóstico Técnico de Rendimiento</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer de Agencia -->
+    <footer class="bg-deep-dark text-white-50 py-5 font-jakarta border-top border-secondary-subtle">
+        <div class="container">
+            <div class="row g-4 text-start mb-4">
+                <div class="col-md-8">
+                    <h5 class="font-grotesk text-white tracking-wide mb-3">WEBPYME DEV STUDIO CHILE</h5>
+                    <p class="small text-muted-slate lh-lg mb-0">WebPyme Studio es un portal estático de simulación de agencia de ingeniería de software front-end y digitalización pyme. Los planes comerciales, integraciones bancarias y métricas técnicas forman parte de una demostración avanzada para exhibición de portafolio web front-end profesional.</p>
+                </div>
+                <div class="col-md-4 text-md-end d-flex flex-column justify-content-center">
+                    <a href="../index.html" class="text-white text-decoration-none font-jakarta fw-bold small"><i class="bi bg-arrow-left me-1"></i> Volver a Panel de Control</a>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25">
+            <p class="mb-0 small text-center">&copy; 2026 WebPyme Studio. Maquetación optimizada, responsiva y semántica de alto nivel competitivo.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

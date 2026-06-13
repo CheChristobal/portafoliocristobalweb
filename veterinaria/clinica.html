@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Claws | Clínica Veterinaria & PetShop</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Propio de esta página -->
+    <link rel="stylesheet" href="clinica.css">
+</head>
+<body>
+
+    <!-- Topbar de Emergencias Médicas -->
+    <div class="pet-topbar py-2 text-white text-center small tracking-wide font-jakarta fw-semibold">
+        <div class="container">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i> Urgencias Veterinarias 24/7: +56 2 2765 4321
+        </div>
+    </div>
+
+    <!-- Navbar Pastel Soft -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3 navbar-pet bg-white shadow-xs">
+        <div class="container">
+            <a class="navbar-brand font-fredoka fw-bold text-teal fs-3" href="#">
+                <i class="bi bi-heart-pulse-fill text-coral me-2"></i>Paws<span class="text-dark fw-normal">&amp;Claws</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPet">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPet">
+                <ul class="navbar-nav ms-auto align-items-center gap-3 font-jakarta small fw-bold text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tienda">PetShop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Especialistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Opiniones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#historial">Historial Digital</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-outline-teal btn-sm px-4 rounded-pill">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Portada Empática Alegre -->
+    <header class="pet-hero d-flex align-items-center position-relative py-5">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5 text-center text-lg-start">
+                <div class="col-lg-6">
+                    <span class="badge badge-pet mb-3 text-uppercase font-jakarta rounded-pill">El Cuidado que merecen</span>
+                    <h1 class="display-4 font-fredoka text-dark mb-3">Salud integral para tu <span class="text-teal">mejor amigo</span>.</h1>
+                    <p class="lead font-jakarta text-muted mb-4 fw-light fs-5">Medicina veterinaria avanzada, pabellones de cirugía menor, laboratorio propio y un PetShop con nutrición premium en un ambiente libre de estrés para ellos.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#historial" class="btn btn-teal font-jakarta px-4 py-3 rounded-pill fw-bold shadow-teal">Registrar Mascota</a>
+                        <a href="#servicios" class="btn btn-outline-coral font-jakarta px-4 py-3 rounded-pill fw-bold">Ver Especialidades</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative d-inline-block">
+<img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80" alt="Mascotas Felices Paws & Claws" class="img-fluid rounded-5 shadow-md main-pet-img">                        <!-- Card flotante de atención médica -->
+                        <div class="floating-pet-card p-3 rounded-4 bg-white shadow-lg d-flex align-items-center gap-3 border">
+                            <div class="icon-circle-pet bg-teal-soft text-teal"><i class="bi bi-shield-fill-check fs-4"></i></div>
+                            <div class="text-start font-jakarta">
+                                <h6 class="fw-bold text-dark mb-0">Médicos Certificados</h6>
+                                <small class="text-muted">Colegio Veterinario Activo</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NUEVA SECCIÓN: Indicadores de la Clínica -->
+    <section class="py-4 bg-white border-bottom text-center font-fredoka">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <h3 class="display-5 fw-bold text-teal mb-0">+8.5K</h3>
+                    <span class="font-jakarta small text-muted text-uppercase fw-bold tracking-wide">Pacientes De Alta</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="display-5 fw-bold text-coral mb-0">99.2%</h3>
+                    <span class="font-jakarta small text-muted text-uppercase fw-bold tracking-wide">Casos De Éxito</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="display-5 fw-bold text-purple mb-0">24 Hrs</h3>
+                    <span class="font-jakarta small text-muted text-uppercase fw-bold tracking-wide">Monitoreo Crítico</span>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="display-5 fw-bold text-dark mb-0">100%</h3>
+                    <span class="font-jakarta small text-muted text-uppercase fw-bold tracking-wide">Amor Por Los Animales</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulos de Servicios Médicos y Estéticos Ampliado a 6 Tarjetas -->
+    <section id="servicios" class="py-5 bg-pet-soft border-bottom">
+        <div class="container py-5">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-coral text-uppercase tracking-wider small fw-bold d-block mb-2">Áreas de Atención</span>
+                <h2 class="font-fredoka display-5 text-dark">Nuestros Servicios Médicos</h2>
+                <div class="pet-line mx-auto my-3"></div>
+                <p class="text-muted font-jakarta small">Atención hospitalaria, diagnóstico molecular y peluquería sanitaria ejecutada con paciencia y contención emocional.</p>
+            </div>
+
+            <div class="row g-4 font-jakarta">
+                <!-- Servicio 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs pet-card p-4 rounded-5">
+                        <div class="pet-icon bg-teal-soft text-teal mb-3"><i class="bi bi-heart-pulse fs-2"></i></div>
+                        <h4 class="font-fredoka text-dark fs-4">Medicina Preventiva</h4>
+                        <p class="text-muted small mb-0 lh-lg">Controles de niño sano (cachorros), planes de vacunación obligatorios, desparasitaciones internas/externas y chequeos geriátricos avanzados.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs pet-card p-4 rounded-5">
+                        <div class="pet-icon bg-coral-soft text-coral mb-3"><i class="bi bi-scissors fs-2"></i></div>
+                        <h4 class="font-fredoka text-dark fs-4">Peluquería Cosmética</h4>
+                        <p class="text-muted small mb-0 lh-lg">Baños sanitarios medicados, corte de pelo estructural según la raza, limpieza profunda de oídos y corte seguro de garras sin estrés.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs pet-card p-4 rounded-5">
+                        <div class="pet-icon bg-purple-soft text-purple mb-3"><i class="bi bi-prescription2 fs-2"></i></div>
+                        <h4 class="font-fredoka text-dark fs-4">PetShop Especializado</h4>
+                        <p class="text-muted small mb-0 lh-lg">Venta de alimentos terapéuticos (prescripción médica), fármacos autorizados de alta gama y juguetes de estimulación cognitiva avanzada.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs pet-card p-4 rounded-5">
+                        <div class="pet-icon bg-teal-soft text-teal mb-3"><i class="bi bi-droplet-half fs-2"></i></div>
+                        <h4 class="font-fredoka text-dark fs-4">Laboratorio Clínico Insitu</h4>
+                        <p class="text-muted small mb-0 lh-lg">Hemogramas completos, perfiles bioquímicos bioquímicos y test rápidos de enfermedades virales con resultados listos en menos de 45 minutos.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 5 (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs pet-card p-4 rounded-5">
+                        <div class="pet-icon bg-coral-soft text-coral mb-3"><i class="bi bi-camera-video fs-2"></i></div>
+                        <h4 class="font-fredoka text-dark fs-4">Diagnóstico por Imágenes</h4>
+                        <p class="text-muted small mb-0 lh-lg">Radiología digital de baja radiación y ecografías abdominales de alta resolución para diagnósticos rápidos en situaciones críticas de emergencia.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 6 (Nuevo) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-xs pet-card p-4 rounded-5">
+                        <div class="pet-icon bg-purple-soft text-purple mb-3"><i class="bi bi-shield-plus fs-2"></i></div>
+                        <h4 class="font-fredoka text-dark fs-4">Odontología Veterinaria</h4>
+                        <p class="text-muted small mb-0 lh-lg">Destartraje ultrasónico preventivo, pulido dental clínico y extracciones complejas para evitar infecciones periodontales graves.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Planes de Cuidado Preventivo (Suscripciones) -->
+    <section id="planes" class="py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-purple text-uppercase tracking-wider small fw-bold d-block mb-2">Cobertura Mensual</span>
+                <h2 class="font-fredoka text-dark">Planes Colectivos de Salud</h2>
+                <div class="pet-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 justify-content-center align-items-center font-jakarta">
+                <!-- Plan Cachorro -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="card p-4 border border-light text-center rounded-5 shadow-xs">
+                        <h4 class="font-fredoka text-dark mb-1">Plan Puppy</h4>
+                        <p class="text-muted small mb-3">Hasta los 12 meses de edad.</p>
+                        <div class="font-fredoka text-teal h2 fw-bold mb-3">$18.990 <span class="fs-6 text-muted font-jakarta fw-normal">/mes</span></div>
+                        <ul class="list-unstyled text-start small text-muted mb-4 d-flex flex-column gap-2">
+                            <li><i class="bi bi-check-circle-fill text-teal me-2"></i> Consultas generales ilimitadas</li>
+                            <li><i class="bi bi-check-circle-fill text-teal me-2"></i> Todas las vacunas iniciales (Puppy/Séxtuple)</li>
+                            <li><i class="bi bi-check-circle-fill text-teal me-2"></i> 2 Coprocultivos de control al año</li>
+                        </ul>
+                        <button class="btn btn-outline-teal w-100 rounded-pill fw-bold" onclick="alert('Simulación: Iniciando alta de suscripción Plan Puppy...')">Suscribir Plan</button>
+                    </div>
+                </div>
+                <!-- Plan Adulto Destacado -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="card p-4 border-2 border-teal text-center rounded-5 shadow-sm position-relative bg-teal-soft">
+                        <span class="position-absolute top-0 start-50 translate-middle badge bg-coral text-white text-uppercase rounded-pill px-3 py-1 font-jakarta small">Recomendado</span>
+                        <h4 class="font-fredoka text-dark mt-2 mb-1">Plan Plus Can/Fel</h4>
+                        <p class="text-muted small mb-3">Mascotas adultas sanas.</p>
+                        <div class="font-fredoka text-coral h2 fw-bold mb-3">$24.990 <span class="fs-6 text-muted font-jakarta fw-normal">/mes</span></div>
+                        <ul class="list-unstyled text-start small text-muted mb-4 d-flex flex-column gap-2">
+                            <li><i class="bi bi-check-circle-fill text-teal me-2"></i> <strong>Consultas de urgencia incluidas</strong></li>
+                            <li><i class="bi bi-check-circle-fill text-teal me-2"></i> Vacuna antirrábica anual obligatoria</li>
+                            <li><i class="bi bi-check-circle-fill text-teal me-2"></i> 1 Perfil bioquímico preventivo anual</li>
+                            <li><i class="bi bi-check-circle-fill text-teal me-2"></i> 15% Desc. permanente en PetShop</li>
+                        </ul>
+                        <button class="btn btn-teal w-100 rounded-pill fw-bold shadow-teal" onclick="alert('Simulación: Iniciando alta de suscripción Plan Plus...')">Suscribir Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Vitrina Especializada PetShop -->
+    <section id="tienda" class="py-5 bg-pet-soft border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-coral text-uppercase tracking-wider small fw-bold d-block mb-2">Línea Clínica Premium</span>
+                <h2 class="font-fredoka text-dark">Destacados del PetShop</h2>
+                <div class="pet-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta">
+                <!-- Producto 1 -->
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 rounded-4 p-3 h-100 shadow-xs d-flex flex-column justify-content-between text-start">
+                        <div>
+                            <span class="badge bg-danger-subtle text-danger mb-2 small fw-bold rounded-pill">Prescripción</span>
+                            <h6 class="fw-bold text-dark mb-1">Alimento Urinary Felino (2kg)</h6>
+                            <p class="text-muted small mb-0">Especial para disolución de cálculos de estruvita.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-2">
+                            <span class="fw-bold text-dark">$28.500</span>
+                            <button class="btn btn-sm btn-teal rounded-circle" onclick="alert('Simulación: Artículo añadido al carro digital.')"><i class="bi bi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 rounded-4 p-3 h-100 shadow-xs d-flex flex-column justify-content-between text-start">
+                        <div>
+                            <span class="badge bg-success-subtle text-success mb-2 small fw-bold rounded-pill"> Antiparasitario</span>
+                            <h6 class="fw-bold text-dark mb-1">Comprimido Canino NexGard</h6>
+                            <p class="text-muted small mb-0">Protección total de 30 días contra pulgas y garrapatas.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-2">
+                            <span class="fw-bold text-dark">$14.900</span>
+                            <button class="btn btn-sm btn-teal rounded-circle" onclick="alert('Simulación: Artículo añadido al carro digital.')"><i class="bi bi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo Médico / Médicos Veterinarios -->
+    <section id="equipo" class="py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-teal text-uppercase tracking-wider small fw-bold d-block mb-2">Cuerpo Médico</span>
+                <h2 class="font-fredoka text-dark">Especialistas Paws &amp; Claws</h2>
+                <div class="pet-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 justify-content-center text-center font-jakarta">
+                <div class="col-md-4">
+                    <div class="p-4 bg-pet-soft rounded-5 border h-100 d-flex flex-column align-items-center">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&h=200&q=80" alt="Veterinaria" class="rounded-circle mb-3 object-fit-cover shadow-xs border border-3 border-white" style="width: 120px; height: 120px;">
+                        <h5 class="font-fredoka text-dark fw-bold mb-1">Dra. Macarena Prieto</h5>
+                        <small class="text-teal text-uppercase tracking-wider d-block small mb-3 fw-bold">Médico Cirujano / Felinos</small>
+                        <p class="text-muted small mb-0 fw-light">Diplomada en Medicina Felina, experta en el manejo etológico amable (Cat Friendly Practice) y cirugías de tejidos blandos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-pet-soft rounded-5 border h-100 d-flex flex-column align-items-center">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&h=200&q=80" alt="Veterinario" class="rounded-circle mb-3 object-fit-cover shadow-xs border border-3 border-white" style="width: 120px; height: 120px;">
+                        <h5 class="font-fredoka text-dark fw-bold mb-1">Dr. Camilo Fuenzalida</h5>
+                        <small class="text-coral text-uppercase tracking-wider d-block small mb-3 fw-bold">Especialista en Caninos / Imagenología</small>
+                        <p class="text-muted small mb-0 fw-light">Experto en ecografía abdominal doppler transaccional, radiología digital compleja y traumatología en animales de compañía.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opiniones de Tutores Felices -->
+    <section id="testimonios" class="py-5 bg-pet-soft border-bottom">
+        <div class="container py-4">
+            <div class="text-center max-w-600 mx-auto mb-5">
+                <span class="text-purple text-uppercase tracking-wider small fw-bold d-block mb-2">Comunidad Pet-Lovers</span>
+                <h2 class="font-fredoka text-dark">Historias de Sanación</h2>
+                <div class="pet-line mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 font-jakarta justify-content-center text-start">
+                <div class="col-md-5">
+                    <div class="p-4 bg-white rounded-5 shadow-xs h-100 d-flex flex-column justify-content-between">
+                        <p class="text-muted small fst-italic lh-lg">"Llevé a mi gatito por una emergencia urinaria crítica y la atención de la Dra. Macarena fue impecable. Tienen un trato tan dulce y profesional que mi gatito ni siquiera se asustó. Totalmente recomendados."</p>
+                        <div class="fw-bold text-teal small mt-3">Tutor de "Tomás" <span class="fw-light text-muted d-block" style="font-size: 0.75rem;">Atención en Mayo 2026</span></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 bg-white rounded-5 shadow-xs h-100 d-flex flex-column justify-content-between">
+                        <p class="text-muted small fst-italic lh-lg">"La mejor veterinaria del sector. El sistema de historial digital me avisa automáticamente al correo cuando le toca la vacuna séxtuple a mi perrita. Además, el PetShop tiene excelentes marcas."</p>
+                        <div class="fw-bold text-coral small mt-3">Tutora de "Luna" <span class="fw-light text-muted d-block" style="font-size: 0.75rem;">Atención en Abril 2026</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes (Soporte Tutor Accordion) -->
+    <section id="faq" class="py-5 bg-white border-bottom">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2 class="font-fredoka text-dark">Preguntas de Tutores</h2>
+                <p class="text-muted font-jakarta small">Información operativa sobre la dinámica de atención en clínica.</p>
+            </div>
+            
+            <div class="accordion accordion-flush pet-accordion border rounded-5 overflow-hidden font-jakarta" id="petAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark font-fredoka fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#petFAQ1">
+                            ¿Se requiere agendar hora previa para atención médica general?
+                        </button>
+                    </h2>
+                    <div id="petFAQ1" class="accordion-collapse collapse" data-bs-parent="#petAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Para consultas rutinarias, planes de vacunas y servicios de peluquería recomendamos agendar previamente a través de nuestros canales fijos para evitar esperas prolongadas. Sin embargo, las atenciones clasificadas como **Urgencias Médicas** entran directo a triage de pabellón sin cita previa las 24 horas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark font-fredoka fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#petFAQ2">
+                            ¿Cuentan con facilidades de pago para cirugías complejas?
+                        </button>
+                    </h2>
+                    <div id="petFAQ2" class="accordion-collapse collapse" data-bs-parent="#petAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Sí. Comprendemos que las emergencias quirúrgicas son imprevistas. Contamos con convenios para pago diferido con tarjetas de crédito bancarias (hasta 3 cuotas sin interés) y planes de financiamiento con seguro médico animal de cobertura nacional.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo Squeeze: Formulario de Registro Historial Digital -->
+    <section id="historial" class="py-5 bg-pet-soft">
+        <div class="container py-4" style="max-width: 750px;">
+            <div class="card border-0 p-4 p-md-5 bg-white shadow-lg rounded-5">
+                <div class="text-center mb-4">
+                    <h2 class="font-fredoka text-dark display-6">Inscripción Historial Médico Digital</h2>
+                    <p class="font-jakarta text-muted small mt-2">Inscribe los datos estáticos de tu mascota. El sistema registrará su ficha clínica y enviará recordatorios automáticos opcionales para sus vacunas.</p>
+                </div>
+                <form action="#" onsubmit="event.preventDefault(); alert('Mascota registrada correctamente en el ecosistema Paws & Claws. Hemos enviado el link de acceso a tu Ficha Digital al correo electrónico.');">
+                    <div class="row g-3 font-jakarta">
+                        <div class="col-md-6">
+                            <label class="form-label text-teal small fw-bold text-uppercase">Tutor Responsable</label>
+                            <input type="text" class="form-control rounded-4 input-pet" placeholder="Ej: Diego Silva" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-teal small fw-bold text-uppercase">Nombre de la Mascota</label>
+                            <input type="text" class="form-control rounded-4 input-pet" placeholder="Ej: Rocky" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-teal small fw-bold text-uppercase">Especie</label>
+                            <select class="form-select rounded-4 input-pet" required>
+                                <option value="" selected disabled>Selecciona especie...</option>
+                                <option>Canino (Perro)</option>
+                                <option>Felino (Gato)</option>
+                                <option>Exótico (Conejo, Hurón, etc.)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-teal small fw-bold text-uppercase">Correo de Contacto</label>
+                            <input type="email" class="form-control rounded-4 input-pet" placeholder="diego@correo.com" required>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-teal w-100 py-3 text-uppercase tracking-wider fw-bold rounded-pill">Generar Ficha Veterinaria</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Amigable -->
+    <footer class="bg-white py-5 text-center border-top font-jakarta">
+        <div class="container text-muted">
+            <p class="mb-2 small">&copy; 2026 Paws &amp; Claws Clinic. Espacio maquetado estático independiente para exhibición de portafolio UI profesional.</p>
+            <a href="../index.html" class="text-teal text-decoration-none font-fredoka fw-bold tracking-wide small"><i class="bi bi-arrow-left-circle me-1"></i> Volver a Panel Principal</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
