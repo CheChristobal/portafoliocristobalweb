@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaCore Automations | IA Agents & Neural Flows</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="automatizacion.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-obsidian border-bottom border-purple">
+        <div class="container">
+            <a class="navbar-brand fw-bold font-grotesk text-purple" href="#">HEXA<span class="text-white">CORE</span> <span class="font-mono text-cyan fs-6">>AI</span></a>
+            <div class="ms-auto"><a href="../index.html" class="btn btn-outline-purple btn-sm rounded-0 font-mono">Volver al Panel</a></div>
+        </div>
+    </nav>
+
+    <header class="ai-hero py-5 text-white">
+        <div class="container py-5 text-center">
+            <span class="font-mono text-cyan tracking-widest">[ Neural Engine: Active ]</span>
+            <h1 class="display-1 fw-bold my-4 font-grotesk">Automatización <br><span class="text-gradient">Autónoma</span>.</h1>
+            <p class="lead text-white-50 mx-auto" style="max-width: 700px;">Agentes que ejecutan tareas complejas de forma local. Optimizamos flujos de trabajo utilizando modelos LLM de alto rendimiento.</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-obsidian border-purple p-4 h-100 rounded-0 text-white">
+                        <i class="bi bi-robot fs-2 text-purple mb-3"></i>
+                        <h4 class="font-grotesk">Agentes Autogestionados</h4>
+                        <p class="text-white-50 small">Modelos locales Ollama para gestión de correos, resúmenes de logs y redacción técnica asistida.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-obsidian border-purple p-4 h-100 rounded-0 text-white">
+                        <i class="bi bi-diagram-3 fs-2 text-cyan mb-3"></i>
+                        <h4 class="font-grotesk">Workflows Neurales</h4>
+                        <p class="text-white-50 small">Lógica condicional donde la IA toma decisiones críticas basadas en triggers del sistema en tiempo real.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-obsidian border-purple p-4 h-100 rounded-0 text-white">
+                        <i class="bi bi-code-square fs-2 text-purple mb-3"></i>
+                        <h4 class="font-grotesk">Optimización de Código</h4>
+                        <p class="text-white-50 small">Integración directa con modelos Qwen2.5 para auditoría, refactorización y despliegue de microservicios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-black border-top border-purple">
+        <div class="container">
+            <h3 class="font-grotesk text-white mb-4"><span class="text-cyan">></span> Estado de Agentes Activos</h3>
+            <div class="table-responsive border border-purple">
+                <table class="table table-dark table-hover font-mono small">
+                    <thead><tr class="text-purple"><th>ID_AGENT</th><th>Modelo</th><th>Uso de GPU</th><th>Latency</th><th>Status</th></tr></thead>
+                    <tbody>
+                        <tr><td>AGENT_01</td><td>Qwen2.5-Coder:7b</td><td>4.2 GB</td><td>12ms</td><td class="text-success">READY</td></tr>
+                        <tr><td>AGENT_02</td><td>Mistral:Latest</td><td>2.1 GB</td><td>8ms</td><td class="text-info">RUNNING</td></tr>
+                        <tr><td>AGENT_03</td><td>Llama3:8b</td><td>4.8 GB</td><td>25ms</td><td class="text-warning">LOADING</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-obsidian">
+        <div class="container" style="max-width: 900px;">
+            <h3 class="font-grotesk text-white mb-4">> Terminal de Ejecución Log</h3>
+            <div class="bg-black p-4 border border-purple font-mono text-cyan shadow-lg overflow-auto" style="min-height: 250px; height: 250px;">
+                <p>> Initializing Neural Flows...</p>
+                <p>> Loading local LLM (Ollama: qwen2.5-coder:7b)...</p>
+                <p>> Workflow Engine status: [OK]</p>
+                <p>> Vector Database: Indexing docs...</p>
+                <p>> Agent_01 connected to GitHub Webhooks.</p>
+                <p class="text-white">> Waiting for task trigger...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 text-white">
+        <div class="container">
+            <h3 class="font-grotesk text-center mb-5">Integraciones de API</h3>
+            <div class="row g-4">
+                <div class="col-md-4"><div class="p-4 bg-obsidian border border-purple text-center"><i class="bi bi-github fs-1 text-white"></i><h5 class="mt-3">GitHub Hooks</h5><small class="text-white-50">Auto-deploy en cada commit.</small></div></div>
+                <div class="col-md-4"><div class="p-4 bg-obsidian border border-purple text-center"><i class="bi bi-slack fs-1 text-white"></i><h5 class="mt-3">Slack Notifications</h5><small class="text-white-50">Alertas de errores en tiempo real.</small></div></div>
+                <div class="col-md-4"><div class="p-4 bg-obsidian border border-purple text-center"><i class="bi bi-database fs-1 text-white"></i><h5 class="mt-3">Supabase</h5><small class="text-white-50">DB vectorial con memoria persistente.</small></div></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+:root {
+    --bg-obsidian: #050505;
+    --purple: #8b5cf6;
+    --cyan: #06b6d4;
+    --text-white: #f8fafc;
+}
+
+body {
+    background-color: var(--bg-obsidian);
+    color: var(--text-white);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.bg-obsidian { background-color: var(--bg-obsidian); }
+.border-purple { border: 1px solid var(--purple); }
+.text-purple { color: var(--purple); }
+.text-cyan { color: var(--cyan); }
+.font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--purple), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ai-hero {
+    background: radial-gradient(circle at 50% 0%, #1e1b4b, #050505);
+}
+
+.card {
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+.btn-outline-purple {
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+
+.btn-outline-purple:hover {
+    background-color: var(--purple);
+    color: white;
+}

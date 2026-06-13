@@ -1,0 +1,68 @@
+:root {
+    --coral: #fb7185;
+    --navy: #1e293b;
+    --sky: #e0f2fe;
+}
+
+body { font-family: 'Quicksand', sans-serif; background-color: #fffdfa; color: var(--navy); }
+
+.text-coral { color: var(--coral); }
+.text-navy { color: var(--navy); }
+
+.groom-hero { background: radial-gradient(circle at 50% 100%, var(--sky), #fffdfa); }
+
+.card { transition: 0.3s ease; }
+.card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(251, 113, 133, 0.15) !important; }
+
+.btn-outline-coral { border: 2px solid var(--coral); color: var(--coral); font-weight: 600; }
+.btn-outline-coral:hover { background-color: var(--coral); color: white; }
+
+.rounded-4 { border-radius: 20px !important; }
+
+:root {
+    --coral: #fb7185;
+    --navy: #1e293b;
+    --sky: #e0f2fe;
+}
+
+body { font-family: 'Quicksand', sans-serif; background-color: #fffdfa; color: var(--navy); }
+
+.text-coral { color: var(--coral); }
+.bg-coral { background-color: var(--coral); }
+.text-navy { color: var(--navy); }
+
+.groom-hero { background: radial-gradient(circle at 50% 100%, var(--sky), #fffdfa); }
+
+.card { transition: 0.3s ease; }
+.card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(251, 113, 133, 0.15) !important; }
+
+.btn-outline-coral { border: 2px solid var(--coral); color: var(--coral); font-weight: 600; }
+.btn-outline-coral:hover { background-color: var(--coral); color: white; }
+
+.rounded-4 { border-radius: 20px !important; }
+
+/* Nueva clase para filas de tabla */
+.table td { padding: 1rem; }
+
+:root {
+    --coral: #fb7185;
+    --navy: #1e293b;
+    --sky: #e0f2fe;
+}
+
+body { font-family: 'Quicksand', sans-serif; background-color: #fffdfa; color: var(--navy); }
+
+.text-coral { color: var(--coral); }
+.text-navy { color: var(--navy); }
+.bg-navy { background-color: var(--navy); }
+
+.groom-hero { background: radial-gradient(circle at 50% 100%, var(--sky), #fffdfa); }
+
+.card { transition: 0.3s ease; border-radius: 20px !important; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(251, 113, 133, 0.15) !important; }
+
+.btn-coral { background-color: var(--coral); }
+.btn-outline-coral { border: 2px solid var(--coral); color: var(--coral); font-weight: 600; }
+.btn-outline-coral:hover { background-color: var(--coral); color: white; }
+
+input, textarea, select { border: 2px solid #e2e8f0 !important; }

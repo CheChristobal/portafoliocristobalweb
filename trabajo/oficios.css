@@ -1,0 +1,72 @@
+:root {
+    --warning: #facc15;      /* Un amarillo más brillante y moderno */
+    --dark-slate: #1e293b;   /* Un azul noche más profundo y elegante */
+    --accent: #f59e0b;       /* Naranja para llamadas a la acción */
+}
+
+body { 
+    font-family: 'Roboto', sans-serif; 
+    color: var(--dark-slate);
+}
+
+/* Hero con efecto de profundidad */
+.hero-oficios {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.9)), 
+                url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 !important;
+    border-bottom: 8px solid var(--warning); /* Línea de acento inferior */
+}
+
+/* Títulos más impactantes */
+.fw-black { 
+    font-weight: 900; 
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+/* Botones con sombra y efecto de elevación */
+.btn-warning { 
+    background-color: var(--warning); 
+    border: none; 
+    color: #000; 
+    font-weight: 800;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(250, 204, 21, 0.4);
+}
+
+.btn-warning:hover { 
+    background-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+}
+
+/* Categorías con mejor estilo visual */
+.border-hover {
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    transition: all 0.4s ease;
+}
+
+.border-hover:hover {
+    border-color: var(--warning);
+    background-color: #fffbeb !important; /* Fondo suave al pasar el mouse */
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Tarjetas de Profesionales */
+.card { 
+    border-radius: 20px !important; 
+    border: none !important;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Etiquetas y elementos pequeños */
+.text-warning { color: var(--warning) !important; }

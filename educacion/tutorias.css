@@ -1,0 +1,88 @@
+:root {
+    --primary-blue: #1e3a8a;
+    --navy-dark: #0f172a;
+    --orange-accent: #f97316;
+    --light-gray: #f1f5f9;
+    --glass: rgba(255, 255, 255, 0.7);
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Inter', sans-serif;
+    color: #334155;
+}
+
+/* Hero con efecto degradado dinámico */
+.edu-hero {
+    background: linear-gradient(160deg, var(--primary-blue) 0%, var(--navy-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Añadimos un círculo decorativo en el fondo del hero */
+.edu-hero::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(249, 115, 22, 0.15);
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    filter: blur(60px);
+}
+
+/* Tarjetas con efecto Glassmorphism */
+.edu-card {
+    background: var(--glass) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 20px !important; /* Esquinas redondeadas modernas */
+}
+
+.edu-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+    border-color: var(--primary-blue) !important;
+}
+
+/* Tablas estilizadas */
+.table-responsive {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.table {
+    background: white;
+}
+
+.table thead {
+    background-color: var(--navy-dark);
+    color: white;
+}
+
+/* Botones Premium */
+.btn-primary { 
+    background-color: var(--primary-blue); 
+    border: none; 
+    padding: 0.8rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.btn-primary:hover { 
+    background-color: var(--orange-accent);
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3);
+}
+
+/* Ajustes de color */
+.text-primary { color: var(--primary-blue) !important; }
+.text-secondary { color: var(--orange-accent) !important; }
+
+/* Efecto de borde para el formulario */
+.card.shadow {
+    border-radius: 20px !important;
+    border-top: 5px solid var(--primary-blue);
+}
