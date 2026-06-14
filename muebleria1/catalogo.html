@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Mueblería de Autor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+<body class="bg-dark text-white">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html"><i class="bi bi-arrow-left me-2"></i>Volver al Inicio</a>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center border-bottom border-secondary">
+        <div class="container">
+            <h1 class="display-3 fw-bold text-gradient">Mueblería de Autor</h1>
+            <p class="text-muted lead">Diseño y funcionalidad en cada fibra de madera.</p>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                <button class="btn btn-outline-light rounded-pill px-4">Todos</button>
+                <button class="btn btn-outline-light rounded-pill px-4">Sillas</button>
+                <button class="btn btn-outline-light rounded-pill px-4">Mesas</button>
+                <button class="btn btn-outline-light rounded-pill px-4">Almacenaje</button>
+            </div>
+
+            <section class="mb-5 p-4 p-md-5 rounded-4 border border-secondary shadow-lg">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <span class="text-primary fw-bold text-uppercase tracking-wider">Favorito de los clientes</span>
+                        <h2 class="display-5 fw-bold my-3">Estantería Modular "Natura"</h2>
+                        <p class="text-white-50">La solución perfecta para organizar tus espacios con estilo. Fabricada en pino oregón recuperado con acabado en cera de abeja.</p>
+                        <button class="btn btn-primary rounded-pill px-4 py-2 mt-2">SOLICITAR COTIZACIÓN</button>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-sm" alt="Estantería">
+                    </div>
+                </div>
+            </section>
+
+            <h3 class="fw-bold mb-4 text-white">Colección Completa</h3>
+                <div class="row g-4">
+                    <!-- Tarjeta 1 -->
+                    <div class="col-md-4">
+                        <div class="card project-card h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=600&q=80" class="card-img-top p-3" style="border-radius: 25px;">
+                            <div class="card-body">
+                                <h5 class="fw-bold text-white">Silla Escandinava</h5>
+                                <p class="text-white-50 small">Madera de roble natural y tapizado en lino.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-primary fs-5">$180.000</span>
+                                    <button class="btn btn-outline-primary btn-sm rounded-pill px-3">Añadir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="col-md-4">
+                        <div class="card project-card h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=600&q=80" class="card-img-top p-3" style="border-radius: 25px;">
+                            <div class="card-body">
+                                <h5 class="fw-bold text-white">Mesa de Centro Nogal</h5>
+                                <p class="text-white-50 small">Minimalista con acabado en aceite mate.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-primary fs-5">$290.000</span>
+                                    <button class="btn btn-outline-primary btn-sm rounded-pill px-3">Añadir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="col-md-4">
+                        <div class="card project-card h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=600&q=80" class="card-img-top p-3" style="border-radius: 25px;">
+                            <div class="card-body">
+                                <h5 class="fw-bold text-white">Escritorio de Estudio</h5>
+                                <p class="text-white-50 small">Madera sólida con compartimientos ocultos.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-primary fs-5">$350.000</span>
+                                    <button class="btn btn-outline-primary btn-sm rounded-pill px-3">Añadir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <section class="mt-5 py-5 border-top border-secondary">
+                <div class="row text-center g-4">
+                    <div class="col-md-4"><i class="bi bi-truck fs-1 text-primary"></i><h5>Despacho a todo Chile</h5><p class="text">Enviamos con seguro de transporte.</p></div>
+                    <div class="col-md-4"><i class="bi bi-palette fs-1 text-primary"></i><h5>Personalizable</h5><p class="text">Elige el tono de madera que prefieras.</p></div>
+                    <div class="col-md-4"><i class="bi bi-patch-check fs-1 text-primary"></i><h5>Garantía de Calidad</h5><p class="text">Muebles hechos para durar décadas.</p></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-5 text-center border-top border-secondary">
+        <p class="text small">&copy; 2026 HexaCore Dev - Mueblería de Autor</p>
+    </footer>
+
+</body>
+</html>

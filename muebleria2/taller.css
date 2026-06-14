@@ -1,0 +1,117 @@
+/* ==========================================================================
+   PANEL DE CONTROL - GLOW & GLASS DESIGN
+   ========================================================================== */
+
+/* Fondo base con gradiente sutil */
+body {
+    background: radial-gradient(circle at top right, #1a202c, #0a0c10) !important;
+    background-attachment: fixed !important;
+}
+
+/* Glassmorphism para las tarjetas */
+.card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 114, 255, 0.5) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Animación de entrada para los números de estadísticas */
+.p-4.bg-dark {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.p-4.bg-dark:hover {
+    background: rgba(0, 114, 255, 0.1) !important;
+}
+
+/* Estilo de la tabla con efectos de neón */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Separación entre filas */
+}
+
+.table tbody tr {
+    background: rgba(255, 255, 255, 0.02);
+    transition: 0.3s;
+}
+
+.table tbody tr:hover {
+    background: rgba(0, 114, 255, 0.1);
+    transform: scale(1.01);
+}
+
+/* Badges con brillo */
+.badge {
+    padding: 0.6em 1.2em !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Botón llamativo con animación de "pulso" */
+.btn-primary {
+    background: linear-gradient(45deg, #0072ff, #00c6ff) !important;
+    border: none !important;
+    animation: glow-pulse 2s infinite;
+}
+
+@keyframes glow-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 114, 255, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 114, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 114, 255, 0); }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0a0c10; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #0072ff; }
+
+/* Animación de entrada general */
+main {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Forzar texto blanco en contenedores críticos */
+.card, .table, .list-group-item, h1, h2, h3, h4, h5, h6, p, td, th {
+    color: #ffffff !important;
+}
+
+/* Ajuste de opacidad para textos secundarios (legibilidad premium) */
+.text-muted, .text-white-50 {
+    color: #a0aec0 !important;
+}
+
+/* Bordes unificados para un aspecto de "App Profesional" */
+.card {
+    border: 1px solid #2d3748 !important;
+    background-color: #12161f !important;
+}
+
+/* Asegurar que el textarea del Bitácora se vea bien */
+textarea {
+    color: #ffffff !important;
+    background-color: #1a202c !important;
+}
+
+/* Mejora visual de los botones de acción */
+.btn-outline-light {
+    border-color: #4a5568 !important;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}

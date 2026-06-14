@@ -1,0 +1,100 @@
+/* ==========================================================================
+   CATÁLOGO MUEBLERÍA - ESTILO GLOW DARK
+   ========================================================================== */
+
+/* Fondo general */
+body {
+    background-color: #0a0c10 !important;
+    color: #f8fafc !important;
+}
+
+/* Título con Gradiente (reutilizando lógica del portafolio) */
+.text-gradient {
+    background: linear-gradient(90deg, #0072ff, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Tarjetas de Producto */
+.card.project-card {
+    background-color: #12161f !important;
+    border: 1px solid #1e293b !important;
+    border-radius: 20px !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+
+.card.project-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 114, 255, 0.2) !important;
+    border-color: rgba(0, 242, 254, 0.3) !important;
+}
+
+.card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Botones de Filtro */
+.btn-outline-light {
+    border-color: #334155 !important;
+    color: #94a3b8 !important;
+}
+
+.btn-outline-light:hover, .btn-outline-light.active {
+    background: #0072ff !important;
+    border-color: #0072ff !important;
+    color: #fff !important;
+}
+
+/* Botón de Añadir (CTA pequeño) */
+.btn-primary {
+    background: linear-gradient(135deg, #0072ff, #00f2fe) !important;
+    border: none !important;
+    padding: 0.5rem 1.2rem !important;
+    font-weight: 600 !important;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
+}
+
+/* Footer oscuro */
+footer {
+    background-color: #0a0c10;
+    margin-top: 5rem;
+}
+/* Mejora la legibilidad del texto en modo oscuro */
+body {
+    -webkit-font-smoothing: antialiased; /* Suaviza las fuentes */
+    line-height: 1.6;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #fff, #a1a1aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* El precio resalta más */
+.text-warning {
+    color: #fbbf24 !important; /* Un amarillo/dorado que se lee perfecto en negro */
+}
+
+/* Asegura que los textos secundarios tengan buen contraste */
+.text-muted {
+    color: #cbd5e1 !important; 
+}
+
+/* Efecto de tarjetas mejorado */
+.project-card {
+    border: 1px solid #1e293b !important;
+}
+
+.project-card:hover {
+    border: 1px solid #3b82f6 !important;
+}

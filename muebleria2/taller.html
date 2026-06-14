@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Taller | HexaCore Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="taller.css">
+</head>
+<body class="bg-dark text-white">
+
+    <nav class="navbar navbar-dark bg-dark border-bottom border-secondary mb-4 sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html"><i class="bi bi-arrow-left me-2"></i>Volver al Inicio</a>
+            <div class="d-flex align-items-center">
+                <span class="text-white me-3">Cristóbal Echeverría</span>
+                <img src="https://ui-avatars.com/api/?name=Cristobal+Echeverria&background=0072ff&color=fff" width="35" class="rounded-circle">
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        
+        <section class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="card bg-dark border-secondary rounded-4 p-4 h-100">
+                    <h5 class="fw-bold text-white mb-3"><i class="bi bi-graph-up-arrow text-primary me-2"></i> Rendimiento Mensual</h5>
+                    <div class="progress bg-secondary" style="height: 20px;">
+                        <div class="progress-bar bg-primary" style="width: 75%">75% Meta Alcanzada</div>
+                    </div>
+                    <p class="text-white-50 mt-2 small">Ventas proyectadas: $4.200.000 CLP</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card bg-dark border-secondary rounded-4 p-4 h-100">
+                    <h5 class="fw-bold text-white mb-3"><i class="bi bi-cpu text-warning me-2"></i> Estado de Maquinaria</h5>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-success">Sierra Circular: ON</span>
+                        <span class="badge bg-success">Lijadora: ON</span>
+                        <span class="badge bg-danger">Cepilladora: MANT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row g-4 mb-4">
+            <div class="col-md-3"><div class="p-4 bg-dark border border-secondary rounded-4 text-center"><h3 class="fw-bold text-white">12</h3><p class="text-white-50 mb-0">En Proceso</p></div></div>
+            <div class="col-md-3"><div class="p-4 bg-dark border border-secondary rounded-4 text-center"><h3 class="fw-bold text-warning">5</h3><p class="text-white-50 mb-0">Pendiente Pintura</p></div></div>
+            <div class="col-md-3"><div class="p-4 bg-dark border border-secondary rounded-4 text-center"><h3 class="fw-bold text-success">28</h3><p class="text-white-50 mb-0">Completados</p></div></div>
+            <div class="col-md-3"><div class="p-4 bg-dark border border-secondary rounded-4 text-center"><h3 class="fw-bold text-danger">1</h3><p class="text-white-50 mb-0">Retraso</p></div></div>
+        </section>
+
+        <div class="row g-4">
+            <section class="col-lg-8">
+                <div class="card bg-dark border-secondary rounded-4 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5 class="fw-bold text-white m-0">Órdenes de Trabajo</h5>
+                            <button class="btn btn-primary btn-sm"><i class="bi bi-plus-lg me-1"></i> Nueva Orden</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-dark table-hover align-middle">
+                                <thead><tr><th>Proyecto</th><th>Estado</th><th>Entrega</th><th>Acción</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Mesa Nogal V2</td><td><span class="badge bg-primary rounded-pill">Corte</span></td><td>15 Jun</td><td><button class="btn btn-sm btn-outline-light">Info</button></td></tr>
+                                    <tr><td>Sillas Escandinavas</td><td><span class="badge bg-warning text-dark rounded-pill">Barniz</span></td><td>18 Jun</td><td><button class="btn btn-sm btn-outline-light">Info</button></td></tr>
+                                    <tr><td>Rack TV Industrial</td><td><span class="badge bg-success rounded-pill">Ensamblaje</span></td><td>20 Jun</td><td><button class="btn btn-sm btn-outline-light">Info</button></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-lg-4">
+                <div class="card bg-dark border-secondary rounded-4 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-white mb-4">Stock Crítico</h5>
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent border-secondary text-white d-flex justify-content-between">
+                                Roble Americano <span><small class="text-danger fw-bold">Bajo</small></span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-secondary text-white d-flex justify-content-between">
+                                Lijas Grano 80 <span><small class="text-success fw-bold">OK</small></span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-secondary text-white d-flex justify-content-between">
+                                Barniz Poliuretano <span><small class="text-danger fw-bold">Bajo</small></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="mt-4">
+            <div class="card bg-dark border-secondary rounded-4 p-4 shadow-sm">
+                <h5 class="fw-bold text-white mb-4">Próximos Proyectos en Cola</h5>
+                <div class="row g-3">
+                    <div class="col-md-4"><div class="p-3 border border-secondary rounded-3 text-white">Comedor Roble (20 Jun)</div></div>
+                    <div class="col-md-4"><div class="p-3 border border-secondary rounded-3 text-white">Puertas Interior (25 Jun)</div></div>
+                    <div class="col-md-4"><div class="p-3 border border-secondary rounded-3 text-white">Escritorio Zen (30 Jun)</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row mt-4">
+            <div class="col-12">
+                <div class="card bg-dark border-secondary rounded-4 shadow-sm p-4">
+                    <h5 class="fw-bold text-white mb-3">Bitácora de Taller</h5>
+                    <textarea class="form-control bg-dark text-white border-secondary" rows="3" placeholder="Escribe aquí las novedades del día..."></textarea>
+                    <button class="btn btn-outline-secondary mt-2 w-auto">Guardar Nota</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 text-muted small border-top border-secondary mt-5">
+        &copy; 2026 HexaCore Systems Solutions
+    </footer>
+</body>
+</html>
