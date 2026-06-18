@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Fade Studio | HexaCore Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Fuentes Google: Montserrat para un look urbano y pesado, Roboto para lectura -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="urban.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navegación Urbana -->
+    <nav class="navbar navbar-dark bg-black border-bottom border-danger mb-0 py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand font-roboto text-white-50 fs-6" href="../index.html"><i class="bi bi-arrow-left me-2"></i>Volver</a>
+            <span class="text-white font-montserrat fw-bold fs-4 tracking-wide">URBAN<span class="text-danger">FADE</span>.</span>
+            
+            <div class="d-none d-md-flex gap-4 mx-auto">
+                <a href="#servicios" class="text-white text-decoration-none font-montserrat fw-bold text-uppercase small hover-danger">Servicios</a>
+                <a href="#crew" class="text-white text-decoration-none font-montserrat fw-bold text-uppercase small hover-danger">El Crew</a>
+                <a href="#lookbook" class="text-white text-decoration-none font-montserrat fw-bold text-uppercase small hover-danger">Lookbook</a>
+                <a href="#shop" class="text-white text-decoration-none font-montserrat fw-bold text-uppercase small hover-danger">Shop</a>
+            </div>
+
+            <a href="#reservas" class="btn btn-danger btn-sm font-montserrat fw-bold rounded-0 px-3">RESERVAR</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section con fondo oscuro -->
+    <header class="hero-urban d-flex align-items-center py-5 mb-5 border-bottom border-dark">
+        <div class="container text-center py-5">
+            <span class="badge bg-danger font-montserrat text-uppercase mb-3 px-3 py-2">El Mejor Estilo de la Calle</span>
+            <h1 class="display-1 font-montserrat fw-black text-uppercase lh-1 mb-4">
+                Domina <br><span class="text-outline">Tu Estilo.</span>
+            </h1>
+            <p class="font-roboto fs-5 text-white-50 mx-auto mb-5" style="max-width: 600px;">
+                Cortes en tendencia, skin fades precisos y freestyle designs. Si buscas destacar, estás en el lugar correcto. No somos una peluquería, somos un movimiento.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#lookbook" class="btn btn-outline-light btn-lg font-montserrat fw-bold rounded-0 px-4">VER TRABAJOS</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        <!-- Menú de Servicios Urbano -->
+        <section id="servicios" class="mb-5 py-5">
+            <div class="d-flex align-items-center mb-5">
+                <h2 class="font-montserrat fw-bold text-uppercase mb-0 me-3">La Lista</h2>
+                <div class="flex-grow-1 bg-danger" style="height: 3px;"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="service-row d-flex justify-content-between align-items-center p-4 bg-dark-subtle border-start border-4 border-danger h-100">
+                        <div>
+                            <h4 class="font-montserrat fw-bold text-uppercase mb-1">Skin Fade + Perfilado</h4>
+                            <p class="text-white-50 font-roboto small mb-0">Degradado a cero perfecto y contornos definidos a navaja.</p>
+                        </div>
+                        <h4 class="font-montserrat text-danger fw-bold mb-0">$18K</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-row d-flex justify-content-between align-items-center p-4 bg-dark-subtle border-start border-4 border-danger h-100">
+                        <div>
+                            <h4 class="font-montserrat fw-bold text-uppercase mb-1">Freestyle Design</h4>
+                            <p class="text-white-50 font-roboto small mb-0">Líneas y diseños geométricos personalizados en tu corte.</p>
+                        </div>
+                        <h4 class="font-montserrat text-danger fw-bold mb-0">$22K</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-row d-flex justify-content-between align-items-center p-4 bg-dark-subtle border-start border-4 border-light h-100">
+                        <div>
+                            <h4 class="font-montserrat fw-bold text-uppercase mb-1">Color & Bleach</h4>
+                            <p class="text-white-50 font-roboto small mb-0">Decoloración global, platinados o colores de fantasía.</p>
+                        </div>
+                        <h4 class="font-montserrat text-white fw-bold mb-0">$35K+</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-row d-flex justify-content-between align-items-center p-4 bg-dark-subtle border-start border-4 border-light h-100">
+                        <div>
+                            <h4 class="font-montserrat fw-bold text-uppercase mb-1">Corte Urbano Básico</h4>
+                            <p class="text-white-50 font-roboto small mb-0">Corte tradicional a máquina con texturizado superior.</p>
+                        </div>
+                        <h4 class="font-montserrat text-white fw-bold mb-0">$14K</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- El Crew / Barberos -->
+        <section id="crew" class="py-5 mb-5 border-top border-dark">
+            <h2 class="font-montserrat fw-bold text-uppercase text-center mb-5">El Escuadrón</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="border border-dark bg-dark-subtle p-3 h-100">
+                        <img src="https://picsum.photos/id/1012/400/400" class="img-fluid rounded-0 mb-3 grayscale-hover" alt="Barbero 1">
+                        <h4 class="font-montserrat fw-bold text-uppercase mb-0">T-Bone</h4>
+                        <p class="text-danger font-montserrat fw-bold small text-uppercase mb-2">Fade Master</p>
+                        <p class="font-roboto text-white-50 small">Precisión quirúrgica con la clipper. Especialista en texturas afro y mid fades.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="border border-danger bg-dark-subtle p-3 h-100 position-relative">
+                        <span class="badge bg-danger position-absolute top-0 end-0 m-3 rounded-0 font-montserrat">TOP RATED</span>
+                        <img src="https://picsum.photos/id/1027/400/400" class="img-fluid rounded-0 mb-3 grayscale-hover" alt="Barbero 2">
+                        <h4 class="font-montserrat fw-bold text-uppercase mb-0">Jota.C</h4>
+                        <p class="text-danger font-montserrat fw-bold small text-uppercase mb-2">Color & Bleach</p>
+                        <p class="font-roboto text-white-50 small">Si quieres un platinado blanco hielo sin quemar tu pelo, él es el indicado.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="border border-dark bg-dark-subtle p-3 h-100">
+                        <img src="https://picsum.photos/id/338/400/400" class="img-fluid rounded-0 mb-3 grayscale-hover" alt="Barbero 3">
+                        <h4 class="font-montserrat fw-bold text-uppercase mb-0">El Zorro</h4>
+                        <p class="text-danger font-montserrat fw-bold small text-uppercase mb-2">Freestyle Artist</p>
+                        <p class="font-roboto text-white-50 small">Tu cabeza es su lienzo. Líneas perfectas y diseños 3D con navaja libre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería Interactiva / Lookbook -->
+        <section id="lookbook" class="py-5 mb-5 border-top border-dark">
+            <h2 class="font-montserrat fw-bold text-uppercase text-center mb-5">
+                <i class="bi bi-fire text-danger"></i> The Lookbook <i class="bi bi-fire text-danger"></i>
+            </h2>
+            <div class="row g-2">
+                <div class="col-6 col-md-4">
+                    <div class="lookbook-item position-relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1025/400/500" class="img-fluid w-100" alt="Corte Fade">
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <span class="font-montserrat fw-bold fs-5">#SkinFade</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="lookbook-item position-relative overflow-hidden">
+                        <img src="https://picsum.photos/id/64/400/500" class="img-fluid w-100" alt="Diseño Freestyle">
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <span class="font-montserrat fw-bold fs-5">#Freestyle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="lookbook-item position-relative overflow-hidden h-100">
+                        <img src="https://picsum.photos/id/65/400/500" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Color platinado">
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <span class="font-montserrat fw-bold fs-5">#BleachBoy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Shop / Merch -->
+        <section id="shop" class="py-5 bg-dark-subtle p-4 p-md-5 mb-5 border border-dark">
+            <h2 class="font-montserrat fw-bold text-uppercase text-center mb-2">The Drop</h2>
+            <p class="text-center font-roboto text-white-50 mb-5">Fresh gear y productos top para mantener el look en casa.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-black border-dark rounded-0 h-100 p-3 text-center">
+                        <img src="https://picsum.photos/id/21/300/300" class="img-fluid mb-3 grayscale-hover" alt="Polera Oversize">
+                        <h5 class="text-white font-montserrat fw-bold text-uppercase mb-1">T-Shirt Oversize "FADE"</h5>
+                        <p class="text-danger font-montserrat fw-bold mb-3">$19.990</p>
+                        <button class="btn btn-outline-light btn-sm font-montserrat fw-bold rounded-0 w-100 mt-auto">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-black border-dark rounded-0 h-100 p-3 text-center">
+                        <img src="https://picsum.photos/id/63/300/300" class="img-fluid mb-3 grayscale-hover" alt="Polvo Voluminizador">
+                        <h5 class="text-white font-montserrat fw-bold text-uppercase mb-1">Polvo Voluminizador Mate</h5>
+                        <p class="text-danger font-montserrat fw-bold mb-3">$12.500</p>
+                        <button class="btn btn-outline-light btn-sm font-montserrat fw-bold rounded-0 w-100 mt-auto">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-black border-dark rounded-0 h-100 p-3 text-center">
+                        <img src="https://picsum.photos/id/26/300/300" class="img-fluid mb-3 grayscale-hover" alt="Cera Texturizante">
+                        <h5 class="text-white font-montserrat fw-bold text-uppercase mb-1">Arcilla Texturizante Fuerte</h5>
+                        <p class="text-danger font-montserrat fw-bold mb-3">$14.000</p>
+                        <button class="btn btn-outline-light btn-sm font-montserrat fw-bold rounded-0 w-100 mt-auto">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Testimonios -->
+        <section class="py-5 mb-5">
+            <h3 class="font-montserrat fw-bold text-uppercase mb-4 text-center">La calle habla</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5">
+                    <div class="p-4 border border-dark bg-dark-subtle">
+                        <div class="text-danger mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="font-roboto text-white-50 font-italic">"Nadie hace los fades como aquí. El ambiente está cabrón, tienen la Play 5 mientras esperas y los locos saben lo que hacen. 10/10."</p>
+                        <h6 class="font-montserrat fw-bold text-uppercase mb-0">- @Nico_Trapz</h6>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 border border-dark bg-dark-subtle">
+                        <div class="text-danger mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="font-roboto text-white-50 font-italic">"Fui por un platinado y me dejaron fresh. El freestyle que me tiraron en la nuca rompió todo. Mi nuevo spot fijo."</p>
+                        <h6 class="font-montserrat fw-bold text-uppercase mb-0">- @ElMati_Flow</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Reservas (Brutalismo) -->
+        <section id="reservas" class="py-5 mb-5">
+            <div class="border border-4 border-danger p-4 p-md-5 position-relative">
+                <span class="badge bg-danger position-absolute top-0 start-50 translate-middle font-montserrat px-4 py-2 fs-5 text-uppercase">Asegura tu silla</span>
+                
+                <h2 class="font-montserrat fw-black text-uppercase text-center mb-4 mt-3">Agendar Hora</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form class="font-roboto">
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-6">
+                                    <label class="form-label text-white-50 text-uppercase fw-bold small">¿Con quién te cortas?</label>
+                                    <select class="form-select bg-black text-white border-dark rounded-0 p-3">
+                                        <option selected>Cualquiera disponible</option>
+                                        <option value="1">T-Bone</option>
+                                        <option value="2">Jota.C</option>
+                                        <option value="3">El Zorro</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white-50 text-uppercase fw-bold small">Servicio</label>
+                                    <select class="form-select bg-black text-white border-dark rounded-0 p-3">
+                                        <option selected>Skin Fade + Perfilado ($18K)</option>
+                                        <option value="1">Freestyle Design ($22K)</option>
+                                        <option value="2">Color & Bleach ($35K+)</option>
+                                        <option value="3">Corte Urbano Básico ($14K)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white-50 text-uppercase fw-bold small">Día</label>
+                                    <input type="date" class="form-control bg-black text-white border-dark rounded-0 p-3">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white-50 text-uppercase fw-bold small">Hora</label>
+                                    <input type="time" class="form-control bg-black text-white border-dark rounded-0 p-3">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-danger w-100 py-3 font-montserrat fw-black fs-4 text-uppercase rounded-0">
+                                CONFIRMAR RESERVA
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-black py-5 border-top border-dark text-center">
+        <div class="container">
+            <h2 class="font-montserrat fw-black text-uppercase text-outline-small mb-4">URBAN FADE</h2>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="#" class="text-white fs-3 hover-danger"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-3 hover-danger"><i class="bi bi-tiktok"></i></a>
+                <a href="#" class="text-white fs-3 hover-danger"><i class="bi bi-spotify"></i></a>
+            </div>
+            <p class="font-roboto text-white-50 small text-uppercase">Barrio Bellavista, Stgo. Cultura Urbana & Estilo.</p>
+            <p class="font-roboto text-white-50 small mt-4 opacity-50">&copy; 2026 HexaCore Systems Solutions</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

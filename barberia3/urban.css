@@ -1,0 +1,104 @@
+/* --- Variables --- */
+:root {
+    --neon-red: #ff1e1e;
+    --black-bg: #050505;
+    --dark-subtle: #111111;
+}
+
+body {
+    background-color: var(--black-bg) !important;
+}
+
+/* --- Tipografía --- */
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.fw-black {
+    font-weight: 900;
+}
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+/* --- Colores Especiales --- */
+.text-danger { color: var(--neon-red) !important; }
+.bg-danger { background-color: var(--neon-red) !important; }
+.bg-black { background-color: var(--black-bg) !important; }
+.bg-dark-subtle { background-color: var(--dark-subtle) !important; }
+.border-danger { border-color: var(--neon-red) !important; }
+
+/* --- Texto Delineado (Outline Text) --- */
+.text-outline {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+.text-outline-small {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--neon-red);
+}
+
+/* --- Botones --- */
+.btn-danger {
+    background-color: var(--neon-red);
+    border: none;
+    transition: all 0.2s ease;
+}
+.btn-danger:hover {
+    background-color: #d11212;
+    transform: scale(1.05);
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+.btn-outline-light:hover {
+    background: white;
+    color: black;
+    box-shadow: 4px 4px 0px var(--neon-red); /* Sombra dura estilo Brutalismo */
+}
+
+/* --- Fila de Servicios --- */
+.service-row {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.service-row:hover {
+    background-color: #1a1a1a !important;
+    transform: translateX(10px);
+}
+
+/* --- The Lookbook (Galería) --- */
+.lookbook-item img {
+    filter: grayscale(100%) contrast(1.2);
+    transition: all 0.4s ease;
+}
+.lookbook-item .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 30, 30, 0.8);
+    color: white;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateY(20px);
+}
+.lookbook-item:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.lookbook-item:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Footer Icons --- */
+.hover-danger {
+    transition: color 0.2s ease;
+}
+.hover-danger:hover {
+    color: var(--neon-red) !important;
+}

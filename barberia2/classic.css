@@ -1,0 +1,111 @@
+/* --- Variables de Color --- */
+:root {
+    --gold: #d4af37;
+    --gold-hover: #b5952f;
+    --dark-bg: #121212;
+    --darker-bg: #0a0a0a;
+}
+
+/* --- Tipografía --- */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg) !important;
+}
+
+/* --- Utilidades de Color --- */
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.bg-darker {
+    background-color: var(--darker-bg) !important;
+}
+
+.border-gold {
+    border-color: var(--gold) !important;
+}
+
+.border-gold-subtle {
+    border: 1px solid rgba(212, 175, 55, 0.2) !important;
+}
+
+/* --- Botones --- */
+.btn-gold {
+    background-color: var(--gold);
+    color: #000 !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline-gold {
+    background-color: transparent;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: #000;
+}
+
+/* --- Imágenes y Hero --- */
+.hero-img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(30%) contrast(120%);
+    transition: filter 0.5s ease;
+}
+
+.hero-img:hover {
+    filter: grayscale(0%) contrast(100%);
+}
+
+/* --- Tarjetas de Servicios --- */
+.service-card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* --- Formularios --- */
+.custom-input, .custom-select {
+    border-radius: 0; /* Bordes rectos para look clásico */
+    padding: 12px;
+}
+
+.custom-input:focus, .custom-select:focus {
+    border-color: var(--gold) !important;
+    box-shadow: none !important;
+    outline: none;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 4px;
+}

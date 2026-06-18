@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Barber | HexaCore Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Fuentes Google: Playfair para elegancia clásica, Inter para legibilidad -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="classic.css">
+</head>
+<body class="bg-dark text-white">
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-dark bg-dark border-bottom border-gold mb-4 py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand font-inter" href="../index.html"><i class="bi bi-arrow-left me-2"></i>Volver al Portafolio</a>
+            <div class="d-none d-md-flex gap-4">
+                <a href="#servicios" class="text-white-50 text-decoration-none text-uppercase small fw-bold custom-link">Servicios</a>
+                <a href="#equipo" class="text-white-50 text-decoration-none text-uppercase small fw-bold custom-link">El Equipo</a>
+                <a href="#productos" class="text-white-50 text-decoration-none text-uppercase small fw-bold custom-link">Tienda</a>
+            </div>
+            <a href="#reservas" class="btn btn-outline-gold btn-sm px-3 text-uppercase fw-bold d-none d-md-block">Reservar</a>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <!-- Hero Section -->
+        <section class="row align-items-center g-5 mb-5 hero-section">
+            <div class="col-lg-6">
+                <img src="https://picsum.photos/id/64/800/600" 
+                     class="img-fluid rounded-4 shadow-lg border-gold-subtle hero-img" 
+                     alt="Silla de Barbería Clásica">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-3 font-playfair mb-3">Estilo Clásico,<br><span class="text-gold">Precisión Moderna.</span></h1>
+                <p class="text-white-50 fs-5 font-inter mb-4">Experimenta el arte del cuidado masculino. Desde cortes con tijera hasta afeitados con navaja y toalla caliente, en un ambiente diseñado para caballeros.</p>
+                <div class="d-flex gap-3">
+                    <a href="#reservas" class="btn btn-gold btn-lg px-5 text-uppercase fw-bold">Agendar Hora</a>
+                    <a href="#servicios" class="btn btn-outline-gold btn-lg px-4 text-uppercase fw-bold">Ver Servicios</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menú de Servicios -->
+        <section id="servicios" class="py-5 border-top border-secondary">
+            <div class="text-center mb-5">
+                <h2 class="font-playfair text-gold display-5">Nuestros Servicios</h2>
+                <p class="text-white-50 font-inter">La tradición de la vieja escuela combinada con técnicas contemporáneas.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-darker border-gold-subtle h-100 p-4 service-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="font-playfair text-gold mb-0">Corte Clásico</h4>
+                            <span class="fs-5 fw-bold font-inter">$15.000</span>
+                        </div>
+                        <p class="text-white-50 small">Asesoría de imagen, lavado, corte a tijera o máquina, secado y peinado con productos premium.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-darker border-gold-subtle h-100 p-4 service-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="font-playfair text-gold mb-0">Ritual de Barba</h4>
+                            <span class="fs-5 fw-bold font-inter">$12.000</span>
+                        </div>
+                        <p class="text-white-50 small">Perfilado perfecto, vaporizador, toalla caliente, masaje facial y aplicación de aceites esenciales.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-darker border-gold-subtle h-100 p-4 service-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="font-playfair text-gold mb-0">Servicio Full</h4>
+                            <span class="fs-5 fw-bold font-inter">$25.000</span>
+                        </div>
+                        <p class="text-white-50 small">La experiencia completa: Corte clásico + Ritual de Barba + Lavado exfoliante del cuero cabelludo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maestros Barberos -->
+        <section id="equipo" class="py-5 border-top border-secondary">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <h2 class="font-playfair text-gold display-5">Maestros Barberos</h2>
+                    <p class="text-white-50 font-inter">Expertos en su oficio, dedicados a perfeccionar tu estilo.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <img src="https://picsum.photos/id/338/400/400" class="img-fluid rounded-circle mb-3 border border-3 border-gold" alt="Barbero 1" style="width: 200px; height: 200px; object-fit: cover;">
+                    <h4 class="font-playfair mb-1">Marcelo Valdés</h4>
+                    <p class="text-gold small text-uppercase fw-bold mb-2">Master Barber</p>
+                    <p class="text-white-50 small px-3">Especialista en cortes clásicos a tijera y afeitados tradicionales con navaja.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://picsum.photos/id/1027/400/400" class="img-fluid rounded-circle mb-3 border border-3 border-gold" alt="Barbero 2" style="width: 200px; height: 200px; object-fit: cover;">
+                    <h4 class="font-playfair mb-1">Franklin Rojas</h4>
+                    <p class="text-gold small text-uppercase fw-bold mb-2">Especialista Fades & Barba</p>
+                    <p class="text-white-50 small px-3">Precisión milimétrica en degradados y esculpido geométrico de barbas.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://picsum.photos/id/22/400/400" class="img-fluid rounded-circle mb-3 border border-3 border-gold" alt="Barbero 3" style="width: 200px; height: 200px; object-fit: cover;">
+                    <h4 class="font-playfair mb-1">Javier Soto</h4>
+                    <p class="text-gold small text-uppercase fw-bold mb-2">Estilista Senior</p>
+                    <p class="text-white-50 small px-3">Experto en texturas, peinados modernos y asesoría integral de imagen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vitrina de Productos -->
+        <section id="productos" class="py-5 border-top border-secondary">
+            <div class="text-center mb-5">
+                <h2 class="font-playfair text-gold display-5">Cuidado Premium</h2>
+                <p class="text-white-50 font-inter">Mantén tu estilo impecable en casa con nuestra línea de productos seleccionados.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Producto 1 -->
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="card bg-darker border-gold-subtle p-3 h-100 service-card">
+                        <img src="https://picsum.photos/id/250/300/300" class="img-fluid rounded mb-3" alt="Aceite de Barba">
+                        <h5 class="text-white font-playfair mb-1">Aceite de Barba 'Oak & Tobacco'</h5>
+                        <p class="text-gold fw-bold mb-3">$18.990</p>
+                        <button class="btn btn-outline-gold btn-sm w-100 mt-auto">Añadir <i class="bi bi-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="card bg-darker border-gold-subtle p-3 h-100 service-card">
+                        <img src="https://picsum.photos/id/252/300/300" class="img-fluid rounded mb-3" alt="Pomada Mate">
+                        <h5 class="text-white font-playfair mb-1">Pomada de Fijación Mate</h5>
+                        <p class="text-gold fw-bold mb-3">$14.500</p>
+                        <button class="btn btn-outline-gold btn-sm w-100 mt-auto">Añadir <i class="bi bi-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="card bg-darker border-gold-subtle p-3 h-100 service-card">
+                        <img src="https://picsum.photos/id/21/300/300" class="img-fluid rounded mb-3" alt="Brocha de Afeitar">
+                        <h5 class="text-white font-playfair mb-1">Brocha de Afeitar Premium</h5>
+                        <p class="text-gold fw-bold mb-3">$22.000</p>
+                        <button class="btn btn-outline-gold btn-sm w-100 mt-auto">Añadir <i class="bi bi-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="card bg-darker border-gold-subtle p-3 h-100 service-card">
+                        <img src="https://picsum.photos/id/111/300/300" class="img-fluid rounded mb-3" alt="Aftershave">
+                        <h5 class="text-white font-playfair mb-1">Bálsamo Aftershave Calmante</h5>
+                        <p class="text-gold fw-bold mb-3">$16.000</p>
+                        <button class="btn btn-outline-gold btn-sm w-100 mt-auto">Añadir <i class="bi bi-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sistema de Reservas -->
+        <section id="reservas" class="py-5 border-top border-secondary">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card bg-darker border-gold p-4 p-md-5 rounded-4 shadow-lg position-relative overflow-hidden">
+                        <!-- Elemento decorativo de fondo -->
+                        <i class="bi bi-calendar-check text-gold position-absolute opacity-25" style="font-size: 15rem; right: -50px; bottom: -50px; z-index: 0;"></i>
+                        
+                        <div class="position-relative" style="z-index: 1;">
+                            <h2 class="font-playfair text-center mb-4 text-gold">Reserva tu Sillón</h2>
+                            <p class="text-center text-white-50 mb-4">Asegura tu momento de relajo. Selecciona a tu barbero, el servicio y la hora que mejor te acomode.</p>
+                            
+                            <form class="font-inter">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label text-gold small text-uppercase fw-bold">Elige a tu Barbero</label>
+                                        <select class="form-select bg-dark text-white border-secondary custom-select">
+                                            <option selected>Cualquiera disponible</option>
+                                            <option value="1">Marcelo (Master Barber)</option>
+                                            <option value="2">Franklin (Especialista en Fades)</option>
+                                            <option value="3">Javier (Estilista Senior)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-gold small text-uppercase fw-bold">Servicio</label>
+                                        <select class="form-select bg-dark text-white border-secondary custom-select">
+                                            <option selected>Corte Clásico ($15.000)</option>
+                                            <option value="1">Ritual de Barba ($12.000)</option>
+                                            <option value="2">Servicio Full ($25.000)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label text-gold small text-uppercase fw-bold">Fecha</label>
+                                        <input type="date" class="form-control bg-dark text-white border-secondary custom-input">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-gold small text-uppercase fw-bold">Hora</label>
+                                        <input type="time" class="form-control bg-dark text-white border-secondary custom-input">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-gold w-100 py-3 text-uppercase fw-bold fs-5">Confirmar Reserva</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-darker py-5 border-top border-gold">
+        <div class="container text-center">
+            <h4 class="font-playfair text-gold mb-3">Classic Gentleman Barber</h4>
+            <p class="text-white-50 font-inter small mb-4">Av. Providencia 1234, Santiago, Chile <br> +56 9 1234 5678</p>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#" class="text-gold fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-gold fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-gold fs-4"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <p class="text-white-50 font-inter small mb-0">&copy; 2026 HexaCore Systems Solutions - Demo de Barbería</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

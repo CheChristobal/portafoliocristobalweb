@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality | Farmacia Natural & Bienestar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="natural.css">
+</head>
+<body class="bg-light-green text-dark-green">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand text-primary-green fw-bold fs-4" href="../index.html">
+                <i class="bi bi-droplet-half me-2"></i>Vitality.
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto font-poppins fw-semibold">
+                    <li class="nav-item"><a class="nav-link px-3" href="#categorias">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#tienda">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#suscripcion">Plan Mensual</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#blog">Blog de Salud</a></li>
+                </ul>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-primary-green fs-5 position-relative">
+                        <i class="bi bi-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-accent-green text-primary-green" style="font-size: 0.6rem;">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section position-relative d-flex align-items-center mb-5">
+            <div class="container position-relative z-1 py-5">
+                <div class="row align-items-center py-5">
+                    <div class="col-lg-6">
+                        <span class="badge bg-accent-green text-primary-green px-3 py-2 fw-semibold mb-3 rounded-pill tracking-wide">100% ORGÁNICO Y CLÍNICAMENTE PROBADO</span>
+                        <h1 class="display-3 fw-bold text-primary-green mb-4 lh-sm">
+                            Tu Bienestar,<br>Desde la <span class="text-secondary-green">Raíz.</span>
+                        </h1>
+                        <p class="fs-5 text-muted mb-5 font-poppins" style="max-width: 500px;">
+                            Descubre nuestra línea de suplementos naturales, vitaminas puras y remedios botánicos libres de químicos tóxicos.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#tienda" class="btn btn-primary-green btn-lg px-4 rounded-pill fw-bold shadow-sm">Explorar Remedios</a>
+                            <a href="#suscripcion" class="btn btn-outline-green btn-lg px-4 rounded-pill fw-bold">Ver Planes</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block text-center">
+                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?q=80&w=800" 
+                             class="img-fluid rounded-circle shadow-lg border border-5 border-white hero-img" 
+                             style="width: 500px; height: 500px; object-fit: cover;" 
+                             alt="Frascos de suplementos y vitaminas"
+                             onerror="this.src='https://placehold.co/800x800/d8f3dc/1a4331?text=Suplementos+Naturales'">
+                    </div>
+                </div>
+            </div>
+            <!-- Fondo decorativo curvado -->
+            <div class="hero-bg-shape bg-accent-green position-absolute top-0 end-0 h-100 w-50 z-0" style="border-bottom-left-radius: 200px;"></div>
+        </section>
+
+        <!-- Propuesta de Valor -->
+        <section class="container py-4 mb-5">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 feature-card">
+                        <i class="bi bi-capsule text-secondary-green display-4 mb-3"></i>
+                        <h5 class="fw-bold text-primary-green">Fórmulas Clínicas</h5>
+                        <p class="text-muted small mb-0">Dosis efectivas con ingredientes de alta biodisponibilidad para tu organismo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 feature-card">
+                        <i class="bi bi-shield-check text-secondary-green display-4 mb-3"></i>
+                        <h5 class="fw-bold text-primary-green">Certificación ISP</h5>
+                        <p class="text-muted small mb-0">Todos nuestros remedios y suplementos cuentan con registro sanitario aprobado.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 feature-card">
+                        <i class="bi bi-flower1 text-secondary-green display-4 mb-3"></i>
+                        <h5 class="fw-bold text-primary-green">Medicina Botánica</h5>
+                        <p class="text-muted small mb-0">Combinamos el poder de la herbolaria tradicional con la ciencia moderna.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva Sección: Categorías -->
+        <section id="categorias" class="container py-5 mb-5 border-top border-light">
+            <h2 class="fw-bold text-primary-green text-center mb-5">Explora por Necesidad</h2>
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="p-4 bg-white rounded-circle shadow-sm mx-auto mb-3 feature-card d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                        <i class="bi bi-heart-pulse text-secondary-green display-5"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary-green">Salud Cardiovascular</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 bg-white rounded-circle shadow-sm mx-auto mb-3 feature-card d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                        <i class="bi bi-moon-stars text-secondary-green display-5"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary-green">Sueño y Estrés</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 bg-white rounded-circle shadow-sm mx-auto mb-3 feature-card d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                        <i class="bi bi-lightning-charge text-secondary-green display-5"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary-green">Energía y Foco</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 bg-white rounded-circle shadow-sm mx-auto mb-3 feature-card d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                        <i class="bi bi-bandaid text-secondary-green display-5"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary-green">Inmunidad</h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section id="tienda" class="container py-5 mb-5 bg-white rounded-5 shadow-sm p-4 p-md-5">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="fw-bold text-primary-green mb-0">Botiquín Natural</h2>
+                    <p class="text-muted">Los suplementos y remedios más recomendados por nuestros especialistas.</p>
+                </div>
+                <a href="#" class="text-secondary-green fw-bold text-decoration-none d-none d-md-block">Ver todo el catálogo <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Producto 1: Pastillas -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 product-card overflow-hidden bg-light">
+                        <div class="position-relative">
+                            <span class="badge bg-secondary-green position-absolute top-0 start-0 m-3 rounded-pill">Best Seller</span>
+                            <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=400" 
+                                 class="card-img-top p-4" style="height: 250px; object-fit: contain;" alt="Cápsulas de Magnesio"
+                                 onerror="this.src='https://placehold.co/400x400/fff/1a4331?text=Magnesio'">
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <p class="text-muted small mb-1">Cápsulas / 60 caps</p>
+                            <h5 class="card-title fw-bold text-primary-green fs-6">Magnesio Citrato Puro</h5>
+                            <p class="fw-bold text-secondary-green fs-5 mb-3">$12.990</p>
+                            <button class="btn btn-outline-green w-100 rounded-pill fw-semibold">Añadir <i class="bi bi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2: Aceite Esencial / Gotas -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 product-card overflow-hidden bg-light">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400" 
+                                 class="card-img-top p-4" style="height: 250px; object-fit: contain;" alt="Gotas de CBD / Valeriana"
+                                 onerror="this.src='https://placehold.co/400x400/fff/1a4331?text=Gotas'">
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <p class="text-muted small mb-1">Gotas Sublinguales / 30ml</p>
+                            <h5 class="card-title fw-bold text-primary-green fs-6">Extracto Valeriana & CBD</h5>
+                            <p class="fw-bold text-secondary-green fs-5 mb-3">$24.500</p>
+                            <button class="btn btn-outline-green w-100 rounded-pill fw-semibold">Añadir <i class="bi bi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3: Polvo / Colágeno -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 product-card overflow-hidden bg-light">
+                        <div class="position-relative">
+                            <span class="badge bg-accent-green text-primary-green position-absolute top-0 start-0 m-3 rounded-pill">Nuevo</span>
+                            <img src="https://images.unsplash.com/photo-1611078589410-4447385be4ec?q=80&w=400" 
+                                 class="card-img-top p-4" style="height: 250px; object-fit: contain;" alt="Frasco de polvo"
+                                 onerror="this.src='https://placehold.co/400x400/fff/1a4331?text=Colageno'">
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <p class="text-muted small mb-1">Polvo / 300g</p>
+                            <h5 class="card-title fw-bold text-primary-green fs-6">Colágeno Marino + Vit D3</h5>
+                            <p class="fw-bold text-secondary-green fs-5 mb-3">$19.900</p>
+                            <button class="btn btn-outline-green w-100 rounded-pill fw-semibold">Añadir <i class="bi bi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4: Frasco pastillas -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 product-card overflow-hidden bg-light">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=400" 
+                                 class="card-img-top p-4" style="height: 250px; object-fit: contain;" alt="Vitamina C"
+                                 onerror="this.src='https://placehold.co/400x400/fff/1a4331?text=Vitamina+C'">
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <p class="text-muted small mb-1">Cápsulas / 90 caps</p>
+                            <h5 class="card-title fw-bold text-primary-green fs-6">Complejo B & Vitamina C</h5>
+                            <p class="fw-bold text-secondary-green fs-5 mb-3">$14.990</p>
+                            <button class="btn btn-outline-green w-100 rounded-pill fw-semibold">Añadir <i class="bi bi-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suscripción: VitalBox -->
+        <section id="suscripcion" class="py-5 mb-5">
+            <div class="container bg-primary-green rounded-5 p-4 p-md-5 shadow-lg position-relative overflow-hidden text-white">
+                <div class="row align-items-center position-relative z-1">
+                    <div class="col-lg-7">
+                        <span class="badge bg-accent-green text-primary-green px-3 py-2 fw-semibold mb-3 rounded-pill">TRATAMIENTO CONTINUO</span>
+                        <h2 class="display-5 fw-bold mb-3">Programa VitalBox.</h2>
+                        <p class="fs-5 text-white-50 mb-4">La constancia es la clave de la medicina natural. Suscríbete para recibir tus remedios y suplementos cada mes sin preocuparte por el stock, con un 15% de descuento asegurado.</p>
+                        
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-white text-primary-green rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-1-circle-fill fs-4"></i></div>
+                                    <span class="fw-semibold">Arma tu receta médica</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-white text-primary-green rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-2-circle-fill fs-4"></i></div>
+                                    <span class="fw-semibold">Fija la frecuencia</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-white text-primary-green rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-3-circle-fill fs-4"></i></div>
+                                    <span class="fw-semibold">Pausa o cancela gratis</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-white text-primary-green rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-4-circle-fill fs-4"></i></div>
+                                    <span class="fw-semibold">Despacho prioritario</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-accent-green btn-lg px-5 rounded-pill fw-bold text-primary-green mt-2">Crear mi plan mensual</button>
+                    </div>
+                    <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                        <img src="https://images.unsplash.com/photo-1615486511484-9ca0fa411eb1?q=80&w=500" 
+                             class="img-fluid rounded-4 shadow border border-3 border-white" 
+                             style="transform: rotate(5deg); height: 400px; object-fit: cover;" 
+                             alt="Caja de Suscripción"
+                             onerror="this.src='https://placehold.co/500x500/d8f3dc/1a4331?text=Caja+de+Envio'">
+                    </div>
+                </div>
+                <!-- Decoración -->
+                <i class="bi bi-capsule position-absolute text-white opacity-10" style="font-size: 20rem; top: -50px; right: -50px; transform: rotate(-45deg);"></i>
+            </div>
+        </section>
+
+        <!-- Nueva Sección: Testimonios Reales -->
+        <section class="container py-5 mb-5">
+            <h2 class="fw-bold text-primary-green text-center mb-5">Testimonios Reales</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 bg-white shadow-sm p-4 h-100 rounded-4">
+                        <div class="text-secondary-green mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="text-muted font-poppins fst-italic">"Comencé a tomar las gotas de valeriana hace un mes y finalmente pude dejar los somníferos químicos. La calidad de estos remedios naturales es increíble."</p>
+                        <h6 class="fw-bold text-primary-green mt-auto">- Carmen R.</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-white shadow-sm p-4 h-100 rounded-4">
+                        <div class="text-secondary-green mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="text-muted font-poppins fst-italic">"El programa VitalBox me salvó. Sufría de déficit de vitamina D y magnesio, ahora me llega la caja cada mes y nunca olvido mi tratamiento."</p>
+                        <h6 class="fw-bold text-primary-green mt-auto">- Diego M.</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-white shadow-sm p-4 h-100 rounded-4">
+                        <div class="text-secondary-green mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                        <p class="text-muted font-poppins fst-italic">"El colágeno en polvo se disuelve perfecto, a diferencia de otras marcas de farmacia tradicional. Excelente servicio al cliente también."</p>
+                        <h6 class="fw-bold text-primary-green mt-auto">- Francisca L.</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva Sección: FAQ (Acordeón) -->
+        <section class="container py-5 mb-5 border-top border-light">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-primary-green text-center mb-4">Preguntas Frecuentes</h2>
+                    <div class="accordion accordion-flush bg-transparent" id="faqFarmacia">
+                        <div class="accordion-item bg-transparent border-bottom border-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-primary-green fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Los suplementos reemplazan medicamentos recetados?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqFarmacia">
+                                <div class="accordion-body text-muted small">No. Nuestros suplementos y vitaminas naturales están diseñados para apoyar el bienestar general y complementar tratamientos, pero nunca deben usarse como sustitutos de la medicación prescrita por un médico sin consulta previa.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-primary-green fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿Cuánto demoran los despachos a regiones?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqFarmacia">
+                                <div class="accordion-body text-muted small">Para la Región Metropolitana, garantizamos entregas en 24 horas. Para regiones, el plazo es de 2 a 4 días hábiles mediante transporte con control de temperatura para no afectar las propiedades de los remedios.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-primary-green fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿Cómo funciona la cancelación de la VitalBox?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqFarmacia">
+                                <div class="accordion-body text-muted small">Es 100% flexible. Puedes ingresar a tu perfil y pausar o cancelar tu suscripción mensual de remedios en cualquier momento con un solo clic, sin multas ni llamadas telefónicas.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Médico / Salud -->
+        <section id="blog" class="container py-5 mb-5 border-top border-light">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary-green mb-0">Journal Médico</h2>
+                <p class="text-muted">Artículos verificados por especialistas en medicina integrativa.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?q=80&w=600" 
+                             class="card-img-top rounded-4 mb-3 object-fit-cover h-50" alt="Plantas medicinales"
+                             onerror="this.src='https://placehold.co/600x400/fff/1a4331?text=Hierbas'">
+                        <div class="card-body p-0">
+                            <span class="text-secondary-green fw-bold small text-uppercase mb-2 d-block">Fitoterapia</span>
+                            <h5 class="fw-bold text-primary-green mb-3">La diferencia clínica entre Melatonina y Pasiflora</h5>
+                            <p class="text-muted small">Descubre qué remedio natural es el adecuado para combatir tu insomnio según su origen: nervioso, ansioso o por desfase horario.</p>
+                            <a href="#" class="text-primary-green fw-semibold text-decoration-none border-bottom border-secondary-green">Leer artículo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=600" 
+                             class="card-img-top rounded-4 mb-3 object-fit-cover h-50" alt="Alimentación e Inmunidad"
+                             onerror="this.src='https://placehold.co/600x400/fff/1a4331?text=Inmunidad'">
+                        <div class="card-body p-0">
+                            <span class="text-secondary-green fw-bold small text-uppercase mb-2 d-block">Inmunología</span>
+                            <h5 class="fw-bold text-primary-green mb-3">Por qué necesitas Zinc en invierno (y qué tipo comprar)</h5>
+                            <p class="text-muted small">Sulfato, gluconato, picolinato... Una guía definitiva para entender cómo este mineral previene infecciones respiratorias.</p>
+                            <a href="#" class="text-primary-green fw-semibold text-decoration-none border-bottom border-secondary-green">Leer artículo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=600" 
+                             class="card-img-top rounded-4 mb-3 object-fit-cover h-50" alt="Salud Mental"
+                             onerror="this.src='https://placehold.co/600x400/fff/1a4331?text=Adaptogenos'">
+                        <div class="card-body p-0">
+                            <span class="text-secondary-green fw-bold small text-uppercase mb-2 d-block">Salud Mental</span>
+                            <h5 class="fw-bold text-primary-green mb-3">Adaptógenos: Ashwagandha y reducción de cortisol</h5>
+                            <p class="text-muted small">La evidencia clínica detrás de las raíces milenarias y cómo pueden reemplazar ansiolíticos leves bajo supervisión médica.</p>
+                            <a href="#" class="text-primary-green fw-semibold text-decoration-none border-bottom border-secondary-green">Leer artículo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-5 mt-5 border-top border-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="text-primary-green fw-bold fs-4 text-decoration-none mb-3 d-inline-block" href="#">
+                        <i class="bi bi-droplet-half me-2"></i>Vitality.
+                    </a>
+                    <p class="text-muted font-poppins small">Nuestra misión es hacer que la salud integrativa y los remedios naturales sean accesibles, utilizando únicamente compuestos con respaldo científico.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="fw-bold text-primary-green mb-3">Farmacia</h6>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="#" class="text-decoration-none text-muted">Vitaminas</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Fitomedicamentos</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Dermocosmética</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Plan VitalBox</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="fw-bold text-primary-green mb-3">Ayuda</h6>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="#" class="text-decoration-none text-muted">Despachos Clínicos</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Políticas de Devolución</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Consulta Farmacéutico</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <h6 class="fw-bold text-primary-green mb-3">Prevención es Salud</h6>
+                    <p class="text-muted small">Únete al boletín para recibir guías de suplementación y un 10% OFF.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control rounded-start-pill border-secondary-green" placeholder="Tu correo electrónico">
+                        <button class="btn btn-primary-green rounded-end-pill" type="button">Suscribir</button>
+                    </div>
+                    <div class="d-flex justify-content-lg-end gap-3 mt-3">
+                        <a href="#" class="text-primary-green fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-primary-green fs-5"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-muted small mt-5 pt-4 border-top border-light">
+                &copy; 2026 HexaCore Systems Solutions - Demo Farmacia Natural
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

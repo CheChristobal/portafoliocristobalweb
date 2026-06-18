@@ -1,0 +1,74 @@
+/* --- Diseño Textil & Orgánico --- */
+body {
+    background-color: #0a0c10 !important;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff !important;
+}
+
+/* Títulos con sombra sutil para profundidad */
+h1, h2, h3, h4, h5 {
+    letter-spacing: -0.8px;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+}
+
+/* Tarjeta de la Calculadora (Efecto Glassmorphism) */
+.card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 114, 255, 0.3) !important; /* Borde azul suave */
+    border-radius: 16px !important;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    border-color: #0072ff !important;
+    box-shadow: 0 10px 30px rgba(0, 114, 255, 0.15);
+}
+
+/* Inputs de la calculadora */
+.form-control {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid #4a5568 !important;
+    color: #ffffff !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+}
+
+.form-control:focus {
+    border-color: #0072ff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 114, 255, 0.25) !important;
+}
+
+/* Botón de Cotización */
+.btn-primary {
+    background: linear-gradient(135deg, #0072ff, #00c6ff) !important;
+    border: none !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+/* Elementos visuales */
+.img-fluid {
+    filter: brightness(0.9);
+    border-radius: 20px !important;
+    transition: 0.5s;
+}
+
+.img-fluid:hover {
+    filter: brightness(1.1);
+}
+
+/* Texto de ayuda */
+.text-white-50 {
+    color: #a0aec0 !important;
+}

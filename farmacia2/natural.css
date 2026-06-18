@@ -1,0 +1,196 @@
+/* --- Variables de Color Naturista Premium --- */
+:root {
+    --primary-green: #113826;   /* Verde bosque más profundo y elegante */
+    --secondary-green: #3a7553; /* Verde esmeralda vibrante */
+    --accent-green: #dcf5e3;    /* Verde menta luminoso */
+    --light-bg: #f4f9f5;        /* Blanco con un ligero toque de clorofila */
+    
+    /* Nuevos efectos de diseño */
+    --gradient-green: linear-gradient(135deg, #113826 0%, #3a7553 100%);
+    --glow-green: rgba(58, 117, 83, 0.35);
+}
+
+/* --- Configuración General --- */
+body {
+    background-color: var(--light-bg) !important;
+    font-family: 'Poppins', sans-serif;
+    color: #495057;
+    overflow-x: hidden; /* Evita scroll horizontal con las animaciones */
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Clases de utilidad actualizadas */
+.text-primary-green { color: var(--primary-green) !important; }
+.text-secondary-green { color: var(--secondary-green) !important; }
+.bg-primary-green { background: var(--primary-green) !important; }
+.bg-secondary-green { background: var(--secondary-green) !important; }
+.bg-accent-green { background: var(--accent-green) !important; }
+.border-secondary-green { border-color: var(--secondary-green) !important; }
+
+/* --- Navegación (Efecto Cristal / Glassmorphism) --- */
+.navbar {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar .nav-link {
+    color: var(--primary-green);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Subrayado animado en el menú */
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--secondary-green);
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-green);
+}
+
+.navbar .nav-link:hover::after {
+    width: 70%;
+    left: 15%;
+}
+
+/* --- Badges / Etiquetas con Cristal --- */
+.badge {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.6);
+    backdrop-filter: blur(4px);
+    letter-spacing: 1px;
+}
+
+/* --- Botones --- */
+.btn-primary-green {
+    background: var(--gradient-green);
+    color: white;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote */
+}
+
+.btn-primary-green:hover {
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px var(--glow-green);
+}
+
+.btn-outline-green {
+    background-color: transparent;
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-green:hover {
+    background: var(--gradient-green);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--glow-green);
+}
+
+.btn-accent-green {
+    background-color: var(--accent-green);
+    color: var(--primary-green);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-accent-green:hover {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* --- Hero Section y Animaciones Constantes --- */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-img {
+    animation: float 6s ease-in-out infinite; /* Flotación constante */
+    box-shadow: 0 30px 60px rgba(17, 56, 38, 0.2) !important;
+}
+
+/* --- Feature Cards (Categorías e Iconos) --- */
+.feature-card {
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.feature-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(17, 56, 38, 0.08) !important;
+    border-color: var(--accent-green);
+}
+
+.feature-card i {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover i {
+    transform: scale(1.2);
+}
+
+/* --- Tarjetas de Producto --- */
+.product-card {
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card img {
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 25px 50px rgba(17, 56, 38, 0.1) !important;
+    transform: translateY(-8px);
+}
+
+.product-card:hover img {
+    transform: scale(1.15) rotate(3deg);
+}
+
+/* --- Tarjetas de Blog --- */
+.blog-card img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: brightness(0.9);
+}
+
+.blog-card:hover img {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+.blog-card a {
+    transition: all 0.3s ease;
+    padding-bottom: 2px;
+}
+
+.blog-card a:hover {
+    color: var(--secondary-green) !important;
+    border-color: var(--secondary-green) !important;
+    letter-spacing: 0.5px;
+}
+
+/* Forma del fondo del Hero */
+.hero-bg-shape {
+    background: linear-gradient(180deg, var(--accent-green) 0%, rgba(220, 245, 227, 0) 100%);
+    opacity: 0.8;
+}

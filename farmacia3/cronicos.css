@@ -1,0 +1,91 @@
+/* --- Variables de Color Clínico / Tecnológico --- */
+:root {
+    --primary-blue: #0d47a1;   /* Azul médico profundo (Confianza, Seriedad) */
+    --accent-blue: #29b6f6;    /* Azul claro/Cian (Tecnología, Acción) */
+    --soft-blue: #f0f7ff;      /* Fondo azul muy claro (Higiene, Limpieza) */
+    --text-dark: #2d3748;      /* Gris oscuro para textos (Legibilidad) */
+}
+
+/* --- Configuración General --- */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    letter-spacing: -0.3px; /* Da un look más corporativo/tecnológico */
+}
+
+/* Clases de Color Personalizadas */
+.text-primary-blue { color: var(--primary-blue) !important; }
+.text-accent-blue { color: var(--accent-blue) !important; }
+.bg-primary-blue { background-color: var(--primary-blue) !important; }
+.bg-soft-blue { background-color: var(--soft-blue) !important; }
+
+/* --- Botones --- */
+.btn-primary-blue {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-primary-blue:hover {
+    background-color: #08306b;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(13, 71, 161, 0.2);
+}
+
+.btn-outline-blue {
+    background-color: transparent;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    transition: all 0.3s ease;
+}
+.btn-outline-blue:hover {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+/* --- Tarjetas de Pasos (Cómo Funciona) --- */
+.step-card {
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(13, 71, 161, 0.1) !important;
+    border-color: var(--accent-blue);
+}
+.icon-wrapper {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.step-card:hover .icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+    background-color: var(--primary-blue) !important;
+    color: white !important;
+}
+
+/* --- Dashboard / UI Maqueta --- */
+.form-switch .form-check-input {
+    cursor: pointer;
+}
+.form-switch .form-check-input:checked {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
+/* --- Logos / Alianzas --- */
+.grayscale-logos {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+.grayscale-logos:hover {
+    filter: grayscale(0%);
+    opacity: 1 !important;
+}
+
+/* --- Utilidades --- */
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+.rounded-5 {
+    border-radius: 1.5rem !important;
+}
