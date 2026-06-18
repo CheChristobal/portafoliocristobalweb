@@ -1,0 +1,123 @@
+/* --- Variables Flora Seca (Earthy/Desert Palette) --- */
+:root {
+    --terra: #c85a3a;       /* Terracota arcilla */
+    --terra-light: #e5876b; /* Naranja cálido suave */
+    --sage: #7d967b;        /* Verde salvia grisáceo */
+    --sand: #f5f2eb;        /* Beige claro arena */
+    --earth: #3b332d;       /* Café muy oscuro / casi negro */
+}
+
+/* --- Configuración General --- */
+body {
+    background-color: var(--sand) !important;
+    color: var(--earth);
+    overflow-x: hidden;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+.tracking-wide { letter-spacing: 2px; }
+
+/* --- Utilidades de Color --- */
+.text-terra { color: var(--terra) !important; }
+.text-terra-light { color: var(--terra-light) !important; }
+.text-sage { color: var(--sage) !important; }
+.text-sand { color: var(--sand) !important; }
+.text-earth { color: var(--earth) !important; }
+
+.bg-terra { background-color: var(--terra) !important; }
+.bg-sage { background-color: var(--sage) !important; }
+.bg-sand { background-color: var(--sand) !important; }
+.bg-earth { background-color: var(--earth) !important; }
+
+.border-terra-subtle { border-color: rgba(200, 90, 58, 0.15) !important; }
+.border-terra { border-color: var(--terra) !important; }
+
+/* --- Botones --- */
+.btn-terra {
+    background-color: var(--terra);
+    color: var(--sand);
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-terra:hover {
+    background-color: #a8482d;
+    color: var(--sand);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(200, 90, 58, 0.2) !important;
+}
+
+.btn-outline-sand {
+    border: 2px solid var(--sand);
+    color: var(--sand);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.btn-outline-sand:hover {
+    background-color: var(--sand);
+    color: var(--earth);
+}
+
+.btn-earth {
+    background-color: var(--earth);
+    color: var(--sand);
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-earth:hover {
+    background-color: var(--terra);
+    color: var(--sand);
+    transform: scale(1.02);
+}
+
+/* --- Botones del Simulador --- */
+.texture-btn {
+    border-color: rgba(245, 242, 235, 0.2);
+    border-width: 2px;
+}
+.texture-btn:hover {
+    border-color: var(--terra-light);
+    transform: translateX(5px);
+}
+.texture-btn.active {
+    border-color: var(--terra) !important;
+    background-color: var(--sand) !important;
+    color: var(--earth) !important;
+}
+.texture-btn.active h5, .texture-btn.active small {
+    color: var(--earth) !important;
+}
+
+.transition-opacity {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* --- Catálogo / Plantas --- */
+.plant-card img {
+    transition: transform 0.6s ease;
+}
+.plant-card:hover img {
+    transform: scale(1.1);
+}
+.plant-overlay {
+    background: linear-gradient(transparent, rgba(59, 51, 45, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.plant-card:hover .plant-overlay {
+    opacity: 1;
+}
+
+/* Extras */
+.transition-all {
+    transition: all 0.3s ease;
+}
+.hover-terra:hover {
+    color: var(--terra) !important;
+    opacity: 1 !important;
+}

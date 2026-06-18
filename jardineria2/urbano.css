@@ -1,0 +1,119 @@
+/* --- Variables Urbanas --- */
+:root {
+    --urban-dark: #1a1a1a;       /* Gris asfalto oscuro */
+    --emerald: #10b981;          /* Verde neón/esmeralda vibrante */
+    --light-gray: #f8fafc;       /* Gris muy claro (fondo general) */
+    --secondary-gray: #94a3b8;   /* Gris neutro para textos secundarios */
+}
+
+/* --- Configuración General --- */
+body {
+    background-color: var(--light-gray) !important;
+    color: var(--urban-dark);
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.fw-black {
+    font-weight: 900 !important;
+}
+.tracking-tight {
+    letter-spacing: -1px;
+}
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+/* Clases de colores personalizados */
+.text-urban-dark { color: var(--urban-dark) !important; }
+.text-emerald { color: var(--emerald) !important; }
+.text-secondary-gray { color: var(--secondary-gray) !important; }
+.bg-urban-dark { background-color: var(--urban-dark) !important; }
+.bg-emerald { background-color: var(--emerald) !important; }
+.bg-light-gray { background-color: var(--light-gray) !important; }
+
+/* --- Botones Cuadrados (Arquitectónicos) --- */
+.btn-emerald {
+    background-color: var(--emerald);
+    color: white;
+    border: 1px solid var(--emerald);
+    transition: all 0.3s ease;
+}
+.btn-emerald:hover {
+    background-color: transparent;
+    color: var(--emerald);
+}
+
+.btn-outline-light {
+    border: 1px solid white;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--urban-dark);
+}
+
+.btn-outline-dark {
+    border: 1px solid var(--urban-dark);
+    color: var(--urban-dark);
+    transition: all 0.3s ease;
+}
+.btn-outline-dark:hover {
+    background-color: var(--urban-dark);
+    color: white;
+}
+
+/* --- Tarjetas de Características y Productos --- */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
+}
+
+.product-card {
+    border: 1px solid rgba(0,0,0,0.05) !important;
+    transition: all 0.4s ease;
+}
+.product-card img {
+    transition: transform 0.6s ease;
+    filter: grayscale(20%);
+}
+.product-card:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-color: var(--emerald) !important;
+}
+.product-card:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* --- Formularios Cuadrados --- */
+.form-control, .form-select {
+    transition: all 0.3s ease;
+}
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: var(--emerald) !important;
+    background-color: white !important;
+}
+
+/* --- Utilidades Extras --- */
+.transition-all {
+    transition: all 0.3s ease;
+}
+.hover-emerald:hover {
+    color: var(--emerald) !important;
+}
+
+/* Overlay para la imagen gráfica del cotizador */
+.z-n1 {
+    z-index: -1;
+}
